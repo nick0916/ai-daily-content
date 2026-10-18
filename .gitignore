@@ -1,2 +1,6 @@
 .DS_Store
 .obsidian/
+
+# Raw fetched content (full article text / transcripts) stays local:
+# the pipeline reads it, the public repo doesn't need it.
+00-inbox/
