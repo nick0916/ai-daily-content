@@ -1,4 +1,6 @@
 # Every URL below was verified (HTTP 200 + parseable entries) on 2026-10-18.
+# `model:` overrides the per-item summarization model (default claude-sonnet-5-5);
+# low-signal feeds (third-party release notes, tier 3) use Haiku to save quota.
 sources:
   - name: claude-code-releases
     kind: rss
@@ -140,6 +142,7 @@ sources:
     url: https://thecuriosity.substack.com/feed
     tier: 3
     source_weight: 0.4
+    model: claude-haiku-5-5
   - name: substack-byte-sized-design
     kind: rss
     url: https://read.bytesizeddesign.com/feed
@@ -165,56 +168,61 @@ sources:
     url: https://towardsdatascience.com/feed
     tier: 3
     source_weight: 0.3
+    model: claude-haiku-5-5
   - name: medium-tag-llm
     kind: rss
     url: https://medium.com/feed/tag/large-language-models
     tier: 3
     source_weight: 0.3
+    model: claude-haiku-5-5
   - name: medium-tag-claude
     kind: rss
     url: https://medium.com/feed/tag/claude
     tier: 3
     source_weight: 0.3
+    model: claude-haiku-5-5
   - name: gitnexus-releases
     kind: rss
     url: https://github.com/abhigyanpatwari/GitNexus/releases.atom
     tier: 2
     source_weight: 0.5
+    model: claude-haiku-5-5
   - name: hermes-agent-releases
     kind: rss
     url: https://github.com/NousResearch/hermes-agent/releases.atom
     tier: 2
     source_weight: 0.5
+    model: claude-haiku-5-5
   - name: ecc-releases
     kind: rss
     url: https://github.com/affaan-m/ECC/releases.atom
     tier: 2
     source_weight: 0.5
+    model: claude-haiku-5-5
   - name: ruflo-releases
     kind: rss
     url: https://github.com/ruvnet/ruflo/releases.atom
     tier: 2
     source_weight: 0.5
+    model: claude-haiku-5-5
   - name: claude-mem-releases
     kind: rss
     url: https://github.com/thedotmack/claude-mem/releases.atom
     tier: 2
     source_weight: 0.5
+    model: claude-haiku-5-5
   - name: superpowers-releases
     kind: rss
     url: https://github.com/obra/superpowers/releases.atom
     tier: 2
     source_weight: 0.5
-  - name: rtk-releases
-    kind: rss
-    url: https://github.com/rtk-ai/rtk/releases.atom
-    tier: 2
-    source_weight: 0.5
+    model: claude-haiku-5-5
   - name: repowise-releases
     kind: rss
     url: https://github.com/repowise-dev/repowise/releases.atom
     tier: 2
     source_weight: 0.5
+    model: claude-haiku-5-5
   - name: hackernews
     kind: hn
     score_threshold: 200
