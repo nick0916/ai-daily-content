@@ -1,0 +1,63 @@
+# Curated columns (專欄). Ids kept from the original setup; prompts rewritten.
+# selection_mode: curated → Sonnet picks from a 30-day quality-gated pool.
+# selection_mode: chronological → latest items from filter.sources, no LLM.
+columns:
+  - id: ai-techniques
+    display_name: "🎓 AI 使用技巧"
+    prompt: >-
+      實際可操作的 AI 使用技巧：prompt 寫法、Claude Code / Codex 等 coding agent 的工作流、
+      skills / hooks / MCP 的用法、提升產出品質的具體方法。必須有讀者看完就能照做的步驟或範例；
+      純產品宣告、新聞、融資消息不要收。
+    filter:
+      keywords: ["prompt", "workflow", "Claude Code", "Codex", "MCP", "skill", "hook", "agent"]
+
+  - id: ai-flow-adoption
+    display_name: "🛤️ 導入心得"
+    prompt: >-
+      個人或團隊把 AI 導入日常工作流程的第一手經驗與 lessons learned：做了什麼、遇到什麼問題、
+      怎麼解決、成效如何。必須有 first-person 經驗；純 announcement、沒有實際經驗的觀點文不要收。
+    filter:
+      keywords: ["lessons", "experience", "in production", "we built", "心得", "經驗"]
+
+  - id: enterprise-ai-adoption
+    display_name: "🏢 企業導入"
+    prompt: >-
+      企業 / 組織層級的 AI 導入：組織調整、流程改造、治理、ROI 與成效衡量、大規模部署的案例。
+      只是「某公司 + AI」的新聞稿、沒談導入流程 / 組織 / 成效的不要收。
+    filter:
+      keywords: ["enterprise", "organization", "adoption", "ROI", "governance", "企業"]
+
+  - id: ai-knowledge-mgmt
+    display_name: "🧠 知識管理"
+    prompt: >-
+      用 AI 做知識管理與檢索：RAG、memory、embedding、個人知識庫（Obsidian 等）、
+      文件整理與搜尋的架構與實作。泛泛談「AI 很重要」的文章不要收。
+    filter:
+      keywords: ["RAG", "retrieval", "memory", "knowledge", "embedding", "Obsidian", "知識"]
+
+  - id: ai-security
+    display_name: "🔐 AI 安全"
+    prompt: >-
+      AI 系統的安全議題：prompt injection、jailbreak、agent 權限與 sandbox、供應鏈與模型風險、
+      資料外洩與防禦做法。只是順帶提到 "security" 的一般產品更新不要收。
+    filter:
+      keywords: ["security", "prompt injection", "jailbreak", "vulnerability", "sandbox", "安全"]
+
+  - id: release-tracker
+    display_name: "🛠 工具最新 release"
+    prompt: "追蹤的開發工具最新版本與變更內容。"
+    selection_mode: chronological
+    lookback_days: 7
+    max_items: 12
+    filter:
+      sources:
+        - claude-code-releases
+        - codex-releases
+        - gitnexus-releases
+        - hermes-agent-releases
+        - ecc-releases
+        - ruflo-releases
+        - claude-mem-releases
+        - superpowers-releases
+        - rtk-releases
+        - repowise-releases

@@ -1,0 +1,227 @@
+# Every URL below was verified (HTTP 200 + parseable entries) on 2026-10-18.
+sources:
+  - name: claude-code-releases
+    kind: rss
+    url: https://github.com/anthropics/claude-code/releases.atom
+    tier: 1
+    source_weight: 1.0
+  - name: openai-blog
+    kind: rss
+    url: https://openai.com/news/rss.xml
+    tier: 1
+    source_weight: 1.0
+  - name: codex-releases
+    kind: rss
+    url: https://github.com/openai/codex/releases.atom
+    tier: 1
+    source_weight: 0.8
+  - name: deepmind-blog
+    kind: rss
+    url: https://deepmind.google/blog/rss.xml
+    tier: 1
+    source_weight: 0.9
+  - name: huggingface-blog
+    kind: rss
+    url: https://huggingface.co/blog/feed.xml
+    tier: 2
+    source_weight: 0.6
+  - name: simon-willison
+    kind: rss
+    url: https://simonwillison.net/atom/everything/
+    tier: 1
+    source_weight: 1.0
+  - name: import-ai
+    kind: rss
+    url: https://importai.substack.com/feed
+    tier: 1
+    source_weight: 0.8
+  - name: latent-space
+    kind: rss
+    url: https://www.latent.space/feed
+    tier: 1
+    source_weight: 0.8
+  - name: interconnects
+    kind: rss
+    url: https://www.interconnects.ai/feed
+    tier: 1
+    source_weight: 0.8
+  - name: eugene-yan
+    kind: rss
+    url: https://eugeneyan.com/rss/
+    tier: 1
+    source_weight: 0.9
+  - name: hamel-husain
+    kind: rss
+    url: https://hamel.dev/index.xml
+    tier: 1
+    source_weight: 0.9
+  - name: lilian-weng
+    kind: rss
+    url: https://lilianweng.github.io/index.xml
+    tier: 1
+    source_weight: 0.9
+  - name: sebastian-raschka
+    kind: rss
+    url: https://magazine.sebastianraschka.com/feed
+    tier: 1
+    source_weight: 0.9
+  - name: substack-bytebytego
+    kind: rss
+    url: https://blog.bytebytego.com/feed
+    tier: 2
+    source_weight: 0.6
+  - name: substack-pragmatic-engineer
+    kind: rss
+    url: https://newsletter.pragmaticengineer.com/feed
+    tier: 2
+    source_weight: 0.7
+  - name: substack-engineers-codex
+    kind: rss
+    url: https://read.engineerscodex.com/feed
+    tier: 2
+    source_weight: 0.6
+  - name: substack-register-spill
+    kind: rss
+    url: https://registerspill.thorstenball.com/feed
+    tier: 2
+    source_weight: 0.6
+  - name: substack-techworld-milan
+    kind: rss
+    url: https://newsletter.techworld-with-milan.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-vutrinh
+    kind: rss
+    url: https://vutr.substack.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-bite-code
+    kind: rss
+    url: https://www.bitecode.dev/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-eng-leadership
+    kind: rss
+    url: https://newsletter.eng-leadership.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-developing-dev
+    kind: rss
+    url: https://www.developing.dev/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-dev-leader
+    kind: rss
+    url: https://devleader.substack.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-lennys-newsletter
+    kind: rss
+    url: https://www.lennysnewsletter.com/feed
+    tier: 2
+    source_weight: 0.6
+  - name: substack-product-compass
+    kind: rss
+    url: https://www.productcompass.pm/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-product-growth
+    kind: rss
+    url: https://www.news.aakashg.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-product-for-engineers
+    kind: rss
+    url: https://newsletter.posthog.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: substack-curiosity-insights-kevin
+    kind: rss
+    url: https://thecuriosity.substack.com/feed
+    tier: 3
+    source_weight: 0.4
+  - name: substack-byte-sized-design
+    kind: rss
+    url: https://read.bytesizeddesign.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: infoq-main
+    kind: rss
+    url: https://feed.infoq.com/
+    tier: 2
+    source_weight: 0.5
+  - name: infoq-ai-ml
+    kind: rss
+    url: https://feed.infoq.com/ai-ml-data-eng/
+    tier: 2
+    source_weight: 0.5
+  - name: infoq-architecture
+    kind: rss
+    url: https://feed.infoq.com/architecture-design/
+    tier: 2
+    source_weight: 0.5
+  - name: medium-towards-data-science
+    kind: rss
+    url: https://towardsdatascience.com/feed
+    tier: 3
+    source_weight: 0.3
+  - name: medium-tag-llm
+    kind: rss
+    url: https://medium.com/feed/tag/large-language-models
+    tier: 3
+    source_weight: 0.3
+  - name: medium-tag-claude
+    kind: rss
+    url: https://medium.com/feed/tag/claude
+    tier: 3
+    source_weight: 0.3
+  - name: gitnexus-releases
+    kind: rss
+    url: https://github.com/abhigyanpatwari/GitNexus/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: hermes-agent-releases
+    kind: rss
+    url: https://github.com/NousResearch/hermes-agent/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: ecc-releases
+    kind: rss
+    url: https://github.com/affaan-m/ECC/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: ruflo-releases
+    kind: rss
+    url: https://github.com/ruvnet/ruflo/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: claude-mem-releases
+    kind: rss
+    url: https://github.com/thedotmack/claude-mem/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: superpowers-releases
+    kind: rss
+    url: https://github.com/obra/superpowers/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: rtk-releases
+    kind: rss
+    url: https://github.com/rtk-ai/rtk/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: repowise-releases
+    kind: rss
+    url: https://github.com/repowise-dev/repowise/releases.atom
+    tier: 2
+    source_weight: 0.5
+  - name: hackernews
+    kind: hn
+    score_threshold: 200
+    tier: 2
+    source_weight: 0.4
+  # Channels listed in youtube.yaml; each becomes youtube-<channel-name>.
+  - name: youtube
+    kind: youtube
+    tier: 2
+    source_weight: 0.6

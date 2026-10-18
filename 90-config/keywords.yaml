@@ -1,0 +1,48 @@
+topics:
+  foundation_models:
+    description: "Frontier LLMs and model releases"
+    keywords: ["GPT", "Claude", "Gemini", "Llama", "Mistral", "Qwen", "DeepSeek"]
+    children:
+      claude:
+        keywords: ["Claude", "Anthropic"]
+      gpt:
+        keywords: ["GPT", "ChatGPT", "OpenAI"]
+      gemini:
+        keywords: ["Gemini", "DeepMind"]
+      open_weights:
+        keywords: ["Llama", "Qwen", "DeepSeek", "Mistral", "open-weight"]
+  agents:
+    keywords: ["agent framework", "tool use", "ReAct"]
+    children:
+      mcp:
+        keywords: ["MCP", "Model Context Protocol"]
+      coding_agents:
+        keywords: ["Claude Code", "Codex", "Cursor", "coding agent"]
+      frameworks:
+        keywords: ["LangGraph", "agent SDK", "multi-agent"]
+  engineering:
+    children:
+      evals:
+        keywords: ["eval", "benchmark", "LLM-as-judge"]
+      rag:
+        keywords: ["RAG", "retrieval", "embedding", "vector database"]
+      inference:
+        keywords: ["inference", "latency", "serving", "quantization"]
+      architecture:
+        keywords: ["system design", "architecture", "distributed systems"]
+  research:
+    children:
+      training:
+        keywords: ["RLHF", "fine-tuning", "pretraining", "post-training"]
+      interpretability:
+        keywords: ["interpretability", "alignment", "safety"]
+  security:
+    keywords: ["prompt injection", "jailbreak", "AI security", "vulnerability"]
+  product_and_org:
+    children:
+      product:
+        keywords: ["product management", "PM", "growth"]
+      leadership:
+        keywords: ["engineering manager", "leadership", "career"]
+      adoption:
+        keywords: ["enterprise AI", "AI adoption", "AI transformation"]
