@@ -217,12 +217,6 @@ sources:
     tier: 2
     source_weight: 0.5
     model: claude-haiku-5-5
-  - name: repowise-releases
-    kind: rss
-    url: https://github.com/repowise-dev/repowise/releases.atom
-    tier: 2
-    source_weight: 0.5
-    model: claude-haiku-5-5
   - name: hackernews
     kind: hn
     score_threshold: 200
