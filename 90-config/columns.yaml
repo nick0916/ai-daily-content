@@ -52,17 +52,36 @@ columns:
       keywords: ["security", "prompt injection", "jailbreak", "vulnerability", "sandbox", "安全"]
       exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
 
+  - id: ai-learning
+    display_name: "📚 用 AI 學習・降低認知負荷"
+    prompt: >-
+      用 AI 幫助「人」學習或降低認知負荷的具體方法、工具與研究，聚焦三類：
+      (1) 用 AI 學習：自學新技能／語言／學科、讀懂論文或長文件、備考、用 AI 當家教或陪孩子學習、
+      教師用 AI 讓學生學得更好，要有具體做法（prompt、流程、工具設定）或可照做的步驟；
+      (2) 用 AI 降低認知負荷：處理資訊過載、整理思緒與待辦、把工作記憶外部化、減少情境切換、
+      輔助決策，要有具體工具用法或工作方法；
+      (3) 研究與反思：AI 對學習成效、批判思考、記憶的影響（cognitive offloading、cognitive debt），
+      以及避免「AI 代勞反而沒學到」的做法（例如先自己想再問、蘇格拉底式提問、學習模式）。
+      必須有具體方法、工具用法或研究結果。
+      不要收：模型訓練、machine learning 技術、agent 自我學習等「機器學習」內容；
+      AI 廠商教育產品的新功能宣告或宣傳文（沒有實際用法）；學區採購、教育政策新聞；
+      課程招生與付費社群推銷；和 AI 無關的一般學習法；企業 L&D 採購或課程製作的商業分析。
+    min_items: 1   # sources are sparse — show even a single good fit
+    filter:
+      keywords: ["learn faster", "learning with AI", "studying", "study mode", "learning mode", "students", "tutor", "cognitive", "spaced repetition", "flashcard", "NotebookLM", "Socratic", "critical thinking", "information overload", "overwhelm", "學習", "認知", "自學"]
+      exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
+
   - id: ai-daily-life
     display_name: "🏡 AI 幫助日常生活"
     prompt: >-
-      個人在「工作以外」用 AI 的具體實例：生活安排與家務、學習（語言、自學、陪孩子學習）、
+      個人在「工作以外」用 AI 的具體實例：生活安排與家務、
       健康／運動／飲食的記錄與規劃、旅遊規劃、購物比價、家庭與育兒、個人記帳與預算、
       個人資料整理（照片、文件、筆記）、無障礙與長輩使用。必須同時有：具體的人、具體做法，
       以及可觀察的成效或讀者可照做的步驟。
       不要收：任何工作／職場／團隊／寫程式相關內容；AI 廠商的客戶案例或成功故事；
       「N 個 AI 工具」清單與工具比較；新功能宣告或初體驗；課程、招生、聯盟行銷與購物優惠文；
       投資、股票、加密貨幣；醫療診斷或取代醫師的建議（只收「用 AI 整理健康資料、準備問醫師的問題」這類）；
-      沒有具體案例的觀點文或趨勢分析。
+      沒有具體案例的觀點文或趨勢分析；用 AI 學習或降低認知負荷（屬於 📚 用 AI 學習）。
     min_items: 1   # sources are sparse — show even a single good fit
     filter:
       keywords: ["daily life", "everyday", "family", "parent", "kids", "travel", "meal", "budget", "language learning", "seniors", "生活", "親子", "旅遊", "記帳", "長輩"]

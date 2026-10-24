@@ -272,6 +272,30 @@ sources:
     url: https://tomtunguz.com/index.xml
     tier: 2
     source_weight: 0.5
+  # ── Learning with AI / cognitive load (added 2026-10-24) ──
+  - name: one-useful-thing         # Ethan Mollick — AI at work and in education, full text in content
+    kind: rss
+    url: https://www.oneusefulthing.org/feed
+    tier: 1
+    source_weight: 0.8
+  - name: substack-educating-ai    # Nick Potkalitsky — cognitive offloading, AI in classrooms
+    kind: rss
+    url: https://nickpotkalitsky.substack.com/feed
+    tier: 3
+    source_weight: 0.5
+    model: claude-haiku-5-5
+  - name: substack-phil-hardman    # Dr Philippa Hardman — AI and learning design
+    kind: rss
+    url: https://drphilippahardman.substack.com/feed
+    tier: 3
+    source_weight: 0.5
+    model: claude-haiku-5-5
+  - name: ness-labs                # Anne-Laure Le Cunff — cognition, tools for thought
+    kind: rss
+    url: https://nesslabs.com/feed
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
   # ── Social / link aggregators (added 2026-10-24) ──
   # Bluesky: links shared by a few hand-picked accounts (public API, no key).
   - name: bluesky-ai-curated
