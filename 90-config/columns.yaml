@@ -71,19 +71,22 @@ columns:
   - id: ai-monetization
     display_name: "💰 用 AI 賺錢"
     prompt: >-
-      個人、solo founder 或小團隊（約 20 人以下、bootstrapped 或早期）用 AI 做出產品或服務並實際賺到錢的案例拆解。
-      必須同時符合：(1) AI 是產品或服務的核心，不只是內部提效工具；(2) 有具名創辦人和可連到的產品或公司；
-      (3) 有具體營收或成效數字（MRR/ARR、付費客戶數、定價、毛利或推論成本結構、獲客管道），
-      最好附可查證來源（例如 TrustMRR、Open Startup 公開營收頁、財報）。受訪者自述的數字要在摘要中可辨識為自述。
-      也收 AI 原生商業模式分析（AI 產品定價、推論成本吃掉毛利、outcome-based pricing），前提是有具體數字或案例。
-      不要收：致富課程、教練、付費社群推銷；「月入百萬／被動收入／躺賺」標題黨；聯盟行銷導購與工具清單；MLM；
-      沒有具名產品、無法查證的收入宣稱；加密貨幣、代幣、交易機器人、投資理財；只有點子沒有營收的「N 個 AI 創業點子」；
-      募資新聞；大公司（OpenAI、Anthropic 等）的財報新聞；企業內部導入 AI 降本的案例（屬於 🏢 企業導入）；
-      和 AI 無關的一般 SaaS 經營文。
+      用 AI 賺錢的實例與方法，聚焦三類：
+      (1) Agent as a Service（AaaS）：把 AI agent 當成服務或產品賣（代客建置與維運 agent、agent 訂閱、
+      按成果計價），談商業模式、定價、交付方式、客戶與實際案例；
+      (2) 個人靠 AI 賺錢的經驗：個人、自由工作者或 solo founder 用 AI 接案、做產品、做內容或提供服務，
+      有具體做法與收入／成效（定價、案件或客戶數、MRR、花費與時間投入）；
+      (3) 小團隊（約 20 人以下）AI 產品的營收拆解與 AI 原生商業模式（定價、推論成本吃掉毛利）。
+      必須有具名的人或產品、具體做法，以及具體數字或可觀察的成效；AI 必須是賺錢方式的核心。
+      受訪者自述的收入可以收，但摘要中要能辨識是自述；能附公開營收頁（TrustMRR、Open Startup）更好。
+      不要收：致富課程、教練、付費社群或 bootcamp 推銷（包括以賣課為主的「AI 代理商」教學）；
+      「月入百萬／被動收入／躺賺」標題黨；聯盟行銷導購與工具清單；MLM；沒有具名產品或人、無法查證的收入宣稱；
+      加密貨幣、代幣、交易機器人、投資理財；只有點子沒有實際收入的「N 個 AI 創業點子」；募資新聞；
+      大公司財報或大公司 agent 產品發表；企業內部導入 AI 降本的案例（屬於 🏢 企業導入）；
+      agent 框架或技術教學（屬於 🎓 AI 使用技巧）；和 AI 無關的一般 SaaS 經營文。
     min_items: 3
     filter:
-      keywords: ["MRR", "ARR", "bootstrapped", "indie hacker", "solo founder", "pricing", "paying customers", "營收", "定價"]
-
+      keywords: ["agent as a service", "AaaS", "AI agency", "freelance", "side income", "solo founder", "indie hacker", "MRR", "ARR", "pricing", "paying customers", "outcome-based", "副業", "接案", "營收", "定價"]
   - id: release-tracker
     display_name: "🛠 工具最新 release"
     prompt: "追蹤的開發工具最新版本與變更內容。"
