@@ -18,6 +18,9 @@ channels:
   - id: UChhw6DlKKTQ9mYSpTfXUYqA   # Starter Story — 小團隊營收案例（自述數字）
     name: Starter Story
     tier: 3
+  - id: UCwOILzAcxK5CM2M7oRBuWSg   # SaaStr AI — agent pricing / results (B2B)
+    name: SaaStr AI
+    tier: 3
 min_duration_sec: 180
 max_duration_sec: 5400
 caption_preference: ["native", "asr"]

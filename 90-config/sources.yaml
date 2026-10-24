@@ -262,6 +262,16 @@ sources:
     tier: 3
     source_weight: 0.4
     model: claude-haiku-5-5
+  - name: substack-platforms-ai    # Sangeet Paul Choudary — AaaS business models, full text in content
+    kind: rss
+    url: https://platforms.substack.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: tomasz-tunguz            # Services-as-Software economics, AI margins (VC view)
+    kind: rss
+    url: https://tomtunguz.com/index.xml
+    tier: 2
+    source_weight: 0.5
   # ── Social / link aggregators (added 2026-10-24) ──
   # Bluesky: links shared by a few hand-picked accounts (public API, no key).
   - name: bluesky-ai-curated
