@@ -12,6 +12,12 @@ channels:
   - id: UCZHmQk67mSJgfCCTn7xBfew   # Yannic Kilcher
     name: Yannic Kilcher
     tier: 2
+  - id: UC7cG3S-CFjpZeQYur8dqPRA   # I'm 阿湯 (I'm Scorpio) — 生活 AI 實測
+    name: I'm 阿湯
+    tier: 2
+  - id: UChhw6DlKKTQ9mYSpTfXUYqA   # Starter Story — 小團隊營收案例（自述數字）
+    name: Starter Story
+    tier: 3
 min_duration_sec: 180
 max_duration_sec: 5400
 caption_preference: ["native", "asr"]

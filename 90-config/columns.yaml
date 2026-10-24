@@ -52,6 +52,38 @@ columns:
       keywords: ["security", "prompt injection", "jailbreak", "vulnerability", "sandbox", "安全"]
       exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
 
+  - id: ai-daily-life
+    display_name: "🏡 AI 幫助日常生活"
+    prompt: >-
+      個人在「工作以外」用 AI 的具體實例：生活安排與家務、學習（語言、自學、陪孩子學習）、
+      健康／運動／飲食的記錄與規劃、旅遊規劃、購物比價、家庭與育兒、個人記帳與預算、
+      個人資料整理（照片、文件、筆記）、無障礙與長輩使用。必須同時有：具體的人、具體做法，
+      以及可觀察的成效或讀者可照做的步驟。
+      不要收：任何工作／職場／團隊／寫程式相關內容；AI 廠商的客戶案例或成功故事；
+      「N 個 AI 工具」清單與工具比較；新功能宣告或初體驗；課程、招生、聯盟行銷與購物優惠文；
+      投資、股票、加密貨幣；醫療診斷或取代醫師的建議（只收「用 AI 整理健康資料、準備問醫師的問題」這類）；
+      沒有具體案例的觀點文或趨勢分析。
+    min_items: 1   # sources are sparse — show even a single good fit
+    filter:
+      keywords: ["daily life", "everyday", "family", "parent", "kids", "travel", "meal", "budget", "language learning", "seniors", "生活", "親子", "旅遊", "記帳", "長輩"]
+      exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
+
+  - id: ai-monetization
+    display_name: "💰 用 AI 賺錢"
+    prompt: >-
+      個人、solo founder 或小團隊（約 20 人以下、bootstrapped 或早期）用 AI 做出產品或服務並實際賺到錢的案例拆解。
+      必須同時符合：(1) AI 是產品或服務的核心，不只是內部提效工具；(2) 有具名創辦人和可連到的產品或公司；
+      (3) 有具體營收或成效數字（MRR/ARR、付費客戶數、定價、毛利或推論成本結構、獲客管道），
+      最好附可查證來源（例如 TrustMRR、Open Startup 公開營收頁、財報）。受訪者自述的數字要在摘要中可辨識為自述。
+      也收 AI 原生商業模式分析（AI 產品定價、推論成本吃掉毛利、outcome-based pricing），前提是有具體數字或案例。
+      不要收：致富課程、教練、付費社群推銷；「月入百萬／被動收入／躺賺」標題黨；聯盟行銷導購與工具清單；MLM；
+      沒有具名產品、無法查證的收入宣稱；加密貨幣、代幣、交易機器人、投資理財；只有點子沒有營收的「N 個 AI 創業點子」；
+      募資新聞；大公司（OpenAI、Anthropic 等）的財報新聞；企業內部導入 AI 降本的案例（屬於 🏢 企業導入）；
+      和 AI 無關的一般 SaaS 經營文。
+    min_items: 3
+    filter:
+      keywords: ["MRR", "ARR", "bootstrapped", "indie hacker", "solo founder", "pricing", "paying customers", "營收", "定價"]
+
   - id: release-tracker
     display_name: "🛠 工具最新 release"
     prompt: "追蹤的開發工具最新版本與變更內容。"

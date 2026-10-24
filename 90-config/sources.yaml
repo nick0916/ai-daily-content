@@ -217,6 +217,51 @@ sources:
     tier: 2
     source_weight: 0.5
     model: claude-haiku-5-5
+  # ── 🏡 AI 幫助日常生活 / 💰 用 AI 賺錢 (added 2026-10-24, HTTP 200 verified) ──
+  - name: playpcesor-ai          # 電腦玩物 AI 分類，繁中全文
+    kind: rss
+    url: https://www.playpcesor.com/feeds/posts/default/-/AI
+    tier: 2
+    source_weight: 0.6
+  - name: tomsguide-chatgpt      # 第一人稱實例比例高，但混新聞/清單
+    kind: rss
+    url: https://www.tomsguide.com/feeds/tag/chatgpt
+    tier: 3
+    source_weight: 0.3
+    model: claude-haiku-5-5
+  - name: ai-for-working-moms    # podcast show notes
+    kind: rss
+    url: https://feeds.captivate.fm/aiforworkingmoms/
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
+  - name: harper-reed
+    kind: rss
+    url: https://harper.blog/index.xml
+    tier: 2
+    source_weight: 0.5
+  - name: substack-tanay         # AI 商業模式分析，全文在 content:encoded
+    kind: rss
+    url: https://www.tanayj.com/feed
+    tier: 2
+    source_weight: 0.6
+  - name: substack-elena-verna   # AI 定價 / PLG
+    kind: rss
+    url: https://www.elenaverna.com/feed
+    tier: 2
+    source_weight: 0.5
+  - name: startups-rest-of-us    # Rob Walling podcast show notes
+    kind: rss
+    url: https://feeds.castos.com/mqv6
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
+  - name: the-saas-podcast       # podcast show notes
+    kind: rss
+    url: https://feeds.transistor.fm/the-saas-podcast-real-lessons-on-growing-profitable-saas
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
   - name: hackernews
     kind: hn
     score_threshold: 200
