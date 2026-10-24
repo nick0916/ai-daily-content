@@ -262,6 +262,28 @@ sources:
     tier: 3
     source_weight: 0.4
     model: claude-haiku-5-5
+  # ── Social / link aggregators (added 2026-10-24) ──
+  # Bluesky: links shared by a few hand-picked accounts (public API, no key).
+  - name: bluesky-ai-curated
+    kind: bluesky
+    actors: [simonwillison.net, emollick.bsky.social, natolambert.bsky.social, timkellogg.me, hamel.bsky.social]
+    tier: 2
+    source_weight: 0.5
+  # Lobsters tag feeds carry only "Comments" — fetch_article pulls the linked page.
+  - name: lobsters-ai
+    kind: rss
+    url: https://lobste.rs/t/ai.rss
+    fetch_article: true
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
+  - name: lobsters-vibecoding
+    kind: rss
+    url: https://lobste.rs/t/vibecoding.rss
+    fetch_article: true
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
   - name: hackernews
     kind: hn
     score_threshold: 200
