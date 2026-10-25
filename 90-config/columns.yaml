@@ -124,6 +124,15 @@ columns:
     min_items: 3
     filter:
       keywords: ["agent as a service", "AaaS", "AI agency", "freelance", "side income", "solo founder", "indie hacker", "MRR", "ARR", "pricing", "paying customers", "outcome-based", "副業", "接案", "營收", "定價"]
+  - id: ai-skills-mcp
+    display_name: "🧩 熱門 Skill・MCP・Plugin"
+    prompt: "GitHub 今日熱門的 coding agent skill、MCP server 與 plugin：用途、適合誰、怎麼安裝。"
+    selection_mode: chronological   # trending is already the popularity signal; no curation call
+    lookback_days: 3
+    max_items: 3
+    filter:
+      sources:
+        - github-trending-agent-tools
   - id: release-tracker
     display_name: "🛠 工具最新 release"
     prompt: "追蹤的開發工具最新版本與變更內容。"

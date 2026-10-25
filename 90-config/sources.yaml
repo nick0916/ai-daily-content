@@ -325,6 +325,14 @@ sources:
     tier: 3
     source_weight: 0.4
     model: claude-haiku-5-5
+  # GitHub daily trending, only repos about skills / MCP / plugins for coding
+  # agents. The README is fetched and summarized (fetch_article, capped).
+  - name: github-trending-agent-tools
+    kind: github
+    filter_topics: ["mcp", "skill", "plugin", "claude", "codex", "cursor"]
+    tier: 2
+    source_weight: 0.5
+    model: claude-haiku-5-5
   - name: hackernews
     kind: hn
     score_threshold: 200
