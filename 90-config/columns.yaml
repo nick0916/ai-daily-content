@@ -120,6 +120,5 @@ columns:
         - gitnexus-releases
         - hermes-agent-releases
         - ecc-releases
-        - ruflo-releases
         - claude-mem-releases
         - superpowers-releases

@@ -199,12 +199,6 @@ sources:
     tier: 2
     source_weight: 0.5
     model: claude-haiku-5-5
-  - name: ruflo-releases
-    kind: rss
-    url: https://github.com/ruvnet/ruflo/releases.atom
-    tier: 2
-    source_weight: 0.5
-    model: claude-haiku-5-5
   - name: claude-mem-releases
     kind: rss
     url: https://github.com/thedotmack/claude-mem/releases.atom
