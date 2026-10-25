@@ -290,6 +290,19 @@ sources:
     tier: 3
     source_weight: 0.4
     model: claude-haiku-5-5
+  # ── Personal productivity, first-person (added 2026-10-25) ──
+  - name: wonder-tools             # Jeremy Caplan — how he uses AI and tools day to day
+    kind: rss
+    url: https://wondertools.substack.com/feed
+    tier: 3
+    source_weight: 0.5
+    model: claude-haiku-5-5
+  - name: creator-economy          # Peter Yang — personal AI workflows, guest walkthroughs
+    kind: rss
+    url: https://creatoreconomy.so/feed
+    tier: 3
+    source_weight: 0.5
+    model: claude-haiku-5-5
   # ── Social / link aggregators (added 2026-10-24) ──
   # Bluesky: links shared by a few hand-picked accounts (public API, no key).
   - name: bluesky-ai-curated

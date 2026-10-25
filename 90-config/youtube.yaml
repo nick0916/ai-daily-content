@@ -21,6 +21,9 @@ channels:
   - id: UCwOILzAcxK5CM2M7oRBuWSg   # SaaStr AI — agent pricing / results (B2B)
     name: SaaStr AI
     tier: 3
+  - id: UCRYY7IEbkHLH_ScJCu9eWDQ   # How I AI (Claire Vo) — people demo their own AI workflows
+    name: How I AI
+    tier: 2
 min_duration_sec: 180
 max_duration_sec: 5400
 caption_preference: ["native", "asr"]

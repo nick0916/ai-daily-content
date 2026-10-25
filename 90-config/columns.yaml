@@ -13,11 +13,28 @@ columns:
       keywords: ["prompt", "workflow", "Claude Code", "Codex", "MCP", "skill", "hook", "agent"]
       exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
 
+  - id: ai-personal-productivity
+    display_name: "⚡ 個人生產力心得"
+    prompt: >-
+      個人用 AI 提升自己工作效率的第一手心得：處理 email 與訊息、會議（準備、記錄、追蹤）、
+      筆記與資料整理、寫作與研究、待辦與行事曆、個人 AI 助理／agent 的設定與日常用法。
+      必須是具名的人分享自己實際怎麼用（工具、設定、prompt、流程），並說明成效、省下的時間，
+      或踩過的坑；讀者看完能照著試。
+      不要收：寫程式／coding agent 的工作流（屬於 🎓 AI 使用技巧）；團隊或企業導入（屬於 🛤️ 導入心得、🏢 企業導入）；
+      工作以外的生活應用（屬於 🏡 AI 幫助日常生活）；「N 個 AI 工具」清單；新功能宣告或初體驗；
+      賣課、付費社群或模板推銷；研究報告或趨勢評論（沒有個人實際做法）。
+    min_items: 1   # sources are sparse — show even a single good fit
+    filter:
+      # No bare 會議/工作流程/效率: Chinese summaries use them for conferences and infra news.
+      keywords: ["how I use", "how I'm using", "my AI workflow", "my AI system", "personal AI", "AI chief of staff", "meeting notes", "email triage", "inbox zero", "to-do list", "task management", "note-taking", "個人生產力", "會議記錄", "會議紀錄", "整理信件", "郵件分類", "行事曆", "待辦清單", "個人助理", "私人助理", "個人工作流程"]
+      exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
+
   - id: ai-flow-adoption
     display_name: "🛤️ 導入心得"
     prompt: >-
       個人或團隊把 AI 導入日常工作流程的第一手經驗與 lessons learned：做了什麼、遇到什麼問題、
       怎麼解決、成效如何。必須有 first-person 經驗；純 announcement、沒有實際經驗的觀點文不要收。
+      個人在非寫程式的日常工作（email、會議、筆記、寫作、待辦）用 AI 的心得屬於 ⚡ 個人生產力心得。
     min_items: 3
     filter:
       keywords: ["lessons", "experience", "in production", "we built", "心得", "經驗"]
