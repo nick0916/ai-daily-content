@@ -1,0 +1,48 @@
+---
+id: inbox_0a769bfb
+date: 2026-10-20
+source_ref: "[[00-inbox/2026-10-20/0101-one-useful-thing-30-months-on-the-exponential-in-charts-395c]]"
+title: "30 Months on the Exponential (in Charts)"
+url: https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts
+source: one-useful-thing
+published_at: 2026-10-20T15:57:59+00:00
+fetched_at: 2026-10-25T01:10:55.828605+00:00
+model: claude-sonnet-5-5
+tokens_in: 0
+tokens_out: 0
+summary_zh: "用圖表回顧 30 個月的 AI 進步：能獨立完成的工作量暴增、成本暴跌，人與 AI 的合作方式從聊天轉向「召喚代理人」。 **Why** 作者的第二本書《Co-Existence》出版，距第一本《Co-Intelligence》30 個月，藉此檢視 AI 進展並說明為何合作方式必須改變。 **How** 以 METR 長時程基準衡量 AI 單次提示下有 50% 成功率能完成的人類工作量，並對照 GPQA 單一正確答案的花費；圖表本身由 Opus 5.5 在 Claude Projects 中以 orchestrator 代理人帶動子代理人完成。 **What** 從 GPT-4 發布到 METR 量測結束，可完成的工作量翻倍 8 次：2024 年約 4 分鐘，2026 年 4 月交稿時 17 小時，之後基準已無法準確量測，其他研究認為可能達 17 週以上。GPQA 單題正確答案成本從 30 美分降到 0.04 美分；有 20 個模型輪流坐過領先位置，180 個模型已超越發布時的 GPT-4，其中 19 個可在現代手機上執行。作者在 centaur、cyborg 之外新增第三種模式 conjurer（召喚代理人、指派工作、評估結果），並指出 AI 能力仍參差不齊，長文寫作仍弱、數學已超人。"
+key_points:
+  - "METR 長時程基準：自 GPT-4 發布起工作量翻倍 8 次，2024 年約 4 分鐘 → 2026 年 4 月 17 小時，之後基準無法再準確量測（其他研究推測可達 17 週以上）"
+  - "GPQA 單一正確答案成本從 30 美分降至 0.04 美分；180 個模型已超越發布時的 GPT-4，其中 19 個可在手機上執行"
+  - "新增第三種協作模式 conjurer：召喚代理人、給大方向、評估成果，作者主張人類優勢在於深度知識、廣度知識、品味與自主性，同時提醒失去對 AI 執行過程控制的風險"
+tags: [ai-progress, metr, agentic-ai, conjurer, ethan-mollick]
+topics: [product_and_org.adoption, engineering.evals, agents.frameworks]
+importance: 3
+novelty: 3
+insight_quality: 4
+insight_type: data-point
+deep_dive_candidate: false
+deep_dive_approved: false
+---
+
+## 30 Months on the Exponential (in Charts)
+
+用圖表回顧 30 個月的 AI 進步：能獨立完成的工作量暴增、成本暴跌，人與 AI 的合作方式從聊天轉向「召喚代理人」。 **Why** 作者的第二本書《Co-Existence》出版，距第一本《Co-Intelligence》30 個月，藉此檢視 AI 進展並說明為何合作方式必須改變。 **How** 以 METR 長時程基準衡量 AI 單次提示下有 50% 成功率能完成的人類工作量，並對照 GPQA 單一正確答案的花費；圖表本身由 Opus 5.5 在 Claude Projects 中以 orchestrator 代理人帶動子代理人完成。 **What** 從 GPT-4 發布到 METR 量測結束，可完成的工作量翻倍 8 次：2024 年約 4 分鐘，2026 年 4 月交稿時 17 小時，之後基準已無法準確量測，其他研究認為可能達 17 週以上。GPQA 單題正確答案成本從 30 美分降到 0.04 美分；有 20 個模型輪流坐過領先位置，180 個模型已超越發布時的 GPT-4，其中 19 個可在現代手機上執行。作者在 centaur、cyborg 之外新增第三種模式 conjurer（召喚代理人、指派工作、評估結果），並指出 AI 能力仍參差不齊，長文寫作仍弱、數學已超人。
+
+### 重點
+- METR 長時程基準：自 GPT-4 發布起工作量翻倍 8 次，2024 年約 4 分鐘 → 2026 年 4 月 17 小時，之後基準無法再準確量測（其他研究推測可達 17 週以上）
+- GPQA 單一正確答案成本從 30 美分降至 0.04 美分；180 個模型已超越發布時的 GPT-4，其中 19 個可在手機上執行
+- 新增第三種協作模式 conjurer：召喚代理人、給大方向、評估成果，作者主張人類優勢在於深度知識、廣度知識、品味與自主性，同時提醒失去對 AI 執行過程控制的風險
+
+**原文：** [one-useful-thing](https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts)
+
+---
+
+### 📄 原文內容
+
+<details>
+<summary>點此展開 / 收合</summary>
+
+My second book on AI, Co-Existence, is out today (and you can get it here ), 30 months after the release of Co-Intelligence in early 2024. Looking back across the gap between these books is a good way to get a sense of AI progress. And, thanks to AI, I can describe this progress with some quite lovely charts. Making the charts is itself a good indicator of how far things have come. In the era of chatbots, the era of Co-Intelligence , I would have had to work back-and-forth with an AI in a chat window, guiding it through each new step. In the current era of agentic AI that I cover in Co-Existence , I delegated the work and let the AI handle it. In this case, I used Opus 5.5 in Claude Projects, which allows you to talk to a single &#8220;orchestrator&#8221; agent that then spins off additional agents as needed, giving them instructions and relaying information back to you. Getting the work done was straightforward. I gave the AI a couple sentences of suggestions and it did what would have taken me hours of work (all the research, all the graphing, all the layouts, all the images, all the citations&#8230;) in minutes. And since I didn&#8217;t have to do the work, I had the AI make many options for me. I picked some and gave handwavy reactions to others that would drive a human team mad (&#8220;make it better&#8221;). It even caught that I&#8217;d gotten the math wrong. I was going to call this post &#8220;28 months on the exponential.&#8221; Some examples of interacting with Claude to make the graphics for this post. Notice that it corrected me. &#8220;This is the worst AI you will ever use&#8221; I wrote this in my last book on AI, and it has continued to be literally true at every moment since. From early 2023 through early 2024, there was a single AI model that was undeniably the best in the world: GPT-4 from OpenAI. This was the AI model that most people remember from the first couple years of AI use, it was the one I thought about while writing Co-Intelligence , and it was the one that gave ChatGPT its status as the default AI for many people. Since then, twenty different AI models have held the lead at one time or another, all from Anthropic, Google, or OpenAI. Which company had the best AI model in the world. But the changing lead alone hides an even bigger change. A total of 180 AI models are now better than GPT-4 was at its release, many of which are open weights models, which anyone is free to use or modify. Nineteen of them can run on a modern smartphone. We are living in an exponential The data below draws on the METR Long Horizon Benchmark, which used to be the most famous chart in AI. The benchmark measured the amount of human work that an AI can do with at least a 50% chance of success from a single prompt. Gains on this benchmark have been startlingly regular. From the release of GPT-4 to the end of the METR measure, the amount of work AI could do doubled eight times. In 2024, an AI could do a four minute task. At the moment I turned in my draft of Co-Existence in April of 2026, an AI could do 17 hours of human work. And then the benchmark ran out. METR said they could no longer accurately measure the amount of work an AI could do using their current methods. Other studies suggest that number might be 17 weeks of work, or more. And, even as ability has increased, prices have dropped. My old favorite AI benchmark, the Google Proof Question and Answer Exam, which gives the AI problems that regularly stump graduate students, used to cost 30 cents in AI usage to get a single correct answer. Now, it costs four hundredths of a cent to get the same result. How humans work with AI is changing Despite all the progress, the frontier of AI ability is still jagged, just as it was 30 months ago. Some areas have stayed stubbornly weak (AI is still quite a bad long-form writer), while others, like solving math problems, went from terrible to superhuman in the same period. And, as I discuss in the book, even where AI is excellent, small gaps create large needs for humans, at least for now. But AI&#8217;s gains have been so large that how we work with it has to change. In Co-Intelligence , I wrote about centaur work (divided between AI and humans) and cyborg work (blended between AI and humans). Both keep you in the loop&#8230; but you can only be in so many loops at once. Now that we have real agents, I added a third way to work with AI: the conjurer. Conjurers summon agents when needed, assign them work, and evaluates what comes back. The charts in this post were made that way: I summoned agents, gave some general guidance, and I said &#8220;make it better&#8221; a lot. It is the most powerful way to use AI, and it carries new risks as we lose control over what, exactly, the AI is doing to get us those results. The Otter Test has fallen Regular readers will know that I have been testing AI image generation and movie tools with the prompt &#8220;Otter on an Airplane Using Wifi&#8221; for the past few years. This is what the best image generator, Midjourney, produced 30 months ago. So today I asked Opus 5.5 the following (typos and all, prompting has become much less important as AIs get better): &#8220;I have a post showing the what happened over the past 30 months of AI in honor of my new book (published 30 months after the origina). i want you to make the ultimate otter on an airplane using wifi video. just something fantastic, i know you are creative, give it a go.&#8221; Using my subscriptions to various online services from Google and ElevenLabs, it produced the following. (Turn the sound on) The video has a few flaws. But the AI figured out how to make it, from the script to the images to the concept to the music to the technical aspects of creating all of this, without any help from me. That is what has changed. This is the least we will ever talk about AI As a result of all of these gains, AI is only becoming a bigger issue in the world. This timeline of achievements and controversies since Co-Intelligence came out gives you some idea of how much is happening (I am leaving out hundreds of important events, but, even with the power of AI, we are all having trouble keeping up). Of course, the speed of AI advancement is a problem for an author like me, which is why my new book does not try to keep up with the news or the latest model releases. Rather, it focuses on trends like the ones in this post: AI is improving exponentially but unevenly, and the way we use it is shifting from chatbots to agents that do real work. The book is about what that means for the humans who have to co-exist with these systems: where we still have an advantage (I argue it comes down to deep knowledge, wide knowledge, taste, and agency), when to hand work to AI, and when to avoid it entirely. If you understand the trends, the present (and near future) becomes much less surprising. Co-Existence is out today. You can get it here , on a website Opus 5.5 redesigned. I told it to make it better. Subscribe now Share
+
+</details>

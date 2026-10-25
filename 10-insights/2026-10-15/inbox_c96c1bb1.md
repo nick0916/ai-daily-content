@@ -1,0 +1,150 @@
+---
+id: inbox_c96c1bb1
+date: 2026-10-15
+source_ref: "[[00-inbox/2026-10-15/0102-lobsters-vibecoding-this-month-in-ladybird-september-2026-762a]]"
+title: "This Month in Ladybird - September 2026"
+url: https://ladybird.org/newsletter/2026-09-30/
+source: lobsters-vibecoding
+published_at: 2026-10-15T06:56:01-05:00
+fetched_at: 2026-10-25T01:29:34.903458+00:00
+model: claude-haiku-5-5
+tokens_in: 0
+tokens_out: 0
+summary_zh: "獨立瀏覽器引擎 Ladybird 九月進度，重點在安全隔離、降低閒置的 CPU 與記憶體浪費。 **Why** 閒置頁面持續耗用資源會讓使用者感到發燙與卡頓；renderer 處理不可信的網頁，因此需要與其他 process 隔離。 **How** 修正 setTimeout 巢狀層級未延續導致的最小延遲失效、對隱藏分頁節流 timer、離開視窗的動畫停止 frame，並讓網路 process 接手 HTTP 與 WebSocket 的 cookie 處理。 **What** 新增 force-dark 模式與可自動更新的內容封鎖清單（如 EasyList）；macOS 以 VideoToolbox 硬體解碼影片；Qt 成為唯一桌面前端；新增 crash reporter。與 Trail of Bits 合作的安全審查（由 OpenAI 贊助）也促成多項隔離修正。"
+key_points:
+  - "與 Trail of Bits 合作一週進行安全審查（由 OpenAI 贊助）；renderer 被攻破時，其他 process 須把其訊息視為不可信並驗證"
+  - "修正 Politico 背景分頁記憶體達 11 GB、El País 達 15 GB 的問題；Speedometer 2、3 與 StyleBench 分別提升約 30%、50%、80%"
+  - "macOS 以 VideoToolbox 解碼 H.264、HEVC、VP9、AV1，並將解碼管線移至獨立 media process；WPT 分數由 2,088,677 升至 2,109,072"
+tags: [browser-engine, security, memory-leak, hardware-decoding, open-web]
+topics: [security, engineering.architecture]
+importance: 3
+novelty: 3
+insight_quality: 4
+insight_type: framework
+deep_dive_candidate: false
+deep_dive_approved: false
+---
+
+## This Month in Ladybird - September 2026
+
+獨立瀏覽器引擎 Ladybird 九月進度，重點在安全隔離、降低閒置的 CPU 與記憶體浪費。 **Why** 閒置頁面持續耗用資源會讓使用者感到發燙與卡頓；renderer 處理不可信的網頁，因此需要與其他 process 隔離。 **How** 修正 setTimeout 巢狀層級未延續導致的最小延遲失效、對隱藏分頁節流 timer、離開視窗的動畫停止 frame，並讓網路 process 接手 HTTP 與 WebSocket 的 cookie 處理。 **What** 新增 force-dark 模式與可自動更新的內容封鎖清單（如 EasyList）；macOS 以 VideoToolbox 硬體解碼影片；Qt 成為唯一桌面前端；新增 crash reporter。與 Trail of Bits 合作的安全審查（由 OpenAI 贊助）也促成多項隔離修正。
+
+### 重點
+- 與 Trail of Bits 合作一週進行安全審查（由 OpenAI 贊助）；renderer 被攻破時，其他 process 須把其訊息視為不可信並驗證
+- 修正 Politico 背景分頁記憶體達 11 GB、El País 達 15 GB 的問題；Speedometer 2、3 與 StyleBench 分別提升約 30%、50%、80%
+- macOS 以 VideoToolbox 解碼 H.264、HEVC、VP9、AV1，並將解碼管線移至獨立 media process；WPT 分數由 2,088,677 升至 2,109,072
+
+**原文：** [lobsters-vibecoding](https://ladybird.org/newsletter/2026-09-30/)
+
+---
+
+### 📄 原文內容
+
+<details>
+<summary>點此展開 / 收合</summary>
+
+This Month in Ladybird — September 2026
+
+Sponsors
+
+A week with Trail of Bits
+
+Dark pages and filter lists
+
+Hardware decoding and a media process
+
+Less CPU and memory waste
+
+While JavaScript is busy
+
+Image pasting and site fixes
+
+Web Platform Tests (WPT)
+
+Getting ready for alpha testing
+
+Hello friends! In September we spent a week working with Trail of Bits security engineers through Patch the Planet , sponsored by OpenAI. We also cut CPU and memory waste on idle pages, added hardware video decoding on macOS, and got more drawing and animation off the main thread. New settings let you darken pages and use content-blocking filter lists that update automatically. You can paste images into web pages too. :^)
+
+Ladybird is entirely funded by companies and individuals who believe in the open web. You can see everyone supporting the project on our sponsors page , and we’re grateful to all of them. If you’re interested in sponsoring, please contact us .
+
+The engineers used a swarm of frontier models from OpenAI to find security issues and reported everything they found. We’d never had Ladybird scrutinized at that intensity before. They also crafted a few full exploit chains. The work left us with a considerable security backlog and helped sharpen our security model.
+
+Our security model has to hold even if a malicious page exploits a bug and takes over its renderer, the process that handles the page’s HTML, CSS, and JavaScript. Other processes must treat its messages as untrusted and validate the requested operations. Each process needs as little system access as its job allows, and different sites need separate processes.
+
+For example, a compromised renderer could ask the browser to read or overwrite any site’s HttpOnly cookies, which are deliberately hidden from page JavaScript. The network process now handles cookies for HTTP responses and WebSocket handshakes, and the browser now terminates any renderer that asks for that privileged access ( #12113 ).
+
+We also tightened the helper sandboxes:
+
+Cross-site iframes can now live in separate processes, and our web test runner exercises that path by default ( #11794 , #12129 ). Normal browsing still isolates at the top level; embedded frames stay with their containing page.
+
+Security work is ongoing and will remain part of Ladybird for as long as the project exists. We’re grateful to Trail of Bits for their efforts and OpenAI for supporting the work!
+
+Ladybird can now darken pages that don’t offer their own dark theme. Enable force-dark mode in about:settings ; here’s Phoronix with it off and on ( #11475 ).
+
+We adjust text, background, and border colors at paint time, while classifying images separately. The photos above keep their original colors. The architecture comes from Chromium; our lightness adjustment uses Oklab, a color space that separates lightness from hue.
+
+Ladybird can now download filter lists for content blocking and keep them up to date ( #11708 ). In the new Blocking tab in settings, you can choose EasyList and other lists for ads, tracking, and cookie notices, or add a list URL of your own. Enable automatic updates and Ladybird checks for fresh copies at startup and daily. Changes take effect on the pages you already have open.
+
+Video playback on macOS now uses hardware decoding through VideoToolbox, which takes much less CPU than decoding with FFmpeg ( #11665 ). It supports H.264, HEVC, VP9, and AV1, using hardware acceleration where available. Decoded frames reach the compositor without copying their pixels.
+
+The decoding and playback pipeline for and also moved into a separate media process ( #12181 ). A media-process crash becomes a playback error, and the renderer no longer needs decoder-service permissions:
+
+To prepare for distributing Ladybird, we removed the patent-encumbered H.264, HEVC, and AAC decoders from our bundled FFmpeg build. Linux loads them from system FFmpeg when available; macOS uses VideoToolbox and AudioToolbox ( #12164 , #12079 ).
+
+An ad library on Politico was waiting for a script our content blocker had blocked. It kept checking with a chain of setTimeout(..., 0) callbacks. We weren’t carrying the timer chain’s nesting level between callbacks, so the required 4 ms minimum delay never kicked in, and we ran the checks as fast as we could. With the delay in place, the polling costs very little CPU ( #11586 ).
+
+Hidden tabs on ProPublica and Al Jazeera kept using CPU on reCAPTCHA timer chains. We now throttle timers in hidden pages the way other browsers do ( #11612 ).
+
+GitHub had another expensive way to sit idle: CI spinners outside the viewport kept both the renderer and compositor busy. We now stop animation frames for offscreen content and skip presenting frames that haven’t changed, so both processes are nearly idle ( #11715 ).
+
+Pages that reload themselves on a timer, like many news sites, kept every document they replaced alive. In background tabs, Politico reached 11 GB after four hours, and El País reached 15 GB after twenty. We fixed references held by navigation requests and pending animation-frame and idle callbacks, so replaced documents can be collected ( #11645 , #11686 ).
+
+We also reduced memory use by no longer copying font files, and by sharing and compacting CSS data ( #11762 ).
+
+Across September, scores on our continuous Linux runner rose by about 30% in Speedometer 2, 50% in Speedometer 3, and 80% in StyleBench. Speedometer exercises interactive web apps; StyleBench focuses on CSS recalculation as a page changes.
+
+A native Task Manager window replaces about:processes . It has a searchable process tree, sortable CPU and memory columns, and an End Process action ( #11713 ).
+
+We expanded August’s compositor animation support to more opacity and transform cases, plus eligible background-color and filter animations. The compositor assembles frames for display and can run these animations independently of the page’s main thread ( #11559 , #11561 ).
+
+The video below shows this on OpenAI’s Codex page: the company logos animate smoothly while its JavaScript ASCII effect keeps the main thread busy.
+
+OffscreenCanvas now has working 2D, WebGL, and WebGL2 rendering in pages and workers ( #12211 ). A page can hand its canvas to a dedicated worker, which sends frames directly to the compositor while the main thread does other work. The APIs are enabled by default.
+
+Both canvases below use the same drawing code. We block the main thread for six seconds; the worker keeps drawing:
+
+You can now copy an image from the desktop and paste it into editable content on a page. The demo below shows it working on Google ( #11514 ):
+
+Accented characters and IME input could disappear in Discord and other Slate-based editors as you continued typing. We now fire composition events so editors can recognize in-progress input and avoid overwriting it with stale document state ( #11280 ).
+
+GitHub’s pull-request tree now shows files as well as directories. Its file rows use content-visibility to skip offscreen rendering and contain-intrinsic-size to reserve their height. We hadn’t implemented those fallback sizes, so the rows collapsed to zero. They now reserve their space correctly ( #11508 ):
+
+Other site fixes:
+
+Our WPT score went from 2,088,677 to 2,109,072 this month, a gain of 20,395 subtests. About half of that came from tests added upstream during the month, mostly new SVG interaction and html/dom tests, which raised every browser’s count. Among existing tests, the largest gains were about 1,500 OffscreenCanvas subtests and about 500 for contain-intrinsic-size .
+
+We used to maintain several GUI frontends. Qt is now our only desktop frontend, and we’re concentrating all our GUI development there ( #12267 ).
+
+We reworked graphics presentation on macOS so compositor frames go directly to a native display layer. This removes an extra Metal rendering pass and a wait for a drawable on the UI thread, which made scrolling sluggish in Low Power Mode ( #12240 ).
+
+Ladybird now has a crash reporter. When a helper process crashes on macOS or Linux, it saves a local report with a backtrace, assertion failure or Rust panic details, and build information. Reports contain no browsing data or local file paths ( #11625 ).
+
+When a page crashes, the crash screen shows what the report contains and lets you add a few words about what you were doing. You decide whether to send it to our crash report service ( #12298 ).
+
+The saved reports are also available in a folder you can open from the General tab in settings.
+
+Automatic filter-list updates and crash reporting without a terminal were two items on last month’s road to alpha . Those pieces are now in place.
+
+That’s it for September. Thanks for reading, and we’ll see you next month!
+
+ macOS: tighter service and file access, plus the hardened runtime to restrict executing code from writable memory ( #12102 ).
+
+ Linux: helpers can no longer connect to arbitrary UNIX sockets in the user’s session. Landlock filesystem restrictions are now applied before GPU-driver threads start, so those threads are confined too. Helpers refuse to start without Landlock by default ( #12099 , #12110 , #12146 ).
+
+ Al Jazeera: articles render instead of just the footer. Site-compatibility rules can now expose selected experimental interfaces per site, letting Al Jazeera pass its Permissions API feature check ( #11539 ).
+
+ Japan Times: the login button now works. The preload scanner now fetches module scripts in the correct CORS request mode ( #11560 ).
+
+ Shopify: we implemented CSS scroll-state queries. Shopify uses scroll-state(stuck: top) to give its sticky header a background once it sticks to the top ( #12067 ).
+
+</details>

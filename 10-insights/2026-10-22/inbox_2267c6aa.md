@@ -1,0 +1,48 @@
+---
+id: inbox_2267c6aa
+date: 2026-10-22
+source_ref: "[[00-inbox/2026-10-22/0101-tomsguide-chatgpt-openai-and-google-just-made-an-unexpecte-2387]]"
+title: "OpenAI and Google just made an unexpected AI deal — here’s what it means for ChatGPT and Gemini"
+url: https://www.tomsguide.com/ai/openai-and-google-just-made-an-unexpected-ai-deal-heres-what-it-means-for-chatgpt-and-gemini
+source: tomsguide-chatgpt
+published_at: 2026-10-22T15:32:50+00:00
+fetched_at: 2026-10-25T01:14:28.964259+00:00
+model: claude-haiku-5-5
+tokens_in: 0
+tokens_out: 0
+summary_zh: "OpenAI 前沿模型與 Codex 將進入 Google Cloud Model Garden，企業可在同一平台選用。 **How** 目前 GPT-6 Astra、GPT-6.1 Sol 與 GPT-6 Luna 以 private preview 方式開放給部分企業客戶，並透過 Google Cloud 的存取控制與資料治理提供，計畫日後加入 Google Antigravity 與 Gemini Agent。 **What** GPT-6 Astra 主攻複雜編碼與科研，GPT-6.1 Sol 能力接近，GPT-6 Luna 為低成本、可大量用於日常任務的模型；Model Garden 已收錄 200 多個模型，Microsoft 仍是 OpenAI 的主要雲端夥伴。"
+key_points:
+  - "private preview 模型：GPT-6 Astra（複雜編碼、電腦操作、科研）、GPT-6.1 Sol（接近 Astra 的代理式編碼能力）、GPT-6 Luna（低成本、大規模日常任務）"
+  - "OpenAI 模型此前已於 Amazon Bedrock 提供，包含 GPT-6、GPT-5.6 與 Daybreak 網路安全模型"
+  - "此合作主要面向企業與開發者，一般 ChatGPT 與 Gemini 使用者未被納入"
+tags: [multi-cloud, model-distribution, google-cloud, enterprise, frontier-models]
+topics: [foundation_models.gpt, foundation_models.gemini]
+importance: 4
+novelty: 4
+insight_quality: 3
+insight_type: pattern
+deep_dive_candidate: false
+deep_dive_approved: false
+---
+
+## OpenAI and Google just made an unexpected AI deal — here’s what it means for ChatGPT and Gemini
+
+OpenAI 前沿模型與 Codex 將進入 Google Cloud Model Garden，企業可在同一平台選用。 **How** 目前 GPT-6 Astra、GPT-6.1 Sol 與 GPT-6 Luna 以 private preview 方式開放給部分企業客戶，並透過 Google Cloud 的存取控制與資料治理提供，計畫日後加入 Google Antigravity 與 Gemini Agent。 **What** GPT-6 Astra 主攻複雜編碼與科研，GPT-6.1 Sol 能力接近，GPT-6 Luna 為低成本、可大量用於日常任務的模型；Model Garden 已收錄 200 多個模型，Microsoft 仍是 OpenAI 的主要雲端夥伴。
+
+### 重點
+- private preview 模型：GPT-6 Astra（複雜編碼、電腦操作、科研）、GPT-6.1 Sol（接近 Astra 的代理式編碼能力）、GPT-6 Luna（低成本、大規模日常任務）
+- OpenAI 模型此前已於 Amazon Bedrock 提供，包含 GPT-6、GPT-5.6 與 Daybreak 網路安全模型
+- 此合作主要面向企業與開發者，一般 ChatGPT 與 Gemini 使用者未被納入
+
+**原文：** [tomsguide-chatgpt](https://www.tomsguide.com/ai/openai-and-google-just-made-an-unexpected-ai-deal-heres-what-it-means-for-chatgpt-and-gemini)
+
+---
+
+### 📄 原文內容
+
+<details>
+<summary>點此展開 / 收合</summary>
+
+OpenAI’s ChatGPT and Google’s Gemini are obviously competitors in the ongoing race between tech giants looking to solidify their AI tools as the very best. But in a shocking turn of events, both companies have decided to partner up in a move that increases the availability of OpenAI’s frontier models (including the GPT-6 series) and Codex coding tools by bringing them to Google Cloud’s Model Garden . It’s worth pointing out that OpenAI models and Codex tools became available on Amazon Bedrock earlier this year, with the GPT-6 line, GPT-5.6 line and specialized Daybreak cybersecurity models on offer. And while Microsoft remains OpenAI’s primary cloud partner, this new deal between OpenAI and Google continues to expand the distribution of its AI models across other major cloud platforms. With all that in mind, here’s what this new partnership means for businesses and developers that rely on ChatGPT and Google Cloud. Google’s AI ecosystem is expanding to include rival AI models (Image credit: Shutterstock) With OpenAI’s frontier models set to become available for purchase for Google Cloud customers and those same models also planned to become available in Google Antigravity and the Gemini Agent , developers and businesses will have a wider range of AI tools to choose from beyond just Gemini. Since those groups of users already work inside a familiar AI environment like Google Cloud’s Model Garden, they won’t have to leave it to gain access to other AI models, since OpenAI’s models will be there alongside Google’s own models. That situation could result in users having an easier time comparing those available models, selecting the best one for a particular task and building workflows among OpenAI & Google’s AI systems. The focus of this team-up between OpenAI and Google is primarily about enterprise user and developer access to OpenAI’s frontier models through Google Cloud, while everyday users of ChatGPT and Gemini haven’t been mentioned or considered for this option right now. Currently, OpenAI’s GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna models have started rolling out in private preview to select enterprise customers in Google Cloud’s model garden, with more models set to arrive at an unannounced date. GPT-6 Astra is mainly used to handle the sort of complex work attached to coding, computer use, professional tasks and scientific research. As for GPT-6.1 Sol, its intelligence is not that far off from Astra and can also handle tasks associated with agentic coding, computer use and professional work. And finally, GPT-6 Luna stands out as a more cost-effective model that can be applied to everyday work tasks at scale. In an official blog post from OpenAI, the company made sure to explain how this partnership with Google emphasizes safety and control for the businesses relying on its integrated models. “For organizations in regulated industries, deploying AI requires control over who can access sensitive data and how it is used,” OpenAI had to say. “The integration will pair OpenAI’s frontier models with Google Cloud’s built-in access controls, centralized data governance, and high-performance infrastructure to support demanding enterprise workloads.” Google Cloud’s library of AI models is already massive, as it houses more than 200 first-party, third-party and open models across a unified enterprise AI platform. With OpenAI’s frontier models now joining the party, Google Cloud’s businesses and developers will have even more options to consider when choosing which model works best for their workflows. Bottom line Reading through OpenAI’s official blog post highlighted two important quotes from two major AI industry figures. Greg Brockman, the president and co-founder of OpenAI, recognizes Google Cloud as “a leading platform for developers and businesses building AI agents.” And Thomas Kurian, the CEO of Google Cloud, stated that “we are focused on giving customers a broad selection of models, including those from OpenAI, so they can choose the right model for any given job.” With those statements in mind, it’s clear that OpenAI and Google want to become the ultimate epicenter of frontier model availability through their combined efforts. All Gemini users won’t suddenly be able to switch to GPT models within Google Cloud’s Model Garden, but here’s hoping that becomes a reality at some point. More from Tom’s Guide ‘Babe, wake up, the internet is collapsing’: Two massive flaws just broke the web, and the data of billions is in the crossfire Ditch the data center: I fired my cloud chatbot and built a free local AI agent to run on my PC — and you can too OpenAI unleashed thousands of AI agents to study a Parkinson-like disease — here's what they found in 32 minutes
+
+</details>
