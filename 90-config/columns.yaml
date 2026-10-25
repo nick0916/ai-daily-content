@@ -68,7 +68,8 @@ columns:
       課程招生與付費社群推銷；和 AI 無關的一般學習法；企業 L&D 採購或課程製作的商業分析。
     min_items: 1   # sources are sparse — show even a single good fit
     filter:
-      keywords: ["learn faster", "learning with AI", "studying", "study mode", "learning mode", "students", "tutor", "cognitive", "spaced repetition", "flashcard", "NotebookLM", "Socratic", "critical thinking", "information overload", "overwhelm", "學習", "認知", "自學"]
+      # No bare 學習/認知: Chinese summaries say 機器學習/強化學習, which filled every reserved slot.
+      keywords: ["learn faster", "learning with AI", "learn with AI", "studying", "study mode", "learning mode", "students", "teachers", "tutor", "cognitive load", "cognitive offloading", "cognitive debt", "spaced repetition", "flashcard", "NotebookLM", "Socratic", "critical thinking", "information overload", "overwhelm", "學生", "老師", "教師", "家教", "自學", "學習成效", "學習方法", "認知負荷", "認知卸載", "批判思考"]
       exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
 
   - id: ai-daily-life
