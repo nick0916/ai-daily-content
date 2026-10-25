@@ -24,6 +24,9 @@ channels:
   - id: UCRYY7IEbkHLH_ScJCu9eWDQ   # How I AI (Claire Vo) — people demo their own AI workflows
     name: How I AI
     tier: 2
+  - id: UCpQBb0fToph3jrDulwz1iUQ   # Invest Like The Best (Patrick O'Shaughnessy) — AI x business / investing
+    name: Invest Like The Best
+    tier: 2
 min_duration_sec: 180
 max_duration_sec: 5400
 caption_preference: ["native", "asr"]
