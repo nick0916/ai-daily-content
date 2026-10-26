@@ -32,11 +32,6 @@ sources:
     url: https://simonwillison.net/atom/everything/
     tier: 1
     source_weight: 1.0
-  - name: import-ai
-    kind: rss
-    url: https://importai.substack.com/feed
-    tier: 1
-    source_weight: 0.8
   - name: latent-space
     kind: rss
     url: https://www.latent.space/feed
@@ -92,19 +87,9 @@ sources:
     url: https://newsletter.techworld-with-milan.com/feed
     tier: 2
     source_weight: 0.5
-  - name: substack-vutrinh
-    kind: rss
-    url: https://vutr.substack.com/feed
-    tier: 2
-    source_weight: 0.5
   - name: substack-bite-code
     kind: rss
     url: https://www.bitecode.dev/feed
-    tier: 2
-    source_weight: 0.5
-  - name: substack-eng-leadership
-    kind: rss
-    url: https://newsletter.eng-leadership.com/feed
     tier: 2
     source_weight: 0.5
   - name: substack-developing-dev
@@ -163,12 +148,6 @@ sources:
     url: https://feed.infoq.com/architecture-design/
     tier: 2
     source_weight: 0.5
-  - name: medium-towards-data-science
-    kind: rss
-    url: https://towardsdatascience.com/feed
-    tier: 3
-    source_weight: 0.3
-    model: claude-haiku-5-5
   - name: medium-tag-llm
     kind: rss
     url: https://medium.com/feed/tag/large-language-models
@@ -272,12 +251,6 @@ sources:
     url: https://www.oneusefulthing.org/feed
     tier: 1
     source_weight: 0.8
-  - name: substack-educating-ai    # Nick Potkalitsky — cognitive offloading, AI in classrooms
-    kind: rss
-    url: https://nickpotkalitsky.substack.com/feed
-    tier: 3
-    source_weight: 0.5
-    model: claude-haiku-5-5
   - name: substack-phil-hardman    # Dr Philippa Hardman — AI and learning design
     kind: rss
     url: https://drphilippahardman.substack.com/feed
@@ -304,12 +277,6 @@ sources:
     source_weight: 0.5
     model: claude-haiku-5-5
   # ── Social / link aggregators (added 2026-10-24) ──
-  # Bluesky: links shared by a few hand-picked accounts (public API, no key).
-  - name: bluesky-ai-curated
-    kind: bluesky
-    actors: [simonwillison.net, emollick.bsky.social, natolambert.bsky.social, timkellogg.me, hamel.bsky.social]
-    tier: 2
-    source_weight: 0.5
   # Lobsters tag feeds carry only "Comments" — fetch_article pulls the linked page.
   - name: lobsters-ai
     kind: rss
