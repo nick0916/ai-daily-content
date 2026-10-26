@@ -24,6 +24,7 @@ channels:
   - id: UCpQBb0fToph3jrDulwz1iUQ   # Invest Like The Best (Patrick O'Shaughnessy) — AI x business / investing
     name: Invest Like The Best
     tier: 2
+    model: claude-haiku-5-5   # every episode hits the 40k-char transcript cap
 min_duration_sec: 180
 max_duration_sec: 5400
 caption_preference: ["native", "asr"]
