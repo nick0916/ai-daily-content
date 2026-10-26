@@ -73,8 +73,8 @@ columns:
     display_name: "📚 用 AI 學習・降低認知負荷"
     prompt: >-
       用 AI 幫助「人」學習或降低認知負荷的具體方法、工具與研究，聚焦三類：
-      (1) 用 AI 學習：自學新技能／語言／學科、讀懂論文或長文件、備考、用 AI 當家教或陪孩子學習、
-      教師用 AI 讓學生學得更好，要有具體做法（prompt、流程、工具設定）或可照做的步驟；
+      (1) 用 AI 學習：成人自學新技能／語言／學科、讀懂論文或長文件、備考、用 AI 當個人家教，
+      要有具體做法（prompt、流程、工具設定）或可照做的步驟；
       (2) 用 AI 降低認知負荷：處理資訊過載、整理思緒與待辦、把工作記憶外部化、減少情境切換、
       輔助決策，要有具體工具用法或工作方法；
       (3) 研究與反思：AI 對學習成效、批判思考、記憶的影響（cognitive offloading、cognitive debt），
@@ -82,12 +82,14 @@ columns:
       必須有具體方法、工具用法或研究結果。
       不要收：模型訓練、machine learning 技術、agent 自我學習等「機器學習」內容；
       AI 廠商教育產品的新功能宣告或宣傳文（沒有實際用法）；學區採購、教育政策新聞；
-      課程招生與付費社群推銷；和 AI 無關的一般學習法；企業 L&D 採購或課程製作的商業分析。
+      課程招生與付費社群推銷；和 AI 無關的一般學習法；企業 L&D 採購或課程製作的商業分析；
+      以孩子、學生、老師、學校、課堂、家長為對象或主角的內容（K-12、大學教學、親子教養都不收）。
     min_items: 1   # sources are sparse — show even a single good fit
     filter:
       # No bare 學習/認知: Chinese summaries say 機器學習/強化學習, which filled every reserved slot.
-      keywords: ["learn faster", "learning with AI", "learn with AI", "studying", "study mode", "learning mode", "students", "teachers", "tutor", "cognitive load", "cognitive offloading", "cognitive debt", "spaced repetition", "flashcard", "NotebookLM", "Socratic", "critical thinking", "information overload", "overwhelm", "學生", "老師", "教師", "家教", "自學", "學習成效", "學習方法", "認知負荷", "認知卸載", "批判思考"]
-      exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-"]   # vendor customer stories
+      keywords: ["learn faster", "learning with AI", "learn with AI", "study mode", "learning mode", "personal tutor", "self-taught", "cognitive load", "cognitive offloading", "cognitive debt", "spaced repetition", "flashcard", "NotebookLM", "Socratic", "critical thinking", "information overload", "overwhelm", "自學", "學習成效", "學習方法", "認知負荷", "認知卸載", "批判思考"]
+      # Vendor customer stories, and anything aimed at kids, students or teachers.
+      exclude: [" with OpenAI", " with ChatGPT Work", " with GPT-", "teacher", "student", " kid", "child", "classroom", "school", "parent", "老師", "教師", "學生", "孩子", "小孩", "家長", "課堂"]
 
   - id: ai-daily-life
     display_name: "🏡 AI 幫助日常生活"
