@@ -343,3 +343,17 @@ sources:
     kind: youtube
     tier: 2
     source_weight: 0.6
+  # Learning methods for adults (📚 column). Full text, weekly.
+  - name: scott-h-young
+    kind: rss
+    url: https://www.scotthyoung.com/blog/feed/
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5
+  # Learning-science research; classroom posts are dropped by the column's excludes.
+  - name: learning-scientists
+    kind: rss
+    url: https://www.learningscientists.org/blog?format=rss
+    tier: 3
+    source_weight: 0.4
+    model: claude-haiku-5-5

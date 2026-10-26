@@ -3,9 +3,6 @@ channels:
   - id: UCLKPca3kwwd-B59HNr-_lvA   # AI Engineer
     name: AI Engineer
     tier: 2
-  - id: UC6t1O76G0jYXOAoYCm153dA   # Lenny's Podcast
-    name: Lenny's Podcast
-    tier: 2
   - id: UCXUPKJO5MZQN11PqgIvyuvQ   # Andrej Karpathy
     name: Andrej Karpathy
     tier: 1

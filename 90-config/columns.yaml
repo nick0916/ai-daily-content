@@ -128,6 +128,17 @@ columns:
     min_items: 3
     filter:
       keywords: ["agent as a service", "AaaS", "AI agency", "freelance", "side income", "solo founder", "indie hacker", "MRR", "ARR", "pricing", "paying customers", "outcome-based", "副業", "接案", "營收", "定價"]
+  - id: lenny
+    display_name: "🎙️ Lenny's Newsletter・Podcast"
+    prompt: "Lenny's Newsletter 的每一篇新文章，包含 podcast 單集（feed 附節目筆記）。"
+    selection_mode: chronological   # every new post, no curation call
+    lookback_days: 7
+    max_items: 5
+    filter:
+      sources:
+        # Podcast episodes are posted to this feed with show notes, so the
+        # YouTube channel is not tracked separately.
+        - substack-lennys-newsletter
   - id: ai-skills-mcp
     display_name: "🧩 熱門 Skill・MCP・Plugin"
     prompt: "GitHub 今日熱門的 coding agent skill、MCP server 與 plugin：用途、適合誰、怎麼安裝。"
