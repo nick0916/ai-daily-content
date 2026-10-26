@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## OpenAI announces ChatGPT Dots — here's what the new AI agents can do
 
-讓 ChatGPT 擁有自己的雲端電腦，離開聊天視窗後仍能替你把事做完。 **Why** 過去 ChatGPT 多半等待下一個提示，無法自行完成後續步驟。 **How** 每個 Dot 運行於隔離的雲端虛擬機，可瀏覽網頁、操作已連接的應用程式，並可透過 ChatGPT、Slack、Microsoft Teams 與語音與之互動。 **What** OpenAI 於 DevDay 發表 ChatGPT Dots，目前開放 Pro 與 Business Premium 訂閱者（部分地區），Enterprise 為管理員啟用的 beta；Pro 方案內含首個 Dot，簡訊支援規劃中。
+讓 ChatGPT 擁有自己的雲端電腦，離開聊天視窗後仍能替你把事做完。
+
+**Why** 過去 ChatGPT 多半等待下一個提示，無法自行完成後續步驟。
+
+**How** 每個 Dot 運行於隔離的雲端虛擬機，可瀏覽網頁、操作已連接的應用程式，並可透過 ChatGPT、Slack、Microsoft Teams 與語音與之互動。
+
+**What** OpenAI 於 DevDay 發表 ChatGPT Dots，目前開放 Pro 與 Business Premium 訂閱者（部分地區），Enterprise 為管理員啟用的 beta；Pro 方案內含首個 Dot，簡訊支援規劃中。
 
 ### 重點
 - 每個 Dot 運行於與本機分離的隔離雲端虛擬機，若要協助本機事務需使用者明確授權

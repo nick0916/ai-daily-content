@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## The Rise of DeployCos
 
-AI 公司派工程師進駐企業，手把手把 AI agent 接進真實工作流程。 **Why** 模型能力遠超過一般組織實際用到的程度（diffusion gap／capability overhang），且導入 AI 涉及系統存取、流程重設計、組織共識，這些不是模型能自己解決的。 **How** FDE 進駐客戶，從範圍明確、結果可驗證的高價值流程切入，建 agent harness 串接資料與系統、寫 evals、達標後部署，並建立線上學習迴圈。 **What** Anthropic 與 Blackstone、H&F、Goldman 等成立 $1.5B 服務公司（7 月以 Ode with Anthropic 啟動，收購 Fractional AI）；OpenAI deployment company 募資逾 $4B（TPG 領投，OpenAI 持多數股權，收購 Tomoro，首日 100+ FDE）；AWS 6 月底承諾 $1B 於 FDE 單位。作者將新型 DeployCo 分為水平型（Distyl 等）、功能型（Sierra、Decagon、Lio）、垂直型（Tennr、Happyrobot），並指出許多垂直 AI 應用公司本質上也是 DeployCo。
+AI 公司派工程師進駐企業，手把手把 AI agent 接進真實工作流程。
+
+**Why** 模型能力遠超過一般組織實際用到的程度（diffusion gap／capability overhang），且導入 AI 涉及系統存取、流程重設計、組織共識，這些不是模型能自己解決的。
+
+**How** FDE 進駐客戶，從範圍明確、結果可驗證的高價值流程切入，建 agent harness 串接資料與系統、寫 evals、達標後部署，並建立線上學習迴圈。
+
+**What** Anthropic 與 Blackstone、H&F、Goldman 等成立 $1.5B 服務公司（7 月以 Ode with Anthropic 啟動，收購 Fractional AI）；OpenAI deployment company 募資逾 $4B（TPG 領投，OpenAI 持多數股權，收購 Tomoro，首日 100+ FDE）；AWS 6 月底承諾 $1B 於 FDE 單位。作者將新型 DeployCo 分為水平型（Distyl 等）、功能型（Sierra、Decagon、Lio）、垂直型（Tennr、Happyrobot），並指出許多垂直 AI 應用公司本質上也是 DeployCo。
 
 ### 重點
 - 實驗室辦 DeployCo 的次要動機：取得長時程真實工作軌跡（訓練資料／決定模型改進方向）、在模型表現接近時以進駐部署形成鎖定、按成果收費而非只賣 token

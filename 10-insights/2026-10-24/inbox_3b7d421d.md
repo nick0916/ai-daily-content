@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## I Run Five Businesses. So I Hired Four AI Agents to Help Me Run Them.
 
-作者雇用四個 AI agent 協助經營自己的五項事業。 **Why** 作者表示，三段職涯讓他認定自己不會只專注一條路（摘要原文）。 **What** 標題表示作者用四個 AI agents 協助經營五家公司；摘要片段未提供具體分工、工具或成效。
+作者雇用四個 AI agent 協助經營自己的五項事業。
+
+**Why** 作者表示，三段職涯讓他認定自己不會只專注一條路（摘要原文）。
+
+**What** 標題表示作者用四個 AI agents 協助經營五家公司；摘要片段未提供具體分工、工具或成效。
 
 ### 重點
 - 標題：經營五項事業，雇用四個 AI agents 協助

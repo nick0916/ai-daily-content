@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key
 
-一個 Mac 小工具，先聽一次原曲學會音高軌跡，再讓你跟著唱並對照自己跑調的地方。 **Why** 作者練唱的 app 歌單塞滿非原唱版本，他想跟著原曲練習。 **How** 讓 App 先聽一次歌曲（不存檔，約需數分鐘）學出音高軌跡，再比對使用者歌聲；歌曲辨識用短版 Shazam 指紋，歌詞來自 LRCLIB。作者起初請 Claude Code 寫 Python 原型，能偵測音高但無法即時偵測原唱音高。 **What** OnKey 是 MIT 授權的開源免費 Mac App，可搭配 Spotify、Apple Music 與瀏覽器 YouTube，限 Apple Silicon（M1 以上）與 macOS 14.2 以上。已知限制：伴奏嘈雜時難抓音高、偶爾差一個八度、評分對初學者偏寬鬆。
+一個 Mac 小工具，先聽一次原曲學會音高軌跡，再讓你跟著唱並對照自己跑調的地方。
+
+**Why** 作者練唱的 app 歌單塞滿非原唱版本，他想跟著原曲練習。
+
+**How** 讓 App 先聽一次歌曲（不存檔，約需數分鐘）學出音高軌跡，再比對使用者歌聲；歌曲辨識用短版 Shazam 指紋，歌詞來自 LRCLIB。作者起初請 Claude Code 寫 Python 原型，能偵測音高但無法即時偵測原唱音高。
+
+**What** OnKey 是 MIT 授權的開源免費 Mac App，可搭配 Spotify、Apple Music 與瀏覽器 YouTube，限 Apple Silicon（M1 以上）與 macOS 14.2 以上。已知限制：伴奏嘈雜時難抓音高、偶爾差一個八度、評分對初學者偏寬鬆。
 
 ### 重點
 - 需先聽歌一次學習音高軌跡，不儲存音樂；僅外送 Shazam 指紋、歌曲資訊、LRCLIB 歌詞查詢與更新檢查

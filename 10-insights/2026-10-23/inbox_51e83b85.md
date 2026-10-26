@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v2.1.310
 
-Claude Code 2.1.310 修補多項穩定性與權限顯示問題，並擴大 Monitor 工具與雲端 session 的管理能力。 **Why** 在第三方雲端、企業 gateway 與不同終端環境下，請求相容性、壓縮與權限提示的細節問題會直接造成任務失敗或安全疑慮。 **How** 遇到 gateway 拒絕 effort-2025-11-24 beta 值或 mid-conversation system message 時改為去除後重試；壓縮在遇到 base64、SVG 等高密度文字時保留更少內容，避免下一次請求再度超長。 **What** Claude Code v2.1.310：Monitor 工具與 plugin monitors 現可用於 Bedrock、Vertex、Foundry 及停用 telemetry 的情境；修正 cleanupPeriodDays 過大時誤刪貼上圖片、讀檔權限提示不顯示 symlink 目標，以及 Windows 缺少 Git Bash 時 PreToolUse/PermissionRequest hook 放行工具呼叫的問題。Enterprise 自訂角色新增 Cloud sessions 與 Remote Control 權限，另有 VSCode、Claude Tag、Code Review 管理頁多項修正。
+Claude Code 2.1.310 修補多項穩定性與權限顯示問題，並擴大 Monitor 工具與雲端 session 的管理能力。
+
+**Why** 在第三方雲端、企業 gateway 與不同終端環境下，請求相容性、壓縮與權限提示的細節問題會直接造成任務失敗或安全疑慮。
+
+**How** 遇到 gateway 拒絕 effort-2025-11-24 beta 值或 mid-conversation system message 時改為去除後重試；壓縮在遇到 base64、SVG 等高密度文字時保留更少內容，避免下一次請求再度超長。
+
+**What** Claude Code v2.1.310：Monitor 工具與 plugin monitors 現可用於 Bedrock、Vertex、Foundry 及停用 telemetry 的情境；修正 cleanupPeriodDays 過大時誤刪貼上圖片、讀檔權限提示不顯示 symlink 目標，以及 Windows 缺少 Git Bash 時 PreToolUse/PermissionRequest hook 放行工具呼叫的問題。Enterprise 自訂角色新增 Cloud sessions 與 Remote Control 權限，另有 VSCode、Claude Tag、Code Review 管理頁多項修正。
 
 ### 重點
 - Gateway 拒絕 effort-2025-11-24 beta 值或 mid-conversation system message 時，Claude Code 會去除後自動重試

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.7 — policy lock hardening + session_list total fix
 
-讓 policy lock 遇到路徑錯誤時快速失敗，並修正 session list 的 total 計數錯誤。 **Why** acquireLock() 把所有 openSync() 錯誤都當成鎖競爭，權限錯誤或路徑被佔用時仍會等滿 5 秒，且每次 MCP 工具呼叫都會發生。 **How** lock 檔以 O_NOFOLLOW 建立以防止透過符號連結建立，非競爭錯誤立即拋出，非一般檔案則被拒絕而非當成可回收的鎖。 **What** ruflo session list 原本在套用 limit 後才計算 total，例如存了 30 筆仍顯示 10 of 10；與 #4324 的 task_list 修正同類（#4343、#4344）。
+讓 policy lock 遇到路徑錯誤時快速失敗，並修正 session list 的 total 計數錯誤。
+
+**Why** acquireLock() 把所有 openSync() 錯誤都當成鎖競爭，權限錯誤或路徑被佔用時仍會等滿 5 秒，且每次 MCP 工具呼叫都會發生。
+
+**How** lock 檔以 O_NOFOLLOW 建立以防止透過符號連結建立，非競爭錯誤立即拋出，非一般檔案則被拒絕而非當成可回收的鎖。
+
+**What** ruflo session list 原本在套用 limit 後才計算 total，例如存了 30 筆仍顯示 10 of 10；與 #4324 的 task_list 修正同類（#4343、#4344）。
 
 ### 重點
 - acquireLock() 把所有 openSync() 錯誤視為鎖競爭，導致路徑錯誤也等滿 5 秒才報 policy-state-lock-timeout

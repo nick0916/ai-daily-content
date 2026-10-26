@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Why ChatGPT Can Sound Right While Being Wrong
 
-說明 ChatGPT 等模型可能以肯定語氣給出錯誤答案。 **Why** 原文以學生用 AI 做功課、得到自信但錯誤答案的情境切入。 **What** 文章以 ChatGPT 與 Gemini 的功課類錯誤為例，主題是語氣自信與答案正確性不一致；提供的內容只有開頭，具體案例與建議未提供。
+說明 ChatGPT 等模型可能以肯定語氣給出錯誤答案。
+
+**Why** 原文以學生用 AI 做功課、得到自信但錯誤答案的情境切入。
+
+**What** 文章以 ChatGPT 與 Gemini 的功課類錯誤為例，主題是語氣自信與答案正確性不一致；提供的內容只有開頭，具體案例與建議未提供。
 
 ### 重點
 - 切入情境：學生以 ChatGPT 或 Gemini 做功課

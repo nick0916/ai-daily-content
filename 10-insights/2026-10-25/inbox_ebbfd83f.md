@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Data Enablement for AI: A Practitioner's Guide to 6 Advanced Architectural Patterns
 
-企業資料湖要變成受治理的 AI 平台，單靠切塊加嵌入並不足夠。 **Why** 文章以「超越單純 chunk-and-embed」為起點，指出簡單做法不足以支撐生產環境。 **What** 文章整理六種生產環境架構模式，目標是把 lakehouse 轉為受治理的 AI 平台；摘要片段未列出各模式細節。
+企業資料湖要變成受治理的 AI 平台，單靠切塊加嵌入並不足夠。
+
+**Why** 文章以「超越單純 chunk-and-embed」為起點，指出簡單做法不足以支撐生產環境。
+
+**What** 文章整理六種生產環境架構模式，目標是把 lakehouse 轉為受治理的 AI 平台；摘要片段未列出各模式細節。
 
 ### 重點
 - 單純 chunk-and-embed 不足以支撐企業生產環境

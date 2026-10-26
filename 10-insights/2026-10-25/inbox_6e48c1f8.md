@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## What Does an AI Engineer Do Now? - Aparna Dhinakaran, Arize AI
 
-AI 工程師的工作從「寫功能」變成「打造能持續寫功能、審查、監控並改進的迴圈」，讓 agent 自己讀觀測資料去找問題。 **Why** 前沿團隊已能同時跑大量 always-on agent，而多數企業與之有落差；工程師的價值轉向設計系統讓 agent 改進產品。 **How** 以 trace/telemetry 作為觸發 agent 的來源（定時、Slack 訊息、指標），每次執行在沙盒中載入 trace、第三方 APM 資料與 repo 權限，結果存入外部記憶，沙盒與憑證用完即銷毀；失敗時可從上一步接續。再用 eval 驗證 PR，並先評估「評審者」本身，確認與人類判斷一致。 **What** Arize 的 Aparna Dhinakaran 介紹其 always-on agent「Signal」：讀取 traces、找出問題並在有 repo 權限時提 PR，支援 Claude Code、Cursor、Codex 等 harness 與多種模型。她主張 AI 工程師該追蹤一切（包含寫程式的 coding agent）、寫 eval 並用 golden dataset 對齊人類判斷。
+AI 工程師的工作從「寫功能」變成「打造能持續寫功能、審查、監控並改進的迴圈」，讓 agent 自己讀觀測資料去找問題。
+
+**Why** 前沿團隊已能同時跑大量 always-on agent，而多數企業與之有落差；工程師的價值轉向設計系統讓 agent 改進產品。
+
+**How** 以 trace/telemetry 作為觸發 agent 的來源（定時、Slack 訊息、指標），每次執行在沙盒中載入 trace、第三方 APM 資料與 repo 權限，結果存入外部記憶，沙盒與憑證用完即銷毀；失敗時可從上一步接續。再用 eval 驗證 PR，並先評估「評審者」本身，確認與人類判斷一致。
+
+**What** Arize 的 Aparna Dhinakaran 介紹其 always-on agent「Signal」：讀取 traces、找出問題並在有 repo 權限時提 PR，支援 Claude Code、Cursor、Codex 等 harness 與多種模型。她主張 AI 工程師該追蹤一切（包含寫程式的 coding agent）、寫 eval 並用 golden dataset 對齊人類判斷。
 
 ### 重點
 - Signal 的 always-on agent 設計：觸發（每 3/6 小時、Slack、指標）→ 沙盒載入 trace/APM/repo → 結果存外部記憶 → 沙盒與憑證銷毀；故障時可從失敗步驟續跑

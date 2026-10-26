@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.4 — hive-mind_init persistence contract fix
 
-讓 hive-mind_init 的實際行為符合它所宣告的持久化設定。 **Why** 先前 persist:false 的回應聲稱已關閉持久化，但 state.json 與 bootstrap secret 仍會被寫入，回應與實際行為不一致。 **How** maxAgents、memoryBackend、persist 在任何檔案寫入前先依 MCP schema 驗證；persist:false 時兩個檔案都不寫。 **What** Ruflo v3.59.4（#4336），legacy status fallback 由 byzantine 改為 raft，與 init 的預設值一致；三個 dist-tags 已在 registry 驗證。
+讓 hive-mind_init 的實際行為符合它所宣告的持久化設定。
+
+**Why** 先前 persist:false 的回應聲稱已關閉持久化，但 state.json 與 bootstrap secret 仍會被寫入，回應與實際行為不一致。
+
+**How** maxAgents、memoryBackend、persist 在任何檔案寫入前先依 MCP schema 驗證；persist:false 時兩個檔案都不寫。
+
+**What** Ruflo v3.59.4（#4336），legacy status fallback 由 byzantine 改為 raft，與 init 的預設值一致；三個 dist-tags 已在 registry 驗證。
 
 ### 重點
 - maxAgents、memoryBackend、persist 在寫入檔案前依 MCP schema 驗證

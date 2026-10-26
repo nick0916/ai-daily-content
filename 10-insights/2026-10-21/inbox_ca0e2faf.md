@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/2b111f4488ed5f94e79e529a3c94bc96202d1700: fix(docker): verify bundled FTS artifacts (#3669)
 
-改用執行期路徑驗證 FTS 打包產物，不再依賴 CDN 下載。 **Why** 線上 ARM64 CDN 產物含有 core 0.21.1 沒有的符號，導致載入失敗。 **How** 透過 runtime path resolver 驗證打包內的產物，並保留強制性的原生 LOAD 檢查，且不需下載。 **What** ARM64 模擬環境重現了 CDN 失敗；打包產物可正常載入、建立 FTS 索引並回應查詢。47 個聚焦測試與兩項 TypeScript 檢查通過，完整本地測試仍在執行中。
+改用執行期路徑驗證 FTS 打包產物，不再依賴 CDN 下載。
+
+**Why** 線上 ARM64 CDN 產物含有 core 0.21.1 沒有的符號，導致載入失敗。
+
+**How** 透過 runtime path resolver 驗證打包內的產物，並保留強制性的原生 LOAD 檢查，且不需下載。
+
+**What** ARM64 模擬環境重現了 CDN 失敗；打包產物可正常載入、建立 FTS 索引並回應查詢。47 個聚焦測試與兩項 TypeScript 檢查通過，完整本地測試仍在執行中。
 
 ### 重點
 - 線上 ARM64 CDN 重建產物含 core 0.21.1 缺少的符號，ARM64 模擬可重現失敗

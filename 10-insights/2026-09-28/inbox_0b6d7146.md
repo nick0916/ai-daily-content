@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I tried the viral '/human' ChatGPT trick and it actually fixed robotic writing
 
-在提示前加上 /human，可讓 ChatGPT 寫出較不像 AI 的文字，但作者認為仍應從人類草稿開始。 **Why** ChatGPT 常見「more importantly」「for your needs」等套語與制式句型，寫信或貼文時顯得機械。 **How** 在提示前加入 `/human` 指令，作者以相同提示前後對照，比較回應的語氣、句型與用語差異。 **What** 測試五項日常寫作任務，包括延期工作信、生日簡訊、150 字咖啡機推薦、親子成長短文與 LinkedIn 換工作公告；作者結論是此技巧有效，但 AI 初稿仍難修成完全自然的文字。
+在提示前加上 /human，可讓 ChatGPT 寫出較不像 AI 的文字，但作者認為仍應從人類草稿開始。
+
+**Why** ChatGPT 常見「more importantly」「for your needs」等套語與制式句型，寫信或貼文時顯得機械。
+
+**How** 在提示前加入 `/human` 指令，作者以相同提示前後對照，比較回應的語氣、句型與用語差異。
+
+**What** 測試五項日常寫作任務，包括延期工作信、生日簡訊、150 字咖啡機推薦、親子成長短文與 LinkedIn 換工作公告；作者結論是此技巧有效，但 AI 初稿仍難修成完全自然的文字。
 
 ### 重點
 - 測試任務去除的典型 AI 寫法包括 more importantly、for your needs 等過渡語，以及 LinkedIn 制式用語

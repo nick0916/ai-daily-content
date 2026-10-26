@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Running RAG with a (small) language model in the browser
 
-在瀏覽器內以小型語言模型做 RAG，多數 350MB 以下模型的摘要都會捏造內容。 **Why** 作者想讓部落格的「問我的部落格」功能在本機完成摘要，但需要先確認小模型是否忠於檢索到的段落。 **How** 以 transformers.js 在瀏覽器執行 ONNX 量化模型，檢索取前四段；以 Opus 5.5 作為評審，將回答判為 faithful、unsupported 或 non-answer，並抽 20 筆人工標註與之比對（一致 16 筆）。 **What** 在 30 題可答問題中，LFM2.5-350M 有 11 題 faithful，其他 350MB 以下模型至多 3 題；最後預設載入的 Qwen3-0.6B（579 MB）有 18 題，Gemma 4 E2B 與 Haiku 則能正確表示段落未涵蓋問題。
+在瀏覽器內以小型語言模型做 RAG，多數 350MB 以下模型的摘要都會捏造內容。
+
+**Why** 作者想讓部落格的「問我的部落格」功能在本機完成摘要，但需要先確認小模型是否忠於檢索到的段落。
+
+**How** 以 transformers.js 在瀏覽器執行 ONNX 量化模型，檢索取前四段；以 Opus 5.5 作為評審，將回答判為 faithful、unsupported 或 non-answer，並抽 20 筆人工標註與之比對（一致 16 筆）。
+
+**What** 在 30 題可答問題中，LFM2.5-350M 有 11 題 faithful，其他 350MB 以下模型至多 3 題；最後預設載入的 Qwen3-0.6B（579 MB）有 18 題，Gemma 4 E2B 與 Haiku 則能正確表示段落未涵蓋問題。
 
 ### 重點
 - 小模型幾乎會回答任何問題，即使問的是部落格沒有的內容（如 Llama 70B 該買哪張 GPU），也很少表示段落未涵蓋

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation
 
-讓語言模型直接處理原始 byte、不需 tokenizer，參數規模變大後反而勝過 subword 模型。 **Why** 論文挑戰「語言模型需要顯式 tokenizer 才有效率」的假設，指出 byte 序列較長的代價可換成同參數預算下的額外運算。 **How** 以 token-superposition 訓練與 hash embeddings，使 byte 模型在相同參數量下達到較低的最佳 loss；模型在標準 Transformer 中自行形成局部分段（copying 任務中注意力集中在少數分段位置）。 **What** 凍結最多四分之一的中間層，仍維持下游表現；byte 級 drafting 模型在 speculative decoding 中每次 target forward 約多接受 3.4 倍的 token；CUTE 字詞操作約相對提升 40%，OCRBench 約提升 20%。
+讓語言模型直接處理原始 byte、不需 tokenizer，參數規模變大後反而勝過 subword 模型。
+
+**Why** 論文挑戰「語言模型需要顯式 tokenizer 才有效率」的假設，指出 byte 序列較長的代價可換成同參數預算下的額外運算。
+
+**How** 以 token-superposition 訓練與 hash embeddings，使 byte 模型在相同參數量下達到較低的最佳 loss；模型在標準 Transformer 中自行形成局部分段（copying 任務中注意力集中在少數分段位置）。
+
+**What** 凍結最多四分之一的中間層，仍維持下游表現；byte 級 drafting 模型在 speculative decoding 中每次 target forward 約多接受 3.4 倍的 token；CUTE 字詞操作約相對提升 40%，OCRBench 約提升 20%。
 
 ### 重點
 - 同參數量下，byte 模型的最佳 loss 低於 subword 模型，且隨規模擴大優勢更明顯

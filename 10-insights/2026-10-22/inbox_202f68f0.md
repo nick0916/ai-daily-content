@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v2.1.309
 
-Claude Code 這版主要在補沙盒與權限檢查的漏洞，並修掉大量 VS Code、雲端工作階段、Slack 整合的小錯誤。 **Why** Claude Code 能執行 Bash、改檔、連 MCP，沙盒或權限檢查若有縫隙，指令就可能在使用者不知情下越界執行或改到不該改的檔案。 **How** 逐一補上各種繞過路徑：沙盒內 shell 啟動檔、symlink 下的 denyWrite、compound 指令中包了 cd 的 git、Edit deny 規則對 Bash redirect 的攔截、PowerShell 權限檢查等；部分行為改成更保守的預設（拒絕或詢問）。 **What** Claude Code v2.1.309。安全面：修正 macOS/Linux 沙盒指令會在沙盒外執行 shell 啟動檔、沙盒指令可修改 --mcp-config 指定的 MCP 設定檔、worktree 隔離守門漏放部分 locale 前綴與 zsh 算術指令等問題；行為變更包括 sed -i 改走標準 Bash 提示且不再被 /rewind 還原、claude ultrareview 需 workspace trust（腳本用 --trust-workspace 或環境變數 CLAUDE_CODE_DISABLE_ULTRAREVIEW_TRUST_CHECK=1）、Desktop/VS Code 的 bypass permissions 模式下危險的 rm/rmdir 直接拒絕並給改寫提示。另有 nested CLAUDE.md 過大只載入開頭以避免反覆 compact、Windows 上 git 指令加速、VS Code 與 Cloud sessions、Claude Tag（Slack）、Code Review 等多項修復。
+Claude Code 這版主要在補沙盒與權限檢查的漏洞，並修掉大量 VS Code、雲端工作階段、Slack 整合的小錯誤。
+
+**Why** Claude Code 能執行 Bash、改檔、連 MCP，沙盒或權限檢查若有縫隙，指令就可能在使用者不知情下越界執行或改到不該改的檔案。
+
+**How** 逐一補上各種繞過路徑：沙盒內 shell 啟動檔、symlink 下的 denyWrite、compound 指令中包了 cd 的 git、Edit deny 規則對 Bash redirect 的攔截、PowerShell 權限檢查等；部分行為改成更保守的預設（拒絕或詢問）。
+
+**What** Claude Code v2.1.309。安全面：修正 macOS/Linux 沙盒指令會在沙盒外執行 shell 啟動檔、沙盒指令可修改 --mcp-config 指定的 MCP 設定檔、worktree 隔離守門漏放部分 locale 前綴與 zsh 算術指令等問題；行為變更包括 sed -i 改走標準 Bash 提示且不再被 /rewind 還原、claude ultrareview 需 workspace trust（腳本用 --trust-workspace 或環境變數 CLAUDE_CODE_DISABLE_ULTRAREVIEW_TRUST_CHECK=1）、Desktop/VS Code 的 bypass permissions 模式下危險的 rm/rmdir 直接拒絕並給改寫提示。另有 nested CLAUDE.md 過大只載入開頭以避免反覆 compact、Windows 上 git 指令加速、VS Code 與 Cloud sessions、Claude Tag（Slack）、Code Review 等多項修復。
 
 ### 重點
 - 沙盒/權限修補：沙盒內 Bash 不再於沙盒外執行 shell 啟動檔；沙盒指令與自動接受的編輯不能再改 --mcp-config 指定的 MCP 設定檔；macOS denyWrite glob 在 symlink 路徑下可正確生效

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Is Software Dead, or Just Not for Humans Anymore?
 
-傳統軟體的價值正被 AI 侵蝕，金流正轉向為 agent 優先設計的軟體。 **Why** 昂貴軟體被 AI 複製與開源，引發「軟體已死」的爭論。 **How** 原文列出四個理由：AI 可逆向工程應用、個人 app 取代部分 SaaS、企業內部工具取代 SaaS、agent 取代人類成為主要使用者。 **What** Retool 調查指出 35% 企業以內部 app 取代 SaaS；Ramp 的內部 coding agent Inspect 寫了 75% 已合併 PR；Curative 取消了 $600K/年的 Salesforce 合約。
+傳統軟體的價值正被 AI 侵蝕，金流正轉向為 agent 優先設計的軟體。
+
+**Why** 昂貴軟體被 AI 複製與開源，引發「軟體已死」的爭論。
+
+**How** 原文列出四個理由：AI 可逆向工程應用、個人 app 取代部分 SaaS、企業內部工具取代 SaaS、agent 取代人類成為主要使用者。
+
+**What** Retool 調查指出 35% 企業以內部 app 取代 SaaS；Ramp 的內部 coding agent Inspect 寫了 75% 已合併 PR；Curative 取消了 $600K/年的 Salesforce 合約。
 
 ### 重點
 - Retool 調查：35% 企業已用內部 app 取代 SaaS 工具

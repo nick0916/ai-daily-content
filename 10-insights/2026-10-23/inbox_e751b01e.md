@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## He Put One Function Between 40 Agents and the Model That Reads Them. Cost Fell 86%.
 
-在多個小模型 worker 與大模型之間加一層中介函式，據稱省下 86% 成本。 **Why** 作者發現 40 個 Claude Haiku worker 接到 Claude Sonnet 報告撰寫模型後，帳單落在錯誤的項目上。 **How** 在 agent 與讀取其輸出的模型之間加入一個 function。 **What** 標題宣稱成本下降 86%；原文片段未提供該 function 的實作細節。
+在多個小模型 worker 與大模型之間加一層中介函式，據稱省下 86% 成本。
+
+**Why** 作者發現 40 個 Claude Haiku worker 接到 Claude Sonnet 報告撰寫模型後，帳單落在錯誤的項目上。
+
+**How** 在 agent 與讀取其輸出的模型之間加入一個 function。
+
+**What** 標題宣稱成本下降 86%；原文片段未提供該 function 的實作細節。
 
 ### 重點
 - 40 個 Claude Haiku worker 接到 Claude Sonnet 報告撰寫模型

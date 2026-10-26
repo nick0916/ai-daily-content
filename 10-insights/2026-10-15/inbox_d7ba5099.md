@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Sunsetting decomp.dev
 
-decomp.dev 停止新增專案與主索引，因排行榜機制讓刷進度與惡意行為變多。 **Why** 作者認為公開索引與排行榜在 AI 能快速產出後，鼓勵只追數字的行為，弊多於利。 **What** 網站 2024 年成立，既有專案頁與歷史資料保留，主索引與新增專案功能停用；作者列出惡意 fork 以 AI 補完、搶先釋出半成品 PC port，以及把 decompilation 與 port 混為一談等問題，且網站程式碼沒有開源授權。
+decomp.dev 停止新增專案與主索引，因排行榜機制讓刷進度與惡意行為變多。
+
+**Why** 作者認為公開索引與排行榜在 AI 能快速產出後，鼓勵只追數字的行為，弊多於利。
+
+**What** 網站 2024 年成立，既有專案頁與歷史資料保留，主索引與新增專案功能停用；作者列出惡意 fork 以 AI 補完、搶先釋出半成品 PC port，以及把 decompilation 與 port 混為一談等問題，且網站程式碼沒有開源授權。
 
 ### 重點
 - 作者指出 Opus 4.6、GPT-5.4（2026 年初）與 GPT-6-Astra 讓 AI 能協助 matching decompilation，但仍需人工清理與審查作弊式結果

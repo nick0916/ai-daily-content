@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI
 
-AI 讓寫程式幾乎免費後，工程師剩下的價值是搞清楚「對方到底要什麼、什麼叫做好」。 **Why** 程式碼產量暴增 8 倍，但出貨只快 30%，瓶頸先卡在 code review，之後會一路往維運、資安移動。 **How** 作者用 Goldratt 的限制理論推演：瓶頸被解開後會移到下一個環節，最後停在 agent 做不到的事——和真人溝通、把隱性知識（什麼叫好）寫成 spec。 **What** Laurie Voss（Arize AI DevRel、NPM 共同創辦人）主張所有工程師都會變成「product engineer」。引用數據：用自主 coding agent 的開發者多寫 741% 程式碼但只快 30%；人類 review 速度約 450 行/小時；Cognition 以「維護者會不會 merge」衡量，通過率由 87% 降到 54%；22–25 歲工程師就業下滑。建議：只人工審高影響範圍的程式碼、把便宜可驗證的事交給 agent、把頂尖人才的判斷寫進 spec/rubric/eval。
+AI 讓寫程式幾乎免費後，工程師剩下的價值是搞清楚「對方到底要什麼、什麼叫做好」。
+
+**Why** 程式碼產量暴增 8 倍，但出貨只快 30%，瓶頸先卡在 code review，之後會一路往維運、資安移動。
+
+**How** 作者用 Goldratt 的限制理論推演：瓶頸被解開後會移到下一個環節，最後停在 agent 做不到的事——和真人溝通、把隱性知識（什麼叫好）寫成 spec。
+
+**What** Laurie Voss（Arize AI DevRel、NPM 共同創辦人）主張所有工程師都會變成「product engineer」。引用數據：用自主 coding agent 的開發者多寫 741% 程式碼但只快 30%；人類 review 速度約 450 行/小時；Cognition 以「維護者會不會 merge」衡量，通過率由 87% 降到 54%；22–25 歲工程師就業下滑。建議：只人工審高影響範圍的程式碼、把便宜可驗證的事交給 agent、把頂尖人才的判斷寫進 spec/rubric/eval。
 
 ### 重點
 - Cognition 基準：標準測試通過率 87%，改問「維護者會不會 merge」後降至 54%，顯示「好的定義」未被 agent 掌握

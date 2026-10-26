@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Tests Show AI *Can* Design Like an Expert Instructional Designer, So What Next?
 
-AI 模型在教學設計的判斷與決策能力，並不比它們產出教材的能力弱。 **Why** 作者假設 AI 較擅長產出教材，較不擅長教學設計的推理，因此想用可檢驗的標準來驗證。 **How** 作者整合 ibstpi 能力框架、英國 ST0974 學徒標準與 Quality Matters 規範，建立 24 項能力、7 個階段的評分表，並以 Junior、Experienced、Expert 三級評分；四款模型各完成 10 項任務，並接受施壓式的反駁測試。 **What** 原文指出 Claude Fable 5.1 與 GPT 6 Astra 在 9/10 項任務達到 Experienced 或 Expert 水準；例如兩者都找出 Northgate 案例中錯誤率三倍增加是軟體更新所致，也都建議不買 £18,500 的去除激動（de-escalation）課程。
+AI 模型在教學設計的判斷與決策能力，並不比它們產出教材的能力弱。
+
+**Why** 作者假設 AI 較擅長產出教材，較不擅長教學設計的推理，因此想用可檢驗的標準來驗證。
+
+**How** 作者整合 ibstpi 能力框架、英國 ST0974 學徒標準與 Quality Matters 規範，建立 24 項能力、7 個階段的評分表，並以 Junior、Experienced、Expert 三級評分；四款模型各完成 10 項任務，並接受施壓式的反駁測試。
+
+**What** 原文指出 Claude Fable 5.1 與 GPT 6 Astra 在 9/10 項任務達到 Experienced 或 Expert 水準；例如兩者都找出 Northgate 案例中錯誤率三倍增加是軟體更新所致，也都建議不買 £18,500 的去除激動（de-escalation）課程。
 
 ### 重點
 - 四款模型為 Claude Fable 5.1、GPT 6 Astra、Gemini Pro、Qwen 3.8 Max，任務涵蓋問題界定、分析、設計、開發、QA 與評估。

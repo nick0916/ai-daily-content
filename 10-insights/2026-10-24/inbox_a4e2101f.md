@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Dessa - the Conversation Model trained only on speech
 
-Block 的小型研究實驗室釋出只用人類對話聲音訓練、不靠文字的雙向語音模型，能邊聽邊說。 **Why** 現行語音 AI 把聲音轉成文字，會丟掉情緒、語氣與時機等資訊，導致體驗僵硬，團隊也認為 AI 聽不出人聲中的情緒有安全疑慮。 **How** 從零開始只用人類對話的聲音訓練，沒有文字、沒有預訓練模型；是 audio in、audio out 的 full-duplex speech-to-speech 模型，能自行判斷何時插話與給回應（如「yeah」「got it」）。 **What** Dessa 宣稱語言學習所需的字數比 LLM 少數百倍，只用一組 NVIDIA GB200 NVL72 訓練，推論速度快於即時，可在 MacBook Pro M4 Max 或更高規格上本機執行。團隊由前 Toronto 深度學習新創 Dessa 成員組成，直接向 Block 共同創辦人 Jack Dorsey 報告，並開放小群 AI 安全研究者早期存取；官方示範包含它與第三方 GPT-Live-1 對話（雙方皆為 AI 語音，GPT-Live-1 開發者未審閱或背書）。
+Block 的小型研究實驗室釋出只用人類對話聲音訓練、不靠文字的雙向語音模型，能邊聽邊說。
+
+**Why** 現行語音 AI 把聲音轉成文字，會丟掉情緒、語氣與時機等資訊，導致體驗僵硬，團隊也認為 AI 聽不出人聲中的情緒有安全疑慮。
+
+**How** 從零開始只用人類對話的聲音訓練，沒有文字、沒有預訓練模型；是 audio in、audio out 的 full-duplex speech-to-speech 模型，能自行判斷何時插話與給回應（如「yeah」「got it」）。
+
+**What** Dessa 宣稱語言學習所需的字數比 LLM 少數百倍，只用一組 NVIDIA GB200 NVL72 訓練，推論速度快於即時，可在 MacBook Pro M4 Max 或更高規格上本機執行。團隊由前 Toronto 深度學習新創 Dessa 成員組成，直接向 Block 共同創辦人 Jack Dorsey 報告，並開放小群 AI 安全研究者早期存取；官方示範包含它與第三方 GPT-Live-1 對話（雙方皆為 AI 語音，GPT-Live-1 開發者未審閱或背書）。
 
 ### 重點
 - 純語音訓練：無文字、無預訓練模型，full-duplex 同時聽與說，可自行決定插話與 backchannel；官方稱為首個僅用人類語音訓練、能即時逼真對話的 AI

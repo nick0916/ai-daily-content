@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## What Would Change Your District's Mind About AI?
 
-AI 教育的爭議難以靠增加研究解決，因為人們會依自身陣營篩選證據。 **Why** 作者認為 AI 教育屬於 Rittel 與 Webber 所定義的 wicked problem，且研究基礎仍在形成，學區必須在證據不足時先行決策。 **How** 作者引用社會心理學的 compensatory conviction（McGregor 等人，2001）與 Dan Kahan 的 identity-protective cognition，並借鏡醫學的 clinical equipoise（Freedman，1987）、對抗式合作研究與 Fishkin 的 America in One Room 審議實驗。 **What** 作者以 Bastani 等人對土耳其高中數學生的研究為例：無護欄的 GPT-4 讓練習成績變好但後來考試變差，有導師護欄的版本大致避免了傷害；作者主張應追問哪些論證會改變辯論結構，而不是重複既有立場。
+AI 教育的爭議難以靠增加研究解決，因為人們會依自身陣營篩選證據。
+
+**Why** 作者認為 AI 教育屬於 Rittel 與 Webber 所定義的 wicked problem，且研究基礎仍在形成，學區必須在證據不足時先行決策。
+
+**How** 作者引用社會心理學的 compensatory conviction（McGregor 等人，2001）與 Dan Kahan 的 identity-protective cognition，並借鏡醫學的 clinical equipoise（Freedman，1987）、對抗式合作研究與 Fishkin 的 America in One Room 審議實驗。
+
+**What** 作者以 Bastani 等人對土耳其高中數學生的研究為例：無護欄的 GPT-4 讓練習成績變好但後來考試變差，有導師護欄的版本大致避免了傷害；作者主張應追問哪些論證會改變辯論結構，而不是重複既有立場。
 
 ### 重點
 - McGregor 等人（2001）指出「內在不確定會導致公開的確信」（compensatory conviction）

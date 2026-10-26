@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Review Claude Code and Codex Changes Before You Commit: A Practical Checklist
 
-整理 Claude Code 與 Codex 改動在 commit 前的審查流程與清單。 **Why** 片段指出編碼 agent 有其慣常錯誤，需要逐一檢查實際改動。 **How** 原文描述為逐步（step-by-step）的審查流程，包含閱讀改動、找出常見錯誤、只保留可信部分。 **What** 作者提供一份適用於 Claude Code 與 Codex 程式碼改動的實務檢查清單，具體步驟未在片段中列出。
+整理 Claude Code 與 Codex 改動在 commit 前的審查流程與清單。
+
+**Why** 片段指出編碼 agent 有其慣常錯誤，需要逐一檢查實際改動。
+
+**How** 原文描述為逐步（step-by-step）的審查流程，包含閱讀改動、找出常見錯誤、只保留可信部分。
+
+**What** 作者提供一份適用於 Claude Code 與 Codex 程式碼改動的實務檢查清單，具體步驟未在片段中列出。
 
 ### 重點
 - 審查對象為 Claude Code 與 Codex 的程式碼改動

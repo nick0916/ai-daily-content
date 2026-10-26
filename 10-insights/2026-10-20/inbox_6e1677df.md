@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 📉 98% GPU Utilization and a 6x Speedup Left on the Table
 
-GPU 使用率顯示 98% 不代表跑得有效率，微調訓練可能白白慢 6 倍。 **Why** 「GPU utilization」只表示 GPU 有在忙，並不代表算力被有效利用，所以高使用率仍可能隱藏嚴重的效能浪費。 **How** Databricks 提出兩個修正：安裝 fused kernels，以及把 batch 做 packing。 **What** 案例是 Qwen 27B 的 fine-tune，顯示 98% GPU 使用率卻比應有速度慢 6 倍；套用上述兩項修正後可取回這 6 倍的加速空間。
+GPU 使用率顯示 98% 不代表跑得有效率，微調訓練可能白白慢 6 倍。
+
+**Why** 「GPU utilization」只表示 GPU 有在忙，並不代表算力被有效利用，所以高使用率仍可能隱藏嚴重的效能浪費。
+
+**How** Databricks 提出兩個修正：安裝 fused kernels，以及把 batch 做 packing。
+
+**What** 案例是 Qwen 27B 的 fine-tune，顯示 98% GPU 使用率卻比應有速度慢 6 倍；套用上述兩項修正後可取回這 6 倍的加速空間。
 
 ### 重點
 - Qwen 27B fine-tune 顯示 98% GPU utilization，卻比應有速度慢 6 倍

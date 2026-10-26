@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Visualizing the AI Education Debate
 
-把 AI 教育爭議拆成 12 個模組地圖，指出多數立場會循環回到先前被取代的位置。 **Why** 作者觀察到 AI 教育討論常在一兩個單點解方之間輪替，教師得到的答案往往只能部分適用。 **How** 作者與 Claude、ChatGPT 協作，將辯論拆為 access、authenticity、AI literacy、teaching profession、governance、evidence、equity、data、curriculum、beneficiaries、development、pace 等 12 個模組，並標出各模組的循環路徑。 **What** 例如 access 模組中，禁止、限制、開放三種立場各自會把壓力推向另一種；governance 模組指出一致性與地方彈性相互取捨。作者說明這份地圖仍在初步階段，希望讀者檢驗，核心問題是「哪些論證改變辯論結構，哪些只是重新生成它」。
+把 AI 教育爭議拆成 12 個模組地圖，指出多數立場會循環回到先前被取代的位置。
+
+**Why** 作者觀察到 AI 教育討論常在一兩個單點解方之間輪替，教師得到的答案往往只能部分適用。
+
+**How** 作者與 Claude、ChatGPT 協作，將辯論拆為 access、authenticity、AI literacy、teaching profession、governance、evidence、equity、data、curriculum、beneficiaries、development、pace 等 12 個模組，並標出各模組的循環路徑。
+
+**What** 例如 access 模組中，禁止、限制、開放三種立場各自會把壓力推向另一種；governance 模組指出一致性與地方彈性相互取捨。作者說明這份地圖仍在初步階段，希望讀者檢驗，核心問題是「哪些論證改變辯論結構，哪些只是重新生成它」。
 
 ### 重點
 - 12 個模組涵蓋 access、authenticity、evidence、equity、data、pace 等議題，每個模組都列出循環式立場

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## AI Cut Our Research Time From 7 Days to 15 Minutes — Gareth Yoder, Vanguard
 
-把舊系統的程式碼開放給 AI 查詢，讓原本要等工程師 7 天的分析 15 分鐘就能回覆。 **Why** Vanguard 的現金帳務（cash ledger）系統要現代化，過去需請大型主機工程師與架構師逐一分析程式碼來確認資料結構，回饋迴圈很慢。 **How** 把 legacy 程式碼透過 MCP server 提供給 AI 工具，並將遷移文件放在公司 wiki 後同樣經由 MCP 提供給 35 個 producer 團隊；資料面採 CDC，每日比對列數（一致性）與欄位內容（完整性），並引入冪等（idempotency）與類 Snowflake ID 的設計。 **What** 研究回饋迴圈從 7 天降到 15 分鐘；系統每日約 3,000 萬次呼叫、50 個 consumer，cash program 有 90% 工程師每日使用 AI 工具。講者提出五點：讓 legacy 程式碼可被 AI 查詢、把遷移文件當產品、重新設計而非 lift-and-shift、漸進導入 AI、可觀測性不可妥協。
+把舊系統的程式碼開放給 AI 查詢，讓原本要等工程師 7 天的分析 15 分鐘就能回覆。
+
+**Why** Vanguard 的現金帳務（cash ledger）系統要現代化，過去需請大型主機工程師與架構師逐一分析程式碼來確認資料結構，回饋迴圈很慢。
+
+**How** 把 legacy 程式碼透過 MCP server 提供給 AI 工具，並將遷移文件放在公司 wiki 後同樣經由 MCP 提供給 35 個 producer 團隊；資料面採 CDC，每日比對列數（一致性）與欄位內容（完整性），並引入冪等（idempotency）與類 Snowflake ID 的設計。
+
+**What** 研究回饋迴圈從 7 天降到 15 分鐘；系統每日約 3,000 萬次呼叫、50 個 consumer，cash program 有 90% 工程師每日使用 AI 工具。講者提出五點：讓 legacy 程式碼可被 AI 查詢、把遷移文件當產品、重新設計而非 lift-and-shift、漸進導入 AI、可觀測性不可妥協。
 
 ### 重點
 - legacy 程式碼經 MCP server 提供 AI 查詢，研究回饋迴圈由 7 天縮短到 15 分鐘

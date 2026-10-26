@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## What’s the ROI of software engineers’ spending on AI?
 
-Pragmatic Engineer 分析 27 家公司資料，檢視工程師的 AI 支出是否真的提升出貨速度與 PR 產出。 **Why** 今年多數公司的 AI 支出大幅增加，但實際是否改變 shipping velocity 與 PR 產出仍待驗證。 **What** 文章分析 27 家公司的資料並稱有一些有趣發現；提供的原文未包含具體數字或結論。
+Pragmatic Engineer 分析 27 家公司資料，檢視工程師的 AI 支出是否真的提升出貨速度與 PR 產出。
+
+**Why** 今年多數公司的 AI 支出大幅增加，但實際是否改變 shipping velocity 與 PR 產出仍待驗證。
+
+**What** 文章分析 27 家公司的資料並稱有一些有趣發現；提供的原文未包含具體數字或結論。
 
 ### 重點
 - 分析範圍：27 家公司的 AI 支出與產出資料

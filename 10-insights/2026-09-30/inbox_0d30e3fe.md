@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Why Siri never worked like ChatGPT — former Siri AI researcher explains what Apple had to change
 
-舊 Siri 照劇本走，偏離就卡住，所以跟不上 ChatGPT 式對話。 **Why** 語音助理需要靈活理解使用者，但 Apple 的低風險偏好讓 Siri 被限制在可預測的功能範圍內。 **How** 舊架構以列舉意圖（enumerated intents）事先對應每條對話路徑；LLM 則以整段對話作為脈絡判斷回應，部分新模型還能直接推理音訊。 **What** 曾參與 Siri 技術的前研究員、PolyAI 執行長 Nikola Mrkšić 指出，多輪記憶在模型層級已「largely solved」，限制主要來自產品規則；Apple 的隱私立場限制了個人資料的使用，而 OS 層級存取是其潛在優勢。
+舊 Siri 照劇本走，偏離就卡住，所以跟不上 ChatGPT 式對話。
+
+**Why** 語音助理需要靈活理解使用者，但 Apple 的低風險偏好讓 Siri 被限制在可預測的功能範圍內。
+
+**How** 舊架構以列舉意圖（enumerated intents）事先對應每條對話路徑；LLM 則以整段對話作為脈絡判斷回應，部分新模型還能直接推理音訊。
+
+**What** 曾參與 Siri 技術的前研究員、PolyAI 執行長 Nikola Mrkšić 指出，多輪記憶在模型層級已「largely solved」，限制主要來自產品規則；Apple 的隱私立場限制了個人資料的使用，而 OS 層級存取是其潛在優勢。
 
 ### 重點
 - 舊 Siri 採列舉意圖設計，每條對話路徑需事先對應，偏離劇本即無法處理

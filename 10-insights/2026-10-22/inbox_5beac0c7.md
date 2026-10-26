@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## The AI Content System Behind 200M Views — Sarah Chieng, Cerebras & Cova Lee, OpenAI
 
-把做影片的每個階段都交給 AI 代理處理瑣事，創作者只負責想法與品味。 **Why** 內容太多、同質化嚴重，創作者時間有限，需要系統化流程來持續產出並檢討成效。 **How** 把流程拆成構思、腳本、錄製、剪輯、再利用、發布六階段，用 swipe file 當風格參考，並把腳本、Premiere 操作、各平台貼文寫成 skills，再用 Codex 串接 Figma、HyperFrames、HeyGen、Buffer 等工具。每週再用一個 skill 回顧流程找出可自動化的低效率處。 **What** 講者是 Cerebras 的 Sarah Chieng 與 OpenAI 的 Kova Lee，使用 ChatGPT/Codex 與 Cerebras 驅動的 GPT 5.6 Soul Ultra Fast（講者稱約 750 tokens/秒）。具體做法包括：口述想法讓 AI 訪談成腳本、一次產生三份腳本、請 AI 依腳本做 shot list、把 Wikipedia 的 signs of AI writing 貼進 prompt 避免 AI 味的文案。
+把做影片的每個階段都交給 AI 代理處理瑣事，創作者只負責想法與品味。
+
+**Why** 內容太多、同質化嚴重，創作者時間有限，需要系統化流程來持續產出並檢討成效。
+
+**How** 把流程拆成構思、腳本、錄製、剪輯、再利用、發布六階段，用 swipe file 當風格參考，並把腳本、Premiere 操作、各平台貼文寫成 skills，再用 Codex 串接 Figma、HyperFrames、HeyGen、Buffer 等工具。每週再用一個 skill 回顧流程找出可自動化的低效率處。
+
+**What** 講者是 Cerebras 的 Sarah Chieng 與 OpenAI 的 Kova Lee，使用 ChatGPT/Codex 與 Cerebras 驅動的 GPT 5.6 Soul Ultra Fast（講者稱約 750 tokens/秒）。具體做法包括：口述想法讓 AI 訪談成腳本、一次產生三份腳本、請 AI 依腳本做 shot list、把 Wikipedia 的 signs of AI writing 貼進 prompt 避免 AI 味的文案。
 
 ### 重點
 - 六階段流程：ideating、scripting、recording、editing、repurposing、publishing；標題與縮圖佔表現約一半（YouTube）

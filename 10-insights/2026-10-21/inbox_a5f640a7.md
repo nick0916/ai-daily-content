@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Turn Long-Running Python Simulations Into a Self-Service Platform
 
-把耗時很長的 Python 模擬包裝成可自助使用的平台。 **Why** 長時間模擬需要排隊、失敗復原與可重現性等機制才能穩定供多人使用。 **How** 以非同步工作負載（asynchronous workloads）架構部署在 AWS 上。 **What** 作者分享在 AWS 上建立非同步模擬平台時，對佇列（queues）、失敗復原與可重現性的實務心得；原文摘要未提供具體架構細節或數據。
+把耗時很長的 Python 模擬包裝成可自助使用的平台。
+
+**Why** 長時間模擬需要排隊、失敗復原與可重現性等機制才能穩定供多人使用。
+
+**How** 以非同步工作負載（asynchronous workloads）架構部署在 AWS 上。
+
+**What** 作者分享在 AWS 上建立非同步模擬平台時，對佇列（queues）、失敗復原與可重現性的實務心得；原文摘要未提供具體架構細節或數據。
 
 ### 重點
 - 核心議題：長時間 Python 模擬的非同步執行與自助化服務

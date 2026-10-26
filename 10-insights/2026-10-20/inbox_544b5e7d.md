@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.1 — npx ruflo tui: mouse clicking on by default
 
-讓 `npx ruflo tui` 的滑鼠點擊預設開啟，解決使用者點擊無反應的問題。 **Why** 滑鼠功能自 ADR-489 起為 opt-in，只有一次性啟動提示，使用者常反映點擊沒有作用。 **How** 預設啟用 mouse，若終端機的 SGR 滑鼠回報與原生文字選取衝突，可用 --no-mouse 關閉。 **What** v3.59.1 發布 @claude-flow/cli、claude-flow、ruflo 三個 npm 套件（latest、alpha、v3alpha dist-tag 已驗證）；main 分支另有 ruflo-core 的 witness 簽章金鑰功能（RUFLO_WITNESS_SEED / --public-key），但不屬於此次 npm 發布。
+讓 `npx ruflo tui` 的滑鼠點擊預設開啟，解決使用者點擊無反應的問題。
+
+**Why** 滑鼠功能自 ADR-489 起為 opt-in，只有一次性啟動提示，使用者常反映點擊沒有作用。
+
+**How** 預設啟用 mouse，若終端機的 SGR 滑鼠回報與原生文字選取衝突，可用 --no-mouse 關閉。
+
+**What** v3.59.1 發布 @claude-flow/cli、claude-flow、ruflo 三個 npm 套件（latest、alpha、v3alpha dist-tag 已驗證）；main 分支另有 ruflo-core 的 witness 簽章金鑰功能（RUFLO_WITNESS_SEED / --public-key），但不屬於此次 npm 發布。
 
 ### 重點
 - npx ruflo tui 的滑鼠點擊預設開啟，點頂部分頁名稱或滾輪即可操作

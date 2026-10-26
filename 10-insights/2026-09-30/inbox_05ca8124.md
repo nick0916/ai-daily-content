@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## OpenAI just launched Dots — here’s why most ChatGPT users can’t try them yet
 
-Dots 不只是更聰明的 ChatGPT，而是停止對話後仍會持續工作的代理。 **Why** 背景代理能主動發現待辦事項，失誤代價比一般聊天回答高。 **How** 背景主動研究時，連接應用程式的工具僅限唯讀；自訂規則決定哪些動作可自動執行、需核准或封鎖；auto-review 會比對使用者指令與安全要求；修改密碼等敏感操作一律由使用者處理。 **What** 目前開放 ChatGPT Pro 與 Business Premium（部分地區），Plus、Go、Free 暫不可用，OpenAI 表示將「soon」擴大；內部測試中，預設確認政策下 GPT-6 Astra 的 misaligned 結果率為 3%，低於 GPT-5.6 Sol 的 8%。
+Dots 不只是更聰明的 ChatGPT，而是停止對話後仍會持續工作的代理。
+
+**Why** 背景代理能主動發現待辦事項，失誤代價比一般聊天回答高。
+
+**How** 背景主動研究時，連接應用程式的工具僅限唯讀；自訂規則決定哪些動作可自動執行、需核准或封鎖；auto-review 會比對使用者指令與安全要求；修改密碼等敏感操作一律由使用者處理。
+
+**What** 目前開放 ChatGPT Pro 與 Business Premium（部分地區），Plus、Go、Free 暫不可用，OpenAI 表示將「soon」擴大；內部測試中，預設確認政策下 GPT-6 Astra 的 misaligned 結果率為 3%，低於 GPT-5.6 Sol 的 8%。
 
 ### 重點
 - 背景主動研究時，連接應用程式的工具僅限唯讀，代理不能自行寄送訊息、修改內容或控制瀏覽器與電腦

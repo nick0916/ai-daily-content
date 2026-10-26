@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Google ML Drift Accelerates On-Device AI Inference Across Diverse GPUs
 
-一套讓同一份 AI 推論程式能在不同裝置 GPU 上運行的開源引擎。 **Why** 不同 GPU 硬體與底層 API 差異大，on-device AI 推論要跨平台很麻煩。 **How** ML Drift 抽象化各種 GPU 硬體與低階 API 的複雜度，支援 OpenGL ES、OpenCL、Metal 與 WebGPU。 **What** Google 釋出開源（Apache 2.0）的跨平台 GPU 運算引擎 ML Drift，用於裝置端 AI／機器學習推論。
+一套讓同一份 AI 推論程式能在不同裝置 GPU 上運行的開源引擎。
+
+**Why** 不同 GPU 硬體與底層 API 差異大，on-device AI 推論要跨平台很麻煩。
+
+**How** ML Drift 抽象化各種 GPU 硬體與低階 API 的複雜度，支援 OpenGL ES、OpenCL、Metal 與 WebGPU。
+
+**What** Google 釋出開源（Apache 2.0）的跨平台 GPU 運算引擎 ML Drift，用於裝置端 AI／機器學習推論。
 
 ### 重點
 - Google 開源 ML Drift，授權為 Apache 2.0

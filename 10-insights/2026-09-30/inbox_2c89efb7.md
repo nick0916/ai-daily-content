@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Meta Muse vs ChatGPT Dots — I compared the new AI agents, and they’re not as similar as they look
 
-Muse 與 Dots 技術相似，但鎖定的客群不同：前者免費起步，後者起價 $100/月。 **Why** 兩者都讓 AI 代理擁有獨立雲端電腦，並在使用者離開後持續工作，因此常被混為一談。 **How** Muse 運行於 Muse Secure VM，以 Sentinel 區分讀取與寫入權限；Dots 由 GPT-6 Astra 驅動，整合進 ChatGPT，並可透過 4,000 多個應用程式插件運作。 **What** Muse 在美國與加拿大提供免費方案及 $20、$100 月費方案；Dots 開放給 Pro 與 Business Premium 訂閱者，Enterprise、Edu、Healthcare 為管理員啟用的 beta。
+Muse 與 Dots 技術相似，但鎖定的客群不同：前者免費起步，後者起價 $100/月。
+
+**Why** 兩者都讓 AI 代理擁有獨立雲端電腦，並在使用者離開後持續工作，因此常被混為一談。
+
+**How** Muse 運行於 Muse Secure VM，以 Sentinel 區分讀取與寫入權限；Dots 由 GPT-6 Astra 驅動，整合進 ChatGPT，並可透過 4,000 多個應用程式插件運作。
+
+**What** Muse 在美國與加拿大提供免費方案及 $20、$100 月費方案；Dots 開放給 Pro 與 Business Premium 訂閱者，Enterprise、Edu、Healthcare 為管理員啟用的 beta。
 
 ### 重點
 - Muse 提供免費方案與 $20、$100 月費方案，支援 iOS、Android 與網頁；Dots 起價為 $100/月的 Pro 方案

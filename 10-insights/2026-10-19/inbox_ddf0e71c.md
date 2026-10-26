@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/47d63a0601eebfff6e69588d3cd8c3c1b06801ee: chore(vendor): update tree-sitter-dart to 1.0.0-g0038280 (#3633)
 
-升級 tree-sitter-dart 並改用原生 extension type 解析，以避免相容性改寫遺失結構。 **Why** 舊的相容性改寫會遺失 generic extension body 與 implements 子句。 **How** 直接捕捉 parser 的原生節點，並註冊成員所有權，同時重新整理 Dart capture fingerprint。 **What** tree-sitter-dart 升級至 1.0.0-g0038280 並重建 native prebuilds（#3633）；另修正 WAL recovery 測試 fixture 的 checkpoint regression，並要求 blocked write 必須以實際錯誤碼退出，而非接受 subprocess timeout。
+升級 tree-sitter-dart 並改用原生 extension type 解析，以避免相容性改寫遺失結構。
+
+**Why** 舊的相容性改寫會遺失 generic extension body 與 implements 子句。
+
+**How** 直接捕捉 parser 的原生節點，並註冊成員所有權，同時重新整理 Dart capture fingerprint。
+
+**What** tree-sitter-dart 升級至 1.0.0-g0038280 並重建 native prebuilds（#3633）；另修正 WAL recovery 測試 fixture 的 checkpoint regression，並要求 blocked write 必須以實際錯誤碼退出，而非接受 subprocess timeout。
 
 ### 重點
 - 改用 tree-sitter-dart 1.0.0-g0038280 的原生 extension type 節點，取代會遺失 generic body 與 implements 的改寫

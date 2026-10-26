@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Can Your AI Analyst Keep a Secret? - Aaron Linsky, Bridgewater & Nikhil Benesch, turbopuffer
 
-讓 AI 搜尋文件時只看得到「這個使用者有權限的文件」，同時還能在 1 億份文件規模下維持夠快、夠準。 **Why** 內部文件各有不同權限；若先做向量搜尋再過濾（post-filtering），有權限的結果會被丟光、召回率差；若先過濾再逐筆掃描，權限範圍大時又太慢。 **How** Turbopuffer 的 native filtering 結合兩者：向量索引會把相近向量分群，再建立權限索引，排除使用者完全無權限的群，只在最近且有權限的群內順序掃描。 **What** Turbopuffer（建在物件儲存之上的搜尋引擎）與 Bridgewater 合作，用於其約 1 億份文件的 Vault。在約 4.5 億個向量上，P90 延遲約 120 毫秒；使用者權限（viewers、groups）直接轉成 filter 語法即可。巢狀群組仍是已知的棘手情況。
+讓 AI 搜尋文件時只看得到「這個使用者有權限的文件」，同時還能在 1 億份文件規模下維持夠快、夠準。
+
+**Why** 內部文件各有不同權限；若先做向量搜尋再過濾（post-filtering），有權限的結果會被丟光、召回率差；若先過濾再逐筆掃描，權限範圍大時又太慢。
+
+**How** Turbopuffer 的 native filtering 結合兩者：向量索引會把相近向量分群，再建立權限索引，排除使用者完全無權限的群，只在最近且有權限的群內順序掃描。
+
+**What** Turbopuffer（建在物件儲存之上的搜尋引擎）與 Bridgewater 合作，用於其約 1 億份文件的 Vault。在約 4.5 億個向量上，P90 延遲約 120 毫秒；使用者權限（viewers、groups）直接轉成 filter 語法即可。巢狀群組仍是已知的棘手情況。
 
 ### 重點
 - napkin math：1KB/doc、1 億份文件，以 20GB/s 暴力掃記憶體要 5 秒，目標是約 100ms，因此必須有索引

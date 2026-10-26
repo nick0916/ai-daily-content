@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Nor'easter warning: I asked ChatGPT, Gemini, Claude and Muse how bad it's going to get this weekend
 
-把同一個颱風式暴風雨問題分別問四款 AI，比較它們對週末東北岸 Nor'easter 嚴重程度的判斷。 **Why** 作者週末出遊計畫受影響，想知道這場暴風雨會有多嚴重。 **How** 作者向 ChatGPT、Gemini、Claude 與 Meta Muse 提出同一個問題，並整理各自回答。 **What** 四款模型都認為週六最糟，ChatGPT 判斷紐約屬「嚴重但非災難」；Gemini 列出週五下午到週一的時間線，陣風可達 50–60 mph；Claude 提醒沿海淹水與停電風險；Muse 估計多數地區降雨 2–4 吋並提到可能具次熱帶特性。
+把同一個颱風式暴風雨問題分別問四款 AI，比較它們對週末東北岸 Nor'easter 嚴重程度的判斷。
+
+**Why** 作者週末出遊計畫受影響，想知道這場暴風雨會有多嚴重。
+
+**How** 作者向 ChatGPT、Gemini、Claude 與 Meta Muse 提出同一個問題，並整理各自回答。
+
+**What** 四款模型都認為週六最糟，ChatGPT 判斷紐約屬「嚴重但非災難」；Gemini 列出週五下午到週一的時間線，陣風可達 50–60 mph；Claude 提醒沿海淹水與停電風險；Muse 估計多數地區降雨 2–4 吋並提到可能具次熱帶特性。
 
 ### 重點
 - 四款模型一致認為週六傍晚至夜間風雨最強，沿海淹水風險最高

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## An 86-minute guide to finding PMF | Rob Snyder (Author, The Power of Pull)
 
-找到產品市場契合的關鍵，是找到「手上有一個卡住的優先專案、現有選項都不夠用」的特定個人。 **Why** 痛點與價值主張不夠，人們可以說很棒卻不會為此調整優先順序而購買；作者創業時兩年都卡在這裡。 **How** Pull 框架 PULL：Project（待辦專案）、Unavoidable（現在非做不可）、List（考慮過的選項）、Limitations（為何選項都不夠好）。四項缺一不可，先用此假設找人驗證，看對方是否主動想買。 **What** Rob Snyder（《The Power of Pull》作者）舉 Jump（財務顧問 AI 筆記）為例：顧問必須記錄並寫入 CRM，通用 AI 筆記工具不整合 CRM 也不確定符合 SEC 規範；保險業務因無此義務，缺 U 就沒有 pull。建議親身蹲點而非腦力激盪、避開設計夥伴、冷開信只寫簡短有趣訊息，並用「Hail Mary」問「有沒有待辦願意付錢請我做」。
+找到產品市場契合的關鍵，是找到「手上有一個卡住的優先專案、現有選項都不夠用」的特定個人。
+
+**Why** 痛點與價值主張不夠，人們可以說很棒卻不會為此調整優先順序而購買；作者創業時兩年都卡在這裡。
+
+**How** Pull 框架 PULL：Project（待辦專案）、Unavoidable（現在非做不可）、List（考慮過的選項）、Limitations（為何選項都不夠好）。四項缺一不可，先用此假設找人驗證，看對方是否主動想買。
+
+**What** Rob Snyder（《The Power of Pull》作者）舉 Jump（財務顧問 AI 筆記）為例：顧問必須記錄並寫入 CRM，通用 AI 筆記工具不整合 CRM 也不確定符合 SEC 規範；保險業務因無此義務，缺 U 就沒有 pull。建議親身蹲點而非腦力激盪、避開設計夥伴、冷開信只寫簡短有趣訊息，並用「Hail Mary」問「有沒有待辦願意付錢請我做」。
 
 ### 重點
 - PULL 四要素缺一不可：缺 Unavoidable 或 Limitations 時，對方只會抱怨而不購買

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Turn your PDFs into audiobooks with ChatGPT — here's the simple trick
 
-用 PDF to MP3 把 PDF 轉成語音，文件處理可接 ChatGPT/Codex，但語音生成需另付 API。 **Why** 作者想把待讀文件轉成有聲內容，方便在通勤或運動時收聽。 **How** 工具透過 MCP 連接 Codex 等 AI 助理處理文件，再由 OpenAI 或 Google Gemini 的 API 生成旁白。 **What** 作者表示設定約 20 分鐘；ChatGPT 訂閱與 API 分開計費，API 金鑰可授權付費請求，需先確認服務如何處理憑證與文件保存；表格、圖表與複雜格式可能朗讀不準確。
+用 PDF to MP3 把 PDF 轉成語音，文件處理可接 ChatGPT/Codex，但語音生成需另付 API。
+
+**Why** 作者想把待讀文件轉成有聲內容，方便在通勤或運動時收聽。
+
+**How** 工具透過 MCP 連接 Codex 等 AI 助理處理文件，再由 OpenAI 或 Google Gemini 的 API 生成旁白。
+
+**What** 作者表示設定約 20 分鐘；ChatGPT 訂閱與 API 分開計費，API 金鑰可授權付費請求，需先確認服務如何處理憑證與文件保存；表格、圖表與複雜格式可能朗讀不準確。
 
 ### 重點
 - 工具透過 MCP 連接 Codex 等 AI 助理處理文件，語音生成需另外接入 OpenAI 或 Google Gemini 的 API

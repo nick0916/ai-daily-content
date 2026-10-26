@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Write Your First AI Eval - SallyAnn DeLucia, Arize AI
 
-教你用「先寫清楚什麼叫好、再讓另一個 LLM 照標準打分」的方式，替 AI agent 寫第一個 eval，取代憑感覺檢查。 **Why** 只靠 vibe check 時，改 prompt 後無法證明是修好還是壞掉，也無法偵測 regression、比較模型版本或在 CI 設品質關卡。 **How** 先看 trace 盤點使用者需求，寫出具體的 pass/fail 標準（如符合天數、預算內、回答追問），一次只評一個品質面向；再把標準轉成 LLM-as-a-judge prompt，用 variable mapping 對應資料欄位，在 prompt playground 反覆迭代後存成 evaluator。 **What** Arize 產品負責人 SallyAnn DeLucia 的 workshop，以旅遊規劃 agent 的 trace 為範例。她提到 Arize 自家 agent Alex 的 eval 從最初幾個（QA correctness、user frustration、jailbreak/toxicity）成長到 32 個；後續可做 alignment（對照人工標註）、online evals，也可把 LLM judge 轉成 decision model 比較表現。建議從約 20 條 trace、1 個維度、1 個 judge 起步。
+教你用「先寫清楚什麼叫好、再讓另一個 LLM 照標準打分」的方式，替 AI agent 寫第一個 eval，取代憑感覺檢查。
+
+**Why** 只靠 vibe check 時，改 prompt 後無法證明是修好還是壞掉，也無法偵測 regression、比較模型版本或在 CI 設品質關卡。
+
+**How** 先看 trace 盤點使用者需求，寫出具體的 pass/fail 標準（如符合天數、預算內、回答追問），一次只評一個品質面向；再把標準轉成 LLM-as-a-judge prompt，用 variable mapping 對應資料欄位，在 prompt playground 反覆迭代後存成 evaluator。
+
+**What** Arize 產品負責人 SallyAnn DeLucia 的 workshop，以旅遊規劃 agent 的 trace 為範例。她提到 Arize 自家 agent Alex 的 eval 從最初幾個（QA correctness、user frustration、jailbreak/toxicity）成長到 32 個；後續可做 alignment（對照人工標註）、online evals，也可把 LLM judge 轉成 decision model 比較表現。建議從約 20 條 trace、1 個維度、1 個 judge 起步。
 
 ### 重點
 - 寫 eval 標準要具體：用「符合天數、總額不超預算、回答追問」取代「helpful、accurate」；LLM-as-a-judge 一個 eval 只評一個品質面向

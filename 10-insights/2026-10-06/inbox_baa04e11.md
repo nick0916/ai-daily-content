@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Your ChatGPT history is worth saving — here’s how to back it up
 
-把 ChatGPT 對話匯出成 ZIP 備份，避免重要紀錄只存在單一帳號裡。 **Why** 長期對話會累積成工作成果，若只存在帳號內，取得與保管都受限。 **How** 依序進入 Settings > Data controls > Export data > Export，約 7 天內會收到下載連結，連結 24 小時後失效。 **What** 個人 Free、Go、Plus、Pro 帳號可自助匯出；Business 與 Enterprise 不提供此選項。封存對話不等於備份，刪除後無法復原。
+把 ChatGPT 對話匯出成 ZIP 備份，避免重要紀錄只存在單一帳號裡。
+
+**Why** 長期對話會累積成工作成果，若只存在帳號內，取得與保管都受限。
+
+**How** 依序進入 Settings > Data controls > Export data > Export，約 7 天內會收到下載連結，連結 24 小時後失效。
+
+**What** 個人 Free、Go、Plus、Pro 帳號可自助匯出；Business 與 Enterprise 不提供此選項。封存對話不等於備份，刪除後無法復原。
 
 ### 重點
 - 路徑：Settings > Data controls > Export data > Export，匯出最多約 7 天，下載連結 24 小時失效

@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Agentic AI in Production: Why Your Agent Keeps Answering After Its Tools Fail
 
-工具壞掉時，agent 仍可能憑空寫出看似確定的答案，而監控儀表板卻持續顯示正常。 **Why** 內文指出儀表板維持綠燈，代表單靠既有監控不易察覺這類失敗。 **What** 文章主題是 agentic AI 上線後，工具失敗卻仍繼續回答的問題；摘要片段僅為開頭，未提供具體解法。
+工具壞掉時，agent 仍可能憑空寫出看似確定的答案，而監控儀表板卻持續顯示正常。
+
+**Why** 內文指出儀表板維持綠燈，代表單靠既有監控不易察覺這類失敗。
+
+**What** 文章主題是 agentic AI 上線後，工具失敗卻仍繼續回答的問題；摘要片段僅為開頭，未提供具體解法。
 
 ### 重點
 - 工具失敗後，agent 仍可能產出看似確定的答案

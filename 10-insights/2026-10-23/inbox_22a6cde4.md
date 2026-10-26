@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Demystifying INT4 Quantization: How We Cram Massive AI Models Into Tiny Spaces Using Pure Python
 
-用純 Python 示範 INT4 量化，讓大型模型能在較小的記憶體中執行。 **Why** 在本機執行先進語言模型受硬體限制影響很大。 **How** 文章以純 Python 實作 INT4 量化流程；原文片段未提供程式細節。 **What** 屬於教學文章，主題為 INT4 量化的原理與實作。
+用純 Python 示範 INT4 量化，讓大型模型能在較小的記憶體中執行。
+
+**Why** 在本機執行先進語言模型受硬體限制影響很大。
+
+**How** 文章以純 Python 實作 INT4 量化流程；原文片段未提供程式細節。
+
+**What** 屬於教學文章，主題為 INT4 量化的原理與實作。
 
 ### 重點
 - INT4 量化用於縮小大型模型的記憶體佔用

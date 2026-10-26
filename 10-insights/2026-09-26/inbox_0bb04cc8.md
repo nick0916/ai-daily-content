@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 🔕 Too Distracted? Try These Tools
 
-整理十多款專注工具，從擋信、擋網站、限時到環境音與問責，協助秋天分心時把注意力拉回來。 **Why** 作者指出秋天以來，通知、新聞與信件不斷搶走注意力，專注力變得脆弱。 **How** 多數工具靠增加摩擦力或設定承諾來阻擋干擾，例如 Apple Screen Time 的停用時間可在 11 點關閉 app，但仍可手動覆寫。 **What** 作者推薦 Inbox Pause（免費）、Raycast Focus Mode、SelfControl（免費 Mac 版，重開機也無法解除）、Forest（60 百萬人使用），以及 Focusmate（免費每週三次，付費每月 8 美元起）等。
+整理十多款專注工具，從擋信、擋網站、限時到環境音與問責，協助秋天分心時把注意力拉回來。
+
+**Why** 作者指出秋天以來，通知、新聞與信件不斷搶走注意力，專注力變得脆弱。
+
+**How** 多數工具靠增加摩擦力或設定承諾來阻擋干擾，例如 Apple Screen Time 的停用時間可在 11 點關閉 app，但仍可手動覆寫。
+
+**What** 作者推薦 Inbox Pause（免費）、Raycast Focus Mode、SelfControl（免費 Mac 版，重開機也無法解除）、Forest（60 百萬人使用），以及 Focusmate（免費每週三次，付費每月 8 美元起）等。
 
 ### 重點
 - 擋信與擋網站：Inbox Pause 暫停收件匣顯示，新信件在解除暫停後才出現；SelfControl 可在限定時間內封鎖清單中的網站

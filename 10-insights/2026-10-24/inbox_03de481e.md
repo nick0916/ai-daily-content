@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## AI Hallucinations: Why AI Models Generate Incorrect Information
 
-解釋 AI 模型為何會產生錯誤或誤導性答案，以及如何辨識。 **Why** 原文以模型給出錯誤或誤導性答案的現象為主題。 **What** 文章涵蓋幻覺的成因、不同類型、辨識方法與因應方式；提供的內容為開頭摘要，具體例子與方法未提供。
+解釋 AI 模型為何會產生錯誤或誤導性答案，以及如何辨識。
+
+**Why** 原文以模型給出錯誤或誤導性答案的現象為主題。
+
+**What** 文章涵蓋幻覺的成因、不同類型、辨識方法與因應方式；提供的內容為開頭摘要，具體例子與方法未提供。
 
 ### 重點
 - 主題：AI 幻覺（hallucination）的成因

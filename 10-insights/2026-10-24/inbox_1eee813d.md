@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Cloudflare Reclaims 100 TB of RAM by Optimizing Consistent Hashing
 
-把負載平衡服務裡的雜湊表壓得更緊，一次省下上百 TB 記憶體。 **Why** 內部負載平衡服務的 consistent hashing 記憶體佔用過大。 **How** 優化 pingora-ketama 的 Rust 實作，壓縮 hash ring 的條目，並用雜湊分佈與碰撞率的統計分析，把每個後端所需的雜湊數量減少約 90%。 **What** Cloudflare 公開紀錄，內部負載平衡服務的記憶體佔用減少超過 100 TB。
+把負載平衡服務裡的雜湊表壓得更緊，一次省下上百 TB 記憶體。
+
+**Why** 內部負載平衡服務的 consistent hashing 記憶體佔用過大。
+
+**How** 優化 pingora-ketama 的 Rust 實作，壓縮 hash ring 的條目，並用雜湊分佈與碰撞率的統計分析，把每個後端所需的雜湊數量減少約 90%。
+
+**What** Cloudflare 公開紀錄，內部負載平衡服務的記憶體佔用減少超過 100 TB。
 
 ### 重點
 - 對象為 Cloudflare 內部負載平衡服務所用的 Rust 函式庫 pingora-ketama

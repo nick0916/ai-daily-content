@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v2.1.307
 
-Claude Code 這版主要在補強穩定性與可觀測性：新增安全事件遙測，並修掉一堆 MCP、壓縮與雲端 session 的錯誤。 **Why** Claude Code 越來越常在雲端、self-hosted runner、無頭模式與桌面 app 中運行，睡眠、鎖定 keychain、連線中斷等邊角情況會造成 MCP 失敗、重複呼叫或對話狀態遺失。 **How** 新增 `claude_code.safety_event` OpenTelemetry 事件，記錄被權限規則、auto mode、安全檢查、hook 或 sandbox 攔截、詢問或退回的每次 tool call；HTTP MCP 工具呼叫在連線中斷時只重試唯讀或冪等的工具；無法解析的 tool call 會先重試最多 2 次才結束該回合。 **What** Claude Code v2.1.307 新增 `/claude-api api-version`，可將 Claude API 程式碼遷移到 API 版本 2026-10-21。修正 `CLAUDE_CODE_DISABLE_1M_CONTEXT` 搭配 `opus[1m]` 別名時的 model-not-found、macOS 鎖定 keychain 時 MCP 顯示需要驗證、電腦睡眠造成 MCP 逾時，以及部分 "Autocompact is thrashing" 錯誤；Agent SDK 的 `setModel()` 等待時間由 5 秒延長到 15 秒。Self-hosted runner 的 checkout hook 預設 30 分鐘後停止（可用 `--checkout-hook-timeout-min` 調整，設 0 為不限制），另有多項 VSCode 與 Code Review 更新（新增 `@claude review stop`/`off`/`pause`）。
+Claude Code 這版主要在補強穩定性與可觀測性：新增安全事件遙測，並修掉一堆 MCP、壓縮與雲端 session 的錯誤。
+
+**Why** Claude Code 越來越常在雲端、self-hosted runner、無頭模式與桌面 app 中運行，睡眠、鎖定 keychain、連線中斷等邊角情況會造成 MCP 失敗、重複呼叫或對話狀態遺失。
+
+**How** 新增 `claude_code.safety_event` OpenTelemetry 事件，記錄被權限規則、auto mode、安全檢查、hook 或 sandbox 攔截、詢問或退回的每次 tool call；HTTP MCP 工具呼叫在連線中斷時只重試唯讀或冪等的工具；無法解析的 tool call 會先重試最多 2 次才結束該回合。
+
+**What** Claude Code v2.1.307 新增 `/claude-api api-version`，可將 Claude API 程式碼遷移到 API 版本 2026-10-21。修正 `CLAUDE_CODE_DISABLE_1M_CONTEXT` 搭配 `opus[1m]` 別名時的 model-not-found、macOS 鎖定 keychain 時 MCP 顯示需要驗證、電腦睡眠造成 MCP 逾時，以及部分 "Autocompact is thrashing" 錯誤；Agent SDK 的 `setModel()` 等待時間由 5 秒延長到 15 秒。Self-hosted runner 的 checkout hook 預設 30 分鐘後停止（可用 `--checkout-hook-timeout-min` 調整，設 0 為不限制），另有多項 VSCode 與 Code Review 更新（新增 `@claude review stop`/`off`/`pause`）。
 
 ### 重點
 - 新增 `claude_code.safety_event` OpenTelemetry 事件，涵蓋權限規則、auto mode、安全檢查、hook、sandbox 攔截/詢問/退回的每次 tool call，利於稽核

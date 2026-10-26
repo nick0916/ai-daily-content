@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## What agents mean for Rust (and vice versa)
 
-Rust 因型別系統與效能旋鈕適合 AI agent，但作者認為仍需證明工具才能確保正確性。 **Why** 作者認為 agent 時代測試不足以證明程式正確，型別系統能排除錯誤但不保證正確，因此需要證明系統。 **How** 作者主張利用 Rust 的型別與借用檢查縮小 agent 出錯空間，並以 Verus、Creusot、Aeneas、Kani 等工具證明 panic-free 或功能正確性。 **What** 作者提出 Rust 的北極星目標「不再需要 unsafe code」，即能證明所有 unsafe 程式碼不會造成 undefined behavior；介面與實作分離、規格設計仍被列為未解問題。
+Rust 因型別系統與效能旋鈕適合 AI agent，但作者認為仍需證明工具才能確保正確性。
+
+**Why** 作者認為 agent 時代測試不足以證明程式正確，型別系統能排除錯誤但不保證正確，因此需要證明系統。
+
+**How** 作者主張利用 Rust 的型別與借用檢查縮小 agent 出錯空間，並以 Verus、Creusot、Aeneas、Kani 等工具證明 panic-free 或功能正確性。
+
+**What** 作者提出 Rust 的北極星目標「不再需要 unsafe code」，即能證明所有 unsafe 程式碼不會造成 undefined behavior；介面與實作分離、規格設計仍被列為未解問題。
 
 ### 重點
 - 效能：agent 能協助調整 Rust 的效能旋鈕（堆疊/堆積配置、struct layout、async 邊界），並搭配 profiler 形成回饋迴路，文中提到 dial9 用於診斷 async 效能問題

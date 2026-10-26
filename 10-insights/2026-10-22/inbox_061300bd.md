@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Test AI Agents When No Benchmark Exists — Nathanael Weill, Air Canada
 
-沒有 benchmark 時，先埋好已知答案，再看 agent 能不能找回來。 **Why** 領域專家很忙，每週只能評一次，沒有公開 benchmark 可用，agent 改了也不知道有沒有變好。 **How** 反轉問題：先從一頁文件讓 LLM 出題，再用程式比對 agent 找到的是不是原頁，不需要意見也不需要 LLM judge。Air Canada 合約分析把這個概念延伸成五種技巧：比對過去決策、依規則生成合約、拿簽好的合約刪掉條款、不變性檢查、用模板產生大量案例。 **What** 在電信 RAG 專案，評估從每週一次變成每天數十次，也因此能拿掉不必要的複雜度。在 Air Canada 供應商合約專案，產生了 275 個規則測試；刪除條款法被認為最有威力，結果顯示 agent 漏掉多數被刪的條款。作者提醒 LLM judge 的雜訊幾乎和待測 agent 一樣難處理，專家回饋應拿來改進測試，而不是直接改 agent。
+沒有 benchmark 時，先埋好已知答案，再看 agent 能不能找回來。
+
+**Why** 領域專家很忙，每週只能評一次，沒有公開 benchmark 可用，agent 改了也不知道有沒有變好。
+
+**How** 反轉問題：先從一頁文件讓 LLM 出題，再用程式比對 agent 找到的是不是原頁，不需要意見也不需要 LLM judge。Air Canada 合約分析把這個概念延伸成五種技巧：比對過去決策、依規則生成合約、拿簽好的合約刪掉條款、不變性檢查、用模板產生大量案例。
+
+**What** 在電信 RAG 專案，評估從每週一次變成每天數十次，也因此能拿掉不必要的複雜度。在 Air Canada 供應商合約專案，產生了 275 個規則測試；刪除條款法被認為最有威力，結果顯示 agent 漏掉多數被刪的條款。作者提醒 LLM judge 的雜訊幾乎和待測 agent 一樣難處理，專家回饋應拿來改進測試，而不是直接改 agent。
 
 ### 重點
 - 答案優先（answer-first）：先植入已知答案/缺陷，再讓 agent 找回來，可用程式（exact match）評分而非 LLM judge

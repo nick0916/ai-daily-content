@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Function Calling Explained: How a Language Model Operates External Tools
 
-語言模型只能輸出文字，function calling 讓這些文字變成程式可可靠解析的結構化指令。 **Why** 模型本身無法直接操作外部工具，需要一套轉換機制。 **What** 文章說明模型如何透過結構化輸出來操作外部工具；原文 teaser 未提供具體格式或程式範例。
+語言模型只能輸出文字，function calling 讓這些文字變成程式可可靠解析的結構化指令。
+
+**Why** 模型本身無法直接操作外部工具，需要一套轉換機制。
+
+**What** 文章說明模型如何透過結構化輸出來操作外部工具；原文 teaser 未提供具體格式或程式範例。
 
 ### 重點
 - 語言模型的原始輸出是文字

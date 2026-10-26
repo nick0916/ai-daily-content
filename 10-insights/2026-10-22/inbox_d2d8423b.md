@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.15 — AGNTCY musl-pin fix, encryption/daemon-config error-message fixes, terminal_history total
 
-修正 RuFlo 的安裝相容性、加密錯誤訊息、daemon 設定讀取與 terminal_history 計數問題。 **Why** @agntcy/slim-bindings 2.0.0-alpha.5 的 optionalDependencies 宣告了從未發布的 linux-arm64-musl 平台套件；寬鬆解析器會忽略此問題，但嚴格解析器（mise 的 aube 後端）會讓整個安裝失敗。 **How** 把 @agntcy/slim-bindings 固定在 2.1.1，這是所有平台 optional 套件都實際存在的最早版本；另修正加密儲存的錯誤訊息、config_set values envelope 的讀取，以及 terminal_history 的 total 計算。 **What** 對應 PR #4371、#4377、#3212、#4378、#3192、#4379、#4380；terminal_history 的 total 原本只回報分頁大小，原文將此列為「total 在分頁切片後計算」bug 類別的第 6 次出現，6 個測試檔共 133/133 通過。
+修正 RuFlo 的安裝相容性、加密錯誤訊息、daemon 設定讀取與 terminal_history 計數問題。
+
+**Why** @agntcy/slim-bindings 2.0.0-alpha.5 的 optionalDependencies 宣告了從未發布的 linux-arm64-musl 平台套件；寬鬆解析器會忽略此問題，但嚴格解析器（mise 的 aube 後端）會讓整個安裝失敗。
+
+**How** 把 @agntcy/slim-bindings 固定在 2.1.1，這是所有平台 optional 套件都實際存在的最早版本；另修正加密儲存的錯誤訊息、config_set values envelope 的讀取，以及 terminal_history 的 total 計算。
+
+**What** 對應 PR #4371、#4377、#3212、#4378、#3192、#4379、#4380；terminal_history 的 total 原本只回報分頁大小，原文將此列為「total 在分頁切片後計算」bug 類別的第 6 次出現，6 個測試檔共 133/133 通過。
 
 ### 重點
 - @agntcy/slim-bindings 固定到 2.1.1（#4371、#4377），因 2.0.0-alpha.5 宣告的 linux-arm64-musl 套件從未發布，嚴格解析器會令安裝失敗

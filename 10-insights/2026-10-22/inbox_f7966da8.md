@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Readers Asked for My LLM Wiki Skill. Here’s a Template You Can Make Your Own.
 
-提供一套新手友善的 LLM 知識庫 skill 範本，讓人保留關鍵決策權。 **Why** 讀者多次索取作者的 LLM Wiki skill，作者因此公開可自行改寫的範本。 **What** 文章主張小型知識庫要保持好用，同時不把每個決定交給 AI；原文僅見摘要，具體步驟與範本內容未提供。
+提供一套新手友善的 LLM 知識庫 skill 範本，讓人保留關鍵決策權。
+
+**Why** 讀者多次索取作者的 LLM Wiki skill，作者因此公開可自行改寫的範本。
+
+**What** 文章主張小型知識庫要保持好用，同時不把每個決定交給 AI；原文僅見摘要，具體步驟與範本內容未提供。
 
 ### 重點
 - 目標：讓小型知識庫持續有用

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## [AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed
 
-Moonshot 推出 Kimi K3.1 Pro，API 已上線、開放權重預計 11 月 4 日釋出，獨立評測顯示開放與閉源模型的差距明顯縮小。 **Why** 此前預測年底前會出現 Fable 等級的開放權重模型，K3.1 Pro 提早兌現，也讓開放與閉源的差距成為焦點。 **How** 它是 Kimi K3 的後訓練版本，投入大幅增加的後訓練算力，並優化 RL 框架、長上下文推理、sandbox 與 rollout 排程，以支援橫跨數百個下游領域的聯合 RL。 **What** 規模為 2.8T 總參數、104B active、1M context 的多模態 MoE。Artificial Analysis Intelligence Index 為 55（第四名，落後 Opus 5.5 的 58）；權重釋出後開放與專有模型差距將由 12 分縮至 3 分。標準定價 $2/M 輸入、$10/M 輸出，Highspeed 版輸出快 2–3 倍、價格為兩倍。Moonshot 刻意移除網路安全相關訓練資料，但 AA Cyber Index 仍達 64%，為公開可用模型最高。
+Moonshot 推出 Kimi K3.1 Pro，API 已上線、開放權重預計 11 月 4 日釋出，獨立評測顯示開放與閉源模型的差距明顯縮小。
+
+**Why** 此前預測年底前會出現 Fable 等級的開放權重模型，K3.1 Pro 提早兌現，也讓開放與閉源的差距成為焦點。
+
+**How** 它是 Kimi K3 的後訓練版本，投入大幅增加的後訓練算力，並優化 RL 框架、長上下文推理、sandbox 與 rollout 排程，以支援橫跨數百個下游領域的聯合 RL。
+
+**What** 規模為 2.8T 總參數、104B active、1M context 的多模態 MoE。Artificial Analysis Intelligence Index 為 55（第四名，落後 Opus 5.5 的 58）；權重釋出後開放與專有模型差距將由 12 分縮至 3 分。標準定價 $2/M 輸入、$10/M 輸出，Highspeed 版輸出快 2–3 倍、價格為兩倍。Moonshot 刻意移除網路安全相關訓練資料，但 AA Cyber Index 仍達 64%，為公開可用模型最高。
 
 ### 重點
 - K3.1 Pro：2.8T 總參數、104B active、1M context；API 已上線，權重承諾 2026 年 11 月 4 日釋出，授權條款與推理需求尚未公布

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## [FREE] A file format claims to be 100x faster than Parquet
 
-說明 Lance 檔案格式如何改掉 Parquet 的設計，讓 AI 工作負載常見的隨機讀取更快。 **Why** AI 工作負載（向量、影像、文件）需要用語意搜尋撈取少數幾列，但 Parquet 擅長順序掃描；其最小讀取單位是 page，只想取一列也得讀出並解碼整個 page。此外 FileMetadata 需整份反序列化才能取得單一欄位 schema，而 row group 需整個緩衝在記憶體再寫出，容易造成 OOM。 **How** Lance 依值大小選擇編碼：小值用 mini-block（約 4–8 KiB 的 chunk，最多 4,096 個值），大值（門檻 256 bytes）用 full-zip，只允許可單獨解碼的「transparent」編碼。它捨棄 row group，每欄各自分頁（預設 8MB），頁面以絕對 offset 定位；每欄的 metadata 為獨立 protobuf message，因此能直接讀取所需欄位。 **What** Lance 由 LanceDB（YC W22）約 2022 年推出，宣稱隨機存取比 Parquet 快 100 倍（此為文中所述的宣稱）。文中例子：100 萬列的檔案中，boolean 欄約 128 KiB 可放進單一 page，3 KiB 的 embedding 欄約 3 GiB、約 384 頁。讀取端可在任意列邊界切分檔案平行處理。
+說明 Lance 檔案格式如何改掉 Parquet 的設計，讓 AI 工作負載常見的隨機讀取更快。
+
+**Why** AI 工作負載（向量、影像、文件）需要用語意搜尋撈取少數幾列，但 Parquet 擅長順序掃描；其最小讀取單位是 page，只想取一列也得讀出並解碼整個 page。此外 FileMetadata 需整份反序列化才能取得單一欄位 schema，而 row group 需整個緩衝在記憶體再寫出，容易造成 OOM。
+
+**How** Lance 依值大小選擇編碼：小值用 mini-block（約 4–8 KiB 的 chunk，最多 4,096 個值），大值（門檻 256 bytes）用 full-zip，只允許可單獨解碼的「transparent」編碼。它捨棄 row group，每欄各自分頁（預設 8MB），頁面以絕對 offset 定位；每欄的 metadata 為獨立 protobuf message，因此能直接讀取所需欄位。
+
+**What** Lance 由 LanceDB（YC W22）約 2022 年推出，宣稱隨機存取比 Parquet 快 100 倍（此為文中所述的宣稱）。文中例子：100 萬列的檔案中，boolean 欄約 128 KiB 可放進單一 page，3 KiB 的 embedding 欄約 3 GiB、約 384 頁。讀取端可在任意列邊界切分檔案平行處理。
 
 ### 重點
 - Parquet 三個痛點：以 page 為最小讀取單位導致隨機讀取延遲高；FileMetadata 需整份反序列化（機器學習表可達上萬欄）；row group 須整個緩衝在記憶體且所有欄位共用列數，大值欄位會拖累其他欄

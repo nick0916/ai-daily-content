@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## PwnEscape: Guest-to-Host KVM Escape (CVE-2026-99999)
 
-Linux 網路堆疊的延遲 checksum 漏洞可讓 guest 在 KVM 沙箱中逃逸至主機，編號 CVE-2026-99999。 **Why** 沙箱隔離不只靠 hypervisor，主機網路堆疊若在延遲寫入時信任未再驗證的 metadata，就會破壞安全假設。 **How** guest 可控的 checksum metadata 在核心驗證後、分片輸出前被完成寫入，使 IPv4 header 的 IHL 由 0x45 變為 0x4f，後續程式以錯誤的 header 長度解讀封包。 **What** 研究者在 Vercel 100 萬美元沙箱挑戰中發現此問題，Vercel 將其列為該計畫唯一的 Critical 發現；上游修補為 6785011f8b16。原文已截斷，本摘要僅依可見段落。
+Linux 網路堆疊的延遲 checksum 漏洞可讓 guest 在 KVM 沙箱中逃逸至主機，編號 CVE-2026-99999。
+
+**Why** 沙箱隔離不只靠 hypervisor，主機網路堆疊若在延遲寫入時信任未再驗證的 metadata，就會破壞安全假設。
+
+**How** guest 可控的 checksum metadata 在核心驗證後、分片輸出前被完成寫入，使 IPv4 header 的 IHL 由 0x45 變為 0x4f，後續程式以錯誤的 header 長度解讀封包。
+
+**What** 研究者在 Vercel 100 萬美元沙箱挑戰中發現此問題，Vercel 將其列為該計畫唯一的 Critical 發現；上游修補為 6785011f8b16。原文已截斷，本摘要僅依可見段落。
 
 ### 重點
 - 漏洞位於 Linux 網路堆疊（CVE-2026-99999，Critical），上游修補 commit 為 6785011f8b16「ipv4: validate checksum_start before completing checksum」

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.6 — memory export --path support
 
-讓 memory export 可以指定單一儲存庫來匯出，不再只能匯出預設庫。 **Why** memory export 是 memory 子命令中唯一沒有 --path 的，無法從 CLI 匯出特定快照（如 .swarm/agentdb-memory.db 或備份檔）。 **How** 指定 --path 或 dbPath 時改為單純讀取該庫，不初始化也不合併預設庫；未指定時行為不變。 **What** Ruflo v3.59.6（@claude-flow/cli 3.59.6，修正 #3196，PR #4341），latest、alpha、v3alpha 三個 dist-tags 已在 registry 上驗證。
+讓 memory export 可以指定單一儲存庫來匯出，不再只能匯出預設庫。
+
+**Why** memory export 是 memory 子命令中唯一沒有 --path 的，無法從 CLI 匯出特定快照（如 .swarm/agentdb-memory.db 或備份檔）。
+
+**How** 指定 --path 或 dbPath 時改為單純讀取該庫，不初始化也不合併預設庫；未指定時行為不變。
+
+**What** Ruflo v3.59.6（@claude-flow/cli 3.59.6，修正 #3196，PR #4341），latest、alpha、v3alpha 三個 dist-tags 已在 registry 上驗證。
 
 ### 重點
 - 補上 memory export --path，修正 #3196，原為唯一缺 --path 的主要 memory 子命令

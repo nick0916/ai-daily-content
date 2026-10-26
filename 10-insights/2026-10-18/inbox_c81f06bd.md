@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Show HN: The Zelda timeline to catch up before the Ocarina of Time remake
 
-一個用分支線條視覺化塞爾達傳說時間線的網站，方便玩家在《時之笛》重製版前補劇情。 **Why** 作者想在重製版上市前補上多年沒追的故事，而且時間線在《時之笛》結尾會分岔。 **How** 以布料上的線為隱喻，《時之笛》結尾依 Link 勝負分成三個時代，各自成一條線，到《曠野之息》再會合；時間線以任天堂的《Hyrule Historia》與官方年表頁為準。 **What** Show HN 作品 legendofhyrule.com，作者表示過程中得到 Claude 很多協助。
+一個用分支線條視覺化塞爾達傳說時間線的網站，方便玩家在《時之笛》重製版前補劇情。
+
+**Why** 作者想在重製版上市前補上多年沒追的故事，而且時間線在《時之笛》結尾會分岔。
+
+**How** 以布料上的線為隱喻，《時之笛》結尾依 Link 勝負分成三個時代，各自成一條線，到《曠野之息》再會合；時間線以任天堂的《Hyrule Historia》與官方年表頁為準。
+
+**What** Show HN 作品 legendofhyrule.com，作者表示過程中得到 Claude 很多協助。
 
 ### 重點
 - 時間線依任天堂《Hyrule Historia》與官方年表頁

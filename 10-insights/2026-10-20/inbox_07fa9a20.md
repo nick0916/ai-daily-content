@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## The Brain Hit a Ceiling. Everyone’s Selling Costumes
 
-作者主張開放權重已讓模型能力商品化，護城河因此轉移到授權條款與 harness。 **Why** 作者認為開放權重使模型「大腦」（brain）變得可取得，競爭焦點因此轉向其他層。 **What** 這是作者觀點文（非事件報導）；標題 Everyone's Selling Costumes 為作者的比喻，正文節錄未列出具體案例或數據。
+作者主張開放權重已讓模型能力商品化，護城河因此轉移到授權條款與 harness。
+
+**Why** 作者認為開放權重使模型「大腦」（brain）變得可取得，競爭焦點因此轉向其他層。
+
+**What** 這是作者觀點文（非事件報導）；標題 Everyone's Selling Costumes 為作者的比喻，正文節錄未列出具體案例或數據。
 
 ### 重點
 - 作者主張：開放權重使基礎模型能力商品化（commoditized）

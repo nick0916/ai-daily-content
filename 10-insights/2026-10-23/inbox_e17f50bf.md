@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Release Candidate v1.6.13-rc.150
 
-GitNexus 的預發布測試版，把大量程式碼智能功能與修補一併交給早期測試者。 **Why** RC 是穩定版前的早期測試建置，穩定版仍維持在 latest dist-tag。 **What** 可見 changelog 含 HTTP embedding 後端（#395）、完整 Swift 支援（#408）、`index` 指令（#402）、Docker 支援（#848）、全域升級 ENOTEMPTY 修補（#843、#846），以及 Go 的 O(n²) scope 重走效能修正（#1915）。版本 1.6.13-rc.150，來源 commit 466d562，安裝指令為 `npm install gitnexus@rc`。原文 changelog 有截斷。
+GitNexus 的預發布測試版，把大量程式碼智能功能與修補一併交給早期測試者。
+
+**Why** RC 是穩定版前的早期測試建置，穩定版仍維持在 latest dist-tag。
+
+**What** 可見 changelog 含 HTTP embedding 後端（#395）、完整 Swift 支援（#408）、`index` 指令（#402）、Docker 支援（#848）、全域升級 ENOTEMPTY 修補（#843、#846），以及 Go 的 O(n²) scope 重走效能修正（#1915）。版本 1.6.13-rc.150，來源 commit 466d562，安裝指令為 `npm install gitnexus@rc`。原文 changelog 有截斷。
 
 ### 重點
 - HTTP embedding 後端（#395）支援自架或遠端端點，Swift 支援含 SPM import 解析（#94）與 query 修正（#408）

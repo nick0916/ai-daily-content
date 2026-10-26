@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I gave ChatGPT $100 and 72 hours to get me out of the house — and it found something I realized I've been missing for years
 
-作者以 $100 預算請 ChatGPT 規劃紐約三天週末，行程多為免費活動。 **Why** 作者想把長週末用於戶外與探索，同時控制花費。 **How** 提示中給定明確預算，ChatGPT 依天列出活動並估算各日花費。 **What** 週五含 MoMA UNIQLO Friday Nights（紐約州居民免費，需事先預約）；週日為 The Battery 的 NYC Fungus Festival（免費，11:00–16:00）；三天估算總花費約 $100。
+作者以 $100 預算請 ChatGPT 規劃紐約三天週末，行程多為免費活動。
+
+**Why** 作者想把長週末用於戶外與探索，同時控制花費。
+
+**How** 提示中給定明確預算，ChatGPT 依天列出活動並估算各日花費。
+
+**What** 週五含 MoMA UNIQLO Friday Nights（紐約州居民免費，需事先預約）；週日為 The Battery 的 NYC Fungus Festival（免費，11:00–16:00）；三天估算總花費約 $100。
 
 ### 重點
 - 提示範例：「我只有 $100，規劃紐約最有趣又便宜的秋季週末」，ChatGPT 回傳分日行程與花費估算

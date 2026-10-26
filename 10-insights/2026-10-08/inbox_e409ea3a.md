@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## ChatGPT-6 just got a huge 'interactive answers' upgrade — and free users get it starting today
 
-ChatGPT 的回答將能包含可互動的圖表與按鈕，讓使用者直接調整內容。 **Why** 原文指出，一般回答常需多次追問才能用上，互動元件讓使用者自行探索與調整。 **How** 新功能 Intelligent UI 可在對話中嵌入圖表、圖解、按鈕與工具；GPT-6 在推理未完成時就開始回應。 **What** 付費版（Plus、Pro、Business、Enterprise）先推出，使用 GPT-6 Sol；免費與 Go 版使用 GPT-6 Luna；官方稱 GPT-6 Instant 在需網路搜尋的問題上，首次回應比 GPT-5.6 Instant 平均快 44%。
+ChatGPT 的回答將能包含可互動的圖表與按鈕，讓使用者直接調整內容。
+
+**Why** 原文指出，一般回答常需多次追問才能用上，互動元件讓使用者自行探索與調整。
+
+**How** 新功能 Intelligent UI 可在對話中嵌入圖表、圖解、按鈕與工具；GPT-6 在推理未完成時就開始回應。
+
+**What** 付費版（Plus、Pro、Business、Enterprise）先推出，使用 GPT-6 Sol；免費與 Go 版使用 GPT-6 Luna；官方稱 GPT-6 Instant 在需網路搜尋的問題上，首次回應比 GPT-5.6 Instant 平均快 44%。
 
 ### 重點
 - Intelligent UI 範例：可調整人數的 Sunday roast 規劃、可點選的七速腳踏車零件拆解、分帳工具

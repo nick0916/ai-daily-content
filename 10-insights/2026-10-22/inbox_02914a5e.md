@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.14 — explicit memory-store targeting + workflow_list total-count fix
 
-RuFlo 讓 memory 工具可指定儲存路徑，並修正 workflow_list 的 total 計數。 **Why** 選擇特定 store 時不應強制觸發預設 store 的初始化與遷移；*_list 工具的 total 若在分頁切片後計算，會永遠等於頁面大小。 **How** memory_store、memory_retrieve、memory_search（含 SmartRetrieval 的 raw search 與 near-miss 路徑）、memory_delete、memory_list 新增可選 dbPath 參數；workflow_list 的 total 改在 .slice(0, limit) 之前計算。 **What** 對應 PR #3196、#4350、#4372，並附帶 #4369 讓 ruflo-browser 的 smoke.sh 在 monorepo 外跳過 CLI 原始碼檢查；mcp-memory 測試 4 項與 workflow-list 測試 3 項通過。
+RuFlo 讓 memory 工具可指定儲存路徑，並修正 workflow_list 的 total 計數。
+
+**Why** 選擇特定 store 時不應強制觸發預設 store 的初始化與遷移；*_list 工具的 total 若在分頁切片後計算，會永遠等於頁面大小。
+
+**How** memory_store、memory_retrieve、memory_search（含 SmartRetrieval 的 raw search 與 near-miss 路徑）、memory_delete、memory_list 新增可選 dbPath 參數；workflow_list 的 total 改在 .slice(0, limit) 之前計算。
+
+**What** 對應 PR #3196、#4350、#4372，並附帶 #4369 讓 ruflo-browser 的 smoke.sh 在 monorepo 外跳過 CLI 原始碼檢查；mcp-memory 測試 4 項與 workflow-list 測試 3 項通過。
 
 ### 重點
 - memory_store、memory_retrieve、memory_search、memory_delete、memory_list 新增可選 dbPath，指定 store 時不再強制初始化或遷移預設 store（#3196、#4350）

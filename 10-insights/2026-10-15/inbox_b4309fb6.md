@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## [FREE] 70% of analytical systems will adopt this open-source solution (?)
 
-介紹 Apache Arrow DataFusion：一套模組化、可擴充的查詢引擎，讓開發者不必從零打造分析型資料庫。 **Why** 建構分析資料庫（儲存、記憶體表示、查詢最佳化、實體執行）非常耗時昂貴，通常只有大公司做得起。 **How** DataFusion 建立在 Parquet（磁碟）、Arrow（記憶體）與 Rust 之上，包含 catalog、SQL／DataFrame 前端、可擴充的邏輯與實體計畫改寫、以 Arrow RecordBatch（預設 8192 列）進行串流且 pull-based 的執行，並用 Tokio 排程。catalog、函式、optimizer、operator、前端與執行環境皆有擴充點。 **What** 文中列出的採用者包括 Cloudflare R2 SQL、Datadog、InfluxDB、OpenObserve、Pydantic Logfire、Spice AI、LanceDB、ParadeDB 與 Cube；另有 DataFusion Comet 加速 Spark、StreamFusion 加速 Flink，Delta Lake 與 Iceberg 的 Rust 函式庫也使用它。記憶體管理內建 Greedy 與 Fair 兩種 pool。
+介紹 Apache Arrow DataFusion：一套模組化、可擴充的查詢引擎，讓開發者不必從零打造分析型資料庫。
+
+**Why** 建構分析資料庫（儲存、記憶體表示、查詢最佳化、實體執行）非常耗時昂貴，通常只有大公司做得起。
+
+**How** DataFusion 建立在 Parquet（磁碟）、Arrow（記憶體）與 Rust 之上，包含 catalog、SQL／DataFrame 前端、可擴充的邏輯與實體計畫改寫、以 Arrow RecordBatch（預設 8192 列）進行串流且 pull-based 的執行，並用 Tokio 排程。catalog、函式、optimizer、operator、前端與執行環境皆有擴充點。
+
+**What** 文中列出的採用者包括 Cloudflare R2 SQL、Datadog、InfluxDB、OpenObserve、Pydantic Logfire、Spice AI、LanceDB、ParadeDB 與 Cube；另有 DataFusion Comet 加速 Spark、StreamFusion 加速 Flink，Delta Lake 與 Iceberg 的 Rust 函式庫也使用它。記憶體管理內建 Greedy 與 Fair 兩種 pool。
 
 ### 重點
 - DataFusion 三大基石為 Parquet、Arrow、Rust；執行採 pull-based 串流，每批為 Arrow RecordBatch（預設 8192 列），以 Tokio 做 CPU 與 I/O 排程

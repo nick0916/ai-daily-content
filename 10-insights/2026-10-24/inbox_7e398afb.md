@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Release Candidate v1.6.13-rc.154
 
-GitNexus 的 1.6.13-rc.154 預發布版，可用於早期測試的程式碼智慧工具。 **Why** RC 版本供穩定版前的早期測試，穩定版仍在 latest dist-tag。 **What** 可用 npm install gitnexus@rc 安裝；release notes 列出 MCP 啟動相容性改善、git commit 後自動重新索引並保留 embeddings、HTTP embedding backend、Swift 與 Docker 支援，以及 Go 的 O(n²) scope-capture 效能修正。節錄為截斷版本，無法確認完整清單。
+GitNexus 的 1.6.13-rc.154 預發布版，可用於早期測試的程式碼智慧工具。
+
+**Why** RC 版本供穩定版前的早期測試，穩定版仍在 latest dist-tag。
+
+**What** 可用 npm install gitnexus@rc 安裝；release notes 列出 MCP 啟動相容性改善、git commit 後自動重新索引並保留 embeddings、HTTP embedding backend、Swift 與 Docker 支援，以及 Go 的 O(n²) scope-capture 效能修正。節錄為截斷版本，無法確認完整清單。
 
 ### 重點
 - 安裝方式：npm install gitnexus@rc；版本 1.6.13-rc.154（target base 1.6.13）

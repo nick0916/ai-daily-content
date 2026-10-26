@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Burn 0.22.0: Faster Builds, Easier Extensions, and Smarter Autotuning
 
-讓 Burn 模型不再綁定後端型別，改由 device 決定執行位置，從而加快重新編譯與執行。 **Why** 原本模型型別一路帶著 B: Backend，應用程式編譯時必須拉進整條依賴鏈，每次改動都要長時間重編。 **How** 以 Tensor → Bridge → Dispatch → Backend 分層做型別抹除，並加入自適應記憶體池、自動調校與 CUDA/HIP graph replay。 **What** 官方測試中，CNN 的 median rebuild 從 28.42 秒降到 4.57 秒、transformer 從 14.73 秒降到 1.00 秒；CNN 訓練吞吐量因卷積優化提升 80%；並新增 LoRA/QLoRA 與 ONNX export。
+讓 Burn 模型不再綁定後端型別，改由 device 決定執行位置，從而加快重新編譯與執行。
+
+**Why** 原本模型型別一路帶著 B: Backend，應用程式編譯時必須拉進整條依賴鏈，每次改動都要長時間重編。
+
+**How** 以 Tensor → Bridge → Dispatch → Backend 分層做型別抹除，並加入自適應記憶體池、自動調校與 CUDA/HIP graph replay。
+
+**What** 官方測試中，CNN 的 median rebuild 從 28.42 秒降到 4.57 秒、transformer 從 14.73 秒降到 1.00 秒；CNN 訓練吞吐量因卷積優化提升 80%；並新增 LoRA/QLoRA 與 ONNX export。
 
 ### 重點
 - 移除使用者 API 的 backend 泛型，改由 device 選擇執行後端；官方測試中 rebuild 最多快 15 倍

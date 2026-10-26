@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Your AI Agent Has a Memory Problem and You’re Paying for It
 
-長時間運作的 agent 需要規劃哪些記憶要保留、壓縮或遺忘。 **Why** 標題指出 agent 的記憶問題會直接造成成本支出。 **How** 作者主張為 agent 制定 keep、compress、forget 三類記憶處理策略。 **What** 原文片段只點出這三個策略方向，未提供實作細節或數據。
+長時間運作的 agent 需要規劃哪些記憶要保留、壓縮或遺忘。
+
+**Why** 標題指出 agent 的記憶問題會直接造成成本支出。
+
+**How** 作者主張為 agent 制定 keep、compress、forget 三類記憶處理策略。
+
+**What** 原文片段只點出這三個策略方向，未提供實作細節或數據。
 
 ### 重點
 - 長時間 agent 需要明確的記憶管理策略

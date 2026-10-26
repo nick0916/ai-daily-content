@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.62.0 — ruRE CUDA launch plan
 
-ruflo 3.62.0 新增唯讀 MCP 工具，依 CUDA 架構規劃 kernel 的量測方案，且不執行程式。 **Why** 分析出的 CUDA kernel 需要量測計畫，才能判斷哪種資源（暫存器、shared memory 等）限制了每個 SM 上可同時執行的 blocks 與 warps。 **How** 以 sm_70 至 sm_120 共 8 種架構的表格計算 occupancy，未列出的架構不給數值；includeHarness 只回傳小型 CUDA 測試程式的文字。 **What** 新工具為 rure_cuda_launch_plan；occupancy 模型與 NVIDIA cuda_occupancy.h 在 1.77 million 組組合上一致，並與五張真實 GPU 的 CUDA driver 對照。另修正 standalone .cubin 被誤報為 sm_5 的問題，以及 daemon 設定優先序與 worker 取消流程。
+ruflo 3.62.0 新增唯讀 MCP 工具，依 CUDA 架構規劃 kernel 的量測方案，且不執行程式。
+
+**Why** 分析出的 CUDA kernel 需要量測計畫，才能判斷哪種資源（暫存器、shared memory 等）限制了每個 SM 上可同時執行的 blocks 與 warps。
+
+**How** 以 sm_70 至 sm_120 共 8 種架構的表格計算 occupancy，未列出的架構不給數值；includeHarness 只回傳小型 CUDA 測試程式的文字。
+
+**What** 新工具為 rure_cuda_launch_plan；occupancy 模型與 NVIDIA cuda_occupancy.h 在 1.77 million 組組合上一致，並與五張真實 GPU 的 CUDA driver 對照。另修正 standalone .cubin 被誤報為 sm_5 的問題，以及 daemon 設定優先序與 worker 取消流程。
 
 ### 重點
 - rure_cuda_launch_plan 為唯讀 MCP 工具，輸出每架構、每 kernel 在各 block size 下可容納的 blocks/warps 與限制資源

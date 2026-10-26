@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## My Rough Ride with Claude Opus 5 — and Why Opus 5.5 Feels Like a Different Model
 
-作者分享使用 Claude Opus 5 的不順經驗，並認為 Opus 5.5 的體感像是不同的模型。 **Why** 作者以個人 agent 系統處理晨間例行、郵件分類與待辦排序，作為使用背景。 **What** 文章為個人使用體驗分享，節錄未提供具體問題描述或量化比較。
+作者分享使用 Claude Opus 5 的不順經驗，並認為 Opus 5.5 的體感像是不同的模型。
+
+**Why** 作者以個人 agent 系統處理晨間例行、郵件分類與待辦排序，作為使用背景。
+
+**What** 文章為個人使用體驗分享，節錄未提供具體問題描述或量化比較。
 
 ### 重點
 - 作者使用個人 agent 系統處理晨間例行、郵件分類、待辦優先排序

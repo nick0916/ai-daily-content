@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## You can now virtually try on clothes with ChatGPT before you buy them — here’s how it works
 
-ChatGPT 推出虛擬試穿，上傳自己的照片就能看到衣服穿在身上的樣子。 **Why** 網購時很難想像服飾穿在自己身上的效果，生成影像可協助判斷。 **How** 由 ChatGPT Images 2.5 生成試穿圖片；搜尋服飾後點選 Try on，再上傳自拍或全身照。 **What** 功能已於桌面與行動版全球推出；參考照片會被儲存供後續使用，可於 Settings > Personalization > Reference photos 新增、替換或刪除；也可用書籤收藏到 Favorites 或自訂資料夾。
+ChatGPT 推出虛擬試穿，上傳自己的照片就能看到衣服穿在身上的樣子。
+
+**Why** 網購時很難想像服飾穿在自己身上的效果，生成影像可協助判斷。
+
+**How** 由 ChatGPT Images 2.5 生成試穿圖片；搜尋服飾後點選 Try on，再上傳自拍或全身照。
+
+**What** 功能已於桌面與行動版全球推出；參考照片會被儲存供後續使用，可於 Settings > Personalization > Reference photos 新增、替換或刪除；也可用書籤收藏到 Favorites 或自訂資料夾。
 
 ### 重點
 - 功能全球推出於 ChatGPT 桌面與行動版，使用 ChatGPT Images 2.5 生成試穿影像，官方稱光線與質感更自然

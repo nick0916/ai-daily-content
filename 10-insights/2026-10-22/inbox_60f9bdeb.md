@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.17 — stop advertising a dead init memory-config key
 
-修正 RuFlo init 產生的設定檔中一個無效的記憶體路徑設定鍵。 **Why** 初始化設定檔列出了 runtime 不會讀取的 memory.persistPath，會誤導使用者。 **How** 移除該無效鍵，並在註解中指向實際控制儲存的 JSON 設定鍵。 **What** 對應 PR #4392；init 相關測試 4/4 通過。發布 PR 的 Test Suite 曾因既有不穩定測試 doctor-memory-driver-3321.test.ts 失敗一次，重跑後通過，程式碼未改。
+修正 RuFlo init 產生的設定檔中一個無效的記憶體路徑設定鍵。
+
+**Why** 初始化設定檔列出了 runtime 不會讀取的 memory.persistPath，會誤導使用者。
+
+**How** 移除該無效鍵，並在註解中指向實際控制儲存的 JSON 設定鍵。
+
+**What** 對應 PR #4392；init 相關測試 4/4 通過。發布 PR 的 Test Suite 曾因既有不穩定測試 doctor-memory-driver-3321.test.ts 失敗一次，重跑後通過，程式碼未改。
 
 ### 重點
 - 移除 init 產生的 .claude-flow/config.yaml 中無效的 memory.persistPath 鍵，註解改指向實際控制儲存的 JSON 設定鍵（#4392）

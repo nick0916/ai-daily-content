@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## llm-echo 0.5
 
-llm-echo 0.5 是個不接 LLM、只回放提示的除錯用「假模型」，新版把模擬 token 計數做得更貼近真實。 **Why** Simon 正在準備新的 LLM 版本，測試 PR 時重新檢視這個除錯外掛。 **How** 模擬的 token 用量現在會把 tool call、system prompt 與 reasoning token 一併計入。 **What** llm-echo 0.5；可用 `uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage` 試跑，範例輸出為 2 input、24 output tokens。
+llm-echo 0.5 是個不接 LLM、只回放提示的除錯用「假模型」，新版把模擬 token 計數做得更貼近真實。
+
+**Why** Simon 正在準備新的 LLM 版本，測試 PR 時重新檢視這個除錯外掛。
+
+**How** 模擬的 token 用量現在會把 tool call、system prompt 與 reasoning token 一併計入。
+
+**What** llm-echo 0.5；可用 `uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage` 試跑，範例輸出為 2 input、24 output tokens。
 
 ### 重點
 - llm-echo 提供不涉及 LLM、只回放收到提示的 echo 模型，供除錯使用

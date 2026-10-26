@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space
 
-本期 Import AI 整理幾個新基準與新模型：AI 的視覺直覺推理仍遠遜於人類，但研究品味能力正快速倍增。 **Why** 作者想追蹤 AI 的創造力與研究品味，因為這是遞迴自我改進（RSI）速度的關鍵變數。 **How** TasteVal 讓模型在 8 個前沿 AI 開發任務中設計實驗並詮釋結果，與 24 位專家的人類基準比較。 **What** Humanity's Sixth Sense（Elorian 與 Scale AI）含 522 題，人類 pass@1 為 93.1，最佳 AI GPT 6 Astra 為 53.6，GLM-5.3-flash 26.8、Kimi K3 25.5。TasteVal 顯示研究品味自 2025 年 12 月起每 3.0 個月翻倍，Opus 5.5 達人類基準 2.30 倍（成本約 1/30），作者因此將完整 RSI 的預估由 2028 年提前到 2027 年。另有 Reflection 的 Beam（501B MoE、23B active，DeepSWE 1.1 為 44.4 對 GLM-5.3 的 61）與 Mistral Large 4（DeepSWE 1.1 為 62，對 Kimi K3 的 68），兩者都計畫本月釋出權重，但仍落後中國開放權重模型。內文在摘錄處被截斷。
+本期 Import AI 整理幾個新基準與新模型：AI 的視覺直覺推理仍遠遜於人類，但研究品味能力正快速倍增。
+
+**Why** 作者想追蹤 AI 的創造力與研究品味，因為這是遞迴自我改進（RSI）速度的關鍵變數。
+
+**How** TasteVal 讓模型在 8 個前沿 AI 開發任務中設計實驗並詮釋結果，與 24 位專家的人類基準比較。
+
+**What** Humanity's Sixth Sense（Elorian 與 Scale AI）含 522 題，人類 pass@1 為 93.1，最佳 AI GPT 6 Astra 為 53.6，GLM-5.3-flash 26.8、Kimi K3 25.5。TasteVal 顯示研究品味自 2025 年 12 月起每 3.0 個月翻倍，Opus 5.5 達人類基準 2.30 倍（成本約 1/30），作者因此將完整 RSI 的預估由 2028 年提前到 2027 年。另有 Reflection 的 Beam（501B MoE、23B active，DeepSWE 1.1 為 44.4 對 GLM-5.3 的 61）與 Mistral Large 4（DeepSWE 1.1 為 62，對 Kimi K3 的 68），兩者都計畫本月釋出權重，但仍落後中國開放權重模型。內文在摘錄處被截斷。
 
 ### 重點
 - TasteVal：研究品味每 3.0 個月翻倍（95% CI 1.7-5.0 個月），Opus 5.5 為專家基準 2.30 倍，每次嘗試成本約 1/30；作者將完整 RSI 預估由 2028 提前至 2027

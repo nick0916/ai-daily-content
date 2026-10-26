@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Claude Duet is beautiful. I still forgot to use it
 
-Lenny 實測 Anthropic 新的個人 agent Claude Duet：介面漂亮，但他自己常常忘了用。 **Why** 他想驗證它能否緩解「個人 agent 疲勞」，在眾多 agent 中站穩位置。 **How** 把 Claude Duet 放到真實工作中測試。 **What** Lenny's Newsletter 16 分鐘影片，評價 Claude Duet 設計精美，但標題點出使用黏著度是問題。
+Lenny 實測 Anthropic 新的個人 agent Claude Duet：介面漂亮，但他自己常常忘了用。
+
+**Why** 他想驗證它能否緩解「個人 agent 疲勞」，在眾多 agent 中站穩位置。
+
+**How** 把 Claude Duet 放到真實工作中測試。
+
+**What** Lenny's Newsletter 16 分鐘影片，評價 Claude Duet 設計精美，但標題點出使用黏著度是問題。
 
 ### 重點
 - Claude Duet 是 Anthropic 的個人 agent，設計獲好評

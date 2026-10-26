@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## The Model Swap Workshop: GPT-5.5 vs Kimi vs DeepSeek vs Mistral — Pamela Fox, Microsoft
 
-用同一套任務實測四個模型，示範「換模型前先在自己的場景跑一輪」，並用 eval 量化差異。 **Why** 新模型層出不窮，模型供應也可能被中斷，AI 工程師需要能把應用換到另一個模型並仍可運作；公開 benchmark 無法告訴你特定場景的表現。 **How** 在同一 repo 中對各模型依序跑計數、RAG、圖片輸入、tool calling、tool-calling loop、agent 框架（LangChain v1 等），再用字串比對與 LLM-as-judge 做批量 eval，並用 prompt 調整（如拆解步驟、要求逐項標註來源）縮小差距。 **What** Microsoft 的 Pamela Fox 在 Microsoft Foundry 上比較 GPT-5.5、Kimi K2.6、DeepSeek V4 Flash、Mistral Large 3。現場結果：數字母 E 時 GPT 與 Kimi 答 13，DeepSeek 答 6，Mistral 答 8（加逐步推理 prompt 後 Mistral 答對）；RAG 中 Mistral 會用權重知識回答資料集外的問題；圖片題 DeepSeek 不支援，Mistral 把鱷魚判成短吻鱷、找錯最便宜植物；agent 任務中 GPT-5.5 會平行 tool calling，其他模型多為序列呼叫，Mistral 曾中途停下。講者強調 LLM-as-judge 每筆 eval 要多一次呼叫、速度慢成本高，需用人工標註校準 judge。（逐字稿在 eval 部分被截斷。）
+用同一套任務實測四個模型，示範「換模型前先在自己的場景跑一輪」，並用 eval 量化差異。
+
+**Why** 新模型層出不窮，模型供應也可能被中斷，AI 工程師需要能把應用換到另一個模型並仍可運作；公開 benchmark 無法告訴你特定場景的表現。
+
+**How** 在同一 repo 中對各模型依序跑計數、RAG、圖片輸入、tool calling、tool-calling loop、agent 框架（LangChain v1 等），再用字串比對與 LLM-as-judge 做批量 eval，並用 prompt 調整（如拆解步驟、要求逐項標註來源）縮小差距。
+
+**What** Microsoft 的 Pamela Fox 在 Microsoft Foundry 上比較 GPT-5.5、Kimi K2.6、DeepSeek V4 Flash、Mistral Large 3。現場結果：數字母 E 時 GPT 與 Kimi 答 13，DeepSeek 答 6，Mistral 答 8（加逐步推理 prompt 後 Mistral 答對）；RAG 中 Mistral 會用權重知識回答資料集外的問題；圖片題 DeepSeek 不支援，Mistral 把鱷魚判成短吻鱷、找錯最便宜植物；agent 任務中 GPT-5.5 會平行 tool calling，其他模型多為序列呼叫，Mistral 曾中途停下。講者強調 LLM-as-judge 每筆 eval 要多一次呼叫、速度慢成本高，需用人工標註校準 judge。（逐字稿在 eval 部分被截斷。）
 
 ### 重點
 - 同一題「數句中 E 的個數」：GPT/Kimi 答 13、DeepSeek V4 Flash 答 6、Mistral Large 3 答 8；要求拆詞逐項計數後 Mistral 答對

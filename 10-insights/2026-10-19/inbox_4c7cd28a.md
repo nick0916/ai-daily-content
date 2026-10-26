@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v2.1.304
 
-Claude Code 發布 v2.1.304，新增 mod 權限判斷欄位、自動模式引導設定與 Code Review 分級，並修了大量穩定性問題。 **Why** 隨著 mod、plugin、subagent、雲端 session 與 LLM gateway 等使用情境增多，權限、resume、compaction 與跨環境相容性的邊角問題也跟著增加。 **How** 為 mod 的 tool.check 加上 decider: "person" 與 e.isReadOnly，讓只有權限對話框或 host callback 能核准；同時修正 compaction、resume、gateway 重試與 rm -r 安全提示等行為。 **What** 新增 /auto-mode-setup（讀取專案與近期 session 教導 auto mode 環境，現也支援 Bedrock、Vertex、Foundry 等）與 /claude-api managed-agents-secure（對照 Anthropic 安全指南檢查 Managed Agents 設定、不改動任何東西）；Pro/Max 方案在 resume 閒置對話會耗用可觀 5 小時額度時會警告；工具搜尋在自訂 ANTHROPIC_BASE_URL 後預設開啟，gateway 回 400/422 時會不帶該功能重試。修正 claude --worktree 在 HEAD detached 時未詢問就刪除 worktree 與分支可能遺失 commit、rm -r 掛載磁碟缺安全提示、CLAUDE_CODE_AUTO_COMPACT_WINDOW=200k 被誤設成 100K 等問題；Code Review 新增 Quick/Standard/Deep 三種審查等級，並可一次涵蓋 GitHub 組織內所有 repo。
+Claude Code 發布 v2.1.304，新增 mod 權限判斷欄位、自動模式引導設定與 Code Review 分級，並修了大量穩定性問題。
+
+**Why** 隨著 mod、plugin、subagent、雲端 session 與 LLM gateway 等使用情境增多，權限、resume、compaction 與跨環境相容性的邊角問題也跟著增加。
+
+**How** 為 mod 的 tool.check 加上 decider: "person" 與 e.isReadOnly，讓只有權限對話框或 host callback 能核准；同時修正 compaction、resume、gateway 重試與 rm -r 安全提示等行為。
+
+**What** 新增 /auto-mode-setup（讀取專案與近期 session 教導 auto mode 環境，現也支援 Bedrock、Vertex、Foundry 等）與 /claude-api managed-agents-secure（對照 Anthropic 安全指南檢查 Managed Agents 設定、不改動任何東西）；Pro/Max 方案在 resume 閒置對話會耗用可觀 5 小時額度時會警告；工具搜尋在自訂 ANTHROPIC_BASE_URL 後預設開啟，gateway 回 400/422 時會不帶該功能重試。修正 claude --worktree 在 HEAD detached 時未詢問就刪除 worktree 與分支可能遺失 commit、rm -r 掛載磁碟缺安全提示、CLAUDE_CODE_AUTO_COMPACT_WINDOW=200k 被誤設成 100K 等問題；Code Review 新增 Quick/Standard/Deep 三種審查等級，並可一次涵蓋 GitHub 組織內所有 repo。
 
 ### 重點
 - 新增 /auto-mode-setup 與 /claude-api managed-agents-secure；前者讀取專案與近期 session 教導 auto mode，後者只比對 Managed Agents 設定與官方安全指南、不改動內容

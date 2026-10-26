@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/e7ef82dfcb3c794710ef902b292d5e36ddbab977: fix(kotlin): type locals from package-qualified factory calls (#3660)
 
-讓程式碼分析工具能追蹤命名空間工廠函式的回傳型別，補上漏掉的呼叫關係。 **Why** 原本 `x = rp.make()` 會把 x 綁到原始字串 rp.make，導致之後的 x.m() 失去接收者型別而漏掉呼叫邊。 **How** 把 dotted callee 對應到函式的回傳型別註解，Python、Dart、Zig 各自處理命名空間 import；未能解析的情況改為明確記錄為 drop。 **What** Python 接收者基準中 call drops 由 128 增至 151、reads 由 44 增至 48，新增的 drop 都沒有對應的 CALLS edge；完整 lang-resolution corpus 的 2,838 條 CALLS/ACCESSES edge 數量不變。
+讓程式碼分析工具能追蹤命名空間工廠函式的回傳型別，補上漏掉的呼叫關係。
+
+**Why** 原本 `x = rp.make()` 會把 x 綁到原始字串 rp.make，導致之後的 x.m() 失去接收者型別而漏掉呼叫邊。
+
+**How** 把 dotted callee 對應到函式的回傳型別註解，Python、Dart、Zig 各自處理命名空間 import；未能解析的情況改為明確記錄為 drop。
+
+**What** Python 接收者基準中 call drops 由 128 增至 151、reads 由 44 增至 48，新增的 drop 都沒有對應的 CALLS edge；完整 lang-resolution corpus 的 2,838 條 CALLS/ACCESSES edge 數量不變。
 
 ### 重點
 - 命名空間工廠呼叫（如 `rp.make()`）依函式回傳型別註解推斷接收者型別，涵蓋 Python、Dart、Zig（標題另列 Kotlin）

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Forget 100-word prompts: ChatGPT’s Sketch tool lets you draw exactly what you mean
 
-用手繪草圖搭配 ChatGPT Images 2.5 生成圖片，比長篇文字提示更能控制構圖。 **Why** 長文字提示難以精準描述畫面位置與細節，草圖能直接表達想要的構圖。 **How** 在 Images 中選擇 Sketch 作圖，ChatGPT 會建議提示詞，確認後生成圖片，再用 Edit 功能局部修改。 **What** 免費帳號即可使用；草圖工具包含線條、文字、形狀、箭頭、橡皮擦與顏色選擇；編輯功能可標記區域、移除背景並切換方形、直式、story、橫式或寬螢幕比例。
+用手繪草圖搭配 ChatGPT Images 2.5 生成圖片，比長篇文字提示更能控制構圖。
+
+**Why** 長文字提示難以精準描述畫面位置與細節，草圖能直接表達想要的構圖。
+
+**How** 在 Images 中選擇 Sketch 作圖，ChatGPT 會建議提示詞，確認後生成圖片，再用 Edit 功能局部修改。
+
+**What** 免費帳號即可使用；草圖工具包含線條、文字、形狀、箭頭、橡皮擦與顏色選擇；編輯功能可標記區域、移除背景並切換方形、直式、story、橫式或寬螢幕比例。
 
 ### 重點
 - 作者建議不必追求畫作品質，只要草圖能表達構圖即可。

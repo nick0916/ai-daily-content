@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## AI Has Changed the Economics of Vulnerability Discovery .. Most CISOs Aren’t Ready.
 
-AI 讓漏洞發現的經濟性改變，CISO 的難題可能轉為跟上發現速度。 **Why** 原文標題指出 AI 已改變漏洞發現的經濟性，且多數 CISO 尚未準備好。 **What** 片段主張挑戰已從「找到漏洞」轉向「跟上漏洞被發現的速度」，但未提供具體數據或案例。
+AI 讓漏洞發現的經濟性改變，CISO 的難題可能轉為跟上發現速度。
+
+**Why** 原文標題指出 AI 已改變漏洞發現的經濟性，且多數 CISO 尚未準備好。
+
+**What** 片段主張挑戰已從「找到漏洞」轉向「跟上漏洞被發現的速度」，但未提供具體數據或案例。
 
 ### 重點
 - 挑戰可能從找出漏洞轉為跟上發現速度

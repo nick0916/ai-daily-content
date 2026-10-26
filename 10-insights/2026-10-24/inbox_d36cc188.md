@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM
 
-Google 把程式 agent 連到資料雲的工具包正式上線，並區分「請 agent 停手」與「系統直接拒絕」兩種護欄。 **Why** 讓 agent 操作資料服務時，必須分清哪些限制只是建議、哪些是真正強制。 **How** 一種護欄是 skill 內要求 agent 停止，另一種是 IAM deny policy，直接拒絕該次呼叫。 **What** Google Data Agent Kit 正式 GA，免費，內含 MCP 工具與 37 個開源 skills，可將 coding agent 連接到 15 個以上的 Google Data Cloud 服務。
+Google 把程式 agent 連到資料雲的工具包正式上線，並區分「請 agent 停手」與「系統直接拒絕」兩種護欄。
+
+**Why** 讓 agent 操作資料服務時，必須分清哪些限制只是建議、哪些是真正強制。
+
+**How** 一種護欄是 skill 內要求 agent 停止，另一種是 IAM deny policy，直接拒絕該次呼叫。
+
+**What** Google Data Agent Kit 正式 GA，免費，內含 MCP 工具與 37 個開源 skills，可將 coding agent 連接到 15 個以上的 Google Data Cloud 服務。
 
 ### 重點
 - Data Agent Kit GA：免費的 MCP 工具加 37 個開源 skills，連接 15+ Google Data Cloud 服務

@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## The Newsletters I Read First
 
-作者整理每天優先閱讀的免費電子報清單，並附上 AI 與科技相關推薦。 **Why** 作者訂閱數百份電子報，每週只能讀一小部分，因此挑出最先讀的幾份。 **What** 清單包括 One Useful Thing（Ethan Mollick 的 AI 實驗）、Stratechery、Benedict Evans、Techmeme 等。Stratechery 的一篇文章提到，Walmart 在加入 OpenAI Instant Checkout 數月後退出，因為透過 ChatGPT 下的訂單轉換率只有其自家網站與 App 的三分之一，且購物車金額較小。
+作者整理每天優先閱讀的免費電子報清單，並附上 AI 與科技相關推薦。
+
+**Why** 作者訂閱數百份電子報，每週只能讀一小部分，因此挑出最先讀的幾份。
+
+**What** 清單包括 One Useful Thing（Ethan Mollick 的 AI 實驗）、Stratechery、Benedict Evans、Techmeme 等。Stratechery 的一篇文章提到，Walmart 在加入 OpenAI Instant Checkout 數月後退出，因為透過 ChatGPT 下的訂單轉換率只有其自家網站與 App 的三分之一，且購物車金額較小。
 
 ### 重點
 - One Useful Thing 作者 Ethan Mollick 為 Wharton 教授，訂閱者約 48 萬人，新書 Co-Existence 於 10 月 20 日出版

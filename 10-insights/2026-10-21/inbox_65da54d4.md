@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.10 — Windows ADR indexing, daemon and init flag-key fixes
 
-修正 Windows 上 ADR 索引找不到任何檔案的問題，並修正 daemon 與 init 的旗標被忽略。 **Why** findAdrs() 以寫死的正斜線路徑比對，而 Windows 上 join() 產生反斜線，因此會靜默地找到 0 筆 ADR。 **How** 新增與分隔符號無關的 isAdrPath() 正規表達式，parseAdr() 在所有平台都回報 POSIX 格式的相對路徑。 **What** daemon start 的 --max-cpu-load、--min-free-memory、--no-distill 與 init 的 --no-signup 原本都被忽略，現已修正（#4330、#4349、#4353）。
+修正 Windows 上 ADR 索引找不到任何檔案的問題，並修正 daemon 與 init 的旗標被忽略。
+
+**Why** findAdrs() 以寫死的正斜線路徑比對，而 Windows 上 join() 產生反斜線，因此會靜默地找到 0 筆 ADR。
+
+**How** 新增與分隔符號無關的 isAdrPath() 正規表達式，parseAdr() 在所有平台都回報 POSIX 格式的相對路徑。
+
+**What** daemon start 的 --max-cpu-load、--min-free-memory、--no-distill 與 init 的 --no-signup 原本都被忽略，現已修正（#4330、#4349、#4353）。
 
 ### 重點
 - findAdrs() 的寫死正斜線比對在 Windows 上靜默找到 0 筆 ADR，改用 isAdrPath() 解決

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Timestral: Mistral's time-series foundation models
 
-Mistral 推出時序基礎模型 Timestral，最大 209M 參數，官方稱三大公開榜單皆排名第一。 **Why** 企業的感測器、監控與供應鏈等場景大量依賴時序預測，而逐資料集從零訓練的模型難以跨領域遷移。 **How** 採用 Decoupled Horizon Forecasting（保留完整歷史，由學習得來的 forecast token 讀取前文），加上 covariate-aware attention（目標、過去協變量、已知未來協變量各有角色），並以合成資料優先與兩階段訓練（先 8192 context，再以 4 倍長度後訓練）。 **What** 共四種尺寸 5M、28M、123M、209M，輸出 21 分位數機率預測，context 長度 32,768；8 執行緒伺服器 CPU 上預測一天後（3 週 15 分鐘歷史）5M 約 10 ms、209M 約 140 ms；授權為 Modified MIT，並已公開 GitHub repo。
+Mistral 推出時序基礎模型 Timestral，最大 209M 參數，官方稱三大公開榜單皆排名第一。
+
+**Why** 企業的感測器、監控與供應鏈等場景大量依賴時序預測，而逐資料集從零訓練的模型難以跨領域遷移。
+
+**How** 採用 Decoupled Horizon Forecasting（保留完整歷史，由學習得來的 forecast token 讀取前文），加上 covariate-aware attention（目標、過去協變量、已知未來協變量各有角色），並以合成資料優先與兩階段訓練（先 8192 context，再以 4 倍長度後訓練）。
+
+**What** 共四種尺寸 5M、28M、123M、209M，輸出 21 分位數機率預測，context 長度 32,768；8 執行緒伺服器 CPU 上預測一天後（3 週 15 分鐘歷史）5M 約 10 ms、209M 約 140 ms；授權為 Modified MIT，並已公開 GitHub repo。
 
 ### 重點
 - 209M 模型官方宣稱在 GIFT-Eval、TIME、fev-bench 皆排名第一；28M 模型據稱在 GIFT-Eval 與 TIME 上勝過約 4 倍大的 Chronos-2

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 9 'slash' commands to get better answers from ChatGPT — number 7 is my personal favorite
 
-用斜線指令取代每次重複的長提示，讓回答的格式與語氣更貼近需求。 **Why** 聊天機器人常過度讚美、回答冗長或偏離原意，每次補充說明很費力。 **How** 在提示開頭加上 /human、/critic 等指令詞；也可在 ChatGPT 指令中定義其具體行為，使每次觸發結果一致。 **What** 文中列出多個常用指令，例如 /critic 要求指出弱點、/diff 只列出修改處、/table 將比較轉為表格、/rubberduck 一次只問一個問題；作者表示這些指令也適用於 Gemini、Claude 等其他聊天機器人。
+用斜線指令取代每次重複的長提示，讓回答的格式與語氣更貼近需求。
+
+**Why** 聊天機器人常過度讚美、回答冗長或偏離原意，每次補充說明很費力。
+
+**How** 在提示開頭加上 /human、/critic 等指令詞；也可在 ChatGPT 指令中定義其具體行為，使每次觸發結果一致。
+
+**What** 文中列出多個常用指令，例如 /critic 要求指出弱點、/diff 只列出修改處、/table 將比較轉為表格、/rubberduck 一次只問一個問題；作者表示這些指令也適用於 Gemini、Claude 等其他聊天機器人。
 
 ### 重點
 - /human 用於去除 AI 制式用語與多餘轉折；/critic 要求指出弱點與風險，而非先給讚美

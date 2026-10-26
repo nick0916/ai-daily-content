@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How agents unlock new markets
 
-AI 代理讓買賣雙方能低成本逐案協商，使過去因談判太貴而從未發生的交易變得划算。 **Why** 傳統市場靠標準化報價降低成本，但買賣雙方真正的需求與彈性被簡化，許多可行交易因探索與協商成本太高而沒發生。 **How** 買方與賣方各有 agent，了解目標與限制，並能連結營運能力（如保留產能、承諾交期）與授權取捨，跨組織互相發現、交換提案、驗證後共同建構原本不存在的報價。 **What** Walmart 用 AI 與 10 萬+供應商個別協商；Honeywell 完成 2,500+ 次自主談判、涵蓋 5 億美元以上支出；Circle Logistics 透過 HappyRobot 讓 18% 貨運訂單免人工完成；Google Direct Offers 讓 Gemini 為購物者組合客製優惠；Anthropic Project Deal 讓 69 名員工的 agent 達成 186 筆真實協議、價值逾 $4,000。作者主張潛在需求釋放（如招聘、旅遊）才是 agentic market 的更大機會。
+AI 代理讓買賣雙方能低成本逐案協商，使過去因談判太貴而從未發生的交易變得划算。
+
+**Why** 傳統市場靠標準化報價降低成本，但買賣雙方真正的需求與彈性被簡化，許多可行交易因探索與協商成本太高而沒發生。
+
+**How** 買方與賣方各有 agent，了解目標與限制，並能連結營運能力（如保留產能、承諾交期）與授權取捨，跨組織互相發現、交換提案、驗證後共同建構原本不存在的報價。
+
+**What** Walmart 用 AI 與 10 萬+供應商個別協商；Honeywell 完成 2,500+ 次自主談判、涵蓋 5 億美元以上支出；Circle Logistics 透過 HappyRobot 讓 18% 貨運訂單免人工完成；Google Direct Offers 讓 Gemini 為購物者組合客製優惠；Anthropic Project Deal 讓 69 名員工的 agent 達成 186 筆真實協議、價值逾 $4,000。作者主張潛在需求釋放（如招聘、旅遊）才是 agentic market 的更大機會。
 
 ### 重點
 - Honeywell 以 AI 完成 2,500+ 次自主供應商談判、涵蓋逾 5 億美元支出；Circle Logistics 18% 貨運訂單無人介入完成

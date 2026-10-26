@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## From Solving Netflix’s Data Lake Problems to Becoming the Dominant Open Table Format: The Evolution of Apache Iceberg
 
-說明 Apache Iceberg 如何從 Netflix 內部為了解決 Hive 資料湖問題的方案，演變成主流開放表格式。 **Why** Netflix 原本用 Hive，但 Hive 為 HDFS 設計，檔案系統沒有交易語意，需靠 Metastore 鎖定寫入；讀取前必須列出檔案，Netflix 曾為 query planning 等超過 9 分鐘；搬到物件儲存後，同一 partition 的資料集中在相同 prefix，吞吐量受限。 **How** Iceberg 以樂觀並行控制（OCC）取代鎖，每位寫入者建立自己的 snapshot、變更後再 commit，衝突時中止；並用 snapshot 明確追蹤每個檔案以略過 file listing，且 snapshot metadata 採分層設計，避免每次都重寫數百萬筆檔案清單。 **What** 文章（Vu Trinh）回顧 Iceberg 自 2017 年起由 Ryan Blue 領導的團隊在 Netflix 開發，到 2026 年成為最常用的開放表格式之一；Google、Microsoft、AWS、Snowflake 乃至 Delta Lake 的創造者 Databricks 都在 lakehouse 產品中支援。原文節錄僅涵蓋早期背景與設計動機，後續演進內容被付費牆截斷。
+說明 Apache Iceberg 如何從 Netflix 內部為了解決 Hive 資料湖問題的方案，演變成主流開放表格式。
+
+**Why** Netflix 原本用 Hive，但 Hive 為 HDFS 設計，檔案系統沒有交易語意，需靠 Metastore 鎖定寫入；讀取前必須列出檔案，Netflix 曾為 query planning 等超過 9 分鐘；搬到物件儲存後，同一 partition 的資料集中在相同 prefix，吞吐量受限。
+
+**How** Iceberg 以樂觀並行控制（OCC）取代鎖，每位寫入者建立自己的 snapshot、變更後再 commit，衝突時中止；並用 snapshot 明確追蹤每個檔案以略過 file listing，且 snapshot metadata 採分層設計，避免每次都重寫數百萬筆檔案清單。
+
+**What** 文章（Vu Trinh）回顧 Iceberg 自 2017 年起由 Ryan Blue 領導的團隊在 Netflix 開發，到 2026 年成為最常用的開放表格式之一；Google、Microsoft、AWS、Snowflake 乃至 Delta Lake 的創造者 Databricks 都在 lakehouse 產品中支援。原文節錄僅涵蓋早期背景與設計動機，後續演進內容被付費牆截斷。
 
 ### 重點
 - Hive 三大問題：檔案系統無交易語意需靠 Metastore 鎖、讀取前必須 file listing（Netflix 曾 query planning 等超過 9 分鐘）、物件儲存上同 partition 共用 prefix 限制吞吐

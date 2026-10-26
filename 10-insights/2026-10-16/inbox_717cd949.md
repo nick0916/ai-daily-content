@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Why Math Dumped OpenAI
 
-作者主張 AI 與數學社群的信任已破裂，並引用 Terence Tao 的「證明消化不良」論點。 **Why** 作者認為 OpenAI 的位置來自預算與聲量，而非實際貢獻，且其與數學界的關係已惡化。 **How** 文章以時間線追蹤 Tao 從 2014 年預言數位化數學、2023 年用 ChatGPT 學習 Lean，到 2026 年提出 proof indigestion 的過程。 **What** Tao 指出證明生成與驗證的自動化快於證明消化，數學進展未同步加速；作者另指 Lean FRO 的投入不到 OpenAI 資源的 1%，並批評 DOGE 期間 NSF 數學經費遭削減。
+作者主張 AI 與數學社群的信任已破裂，並引用 Terence Tao 的「證明消化不良」論點。
+
+**Why** 作者認為 OpenAI 的位置來自預算與聲量，而非實際貢獻，且其與數學界的關係已惡化。
+
+**How** 文章以時間線追蹤 Tao 從 2014 年預言數位化數學、2023 年用 ChatGPT 學習 Lean，到 2026 年提出 proof indigestion 的過程。
+
+**What** Tao 指出證明生成與驗證的自動化快於證明消化，數學進展未同步加速；作者另指 Lean FRO 的投入不到 OpenAI 資源的 1%，並批評 DOGE 期間 NSF 數學經費遭削減。
 
 ### 重點
 - Tao 於 2026 年 4 月提出：證明生成與驗證被自動化的速度，快過理解與整合證明的「消化」（proof digestion）

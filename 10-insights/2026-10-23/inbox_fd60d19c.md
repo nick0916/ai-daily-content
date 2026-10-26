@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Setting Up Walter MCP in Cursor and Windsurf: The Complete Guide
 
-Walter MCP 在 Cursor 與 Windsurf 的完整設定指南。 **Why** 原文指出，2026 年的變動使多數舊的設定教學失效。 **How** 設定涉及兩個部分與一筆 config 項目（摘要原文）。 **What** 文章涵蓋 Cursor 與 Windsurf 兩款編輯器的 Walter MCP 設定；摘要未提供具體設定內容或數字。
+Walter MCP 在 Cursor 與 Windsurf 的完整設定指南。
+
+**Why** 原文指出，2026 年的變動使多數舊的設定教學失效。
+
+**How** 設定涉及兩個部分與一筆 config 項目（摘要原文）。
+
+**What** 文章涵蓋 Cursor 與 Windsurf 兩款編輯器的 Walter MCP 設定；摘要未提供具體設定內容或數字。
 
 ### 重點
 - 範圍：Cursor 與 Windsurf 的 Walter MCP 設定

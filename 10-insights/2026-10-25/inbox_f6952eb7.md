@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v15.2.1 — npm trusted publishing
 
-claude-mem 改用 npm 信任發布（OIDC），取代長效 NPM_TOKEN。 **Why** 原 NPM_TOKEN 自 v13.26.1 起每次 tag 發布都失敗。 **How** 發布工作流程以短效 OIDC token 向 npm 驗證，並附上 provenance 證明，連結套件與建置它的 commit 和 workflow。 **What** 此版本無執行期行為變更，只是讓發布走新管道。
+claude-mem 改用 npm 信任發布（OIDC），取代長效 NPM_TOKEN。
+
+**Why** 原 NPM_TOKEN 自 v13.26.1 起每次 tag 發布都失敗。
+
+**How** 發布工作流程以短效 OIDC token 向 npm 驗證，並附上 provenance 證明，連結套件與建置它的 commit 和 workflow。
+
+**What** 此版本無執行期行為變更，只是讓發布走新管道。
 
 ### 重點
 - 改用 OIDC trusted publishing，以短效 token 取代長效 NPM_TOKEN

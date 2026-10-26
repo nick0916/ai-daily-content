@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## EP230: RAG vs Agentic RAG
 
-ByteByteGo 第 230 期電子報，用簡短圖解說明 RAG 與 Agentic RAG 的差異，並補充 OAuth／OIDC 與 Linux 目錄結構。 **Why** 傳統 RAG 依固定的檢索流程，答案品質取決於檢索到的內容是否準確。 **How** Agentic RAG 讓 agent 依任務挑選工具（文件、API、資料庫、網路），檢查證據是否足夠，不足就調整搜尋或換工具，直到證據充足才交給 LLM 生成答案。 **What** 本期另說明：OAuth 2.0 負責授權（Slack 不經手 Google 密碼，以 authorization code 換 access_token），OIDC 架在其上負責驗證身分（額外回傳簽章過的 JWT id_token）。最後介紹 Linux 目錄結構，例如 bin、etc、var、home。
+ByteByteGo 第 230 期電子報，用簡短圖解說明 RAG 與 Agentic RAG 的差異，並補充 OAuth／OIDC 與 Linux 目錄結構。
+
+**Why** 傳統 RAG 依固定的檢索流程，答案品質取決於檢索到的內容是否準確。
+
+**How** Agentic RAG 讓 agent 依任務挑選工具（文件、API、資料庫、網路），檢查證據是否足夠，不足就調整搜尋或換工具，直到證據充足才交給 LLM 生成答案。
+
+**What** 本期另說明：OAuth 2.0 負責授權（Slack 不經手 Google 密碼，以 authorization code 換 access_token），OIDC 架在其上負責驗證身分（額外回傳簽章過的 JWT id_token）。最後介紹 Linux 目錄結構，例如 bin、etc、var、home。
 
 ### 重點
 - RAG 為單次、預先定義的檢索；Agentic RAG 為迴圈式：選工具、取證據、判斷證據是否足夠、必要時調整搜尋

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## eMudhra Intermediate CA Compromise
 
-一家憑證機構的 8 把中繼 CA 私鑰因亂數不夠隨機而外洩，攻擊者可偽造任何網站憑證。 **Why** 憑證機構是網路信任的根基，私鑰外洩代表可冒充任何網站。 **How** 金鑰是因低 entropy 被推導出來，而非經由已知的入侵事件。 **What** eMudhra 的 8 張 intermediate CA 憑證私鑰遭洩；瀏覽器以 revocation list 封鎖，其他軟體則需移除 emSign ECC G3 root。未修補的系統仍暴露於偽造憑證風險，包括 client auth 與 mTLS。
+一家憑證機構的 8 把中繼 CA 私鑰因亂數不夠隨機而外洩，攻擊者可偽造任何網站憑證。
+
+**Why** 憑證機構是網路信任的根基，私鑰外洩代表可冒充任何網站。
+
+**How** 金鑰是因低 entropy 被推導出來，而非經由已知的入侵事件。
+
+**What** eMudhra 的 8 張 intermediate CA 憑證私鑰遭洩；瀏覽器以 revocation list 封鎖，其他軟體則需移除 emSign ECC G3 root。未修補的系統仍暴露於偽造憑證風險，包括 client auth 與 mTLS。
 
 ### 重點
 - 8 張 eMudhra intermediate CA 憑證私鑰因低 entropy 洩漏

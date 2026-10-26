@@ -26,7 +26,11 @@ deep_dive_approved: false
 
 ## Patch the Planet: global response coordination as agents uncover critical vulnerabilities
 
-OpenAI 推出 Patch the Planet，串連資安研究員、維護者與事件應變人員，協調處理開源軟體中的重大漏洞。 **Why** 原文標題指出 AI agents 正在發現關鍵漏洞，需要全球性的回應協調。 **What** Patch the Planet 連結 security researchers、maintainers 與 incident responders，協助處理整個開源生態的關鍵漏洞。輸入內容僅有簡短摘要，未提供運作細節或數據。
+OpenAI 推出 Patch the Planet，串連資安研究員、維護者與事件應變人員，協調處理開源軟體中的重大漏洞。
+
+**Why** 原文標題指出 AI agents 正在發現關鍵漏洞，需要全球性的回應協調。
+
+**What** Patch the Planet 連結 security researchers、maintainers 與 incident responders，協助處理整個開源生態的關鍵漏洞。輸入內容僅有簡短摘要，未提供運作細節或數據。
 
 ### 重點
 - Patch the Planet 連結資安研究員、維護者與事件應變人員，針對開源關鍵漏洞進行協調

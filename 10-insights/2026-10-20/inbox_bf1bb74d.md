@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.58.1 — CWE-22 fix, CLI parser fix, TokenOptimizer fix
 
-修補 Ruflo hooks_codemod 的路徑越界漏洞（CWE-22），避免工具讀寫專案目錄以外的檔案。 **Why** resolveTargets() 以未錨定的字串前綴判斷路徑是否在專案內，名稱以專案目錄開頭的兄弟目錄（如 cwd-staging）會被誤判為專案內。 **How** 兩處呼叫改為以路徑分隔符為邊界比對，與程式庫中既有的 isWithinPrefix() 做法一致。 **What** v3.58.1 另修正 CommandParser.parse() 把非首次出現的 `--` 當成旗標結束符、吞掉查詢字串的問題，並修正 TokenOptimizer 呼叫不存在的 editCode 方法；後者以 @claude-flow/integration@3.0.2 獨立發布。
+修補 Ruflo hooks_codemod 的路徑越界漏洞（CWE-22），避免工具讀寫專案目錄以外的檔案。
+
+**Why** resolveTargets() 以未錨定的字串前綴判斷路徑是否在專案內，名稱以專案目錄開頭的兄弟目錄（如 cwd-staging）會被誤判為專案內。
+
+**How** 兩處呼叫改為以路徑分隔符為邊界比對，與程式庫中既有的 isWithinPrefix() 做法一致。
+
+**What** v3.58.1 另修正 CommandParser.parse() 把非首次出現的 `--` 當成旗標結束符、吞掉查詢字串的問題，並修正 TokenOptimizer 呼叫不存在的 editCode 方法；後者以 @claude-flow/integration@3.0.2 獨立發布。
 
 ### 重點
 - 路徑包含檢查用 abs.startsWith(cwd) 會被 sibling 目錄繞過，改為路徑分隔符邊界比對（#4312 / #4313）

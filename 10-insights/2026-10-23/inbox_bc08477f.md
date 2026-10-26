@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Presentation: Move Fast, Don’t Break Trust: Shipping Constantly with Humans and Beyond
 
-靠強大的內部平台，讓工程師與 LLM 都能每天安全地大量上線。 **Why** 要在高頻發布的同時不犧牲可靠性與信任，這對金融業尤其關鍵。 **How** 以有主見的 microservice 抽象、基於 tenancy 的 staging、靜態分析檢查與持續 profiling，把安全護欄內建在平台中。 **What** Monzo 的 Suhail Patel 在 InfoQ 演講中分享其工程組織與技術堆疊，如何做到每天數百次安全部署，並讓人與 LLM 都能快速迭代。
+靠強大的內部平台，讓工程師與 LLM 都能每天安全地大量上線。
+
+**Why** 要在高頻發布的同時不犧牲可靠性與信任，這對金融業尤其關鍵。
+
+**How** 以有主見的 microservice 抽象、基於 tenancy 的 staging、靜態分析檢查與持續 profiling，把安全護欄內建在平台中。
+
+**What** Monzo 的 Suhail Patel 在 InfoQ 演講中分享其工程組織與技術堆疊，如何做到每天數百次安全部署，並讓人與 LLM 都能快速迭代。
 
 ### 重點
 - 有主見的 microservice 抽象降低每個團隊的決策與出錯成本

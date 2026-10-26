@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Security researchers discover fake ChatGPT ads that trick you into downloading malware
 
-假 ChatGPT 贊助廣告以 ClickFix 手法誘騙 Windows 使用者執行惡意指令。 **Why** 使用者搜尋 ChatGPT 時，看到的贊助廣告可能導向仿冒網站，且外觀與正版相似。 **How** 假站在輸入提示後導向「備援網域」，接著出現偽造的 Cloudflare 驗證頁，要求使用者按 Win+R 執行指令，進而下載 NetSupport RAT 遠端控制工具。 **What** Island 研究人員指出，2026 年 5 至 8 月間約有 850 則付費廣告、26 個假連結與 71 個 Google Ads campaign ID；Google 表示已停用相關廣告主帳號。正版請直接輸入 chatgpt.com，任何網站要求按 Win+R 或執行 PowerShell 都不應照做。
+假 ChatGPT 贊助廣告以 ClickFix 手法誘騙 Windows 使用者執行惡意指令。
+
+**Why** 使用者搜尋 ChatGPT 時，看到的贊助廣告可能導向仿冒網站，且外觀與正版相似。
+
+**How** 假站在輸入提示後導向「備援網域」，接著出現偽造的 Cloudflare 驗證頁，要求使用者按 Win+R 執行指令，進而下載 NetSupport RAT 遠端控制工具。
+
+**What** Island 研究人員指出，2026 年 5 至 8 月間約有 850 則付費廣告、26 個假連結與 71 個 Google Ads campaign ID；Google 表示已停用相關廣告主帳號。正版請直接輸入 chatgpt.com，任何網站要求按 Win+R 或執行 PowerShell 都不應照做。
 
 ### 重點
 - 攻擊流程：Google 贊助廣告→假 ChatGPT 站→「備援網域」→偽造 Cloudflare 驗證頁要求執行指令→下載 NetSupport RAT

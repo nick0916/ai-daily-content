@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Shipping AI Into 5 Major Banks Without a 12-Month Compliance Wait — Al Chen, Cisco
 
-把 AI 部署進銀行要快，關鍵是每一步都附上證據，而不只是勾選合規項目。 **Why** 銀行的 production 部署常需約一年，因為合規與風險團隊要求能證明答案是如何得出的，而且客戶資料不能外洩。 **How** 以三個支柱示範：CVE 不只確認套件升版，還用 Harbor task 讓 agent 針對舊版寫 exploit，再驗證新版是否仍可利用；災難復原不只確認 ClickHouse 備份還原 job 成功，還要比對列數與副本收斂，並考量資料落地；LLM-as-judge 的推理可能還原已遮蔽的 PII/MNPI，因此用另一個輸入已遮蔽的 judge 或在檢查後才顯示推理。 **What** 講者來自 Cisco，稱可把上線時間從一年縮短到數週。重點數據與取捨：零洩漏需多一次 LLM 呼叫的成本；ClickHouse 沒有託管的跨區 failover，需自行用 Altinity 的 clickhouse-backup 搭配 bucket 方案；落地規範可只跨區複製 ID 與 metadata，核心 trace 留在單一區域。
+把 AI 部署進銀行要快，關鍵是每一步都附上證據，而不只是勾選合規項目。
+
+**Why** 銀行的 production 部署常需約一年，因為合規與風險團隊要求能證明答案是如何得出的，而且客戶資料不能外洩。
+
+**How** 以三個支柱示範：CVE 不只確認套件升版，還用 Harbor task 讓 agent 針對舊版寫 exploit，再驗證新版是否仍可利用；災難復原不只確認 ClickHouse 備份還原 job 成功，還要比對列數與副本收斂，並考量資料落地；LLM-as-judge 的推理可能還原已遮蔽的 PII/MNPI，因此用另一個輸入已遮蔽的 judge 或在檢查後才顯示推理。
+
+**What** 講者來自 Cisco，稱可把上線時間從一年縮短到數週。重點數據與取捨：零洩漏需多一次 LLM 呼叫的成本；ClickHouse 沒有託管的跨區 failover，需自行用 Altinity 的 clickhouse-backup 搭配 bucket 方案；落地規範可只跨區複製 ID 與 metadata，核心 trace 留在單一區域。
 
 ### 重點
 - CVE 驗證：升版不等於修復；用 Harbor（可跑在 Docker、Modal、Daytona 並行）讓 agent 針對舊版寫 exploit，再測新版是否仍可利用

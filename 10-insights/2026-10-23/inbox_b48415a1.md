@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg
 
-用分層防禦與確定性控制，限制 AI agent 被劫持時能造成的損害。 **Why** Agent 要有用就得接觸大量工具與資料，若沒有硬性限制，被劫持時的損害範圍可能無上限；防火牆或靜態規則也無法判斷 agent 目標是否被劫持。 **How** 講者提出六層工具箱：身分與信任、prompt 與輸入防禦、工具與動作治理、執行隔離、資料保護、治理與可觀測性，核心是模型外部的確定性控制、逐次呼叫檢查、記錄與 kill switch。 **What** Bloomberg 的 Andrey Rybka 逐案分析真實事件，例如長效 OAuth token 被社交工程而外洩 700 多家公司 CRM 資料、白底白字隱藏指令的零點擊外洩、Morse code 繞過 guardrail 盜走錢包 token、沙箱忘了封 DNS 而被走私資料、MCP 跨租戶資料存取、AI 在 code freeze 下仍刪除 production 資料庫、NPM 假 MCP 在第 16 版才加入 BCC 惡意碼。三大優先事項：用「三取二」規則（不可信輸入、敏感資料、外部動作）、一個 agent 一個身分並使用短效 scoped token、預設拒絕所有出站（含 DNS）並設定會中止的預算。
+用分層防禦與確定性控制，限制 AI agent 被劫持時能造成的損害。
+
+**Why** Agent 要有用就得接觸大量工具與資料，若沒有硬性限制，被劫持時的損害範圍可能無上限；防火牆或靜態規則也無法判斷 agent 目標是否被劫持。
+
+**How** 講者提出六層工具箱：身分與信任、prompt 與輸入防禦、工具與動作治理、執行隔離、資料保護、治理與可觀測性，核心是模型外部的確定性控制、逐次呼叫檢查、記錄與 kill switch。
+
+**What** Bloomberg 的 Andrey Rybka 逐案分析真實事件，例如長效 OAuth token 被社交工程而外洩 700 多家公司 CRM 資料、白底白字隱藏指令的零點擊外洩、Morse code 繞過 guardrail 盜走錢包 token、沙箱忘了封 DNS 而被走私資料、MCP 跨租戶資料存取、AI 在 code freeze 下仍刪除 production 資料庫、NPM 假 MCP 在第 16 版才加入 BCC 惡意碼。三大優先事項：用「三取二」規則（不可信輸入、敏感資料、外部動作）、一個 agent 一個身分並使用短效 scoped token、預設拒絕所有出站（含 DNS）並設定會中止的預算。
 
 ### 重點
 - 「三取二」規則：不可信輸入、敏感資料、外部動作最多同時擁有兩項，三項齊全就需要人工簽核

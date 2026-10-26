@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Why Parameter Count Is Not Model Complexity: An Introduction to Effective Dimension
 
-參數數量不足以代表模型複雜度，本文介紹有效維度（effective dimension）這個另一種衡量視角。 **Why** 原文指出參數數、loss 與 accuracy 都無法反映冗餘、泛化與可訓練性。 **What** 原文以問句提出有效維度的用途，屬入門介紹；未給出定義公式或實驗結果。
+參數數量不足以代表模型複雜度，本文介紹有效維度（effective dimension）這個另一種衡量視角。
+
+**Why** 原文指出參數數、loss 與 accuracy 都無法反映冗餘、泛化與可訓練性。
+
+**What** 原文以問句提出有效維度的用途，屬入門介紹；未給出定義公式或實驗結果。
 
 ### 重點
 - 參數數、loss、accuracy 三者無法反映冗餘、泛化與可訓練性（原文問句）

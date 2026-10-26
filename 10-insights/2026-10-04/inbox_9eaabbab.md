@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Agents - and their better half
 
-現在的 AI 代理只站在買方一邊，只有買賣雙方都有代理，市場才可能真正改變。 **Why** 目前多數 agent 只代表單一方，面對的仍是賣方事先訂好的目錄、價格與套餐，智慧只是在既有市場裡更會挑選，造成「單邊」的 agent 經濟。 **How** 作者區分「agentic participant」（在既有機制內更有效代表本人）與「agentic market」（多方透過 agent 表達目標與取捨，互動結果決定的不只是選哪個報價，而是報價本身）；並以招聘、旅遊、B2B 採購三個垂直領域說明。 **What** 以 Muse、Instinct 等消費者端 agent 為例；Indeed 的 Apply For Me 與 Sourcing Assistant 分別代表求職者與雇主，Indeed 在雇主回饋後暫停了 Apply For Me 的自動投遞模式。作者結論：我們已有 agentic 參與者，但尚無 agentic 市場。
+現在的 AI 代理只站在買方一邊，只有買賣雙方都有代理，市場才可能真正改變。
+
+**Why** 目前多數 agent 只代表單一方，面對的仍是賣方事先訂好的目錄、價格與套餐，智慧只是在既有市場裡更會挑選，造成「單邊」的 agent 經濟。
+
+**How** 作者區分「agentic participant」（在既有機制內更有效代表本人）與「agentic market」（多方透過 agent 表達目標與取捨，互動結果決定的不只是選哪個報價，而是報價本身）；並以招聘、旅遊、B2B 採購三個垂直領域說明。
+
+**What** 以 Muse、Instinct 等消費者端 agent 為例；Indeed 的 Apply For Me 與 Sourcing Assistant 分別代表求職者與雇主，Indeed 在雇主回饋後暫停了 Apply For Me 的自動投遞模式。作者結論：我們已有 agentic 參與者，但尚無 agentic 市場。
 
 ### 重點
 - 核心區分：agentic participant（改善既有市場內的導航）vs. agentic market（雙方 agent 共同建構報價）

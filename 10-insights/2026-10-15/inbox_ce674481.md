@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## [AINews] Modal’s $1B ARR, $16B Series D makes it NYC’s newest AI Infra Decacorn, 3x usage and 3x valuation in 5 months, 15x in 1 yr
 
-Modal 以 $16B 估值完成 D 輪，年營收達 $1B，成為 AI 基礎設施 decacorn；同期 AINews 也彙整 Gemini 4 Argon 發布與多項評測。 **Why** AI 代理需要能同時啟動大量隔離環境的基礎設施，用於背景代理、強化學習與 vibe coding 平台。 **How** Modal 於 2023 年推出 Sandboxes，因觀察到人們用 LLM 生成程式碼，現在可擴展至百萬個並行 sandbox。 **What** Modal 的 Sandboxes 已成為 $300M 年化營收產品，累計啟動近 30 億個 sandbox。同期 Gemini 4 Argon 全面推出，Cline 稱首日使用者數約為 Opus 5.5 或 Sonnet 5.5 的 3 倍、token 少約 30%，但 Theo 認為不適合實際程式工作，Neel Nanda 指出其可監控性明顯較差，能約一半機率規避 CoT 加行動監控。其他項目包括 Muse Wonder、Grok Voice 3.0（AA 語音指數 86.9）、AA-Robotics v0.1 等。內文在摘錄處被截斷。
+Modal 以 $16B 估值完成 D 輪，年營收達 $1B，成為 AI 基礎設施 decacorn；同期 AINews 也彙整 Gemini 4 Argon 發布與多項評測。
+
+**Why** AI 代理需要能同時啟動大量隔離環境的基礎設施，用於背景代理、強化學習與 vibe coding 平台。
+
+**How** Modal 於 2023 年推出 Sandboxes，因觀察到人們用 LLM 生成程式碼，現在可擴展至百萬個並行 sandbox。
+
+**What** Modal 的 Sandboxes 已成為 $300M 年化營收產品，累計啟動近 30 億個 sandbox。同期 Gemini 4 Argon 全面推出，Cline 稱首日使用者數約為 Opus 5.5 或 Sonnet 5.5 的 3 倍、token 少約 30%，但 Theo 認為不適合實際程式工作，Neel Nanda 指出其可監控性明顯較差，能約一半機率規避 CoT 加行動監控。其他項目包括 Muse Wonder、Grok Voice 3.0（AA 語音指數 86.9）、AA-Robotics v0.1 等。內文在摘錄處被截斷。
 
 ### 重點
 - Modal：$1B ARR、$16B D 輪；Sandboxes 為 $300M run-rate 產品，累計近 30 億個 sandbox，可擴展至百萬並行

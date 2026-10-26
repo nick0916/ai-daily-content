@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Release Candidate v1.6.13-rc.149
 
-GitNexus 的另一個預發布測試版（rc.149），可見的 changelog 與 rc.148、rc.150 相同。 **Why** RC 是穩定版前的早期測試建置，穩定版仍維持在 latest dist-tag。 **What** 版本 1.6.13-rc.149，來源 commit f3fa67b，安裝指令為 `npm install gitnexus@rc`。原文 changelog 有截斷，無法確認後段是否有差異。
+GitNexus 的另一個預發布測試版（rc.149），可見的 changelog 與 rc.148、rc.150 相同。
+
+**Why** RC 是穩定版前的早期測試建置，穩定版仍維持在 latest dist-tag。
+
+**What** 版本 1.6.13-rc.149，來源 commit f3fa67b，安裝指令為 `npm install gitnexus@rc`。原文 changelog 有截斷，無法確認後段是否有差異。
 
 ### 重點
 - 可見 changelog 與 rc.148、rc.150 逐項相同，包含 HTTP embedding 後端（#395）與 Swift 支援（#408）

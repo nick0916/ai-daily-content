@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/2b6542737ad5dfb63b720695c77643282bd6932a: fix(go): resolve imports within selected modules (#3654)
 
-GitNexus 修正 Go 解析器的 import 解析：改為讀取倉庫內所有 go.mod 與 go.work，避免不同模組的同名套件被錯配。 **Why** 原本只讀根目錄的 go.mod；沒有根 go.mod 時，所有 import 都走 GOPATH 後綴匹配，兩個模組的 internal/repository 會同時對應到同一目標，路徑與目錄不一致的模組（如 github.com/acme/orders 位於 services/orders）則解析為空。 **How** 每個 import 由路徑前綴最長的模組擁有；同路徑的多個 go.mod 依 importer 所在模組與 go.work 的 use 清單消歧，仍無法判定就不解析，GOPATH 後綴匹配只保留給模組外的 importer。 **What** 在 lang-resolution 語料中，既有 CALLS/ACCESSES 邊沒有被移除或改指，新增 70 條；call drops 從 148 降到 135，.go call drops 從 14 降到 1。另外 go.mod 讀取失敗改為拋錯，並以單一 file handle 讀檔以修正 CodeQL 指出的競態問題。
+GitNexus 修正 Go 解析器的 import 解析：改為讀取倉庫內所有 go.mod 與 go.work，避免不同模組的同名套件被錯配。
+
+**Why** 原本只讀根目錄的 go.mod；沒有根 go.mod 時，所有 import 都走 GOPATH 後綴匹配，兩個模組的 internal/repository 會同時對應到同一目標，路徑與目錄不一致的模組（如 github.com/acme/orders 位於 services/orders）則解析為空。
+
+**How** 每個 import 由路徑前綴最長的模組擁有；同路徑的多個 go.mod 依 importer 所在模組與 go.work 的 use 清單消歧，仍無法判定就不解析，GOPATH 後綴匹配只保留給模組外的 importer。
+
+**What** 在 lang-resolution 語料中，既有 CALLS/ACCESSES 邊沒有被移除或改指，新增 70 條；call drops 從 148 降到 135，.go call drops 從 14 降到 1。另外 go.mod 讀取失敗改為拋錯，並以單一 file handle 讀檔以修正 CodeQL 指出的競態問題。
 
 ### 重點
 - 每個 import 由路徑前綴最長的模組擁有；同路徑多 go.mod 時依 importer 模組與 go.work use 清單消歧，無法判定則不解析

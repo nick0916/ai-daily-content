@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Show HN: Steal My Bitcoin
 
-有人公開一個「來偷我的比特幣」挑戰網站，想知道有沒有人真能利用最近引發恐慌的 PHP RCE 漏洞。 **Why** 作者好奇是否有人真的找到實際利用該 PHP RCE 的方法。 **What** Show HN 專案 stealmybitcoin.com，作者表示花了數日為該 PHP RCE 感到緊張，因此做了這個站讓人嘗試。原文未說明具體漏洞編號、獎金金額或挑戰規則，無法確定。
+有人公開一個「來偷我的比特幣」挑戰網站，想知道有沒有人真能利用最近引發恐慌的 PHP RCE 漏洞。
+
+**Why** 作者好奇是否有人真的找到實際利用該 PHP RCE 的方法。
+
+**What** Show HN 專案 stealmybitcoin.com，作者表示花了數日為該 PHP RCE 感到緊張，因此做了這個站讓人嘗試。原文未說明具體漏洞編號、獎金金額或挑戰規則，無法確定。
 
 ### 重點
 - Show HN：stealmybitcoin.com，以比特幣為標的的挑戰站

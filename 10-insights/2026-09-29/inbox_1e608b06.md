@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I asked ChatGPT, Gemini, Claude and Muse to give me new podcasts based on my favorites — these 7 picks got added to my queue for International Podcast Day
 
-同一提示請四大 AI 推薦播客，結果都能找到合口味的節目。 **Why** 為慶祝 International Podcast Day，作者想發掘自己未聽過的節目。 **How** 將 7 個喜愛的播客放入同一提示，請 ChatGPT、Gemini、Claude 與 Meta Muse 依此推薦相似節目，再逐一試聽。 **What** 最終加入播放清單的 7 個推薦包括 SpawnCast、Bad Friends、Castle Super Beast、The Big Picture、Tuesdays with Stories、Two Bears One Cave 與 The House of R；ChatGPT 指出作者偏好主持人個性重於紀錄片式製作。
+同一提示請四大 AI 推薦播客，結果都能找到合口味的節目。
+
+**Why** 為慶祝 International Podcast Day，作者想發掘自己未聽過的節目。
+
+**How** 將 7 個喜愛的播客放入同一提示，請 ChatGPT、Gemini、Claude 與 Meta Muse 依此推薦相似節目，再逐一試聽。
+
+**What** 最終加入播放清單的 7 個推薦包括 SpawnCast、Bad Friends、Castle Super Beast、The Big Picture、Tuesdays with Stories、Two Bears One Cave 與 The House of R；ChatGPT 指出作者偏好主持人個性重於紀錄片式製作。
 
 ### 重點
 - 提示方式：列出 7 個喜愛的播客，請各 AI 推薦相似節目，每個 AI 都給出具體推薦與理由

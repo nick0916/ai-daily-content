@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## v3.60.1 — cleanup --keep-config and console Windows fixes
 
-ruflo 3.60.1 修補清理指令誤刪設定檔，並改善 Windows 相容性。 **Why** 旗標在解析器中存為 keepConfig，動作端卻讀取 keep-config，導致 --keep-config 失效、設定檔被刪。 **What** 修正 cleanup --force --keep-config 誤刪 claude-flow.config.json 與 .claude/settings.json 的 hooks／claudeFlow 區塊；ruflo-console 0.45.1 改用新的 host-fs 寫入模式，使 ADR init、儲存與匯出在 Windows 可用；autopilot 接受 Windows 路徑，Autopilot 在 Windows 上仍維持關閉。
+ruflo 3.60.1 修補清理指令誤刪設定檔，並改善 Windows 相容性。
+
+**Why** 旗標在解析器中存為 keepConfig，動作端卻讀取 keep-config，導致 --keep-config 失效、設定檔被刪。
+
+**What** 修正 cleanup --force --keep-config 誤刪 claude-flow.config.json 與 .claude/settings.json 的 hooks／claudeFlow 區塊；ruflo-console 0.45.1 改用新的 host-fs 寫入模式，使 ADR init、儲存與匯出在 Windows 可用；autopilot 接受 Windows 路徑，Autopilot 在 Windows 上仍維持關閉。
 
 ### 重點
 - cleanup --force --keep-config 因旗標名稱不一致（keepConfig 與 keep-config）而誤刪設定檔（#4435）

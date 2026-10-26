@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Agentic Commerce and Incentives
 
-同樣是 AI agent 代買，Shopify 歡迎、Amazon 封鎖，原因是各自賺錢的方式不同。 **Why** 看誘因就能預測反應：agent 購物讓有些公司多賣東西，卻威脅另一些公司的廣告與預設購物入口地位。 **How** 逐一比對各公司收入結構：Shopify 靠訂閱與支付，不需掌握每次互動；Amazon 靠預設購物地位與贊助商品廣告，agent 下單可能完全看不到搜尋結果與贊助版位。 **What** Shopify 的 Merchant Solutions 占營收 76%，商家付標準處理費、無額外費用；Amazon 2025 年廣告營收約 $69B，其以 agent 身分辨識與憑證存取為由封鎖 Meta 的 Muse。Walmart、Best Buy、Sephora、Instacart、Expedia 與 PayPal 選擇加入。作者預測商家可能把部分廣告預算轉為給消費者的折扣、免運或更好退貨條件（如 Google Direct Offers），而 agent 平台可收取曝光或推薦費，但付費影響推薦會引發利益衝突；長期風險是 agent 平台集中後，商家再度受制於少數入口。
+同樣是 AI agent 代買，Shopify 歡迎、Amazon 封鎖，原因是各自賺錢的方式不同。
+
+**Why** 看誘因就能預測反應：agent 購物讓有些公司多賣東西，卻威脅另一些公司的廣告與預設購物入口地位。
+
+**How** 逐一比對各公司收入結構：Shopify 靠訂閱與支付，不需掌握每次互動；Amazon 靠預設購物地位與贊助商品廣告，agent 下單可能完全看不到搜尋結果與贊助版位。
+
+**What** Shopify 的 Merchant Solutions 占營收 76%，商家付標準處理費、無額外費用；Amazon 2025 年廣告營收約 $69B，其以 agent 身分辨識與憑證存取為由封鎖 Meta 的 Muse。Walmart、Best Buy、Sephora、Instacart、Expedia 與 PayPal 選擇加入。作者預測商家可能把部分廣告預算轉為給消費者的折扣、免運或更好退貨條件（如 Google Direct Offers），而 agent 平台可收取曝光或推薦費，但付費影響推薦會引發利益衝突；長期風險是 agent 平台集中後，商家再度受制於少數入口。
 
 ### 重點
 - 「看誘因就知道結果」：Shopify 靠訂閱與支付、無需擁有需求端；Amazon 靠預設購物與廣告，兩者對同一筆 agent 交易的態度相反

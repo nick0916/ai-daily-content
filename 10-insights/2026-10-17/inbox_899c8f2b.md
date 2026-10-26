@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Meta shakes up the frontiers, open and closed
 
-Meta 釋出美國最強的開源權重模型，讓美國與中國開源模型的差距縮小約一半，但附帶一份限制很多的授權。 **Why** 在此之前，最好的美國開源模型對需要前沿效能的使用者而言幾乎無關緊要；作者認為西方開源模型在相同效能與體積下，採用量遠高於中國模型。 **How** 作者推測這是 Muse Spark 1.2 經額外安全後訓練的版本，在 Artificial Analysis 上只掉約 1 分。授權條款要求標示「Built with Muse」、月營收超過 $20M 的公司需另訂授權、必須同意使用政策，且規則同樣適用於輸出與衍生物。 **What** Muse Spark Open 為 816B 總參數、42B 啟用參數，1M context，原生多模態，主打程式與 agent 任務，效能高於 GLM 5.2、接近 DeepSeek V4.1 Flash，落後 GLM 5.3 與 Kimi K3。Reflection 的 Beam 也同期發布；Mistral Large 4 指數分數 38，但權重尚未釋出。作者另指 Meta 數日前發表閉源的 Muse Wonder 與 Muse Wonder Full，僅次於 Opus 5.5，並把各家排序為 Anthropic > OpenAI > Meta ~ Gemini > xAI ~ 中國開源 > 美國開源。
+Meta 釋出美國最強的開源權重模型，讓美國與中國開源模型的差距縮小約一半，但附帶一份限制很多的授權。
+
+**Why** 在此之前，最好的美國開源模型對需要前沿效能的使用者而言幾乎無關緊要；作者認為西方開源模型在相同效能與體積下，採用量遠高於中國模型。
+
+**How** 作者推測這是 Muse Spark 1.2 經額外安全後訓練的版本，在 Artificial Analysis 上只掉約 1 分。授權條款要求標示「Built with Muse」、月營收超過 $20M 的公司需另訂授權、必須同意使用政策，且規則同樣適用於輸出與衍生物。
+
+**What** Muse Spark Open 為 816B 總參數、42B 啟用參數，1M context，原生多模態，主打程式與 agent 任務，效能高於 GLM 5.2、接近 DeepSeek V4.1 Flash，落後 GLM 5.3 與 Kimi K3。Reflection 的 Beam 也同期發布；Mistral Large 4 指數分數 38，但權重尚未釋出。作者另指 Meta 數日前發表閉源的 Muse Wonder 與 Muse Wonder Full，僅次於 Opus 5.5，並把各家排序為 Anthropic > OpenAI > Meta ~ Gemini > xAI ~ 中國開源 > 美國開源。
 
 ### 重點
 - Muse Spark Open：816B 總參數／42B 啟用、1M context、原生多模態；效能高於 GLM 5.2、近 DeepSeek V4.1 Flash、低於 GLM 5.3 與 Kimi K3

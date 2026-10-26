@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How Bridgewater Turned 100 Million Documents Into an Edge - Sam Green & Aaron Linsky, Bridgewater
 
-橋水用自建的非結構化資料平台 Vault，讓人類與 AI agent 都能查到對的資料，並讓 agent 從被動回答變成主動提醒。 **Why** 通用聊天工具只靠開放網路，找到的文件少且過時（引用到三個月前的內容），無法回答投資問題。 **How** 把文件對齊內部 ontology（國家、概念、市場、時間區間）；人類重精準、agent 重規模，分別設計；以約 200 題人工標註基準量測 precision@10，並改用 Turbopuffer 的 native filtering 兼顧速度與召回；把使用者原本的 email 習慣（訂閱、資料夾）遷移成 saved search/collection。 **What** Vault 有超過 1 億份文件、135 個外部來源。同一題在 Vault 上找到 52 篇候選、引用 7 篇，對比網路版只引用 1–2 篇。precision@10 由約 60% 升到 90–95%。產品包括 pocket analyst、researcher、forecaster，以及主動追蹤重點的 investor workbench，協作成果會寫回 Vault 形成複利。
+橋水用自建的非結構化資料平台 Vault，讓人類與 AI agent 都能查到對的資料，並讓 agent 從被動回答變成主動提醒。
+
+**Why** 通用聊天工具只靠開放網路，找到的文件少且過時（引用到三個月前的內容），無法回答投資問題。
+
+**How** 把文件對齊內部 ontology（國家、概念、市場、時間區間）；人類重精準、agent 重規模，分別設計；以約 200 題人工標註基準量測 precision@10，並改用 Turbopuffer 的 native filtering 兼顧速度與召回；把使用者原本的 email 習慣（訂閱、資料夾）遷移成 saved search/collection。
+
+**What** Vault 有超過 1 億份文件、135 個外部來源。同一題在 Vault 上找到 52 篇候選、引用 7 篇，對比網路版只引用 1–2 篇。precision@10 由約 60% 升到 90–95%。產品包括 pocket analyst、researcher、forecaster，以及主動追蹤重點的 investor workbench，協作成果會寫回 Vault 形成複利。
 
 ### 重點
 - 先建約 200 題人工標註基準，發現 precision@10 僅約 60%，經五項改進加 agentic search 後達 90–95%

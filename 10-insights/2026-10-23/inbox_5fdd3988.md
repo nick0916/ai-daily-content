@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## AI: EU Member States approve “digital expropriation” of Europeans for AI companies
 
-歐盟理事會通過 GDPR 修正方向，讓「在 AI 脈絡下」的個資處理原則上合法；noyb 將此形容為對歐洲人個資的數位徵收。 **Why** 原文指出，Digital Omnibus 提案原本被描述為小幅簡化，實際卻以快速程序通過，且未進行基本權利評估。 **How** 原文指新的 Article 88c（理事會文本中為 88bis）可讓 AI 相關處理以「合法利益」為由進行，並可能收窄「個人資料」定義，使依假名識別的資料脫離 GDPR 適用。 **What** 原文稱理事會於週三通過、週四公布文本；後續仍需與歐洲議會及執委會進行三方協商（trilogue），noyb 並提到可能訴諸歐洲法院。
+歐盟理事會通過 GDPR 修正方向，讓「在 AI 脈絡下」的個資處理原則上合法；noyb 將此形容為對歐洲人個資的數位徵收。
+
+**Why** 原文指出，Digital Omnibus 提案原本被描述為小幅簡化，實際卻以快速程序通過，且未進行基本權利評估。
+
+**How** 原文指新的 Article 88c（理事會文本中為 88bis）可讓 AI 相關處理以「合法利益」為由進行，並可能收窄「個人資料」定義，使依假名識別的資料脫離 GDPR 適用。
+
+**What** 原文稱理事會於週三通過、週四公布文本；後續仍需與歐洲議會及執委會進行三方協商（trilogue），noyb 並提到可能訴諸歐洲法院。
 
 ### 重點
 - 原文為 noyb 的立場文，引述 Max Schrems 批評此修正；閱讀時需注意其倡議立場，文中未提供反方論點。

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 3 Free AI Tools From Spiegel’s AI Chief
 
-用語音輸入、補全與個人知識庫，讓 AI 幫忙寫作而不取代思考。 **Why** 作者提出的核心問題是：如何使用 AI 而不讓自己的思考變遲鈍，也不把控制權交給大型科技公司。 **How** 多數推薦工具可在本機以開源模型運作，例如 Cotabby 與 Cotypist 以 Qwen、Gemma 等模型做 Tab 補全，兼顧隱私與速度。 **What** WhisperDictation 是免費的 Mac 語音輸入工具，可加入最多 100 個自訂詞彙；Marker 是瀏覽器編輯器，仍在 2026 年 10 月的 beta 階段；Obsidian 搭配 Claude Code 或 Codex 外掛，並可用 Hister 做本地語意全文搜尋。
+用語音輸入、補全與個人知識庫，讓 AI 幫忙寫作而不取代思考。
+
+**Why** 作者提出的核心問題是：如何使用 AI 而不讓自己的思考變遲鈍，也不把控制權交給大型科技公司。
+
+**How** 多數推薦工具可在本機以開源模型運作，例如 Cotabby 與 Cotypist 以 Qwen、Gemma 等模型做 Tab 補全，兼顧隱私與速度。
+
+**What** WhisperDictation 是免費的 Mac 語音輸入工具，可加入最多 100 個自訂詞彙；Marker 是瀏覽器編輯器，仍在 2026 年 10 月的 beta 階段；Obsidian 搭配 Claude Code 或 Codex 外掛，並可用 Hister 做本地語意全文搜尋。
 
 ### 重點
 - WhisperDictation 為免費 Mac 語音輸入，作者稱口述速度至少是打字兩倍，替代方案有 OpenWhispr 與 whisper-local

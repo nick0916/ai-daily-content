@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## PHP Patches Two Critical RCE Flaws That Were Already Under Attack
 
-PHP 緊急修補兩個可讓未經驗證者遠端執行程式碼的嚴重漏洞，且已有人在攻擊。 **Why** 漏洞在修補前就遭利用，營運團隊還得先花一整天釐清自己是否在跑 PHP、去哪取得套件、如何確認已套用。 **What** PHP 釋出 8.5.12、8.4.27、8.3.36、8.2.35 修補兩個 unauthenticated RCE 漏洞；Amazon 在修補釋出前四天就記錄到一次利用嘗試。
+PHP 緊急修補兩個可讓未經驗證者遠端執行程式碼的嚴重漏洞，且已有人在攻擊。
+
+**Why** 漏洞在修補前就遭利用，營運團隊還得先花一整天釐清自己是否在跑 PHP、去哪取得套件、如何確認已套用。
+
+**What** PHP 釋出 8.5.12、8.4.27、8.3.36、8.2.35 修補兩個 unauthenticated RCE 漏洞；Amazon 在修補釋出前四天就記錄到一次利用嘗試。
 
 ### 重點
 - 修補版本：PHP 8.5.12、8.4.27、8.3.36、8.2.35

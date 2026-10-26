@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## EmbeddingGemma 2 Expands beyond Text to Support Code, Images, Video, and Audio
 
-Google 推出一個小型開源模型，能把文字、程式碼、圖片、影片、音訊都轉成可比對的向量，用於搜尋與 RAG。 **Why** 語意搜尋與 RAG 需要更有效率、且能在裝置端運行的 embedding 模型。 **What** EmbeddingGemma 2 以 Gemma 4 為基礎，採 Apache 2.0 授權，是緊湊的 open-weight 多模態 embedding 模型，支援文字之外的程式碼、圖片、影片與音訊，並針對 on-device 部署最佳化。
+Google 推出一個小型開源模型，能把文字、程式碼、圖片、影片、音訊都轉成可比對的向量，用於搜尋與 RAG。
+
+**Why** 語意搜尋與 RAG 需要更有效率、且能在裝置端運行的 embedding 模型。
+
+**What** EmbeddingGemma 2 以 Gemma 4 為基礎，採 Apache 2.0 授權，是緊湊的 open-weight 多模態 embedding 模型，支援文字之外的程式碼、圖片、影片與音訊，並針對 on-device 部署最佳化。
 
 ### 重點
 - 基於 Gemma 4，Apache 2.0 授權、open-weight

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 5 Writing Tools to Get Unstuck ✍️
 
-用口述、限時寫作、心智圖與 AI 反問，破解寫作卡關的五種方法。 **Why** 寫作最難的是前十分鐘，內在批判者會讓人停下來找「更好的字」。 **How** 口述時批判者較安靜，限時或不能回頭的寫作會逼人先寫出句子，AI 則改為提問而非代寫。 **What** 作者推薦 Google Docs 語音輸入（支援 100 多種語言）、Wispr Flow（免費起跳，Pro 每月 12 美元）、The Most Dangerous Writing App（時間到字即消失），以及 Apple Freeform、Mindmup 等心智圖工具。
+用口述、限時寫作、心智圖與 AI 反問，破解寫作卡關的五種方法。
+
+**Why** 寫作最難的是前十分鐘，內在批判者會讓人停下來找「更好的字」。
+
+**How** 口述時批判者較安靜，限時或不能回頭的寫作會逼人先寫出句子，AI 則改為提問而非代寫。
+
+**What** 作者推薦 Google Docs 語音輸入（支援 100 多種語言）、Wispr Flow（免費起跳，Pro 每月 12 美元）、The Most Dangerous Writing App（時間到字即消失），以及 Apple Freeform、Mindmup 等心智圖工具。
 
 ### 重點
 - 口述草稿：Google Docs 語音輸入免費、支援 100 多種語言；Wispr Flow 可在任何 app 使用，Pro 每月 12 美元

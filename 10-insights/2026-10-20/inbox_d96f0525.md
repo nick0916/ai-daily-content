@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/0e7b3d6fad9ba57e05c1af90874374586953c489: fix(mcp): report cross-function explain lines 1-based (#3635)
 
-讓 GitNexus 跨函式 explain 回報的行號與編輯器一致，改為 1-based。 **Why** 跨函式分析的 source、sink 與 hops 行號直接沿用 tree-sitter 的 0-based 座標，比函式宣告行在編輯器中少一行，且與同一回應中的 intra-procedural 結果不一致。 **How** 對 source.line、sink.line、hops[].line 套用既有的 toDisplayLine 轉換（與 context、query、impact 相同），並在回應說明中註明這些為宣告行。 **What** GitNexus 修正 PR #3635，對應 issue #3491；整合測試以 fixture 驗證 source.ts 第 7 行的 handle 與 sink.ts 第 6 行的 runIt。
+讓 GitNexus 跨函式 explain 回報的行號與編輯器一致，改為 1-based。
+
+**Why** 跨函式分析的 source、sink 與 hops 行號直接沿用 tree-sitter 的 0-based 座標，比函式宣告行在編輯器中少一行，且與同一回應中的 intra-procedural 結果不一致。
+
+**How** 對 source.line、sink.line、hops[].line 套用既有的 toDisplayLine 轉換（與 context、query、impact 相同），並在回應說明中註明這些為宣告行。
+
+**What** GitNexus 修正 PR #3635，對應 issue #3491；整合測試以 fixture 驗證 source.ts 第 7 行的 handle 與 sink.ts 第 6 行的 runIt。
 
 ### 重點
 - source.line、sink.line、hops[].line 原為 tree-sitter 0-based，現經 toDisplayLine 轉為 1-based

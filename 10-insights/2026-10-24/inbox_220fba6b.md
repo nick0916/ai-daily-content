@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Gemini 4 Argon vs Claude Opus 5.5: Pick Wrong, Pay Twice
 
-比較 Gemini 4 Argon 與 Claude Opus 5.5 對開發者的適用性，重點在選型與定價。 **Why** 原文強調選錯模型會多付成本，並以 11 月 30 日後的實際定價為比較基礎。 **What** 文章預告比較 benchmark、定價，以及哪個模型在 coding 與長文等場景勝出；節錄中未出現具體分數或價格數字。
+比較 Gemini 4 Argon 與 Claude Opus 5.5 對開發者的適用性，重點在選型與定價。
+
+**Why** 原文強調選錯模型會多付成本，並以 11 月 30 日後的實際定價為比較基礎。
+
+**What** 文章預告比較 benchmark、定價，以及哪個模型在 coding 與長文等場景勝出；節錄中未出現具體分數或價格數字。
 
 ### 重點
 - 比較對象：Gemini 4 Argon vs Claude Opus 5.5（面向開發者）

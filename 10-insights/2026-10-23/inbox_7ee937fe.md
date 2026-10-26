@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.60.0 — ruRE reverse-engineering tools, console page, security fixes
 
-讓 AI 工具的失敗不再被當成成功，並補上安全漏洞與新的唯讀逆向分析工具。 **Why** 原文多項修正指向同一問題：多個工具在操作失敗時仍回報成功，且 MCP session id 可被猜測。 **How** 新增六個只解析檔案、不執行檔案的 MCP 工具，並修正成功判斷與 session id 的產生方式。 **What** RuFlo v3.60.0 新增 rure_extract_asar、rure_analyze_binary 等六個 MCP 工具，ruflo-console 0.45.0 加入 ruRE 頁面；neural_compress 的 prune 會刪光所有 pattern 卻回報成功，現已拒絕執行；MCP session id 改用 crypto.randomUUID()。
+讓 AI 工具的失敗不再被當成成功，並補上安全漏洞與新的唯讀逆向分析工具。
+
+**Why** 原文多項修正指向同一問題：多個工具在操作失敗時仍回報成功，且 MCP session id 可被猜測。
+
+**How** 新增六個只解析檔案、不執行檔案的 MCP 工具，並修正成功判斷與 session id 的產生方式。
+
+**What** RuFlo v3.60.0 新增 rure_extract_asar、rure_analyze_binary 等六個 MCP 工具，ruflo-console 0.45.0 加入 ruRE 頁面；neural_compress 的 prune 會刪光所有 pattern 卻回報成功，現已拒絕執行；MCP session id 改用 crypto.randomUUID()。
 
 ### 重點
 - 新增六個唯讀逆向工具（rure_extract_asar、rure_analyze_js_app、rure_analyze_binary 等），解析檔案不執行，字串經 AIDefence 掃描；已知缺口是 .asar 暫存資料夾未清理，且可讀取任何程序可讀的路徑。

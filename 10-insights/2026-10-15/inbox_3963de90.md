@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I tested ChatGPT-6 vs Claude Haiku 5.5 on everyday tasks — here’s the winner
 
-作者以 5 項日常任務比較 ChatGPT-6 與 Claude Haiku 5.5，ChatGPT 以 3 比 2 勝出。 **Why** Haiku 5.5 定位為較小、較便宜、速度較快的模型，作者想了解它在日常任務上的表現。 **How** 兩者收到相同提示，評比標準為回覆是否貼近指令，以及使用者還需自行完成多少工作。 **What** ChatGPT 在感恩節菜單（多數配菜預設純素，減少分批烹調）、250 字小說開頭與預算計算器勝出；Claude 在跑鞋推薦（建議中性高緩衝鞋款，指出 Brooks Ghost 偏硬）與下午行程安排勝出。
+作者以 5 項日常任務比較 ChatGPT-6 與 Claude Haiku 5.5，ChatGPT 以 3 比 2 勝出。
+
+**Why** Haiku 5.5 定位為較小、較便宜、速度較快的模型，作者想了解它在日常任務上的表現。
+
+**How** 兩者收到相同提示，評比標準為回覆是否貼近指令，以及使用者還需自行完成多少工作。
+
+**What** ChatGPT 在感恩節菜單（多數配菜預設純素，減少分批烹調）、250 字小說開頭與預算計算器勝出；Claude 在跑鞋推薦（建議中性高緩衝鞋款，指出 Brooks Ghost 偏硬）與下午行程安排勝出。
 
 ### 重點
 - ChatGPT 勝出：感恩節菜單（多數配菜預設純素，減少分批烹調）、250 字小說開頭、可編輯且可離線下載的預算計算器

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## The NIST Elliptic Curves Seeds Bounty Has Been Claimed
 
-NIST 橢圓曲線的種子來源已解開：是 1997–98 年時間戳傳入 drand48 的輸出，而非傳說中英文句子的雜湊。 **Why** 種子來源長年不明，引發了 NSA 後門的陰謀論疑慮。 **How** 作者以 Go 重新實作流程：把 Unix 時間戳傳給 srand48()，逐位元組產生候選種子並依 ANSI X9.62 驗證曲線，無效則拒絕。 **What** Anthropic 團隊於 2026-10-15 領取懸賞並捐給 ISRG（$36,864）；作者估計攻擊者可用的自由度僅約 30 bits，因此排除了 Bernstein 與 Lange 提出、以 70 bits 針對弱曲線的情境。
+NIST 橢圓曲線的種子來源已解開：是 1997–98 年時間戳傳入 drand48 的輸出，而非傳說中英文句子的雜湊。
+
+**Why** 種子來源長年不明，引發了 NSA 後門的陰謀論疑慮。
+
+**How** 作者以 Go 重新實作流程：把 Unix 時間戳傳給 srand48()，逐位元組產生候選種子並依 ANSI X9.62 驗證曲線，無效則拒絕。
+
+**What** Anthropic 團隊於 2026-10-15 領取懸賞並捐給 ISRG（$36,864）；作者估計攻擊者可用的自由度僅約 30 bits，因此排除了 Bernstein 與 Lange 提出、以 70 bits 針對弱曲線的情境。
 
 ### 重點
 - 種子為 srand48(時間戳) 後逐位元組輸出的 drand48 結果，時間落在 1997–98 年，文中列出多組已發表與未發表曲線的對應

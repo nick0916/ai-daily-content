@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Hermes Agent v0.22.4
 
-Hermes Agent v0.22.4 為修補版，移除桌面版輸入框上方的建議按鈕。 **Why** 這些按鈕出現原因不明，多數在提示使用者設定 MCP 伺服器。 **What** 同時修正：無依賴外掛跳過空的同意提示、WhatsApp 登出後可安全重新配對、桌面版審核器不再誤報原型寫入、核准模式標籤跟隨 profile、發布建置的預檢時間加長；外掛目錄新增 bubblewrap、Singularity/Apptainer、mcp-serve、agent-importers（含 Cursor）等，Telegram Business 移至 Hermes Labs 社群層級。
+Hermes Agent v0.22.4 為修補版，移除桌面版輸入框上方的建議按鈕。
+
+**Why** 這些按鈕出現原因不明，多數在提示使用者設定 MCP 伺服器。
+
+**What** 同時修正：無依賴外掛跳過空的同意提示、WhatsApp 登出後可安全重新配對、桌面版審核器不再誤報原型寫入、核准模式標籤跟隨 profile、發布建置的預檢時間加長；外掛目錄新增 bubblewrap、Singularity/Apptainer、mcp-serve、agent-importers（含 Cursor）等，Telegram Business 移至 Hermes Labs 社群層級。
 
 ### 重點
 - 桌面版移除輸入框上方的建議按鈕（原多為催促設定 MCP 伺服器）及其專用輔助程式

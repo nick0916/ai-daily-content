@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## sslx: A fast, modern alternative to OpenSSL's CLI
 
-用一個 Rust 執行檔取代多數 openssl 指令，處理憑證、TLS 連線與格式轉換。 **Why** 原文指出，常見的憑證工作需要記憶多個 openssl 指令與旗標，操作成本高。 **How** 以 Rust 與 rustls 實作，不需要系統 OpenSSL。 **What** 提供 grade、expiry、inspect、connect、generate、csr、convert、match、extract、decode、verify 等子命令；grade 會給出 A+ 到 F 等級，expiry 在憑證 7 天內到期時回傳 exit code 1；所有指令支援 --json，並可用 cargo install 或 brew install glincker/tap/sslx 安裝。專案以 MIT 授權。
+用一個 Rust 執行檔取代多數 openssl 指令，處理憑證、TLS 連線與格式轉換。
+
+**Why** 原文指出，常見的憑證工作需要記憶多個 openssl 指令與旗標，操作成本高。
+
+**How** 以 Rust 與 rustls 實作，不需要系統 OpenSSL。
+
+**What** 提供 grade、expiry、inspect、connect、generate、csr、convert、match、extract、decode、verify 等子命令；grade 會給出 A+ 到 F 等級，expiry 在憑證 7 天內到期時回傳 exit code 1；所有指令支援 --json，並可用 cargo install 或 brew install glincker/tap/sslx 安裝。專案以 MIT 授權。
 
 ### 重點
 - 單一執行檔（Rust 與 rustls），不需系統 OpenSSL；可用 cargo install sslx 或 Homebrew 安裝

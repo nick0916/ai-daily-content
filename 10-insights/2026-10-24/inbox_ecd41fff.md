@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Master Frontier LLMs with Production-Grade Prompts: Introducing the Ultimate Prompt Bible 2026
 
-一篇推廣 prompt 合集的文章，宣稱基本指令式 prompt 浪費 90% 模型能力，但原文未提供佐證。 **Why** 作者主張生產級 prompt 才能發揮前沿模型能力。 **What** 文章介紹《Ultimate Prompt Bible 2026》，節錄中未列出具體技巧、範例或測試結果。
+一篇推廣 prompt 合集的文章，宣稱基本指令式 prompt 浪費 90% 模型能力，但原文未提供佐證。
+
+**Why** 作者主張生產級 prompt 才能發揮前沿模型能力。
+
+**What** 文章介紹《Ultimate Prompt Bible 2026》，節錄中未列出具體技巧、範例或測試結果。
 
 ### 重點
 - 原文宣稱：basic instructional prompts 讓使用者浪費約 90% 的模型能力（未附數據來源）

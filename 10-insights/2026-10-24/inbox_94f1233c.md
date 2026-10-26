@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Agent Standup: I made my Claude Code sub-agents a video call
 
-作者把 Claude Code 子代理做成「視訊通話」形式來追蹤進度。 **Why** 同時執行多個 AI coding agent 時，追蹤各自的工作會變得混亂（摘要原文）。 **What** 標題指出作者將 Claude Code sub-agents 做成視訊通話式的追蹤方式（Agent Standup）；摘要片段未提供實作細節。
+作者把 Claude Code 子代理做成「視訊通話」形式來追蹤進度。
+
+**Why** 同時執行多個 AI coding agent 時，追蹤各自的工作會變得混亂（摘要原文）。
+
+**What** 標題指出作者將 Claude Code sub-agents 做成視訊通話式的追蹤方式（Agent Standup）；摘要片段未提供實作細節。
 
 ### 重點
 - 標題：將 Claude Code sub-agents 做成「視訊通話」（Agent Standup）

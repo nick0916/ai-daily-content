@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Build Financial Agents That Work Across the Web - Jay Sahnan & Arik Bird, Browserbase
 
-替 AI agent 配一個能穩定通過防機器人機制、又不會因網頁改版就壞掉的雲端瀏覽器，讓它能處理沒有 API 的網站。 **Why** 金融場景的資料常在需登入的 portal 或有防機器人保護的網站，沒有 API 或 MCP，過去只能靠人工逐一處理，難以隨規模擴大。 **How** Browserbase 分叉 Chromium，移除 automation flag、對齊瀏覽器身分、讓程序常駐；另以 Stagehand（act/extract/observe）用自然語言操作頁面，並把 DOM 壓成 accessibility tree，再把 Stagehand 放在瀏覽器旁以減少來回延遲。 **What** 講者 Jay Sahnan 與 Arik Bird 以 Ramp、Bill、Stripe 為例：Ramp 用瀏覽器 agent 自動抓收據，據稱省下超過 3 萬人工小時、規模成長 5 倍；Bill 以單一 agent 處理多個付款 portal；Stripe 用於商家 KYC 驗證。Stagehand 示範中，同一頁面由約 12.2 萬 token 的原始 HTML 降到約 4,000 token。
+替 AI agent 配一個能穩定通過防機器人機制、又不會因網頁改版就壞掉的雲端瀏覽器，讓它能處理沒有 API 的網站。
+
+**Why** 金融場景的資料常在需登入的 portal 或有防機器人保護的網站，沒有 API 或 MCP，過去只能靠人工逐一處理，難以隨規模擴大。
+
+**How** Browserbase 分叉 Chromium，移除 automation flag、對齊瀏覽器身分、讓程序常駐；另以 Stagehand（act/extract/observe）用自然語言操作頁面，並把 DOM 壓成 accessibility tree，再把 Stagehand 放在瀏覽器旁以減少來回延遲。
+
+**What** 講者 Jay Sahnan 與 Arik Bird 以 Ramp、Bill、Stripe 為例：Ramp 用瀏覽器 agent 自動抓收據，據稱省下超過 3 萬人工小時、規模成長 5 倍；Bill 以單一 agent 處理多個付款 portal；Stripe 用於商家 KYC 驗證。Stagehand 示範中，同一頁面由約 12.2 萬 token 的原始 HTML 降到約 4,000 token。
 
 ### 重點
 - Stagehand 把 DOM 轉成 accessibility tree：同一範例由約 122k token 降到約 4k token，並直接給出 selector

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Git Worktrees + Claude Code: A Complete Guide from Beginner to Pro
 
-用 git worktree 在同一 repo 同時跑多個 Claude Code session，避免合併混亂。 **Why** 同一 repo 多個 session 同時修改，容易產生合併衝突。 **How** 以 git worktrees 為每個 session 分配獨立工作目錄。 **What** 原文為教學文章，標題為從入門到進階的指南；預覽未展開具體指令與步驟。
+用 git worktree 在同一 repo 同時跑多個 Claude Code session，避免合併混亂。
+
+**Why** 同一 repo 多個 session 同時修改，容易產生合併衝突。
+
+**How** 以 git worktrees 為每個 session 分配獨立工作目錄。
+
+**What** 原文為教學文章，標題為從入門到進階的指南；預覽未展開具體指令與步驟。
 
 ### 重點
 - 方法：以 git worktrees 在同一 repo 運行多個 Claude Code session

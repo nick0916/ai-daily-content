@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## What on earth is going on with AI pricing and packaging?
 
-AI 產品的定價頁讓人看不懂：只告訴你「多 5 倍」「5 億 token」，卻沒說這些能做多少事。 **Why** AI 產品能做的事幾乎無限、每次成本落差又大，不像傳統 SaaS 能用席位或儲存量收費，導致業界連自己也難以預測用量與成本。 **How** 作者歸納四個同時發生的原因：（1）發明「遊樂場代幣」式的 credits／token 讓錢不像錢；（2）用大數字取代價值；（3）不知道該以什麼為計費單位（訊息、任務、時間、成果？）；（4）連自己的推論成本都難預測，尤其是會規劃、重試、呼叫工具的 agent。 **What** Elena Verna（Lovable 成長負責人）逐一檢視 Grok、Muse、Lovable、Instinct、ElevenLabs、ChatGPT、Anthropic 的方案：Grok 的 Premium 是 Plus 的 4x、Super 是 15x，卻不說 Plus 含多少；Muse 登出狀態無定價頁，App 內為 $20/月、每週 5 億 token；Lovable $25/月給 100 Pro credits；Anthropic Max 為 Pro 的 5x 或 20x。她認為目前產品太新太好所以使用者容忍，但大眾市場未必。
+AI 產品的定價頁讓人看不懂：只告訴你「多 5 倍」「5 億 token」，卻沒說這些能做多少事。
+
+**Why** AI 產品能做的事幾乎無限、每次成本落差又大，不像傳統 SaaS 能用席位或儲存量收費，導致業界連自己也難以預測用量與成本。
+
+**How** 作者歸納四個同時發生的原因：（1）發明「遊樂場代幣」式的 credits／token 讓錢不像錢；（2）用大數字取代價值；（3）不知道該以什麼為計費單位（訊息、任務、時間、成果？）；（4）連自己的推論成本都難預測，尤其是會規劃、重試、呼叫工具的 agent。
+
+**What** Elena Verna（Lovable 成長負責人）逐一檢視 Grok、Muse、Lovable、Instinct、ElevenLabs、ChatGPT、Anthropic 的方案：Grok 的 Premium 是 Plus 的 4x、Super 是 15x，卻不說 Plus 含多少；Muse 登出狀態無定價頁，App 內為 $20/月、每週 5 億 token；Lovable $25/月給 100 Pro credits；Anthropic Max 為 Pro 的 5x 或 20x。她認為目前產品太新太好所以使用者容忍，但大眾市場未必。
 
 ### 重點
 - 四大成因：credits 如遊樂場代幣（mental accounting）、大數字取代價值、計費單位不明、AI 自身成本不可預測

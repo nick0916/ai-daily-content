@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## CSIRO Uses Serverless Architecture to Query 100x More Genomic Variants on AWS
 
-澳洲 CSIRO 不把基因變異檔案複製進中央資料庫，而是直接在雲端原檔上做查詢。 **Why** 基因體資料量龐大，把 VCF 檔複製進中央資料庫成本高、也難以擴展。 **How** 用 Amazon S3、Lambda、Athena、DynamoDB 組成 serverless 架構，以 metadata 索引搭配 HTTP byte range request，只讀取壓縮檔中需要的基因體區段。 **What** CSIRO 的 Serverless Beacon，可查詢比先前多 100 倍的基因變異；測試中 10,000 鹼基對查詢平均延遲 1.52 秒。
+澳洲 CSIRO 不把基因變異檔案複製進中央資料庫，而是直接在雲端原檔上做查詢。
+
+**Why** 基因體資料量龐大，把 VCF 檔複製進中央資料庫成本高、也難以擴展。
+
+**How** 用 Amazon S3、Lambda、Athena、DynamoDB 組成 serverless 架構，以 metadata 索引搭配 HTTP byte range request，只讀取壓縮檔中需要的基因體區段。
+
+**What** CSIRO 的 Serverless Beacon，可查詢比先前多 100 倍的基因變異；測試中 10,000 鹼基對查詢平均延遲 1.52 秒。
 
 ### 重點
 - 架構組成：Amazon S3、Lambda、Athena、DynamoDB

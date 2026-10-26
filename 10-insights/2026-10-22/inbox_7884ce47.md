@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Article: AI Changes the Data Interface, Not the Query Engine
 
-讓 AI 只負責「寫查詢與解讀結果」，真正算數字交給確定性的資料庫引擎，結果才可重現。 **Why** 若讓 LLM 直接給出數字，答案無法重現也難以稽核；災害復原分析需要可驗證的事實。 **How** 把工作拆成確定性與非確定性兩段：AI agent 產生受限的 SQL 或 Python，DuckDB 在 Parquet 上計算可重現的事實，再由 agent 解讀結果，整個分析可重播。 **What** InfoQ 文章（作者 Peihao Yuan）以災害復原分析流程為例，說明 determinism split 與 replayable analysis，並提出四個訊號，用來判斷嵌入式引擎（DuckDB）已足夠，或需要上託管式 lakehouse。
+讓 AI 只負責「寫查詢與解讀結果」，真正算數字交給確定性的資料庫引擎，結果才可重現。
+
+**Why** 若讓 LLM 直接給出數字，答案無法重現也難以稽核；災害復原分析需要可驗證的事實。
+
+**How** 把工作拆成確定性與非確定性兩段：AI agent 產生受限的 SQL 或 Python，DuckDB 在 Parquet 上計算可重現的事實，再由 agent 解讀結果，整個分析可重播。
+
+**What** InfoQ 文章（作者 Peihao Yuan）以災害復原分析流程為例，說明 determinism split 與 replayable analysis，並提出四個訊號，用來判斷嵌入式引擎（DuckDB）已足夠，或需要上託管式 lakehouse。
 
 ### 重點
 - 確定性分工：AI agent 產生受限 SQL/Python，DuckDB 在 Parquet 上計算事實，agent 只負責解讀結果

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Introducing Kimi K3.1 Pro
 
-Moonshot 推出 Kimi K3.1 Pro，開放權重承諾下的模型首度在第三方評分上逼近頂尖閉源模型，價格只有一半。 **Why** 開放權重模型長期落後閉源前沿模型，這次差距明顯縮小，讓成本敏感的團隊多了一個選項。 **How** 原文僅提到 Moonshot 同時提供 2-3 倍速、價格兩倍的 Highspeed 版本（input cache hit 價格相同）；作者用 LLM 0.32 的 `llm openai endpoint` 指令，經 OpenAI 相容端點呼叫並測試 low／medium／max 三種 reasoning 等級。 **What** Kimi K3.1 Pro 已上 Kimi API，定價 input $2.00／output $10 每百萬 tokens，與 GPT-6.1 Sol 相同、為 Claude Opus 5.5 的一半。Artificial Analysis 評分 55，高於 Claude Fable 5.1、GPT-6 Astra、Gemini 4 Argon（皆 53），僅次於 Claude Opus 5.5（58）。Moonshot 承諾完整權重於 2026/11/4 前釋出，目前尚未開放。
+Moonshot 推出 Kimi K3.1 Pro，開放權重承諾下的模型首度在第三方評分上逼近頂尖閉源模型，價格只有一半。
+
+**Why** 開放權重模型長期落後閉源前沿模型，這次差距明顯縮小，讓成本敏感的團隊多了一個選項。
+
+**How** 原文僅提到 Moonshot 同時提供 2-3 倍速、價格兩倍的 Highspeed 版本（input cache hit 價格相同）；作者用 LLM 0.32 的 `llm openai endpoint` 指令，經 OpenAI 相容端點呼叫並測試 low／medium／max 三種 reasoning 等級。
+
+**What** Kimi K3.1 Pro 已上 Kimi API，定價 input $2.00／output $10 每百萬 tokens，與 GPT-6.1 Sol 相同、為 Claude Opus 5.5 的一半。Artificial Analysis 評分 55，高於 Claude Fable 5.1、GPT-6 Astra、Gemini 4 Argon（皆 53），僅次於 Claude Opus 5.5（58）。Moonshot 承諾完整權重於 2026/11/4 前釋出，目前尚未開放。
 
 ### 重點
 - Artificial Analysis 評分 55：高於 Claude Fable 5.1／GPT-6 Astra／Gemini 4 Argon（53），僅次於 Claude Opus 5.5（58）

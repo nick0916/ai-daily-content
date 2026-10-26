@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## PyTorch Conference 2026: Google and Meta Open-Source TorchTPU for Native PyTorch on TPUs
 
-讓原生 PyTorch 程式直接跑在 Google TPU 上，不必再改寫成別的框架。 **Why** 開發者長期受限於硬體與框架綁定，報導指出大家也在質疑 TPU 的可取得性，以及 vendor lock-in 如今落在哪一層。 **What** Google 與 Meta 在 PyTorch Conference North America 2026 開源 TorchTPU，為 TPU 提供原生 PyTorch backend，Meta 表示計畫用它把更大的 LLM 工作負載移到 TPU；同週 AWS 也釋出針對 Trainium 的 TorchNeuron。
+讓原生 PyTorch 程式直接跑在 Google TPU 上，不必再改寫成別的框架。
+
+**Why** 開發者長期受限於硬體與框架綁定，報導指出大家也在質疑 TPU 的可取得性，以及 vendor lock-in 如今落在哪一層。
+
+**What** Google 與 Meta 在 PyTorch Conference North America 2026 開源 TorchTPU，為 TPU 提供原生 PyTorch backend，Meta 表示計畫用它把更大的 LLM 工作負載移到 TPU；同週 AWS 也釋出針對 Trainium 的 TorchNeuron。
 
 ### 重點
 - TorchTPU：Google 與 Meta 開源的 TPU 原生 PyTorch backend

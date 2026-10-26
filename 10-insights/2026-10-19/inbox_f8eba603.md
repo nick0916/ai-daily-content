@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Release Candidate v1.6.13-rc.132
 
-GitNexus 推出 1.6.13-rc.132 預發布版，供早期測試用。 **Why** 預發布版（release candidate）供早期測試，穩定版仍保留在 latest dist-tag。 **What** 版本 1.6.13-rc.132，可用 npm install gitnexus@rc 安裝；變更含 MCP 啟動相容性修正、Swift 完整支援、Docker 支援、HTTP embedding 後端、git commit 後自動重新索引，以及 Go scope-capture 的 O(n²) 效能修正。預覽內容已截斷，僅列部分變更。
+GitNexus 推出 1.6.13-rc.132 預發布版，供早期測試用。
+
+**Why** 預發布版（release candidate）供早期測試，穩定版仍保留在 latest dist-tag。
+
+**What** 版本 1.6.13-rc.132，可用 npm install gitnexus@rc 安裝；變更含 MCP 啟動相容性修正、Swift 完整支援、Docker 支援、HTTP embedding 後端、git commit 後自動重新索引，以及 Go scope-capture 的 O(n²) 效能修正。預覽內容已截斷，僅列部分變更。
 
 ### 重點
 - 新增 HTTP embedding 後端，支援自架或遠端端點（#395）

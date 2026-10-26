@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Best Books/Courses/Channels to Leapfrog on AI/ML Material
 
-一位離開 AI 領域多年的人，想找能快速建立最新 AI/ML 知識的學習資源。 **Why** 他從 2018–19 年起沒有跟進，並想知道 LLM 與過去已大量部署的傳統 ML 模型是否需要不同的學習方式。 **What** 這是一則求助貼文，要求推薦書籍、MOOC 課程與 YouTube 頻道，並希望有類似 TeachYourselfCS 的結構化路線圖；貼文中沒有回覆內容。
+一位離開 AI 領域多年的人，想找能快速建立最新 AI/ML 知識的學習資源。
+
+**Why** 他從 2018–19 年起沒有跟進，並想知道 LLM 與過去已大量部署的傳統 ML 模型是否需要不同的學習方式。
+
+**What** 這是一則求助貼文，要求推薦書籍、MOOC 課程與 YouTube 頻道，並希望有類似 TeachYourselfCS 的結構化路線圖；貼文中沒有回覆內容。
 
 ### 重點
 - 要求推薦書籍、MOOC 課程與 YouTube 頻道

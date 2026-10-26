@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## AI Agents for Teachers
 
-教師可用 Claude Cowork 設定代理工作流，但需留意代理迴圈的三種失敗方式。 **Why** 作者指出多數教育科技的 AI 代理目前在後台或管理端運作，教師很少能直接掌控，而 Claude for Teachers 被他視為教師端代理使用的第一個突破。 **How** 作者說明 Cowork 網頁版透過 Google Drive、OneDrive、Slack、email 等雲端連接器運作，桌面版則處理本機檔案與資料夾；建議把含個資的教材放入單一資料夾，只授權 Claude 存取該資料夾。 **What** 文中提供兩個工作流：依 scope and sequence 規劃學期單元，以及掃描 Drive 中既有教材後重建單元；作者列出代理迴圈的三種失敗：幻覺被放大、把一次對話即可完成的工作變成迴圈（造成 token 成本），以及缺乏外部檢查（如程式的測試套件）。
+教師可用 Claude Cowork 設定代理工作流，但需留意代理迴圈的三種失敗方式。
+
+**Why** 作者指出多數教育科技的 AI 代理目前在後台或管理端運作，教師很少能直接掌控，而 Claude for Teachers 被他視為教師端代理使用的第一個突破。
+
+**How** 作者說明 Cowork 網頁版透過 Google Drive、OneDrive、Slack、email 等雲端連接器運作，桌面版則處理本機檔案與資料夾；建議把含個資的教材放入單一資料夾，只授權 Claude 存取該資料夾。
+
+**What** 文中提供兩個工作流：依 scope and sequence 規劃學期單元，以及掃描 Drive 中既有教材後重建單元；作者列出代理迴圈的三種失敗：幻覺被放大、把一次對話即可完成的工作變成迴圈（造成 token 成本），以及缺乏外部檢查（如程式的測試套件）。
 
 ### 重點
 - Cowork 網頁版透過雲端連接器存取 Drive、OneDrive、Slack、email；桌面版主要處理本機檔案

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I use 7 ChatGPT entertainment plugins every day — and these prompts help them deliver the best music and movie recommendations
 
-作者介紹七款 ChatGPT 娛樂外掛，並附上推薦音樂、電影、遊戲、漫畫與下棋的提示詞。 **Why** 作者希望透過外掛發掘自己不易找到的作品，並省下搜尋時間。 **How** 每款外掛的提示詞都要求說明推薦理由、排序，或指定偏好與條件，例如「包含至少五款低調作品」或「避免劇透」。 **What** 七款外掛為 Spotify、Apple Music、Tubi、Flixor、GameFinder、Emaqi 與 Chessy；作者提到 Tubi 推薦了 Hotel Artemis、Mayhem 等電影，Emaqi 推薦了 Psyren、Dragon Quest: The Adventure of Dai 等漫畫，Chessy 則讓使用者與 ChatGPT 對弈並逐步提供建議。
+作者介紹七款 ChatGPT 娛樂外掛，並附上推薦音樂、電影、遊戲、漫畫與下棋的提示詞。
+
+**Why** 作者希望透過外掛發掘自己不易找到的作品，並省下搜尋時間。
+
+**How** 每款外掛的提示詞都要求說明推薦理由、排序，或指定偏好與條件，例如「包含至少五款低調作品」或「避免劇透」。
+
+**What** 七款外掛為 Spotify、Apple Music、Tubi、Flixor、GameFinder、Emaqi 與 Chessy；作者提到 Tubi 推薦了 Hotel Artemis、Mayhem 等電影，Emaqi 推薦了 Psyren、Dragon Quest: The Adventure of Dai 等漫畫，Chessy 則讓使用者與 ChatGPT 對弈並逐步提供建議。
 
 ### 重點
 - GameFinder 的提示詞要求分析玩家喜歡的戰鬥、探索、難度等要素，並至少列出五款被低估的遊戲。

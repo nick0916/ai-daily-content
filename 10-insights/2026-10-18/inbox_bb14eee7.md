@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I made ChatGPT-6 find the best character build in 3 of my favorite games — here’s how it became my personal gaming coach
 
-作者請 ChatGPT-6 為三款遊戲推薦角色配裝，作為個人遊戲教練使用。 **Why** 玩家常需要快速找到角色配置與技能優先順序，作者想測試 AI 能否提供實用建議。 **How** 作者詢問 Splatoon Raiders、CONTROL Resonant 與 Aliens: Fireteam Elite 2 的最佳角色 build，回應包含武器、優先順序與替代玩法。 **What** 作者表示 Splatoon Raiders 的建議（Tactical Tank 搭配 Shichirin Pow Slosher）在高難度 raid 中有幫助；CONTROL Resonant 的建議多數是作者已知的常識；Aliens 的 Machinist 配裝則以自動步槍、高傷害副武器與炮塔相關天賦為主。
+作者請 ChatGPT-6 為三款遊戲推薦角色配裝，作為個人遊戲教練使用。
+
+**Why** 玩家常需要快速找到角色配置與技能優先順序，作者想測試 AI 能否提供實用建議。
+
+**How** 作者詢問 Splatoon Raiders、CONTROL Resonant 與 Aliens: Fireteam Elite 2 的最佳角色 build，回應包含武器、優先順序與替代玩法。
+
+**What** 作者表示 Splatoon Raiders 的建議（Tactical Tank 搭配 Shichirin Pow Slosher）在高難度 raid 中有幫助；CONTROL Resonant 的建議多數是作者已知的常識；Aliens 的 Machinist 配裝則以自動步槍、高傷害副武器與炮塔相關天賦為主。
 
 ### 重點
 - Splatoon Raiders 的建議依序為武器傷害、裝置傷害、HP，並提供偏向生存的替代方案。

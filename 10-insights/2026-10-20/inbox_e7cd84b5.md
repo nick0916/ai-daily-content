@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How To Use Decision Models for Evals
 
-用小型分類模型當便宜的 AI 評審，但要先調整判定門檻，別直接用預設 0.50。 **Why** 決策模型（decision models）是 LLM 評審的低成本替代，但許多人不檢查就沿用預設 0.50 門檻，會浪費效能。 **How** 用 100 筆公寓租賃 agent 的 trace，先設定最低 precision/recall 80%，再用分層五折交叉驗證調整門檻、以 F1 為目標，並用 Platt scaling 校準機率。 **What** 測試 Jev 1.13、Perplexity Decider 1.1 27B、Liquid d1 / d1-ultra、Cloudflare Clef Flash、OpenAI Decisions（GPT-6 Luna）。Perplexity、Liquid d1-ultra、OpenAI 達到 80% 門檻；Perplexity 最便宜，每 100 次 eval 0.82 美分、F1 0.79，OpenAI F1 0.87、3.72 美分（約 4.5 倍成本）。
+用小型分類模型當便宜的 AI 評審，但要先調整判定門檻，別直接用預設 0.50。
+
+**Why** 決策模型（decision models）是 LLM 評審的低成本替代，但許多人不檢查就沿用預設 0.50 門檻，會浪費效能。
+
+**How** 用 100 筆公寓租賃 agent 的 trace，先設定最低 precision/recall 80%，再用分層五折交叉驗證調整門檻、以 F1 為目標，並用 Platt scaling 校準機率。
+
+**What** 測試 Jev 1.13、Perplexity Decider 1.1 27B、Liquid d1 / d1-ultra、Cloudflare Clef Flash、OpenAI Decisions（GPT-6 Luna）。Perplexity、Liquid d1-ultra、OpenAI 達到 80% 門檻；Perplexity 最便宜，每 100 次 eval 0.82 美分、F1 0.79，OpenAI F1 0.87、3.72 美分（約 4.5 倍成本）。
 
 ### 重點
 - 預設門檻 0.50 可能完全失效：例如失敗 trace 都給 0.40、正常給 0.10，0.30 可完美分類，0.50 一個都抓不到；Liquid d1 與 Clef Flash 調整後仍低於 80% 最低要求

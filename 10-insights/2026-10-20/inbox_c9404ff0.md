@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## The Hidden Cost of LLM Routing: Why Switching Models Costs More
 
-在對話中途切換模型，可能抵消較便宜推論所省下的成本。 **Why** LLM routing 的目的通常是省錢，作者實測後想了解為何中途切換模型會讓節省消失。 **How** 作者以實測方式測試 LLM routing。 **What** 節錄未提供具體數字；核心論點是中途切換模型可能抵消 cheaper inference 承諾的節省。
+在對話中途切換模型，可能抵消較便宜推論所省下的成本。
+
+**Why** LLM routing 的目的通常是省錢，作者實測後想了解為何中途切換模型會讓節省消失。
+
+**How** 作者以實測方式測試 LLM routing。
+
+**What** 節錄未提供具體數字；核心論點是中途切換模型可能抵消 cheaper inference 承諾的節省。
 
 ### 重點
 - 作者實測 LLM routing，探討為何 session 中途切換模型會抵消節省

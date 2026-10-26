@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Why AI Agents Will Need Their Own Bank Accounts — Lincoln Murr, Coinbase
 
-讓 AI agent 擁有自己的錢包，能付款、也能賺錢與投資。 **Why** AI 取代網頁瀏覽後，出版商失去廣告收入，且 bot 流量已首度超越人類；同時 agent 即使有錢也沒有地方可以付費。 **How** 以 HTTP 402（Payment Required）狀態碼為基礎，搭配穩定幣作為便宜快速的支付軌道，建立 x402 開放標準，讓網站可對 agent 收取極小額微支付；另外讓 agent 在使用者授權與 guardrails 下管理投資組合、依條件自動交易。 **What** Coinbase 推出 x402（約去年 5 月發布），原訂年底 25,000 筆 agent 交易，年底時已達每 17 秒一筆，目前每 30 天有數億筆交易；Visa、MasterCard、Stripe、PayPal、Amex 等參與，AWS 與 Cloudflare 已啟用 x402 微支付閘道。另有 Agent Kit（LangChain + wallet）及 SEC 註冊的 Coinbase Advisor；講者為 Coinbase AI 產品負責人，數字為其自述。
+讓 AI agent 擁有自己的錢包，能付款、也能賺錢與投資。
+
+**Why** AI 取代網頁瀏覽後，出版商失去廣告收入，且 bot 流量已首度超越人類；同時 agent 即使有錢也沒有地方可以付費。
+
+**How** 以 HTTP 402（Payment Required）狀態碼為基礎，搭配穩定幣作為便宜快速的支付軌道，建立 x402 開放標準，讓網站可對 agent 收取極小額微支付；另外讓 agent 在使用者授權與 guardrails 下管理投資組合、依條件自動交易。
+
+**What** Coinbase 推出 x402（約去年 5 月發布），原訂年底 25,000 筆 agent 交易，年底時已達每 17 秒一筆，目前每 30 天有數億筆交易；Visa、MasterCard、Stripe、PayPal、Amex 等參與，AWS 與 Cloudflare 已啟用 x402 微支付閘道。另有 Agent Kit（LangChain + wallet）及 SEC 註冊的 Coinbase Advisor；講者為 Coinbase AI 產品負責人，數字為其自述。
 
 ### 重點
 - x402 數據：原訂年底 25,000 筆 agent 交易，實際每 17 秒一筆；目前每 30 天達數億筆交易、數千萬美元交易量；AWS、Cloudflare 已支援 x402 微支付閘道

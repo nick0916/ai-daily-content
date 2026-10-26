@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.5 — distill both memory stores
 
-讓記憶蒸餾同時處理兩個儲存庫，避免一個庫的資料默默堆積。 **Why** 原本 memory distill 與 daemon 的 consolidate worker 只解析 memory.db，MCP-only 專案常缺少 AgentDB 目標表，每次 tick 都被跳過，實際資料卻累積在 agentdb-memory.db。 **How** 同時解析並蒸餾兩個儲存庫，單一庫失敗不會阻擋另一個；明確指定 --db 時仍只鎖定單一庫。 **What** Ruflo v3.59.5（#4338，修正 #3446），三個 dist-tags 已在 registry 驗證。
+讓記憶蒸餾同時處理兩個儲存庫，避免一個庫的資料默默堆積。
+
+**Why** 原本 memory distill 與 daemon 的 consolidate worker 只解析 memory.db，MCP-only 專案常缺少 AgentDB 目標表，每次 tick 都被跳過，實際資料卻累積在 agentdb-memory.db。
+
+**How** 同時解析並蒸餾兩個儲存庫，單一庫失敗不會阻擋另一個；明確指定 --db 時仍只鎖定單一庫。
+
+**What** Ruflo v3.59.5（#4338，修正 #3446），三個 dist-tags 已在 registry 驗證。
 
 ### 重點
 - memory distill 與 daemon consolidate worker 原本只解析 memory.db

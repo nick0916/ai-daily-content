@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Pinterest Uses Event Time Watermarks to Finalize Petabyte Scale Data Partitions
 
-用事件時間水位線判斷持續匯入的資料何時夠完整，才能放行下游處理。 **Why** 持續匯入 CDC 資料時，下游作業需要知道某個分區何時已足夠完整。 **How** 以 Apache Flink 追蹤事件時間，並利用 Apache Iceberg metadata 發布不會倒退的水位線。 **What** Pinterest 為其資料庫匯入框架導入以事件時間為基礎的分區定案（partition finalization）機制，應用於 PB 等級的資料分區。
+用事件時間水位線判斷持續匯入的資料何時夠完整，才能放行下游處理。
+
+**Why** 持續匯入 CDC 資料時，下游作業需要知道某個分區何時已足夠完整。
+
+**How** 以 Apache Flink 追蹤事件時間，並利用 Apache Iceberg metadata 發布不會倒退的水位線。
+
+**What** Pinterest 為其資料庫匯入框架導入以事件時間為基礎的分區定案（partition finalization）機制，應用於 PB 等級的資料分區。
 
 ### 重點
 - Flink 負責追蹤事件時間

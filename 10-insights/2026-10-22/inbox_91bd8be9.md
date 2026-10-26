@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Oracle Security Alert Advisory - CVE-2026-91403
 
-Oracle 發布 Java SE 緊急安全更新，不再信任 eMudhra 相關的一組中繼 CA 憑證。 **Why** 受影響的中繼 CA 憑證被視為不可信，必須在 Java 端撤銷信任以避免風險。 **How** 透過 Java 更新把這組 eMudhra 相關中繼 CA 憑證列為不受信任；使用者需更新到最新 Java 版本或套用建議的緩解措施。 **What** Oracle Security Alert 針對 CVE-2026-91403，內含 1 個 Oracle Java SE 新安全補丁；該弱點可在無需認證下由網路遠端利用，也影響執行不受信任程式碼並依賴 Java sandbox 的情境（如 sandboxed Java Web Start / applet）。補丁僅提供給 Premier Support 或 Extended Support 涵蓋的版本；公告未列出回報者。
+Oracle 發布 Java SE 緊急安全更新，不再信任 eMudhra 相關的一組中繼 CA 憑證。
+
+**Why** 受影響的中繼 CA 憑證被視為不可信，必須在 Java 端撤銷信任以避免風險。
+
+**How** 透過 Java 更新把這組 eMudhra 相關中繼 CA 憑證列為不受信任；使用者需更新到最新 Java 版本或套用建議的緩解措施。
+
+**What** Oracle Security Alert 針對 CVE-2026-91403，內含 1 個 Oracle Java SE 新安全補丁；該弱點可在無需認證下由網路遠端利用，也影響執行不受信任程式碼並依賴 Java sandbox 的情境（如 sandboxed Java Web Start / applet）。補丁僅提供給 Premier Support 或 Extended Support 涵蓋的版本；公告未列出回報者。
 
 ### 重點
 - CVE-2026-91403：Java 更新將 eMudhra 相關中繼 CA 憑證列為不信任

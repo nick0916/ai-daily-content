@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Prompt Caching Changes How You Should Write Prompts
 
-同一段 prompt 換排版，成本可相差很多。 **Why** 作者以 prompt caching 為主題，比較不同寫法的成本。 **What** 作者用同一模型、每日 10,000 次請求比較三種排版，其中一種成本為 $20.03，另一種的成本數字在內文截斷處未顯示。
+同一段 prompt 換排版，成本可相差很多。
+
+**Why** 作者以 prompt caching 為主題，比較不同寫法的成本。
+
+**What** 作者用同一模型、每日 10,000 次請求比較三種排版，其中一種成本為 $20.03，另一種的成本數字在內文截斷處未顯示。
 
 ### 重點
 - 同一模型、每日 10,000 次請求，比較三種 prompt 排版

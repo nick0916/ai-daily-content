@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Goodbye Google
 
-一位 Google 工程師因工作會加速 AI 晶片而離職，轉而維護 rr 與 Pernosco 並研究 AI 除錯。 **Why** 他認為 AI 進展過快、風險真實但不確定，且自己參與的晶片設計工具會讓 AI 更便宜、更快。 **What** 文中宣布於 2026-09-24 離開 Google，未來將繼續維護 Pernosco 與 rr，並計畫研究 AI agents 如何除錯及相關工具；他表示希望未來工作「明確站在人類這邊」。
+一位 Google 工程師因工作會加速 AI 晶片而離職，轉而維護 rr 與 Pernosco 並研究 AI 除錯。
+
+**Why** 他認為 AI 進展過快、風險真實但不確定，且自己參與的晶片設計工具會讓 AI 更便宜、更快。
+
+**What** 文中宣布於 2026-09-24 離開 Google，未來將繼續維護 Pernosco 與 rr，並計畫研究 AI agents 如何除錯及相關工具；他表示希望未來工作「明確站在人類這邊」。
 
 ### 重點
 - 2026-09-24 離開 Google，原工作為晶片設計工具，他認為該工具會加速 AI 晶片

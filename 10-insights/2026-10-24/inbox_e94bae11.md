@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Stage-Based Model Selection: Bringing the Right AI Model to Every Step of Spec-Driven Development
 
-讓開發流程的每個階段各自使用最合適的 AI 模型，而非全程只用一個。 **Why** 原文開頭點出「單一模型不夠用」，是此方法存在的理由。 **What** 文章主題為 spec-driven development 中的分階段模型選擇；提供的內容只有標題與開頭，具體做法、模型組合與結果未提供。
+讓開發流程的每個階段各自使用最合適的 AI 模型，而非全程只用一個。
+
+**Why** 原文開頭點出「單一模型不夠用」，是此方法存在的理由。
+
+**What** 文章主題為 spec-driven development 中的分階段模型選擇；提供的內容只有標題與開頭，具體做法、模型組合與結果未提供。
 
 ### 重點
 - 主題：spec-driven development 中的分階段模型選擇

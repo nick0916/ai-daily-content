@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.13 — claims cwd + global-CLI hook fixes
 
-讓工具寫入正確的狀態位置，並讓 hook 呼叫釘住的那一份程式，而非 registry 上最新的版本。 **Why** 從子目錄啟動 MCP server 時，claims 會寫到錯的 store；hook 若 fallback 到 npx，會跟著 registry 的最新版走。 **How** claims 改用 getProjectCwd() 解析專案路徑；hook-handler.cjs 先檢查 npm global prefix、PATH 上的 ruflo/claude-flow 與 ~/.npm-global，找不到才 fallback 到 npx @claude-flow/cli。 **What** ruflo v3.59.13 修兩項 bug（#3210、#3368、#4368）；SessionStart 改用已安裝的全域版本。官方表示版本 lockstep 與 leaf 版本審計通過，3 個相關測試檔 35/35 通過。
+讓工具寫入正確的狀態位置，並讓 hook 呼叫釘住的那一份程式，而非 registry 上最新的版本。
+
+**Why** 從子目錄啟動 MCP server 時，claims 會寫到錯的 store；hook 若 fallback 到 npx，會跟著 registry 的最新版走。
+
+**How** claims 改用 getProjectCwd() 解析專案路徑；hook-handler.cjs 先檢查 npm global prefix、PATH 上的 ruflo/claude-flow 與 ~/.npm-global，找不到才 fallback 到 npx @claude-flow/cli。
+
+**What** ruflo v3.59.13 修兩項 bug（#3210、#3368、#4368）；SessionStart 改用已安裝的全域版本。官方表示版本 lockstep 與 leaf 版本審計通過，3 個相關測試檔 35/35 通過。
 
 ### 重點
 - claims 持久化改用 getProjectCwd()，取代原本的 resolve(CLAUDE_DIR)，子目錄啟動的 claims-aware MCP server 不再漏掉 CLAUDE_FLOW_CWD 而寫錯 store（#3210）

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## When my first AI book was published in 2024, the best AI could do 4 minutes of human work with a 50%
 
-Ethan Mollick 用一則貼文濃縮他的 30 個月圖表文：AI 單次能完成的人類工作量從 4 分鐘漲到 17 週以上。 **Why** 他的第二本書《Co-Existence》剛出版，用這個對比說明 AI 進展速度。 **How** 數據取自 METR 長時程基準（50% 成功率的人類工作量），但該基準已無法再準確量測，17 週以上來自其他研究的推估。 **What** 2024 年第一本書出版時為 4 分鐘，2026 年 4 月交稿時為 17 小時，書出版兩天後貼文宣稱已達 17 週以上；貼文並轉貼同篇《30 Months on the Exponential (in Charts)》全文，內容與同日另一則收錄的原文重複。
+Ethan Mollick 用一則貼文濃縮他的 30 個月圖表文：AI 單次能完成的人類工作量從 4 分鐘漲到 17 週以上。
+
+**Why** 他的第二本書《Co-Existence》剛出版，用這個對比說明 AI 進展速度。
+
+**How** 數據取自 METR 長時程基準（50% 成功率的人類工作量），但該基準已無法再準確量測，17 週以上來自其他研究的推估。
+
+**What** 2024 年第一本書出版時為 4 分鐘，2026 年 4 月交稿時為 17 小時，書出版兩天後貼文宣稱已達 17 週以上；貼文並轉貼同篇《30 Months on the Exponential (in Charts)》全文，內容與同日另一則收錄的原文重複。
 
 ### 重點
 - 對比：2024 年 4 分鐘 → 2026 年交稿時 17 小時 → 貼文宣稱現已達 17 週以上

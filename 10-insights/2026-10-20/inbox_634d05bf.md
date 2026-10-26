@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Battle Drones - a vibe coded RTS with audio-based multiplayer
 
-用 Claude Code 反覆迭代，做出一款能在手機玩的即時戰略遊戲，還能用聲音同步兩台裝置。 **Why** 作者原本認為 coding agent 只能做出看起來像遊戲、但不好玩的東西，想給模型一次機會證明他錯。 **How** 以 Claude Code for Web 的 Ultracode 模式（用 JavaScript 腳本協調多個 subagent 的 dynamic workflow）執行「Make it a LOT more fun」，過程中跑上千場模擬試玩，依結果重新平衡單位並加入新功能。 **What** Battle Drones 歷經 12 次大版本、321 個 commit（主要由 Claude Code 完成），支援手機與桌機瀏覽器、多張地圖與隨機地圖產生器、AI 個性、Agent vs Agent 模式，以及兩台相鄰裝置透過音訊同步的多人模式。v4「fun update」的 1,200 場 AI 對戰測試中，25 分鐘仍未分勝負的比例從 14% 降到 0.9%，落後 800+ scrap 的一方最終獲勝比例從 24% 升到 46%。作者幾乎沒審查程式碼（TypeScript），v8 起改為先請 Claude 研究並批判設計、同意後才動工。
+用 Claude Code 反覆迭代，做出一款能在手機玩的即時戰略遊戲，還能用聲音同步兩台裝置。
+
+**Why** 作者原本認為 coding agent 只能做出看起來像遊戲、但不好玩的東西，想給模型一次機會證明他錯。
+
+**How** 以 Claude Code for Web 的 Ultracode 模式（用 JavaScript 腳本協調多個 subagent 的 dynamic workflow）執行「Make it a LOT more fun」，過程中跑上千場模擬試玩，依結果重新平衡單位並加入新功能。
+
+**What** Battle Drones 歷經 12 次大版本、321 個 commit（主要由 Claude Code 完成），支援手機與桌機瀏覽器、多張地圖與隨機地圖產生器、AI 個性、Agent vs Agent 模式，以及兩台相鄰裝置透過音訊同步的多人模式。v4「fun update」的 1,200 場 AI 對戰測試中，25 分鐘仍未分勝負的比例從 14% 降到 0.9%，落後 800+ scrap 的一方最終獲勝比例從 24% 升到 46%。作者幾乎沒審查程式碼（TypeScript），v8 起改為先請 Claude 研究並批判設計、同意後才動工。
 
 ### 重點
 - Ultracode 模式 + 一句「Make it a LOT more fun」：跑數小時、上千場模擬試玩後自行重新平衡，1,200 場 AI 對戰中 25 分鐘未分勝負比例 14% → 0.9%，落後方逆轉勝比例 24% → 46%

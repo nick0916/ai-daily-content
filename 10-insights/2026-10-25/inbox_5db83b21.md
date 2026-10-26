@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Your Agent Fix Just Broke Something Else - Sofia Jakovcevic, Arize AI
 
-改一行 agent prompt 可能修好一件事卻弄壞另一件，要用 production trace 建成回歸測試並接進 CI。 **Why** Agent 不是在程式碼層出錯，而是在 runtime 出錯；diff 只告訴你改了什麼，trace 才說明實際發生什麼。 **How** 五步迴圈：從 production trace 選資料集（涵蓋典型、已知失敗、邊界、要保護的成功案例）→ 建 evaluator（LLM-as-judge 或 code eval）→ 跑 baseline experiment → 改一處再跑比較 → 接進 CI 當 merge gate；失敗案例再回流成新測試。 **What** Arize 的 Sofia Jakovcevic 示範：客服 agent 加一行「行動前先確認」，action safety +17 點，但 task completion −17 點，平均淨值為零。Arize 提供 prompt playground、agent playground（可連遠端 agent）與 agent skills，讓 coding agent 直接接觀測後端；結論是觀測的下一步是讓 agent 自我除錯與改進。
+改一行 agent prompt 可能修好一件事卻弄壞另一件，要用 production trace 建成回歸測試並接進 CI。
+
+**Why** Agent 不是在程式碼層出錯，而是在 runtime 出錯；diff 只告訴你改了什麼，trace 才說明實際發生什麼。
+
+**How** 五步迴圈：從 production trace 選資料集（涵蓋典型、已知失敗、邊界、要保護的成功案例）→ 建 evaluator（LLM-as-judge 或 code eval）→ 跑 baseline experiment → 改一處再跑比較 → 接進 CI 當 merge gate；失敗案例再回流成新測試。
+
+**What** Arize 的 Sofia Jakovcevic 示範：客服 agent 加一行「行動前先確認」，action safety +17 點，但 task completion −17 點，平均淨值為零。Arize 提供 prompt playground、agent playground（可連遠端 agent）與 agent skills，讓 coding agent 直接接觀測後端；結論是觀測的下一步是讓 agent 自我除錯與改進。
 
 ### 重點
 - 案例：prompt 加一行確認機制，action safety +17、task completion −17，整體淨零，單一維度進步不等於整體進步

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Could On-Policy Self-Distillation Revolutionize Post-Training?
 
-一種以強化學習為基礎的新方法，可能讓基礎模型學新技能時不破壞原有能力。 **Why** 教基礎模型新技能時，原有能力容易被破壞，這件事本身很難處理。 **How** 文章介紹 on-policy self-distillation 這類基於強化學習的後訓練（post-training）做法。 **What** 原文僅提出此方法「可能」改變現況，摘要未提供實驗數據或具體結果。
+一種以強化學習為基礎的新方法，可能讓基礎模型學新技能時不破壞原有能力。
+
+**Why** 教基礎模型新技能時，原有能力容易被破壞，這件事本身很難處理。
+
+**How** 文章介紹 on-policy self-distillation 這類基於強化學習的後訓練（post-training）做法。
+
+**What** 原文僅提出此方法「可能」改變現況，摘要未提供實驗數據或具體結果。
 
 ### 重點
 - 問題設定：為基礎模型加入新技能時，避免破壞既有能力

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/01af833875cad5d2374ed988a39b77ff5f9e716e: fix(scope): preserve lexical bindings in HTTP wrapper detection (#3632)
 
-讓 GitNexus 的 HTTP wrapper 偵測正確追蹤變數綁定，避免誤判出假路由。 **Why** 包裝式寫入（如 `(app as T) = x`、`app!`）原本會讓 Express 來源資訊在寫入後殘留，產生錯誤的 route。 **How** 寫入失效與共用 pattern walker 改為穿透括號、as/satisfies 與非空斷言；另處理 overload 簽章、declarator 清單與 barrel re-export 的 wrapper 身份遺失問題，並把新增的遞迴遍歷改為 explicit stack。 **What** GitNexus rc 提交，對應 PR #3632（追蹤 #3630），附 regression tests 與 432 檔凍結語料的 call-graph 比對；比對報告為僅一個 CALLS 目標改變、431 CALLS 與 11 METHOD_OVERRIDES 不變，校準後 scaling 報告顯示候選版在 4x 輸入下正規化值皆 ≤1.32（門檻 1.8）。
+讓 GitNexus 的 HTTP wrapper 偵測正確追蹤變數綁定，避免誤判出假路由。
+
+**Why** 包裝式寫入（如 `(app as T) = x`、`app!`）原本會讓 Express 來源資訊在寫入後殘留，產生錯誤的 route。
+
+**How** 寫入失效與共用 pattern walker 改為穿透括號、as/satisfies 與非空斷言；另處理 overload 簽章、declarator 清單與 barrel re-export 的 wrapper 身份遺失問題，並把新增的遞迴遍歷改為 explicit stack。
+
+**What** GitNexus rc 提交，對應 PR #3632（追蹤 #3630），附 regression tests 與 432 檔凍結語料的 call-graph 比對；比對報告為僅一個 CALLS 目標改變、431 CALLS 與 11 METHOD_OVERRIDES 不變，校準後 scaling 報告顯示候選版在 4x 輸入下正規化值皆 ≤1.32（門檻 1.8）。
 
 ### 重點
 - `(app)`、`(app as T) = x`、`app!` 的賦值與 `app = x` 視為同一綁定的寫入，修正 Express provenance 殘留造成的假 route

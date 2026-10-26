@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Smarter Models Killed the Harness. Here's What's Left — Jediah Katz, SpaceXAI
 
-模型變聰明後，harness 裡幫模型補腦的部分確實被吃掉了，但 harness 仍決定 agent 能做什麼新事、跑得安不安全、貴不貴。 **Why** 網路上流行「harness 已死」的說法，需要釐清哪些部分真的過時、哪些不會。 **How** 作者提出資料飛輪：harness 讓更難的任務可行→更多使用者嘗試→更多資料給實驗室→模型原生學會→harness 可刪掉補丁→再去解鎖新任務。模型吸收不了的部分是雲端執行環境、信任與安全、效率（cache hit rate、token 效率、model mix）。 **What** SpaceXAI（Cursor 被 SpaceX 收購後）Jediah Katz 引用 UC Berkeley 研究（7 個前沿模型、含 Pi、Codex、Claude Code 等 harness，在 SWE-bench lite 上 harness 差異不顯著）與 Apple/EPFL 的 MLE 研究（MLE-bench 同樣差異不大，但兩者每任務成本差異明顯）。以 Grokbot（長壽 coordinator 搭配 worker agents）為例，新領域反而要把 prompt 與 guardrail 加回去。預測：primitives 設計（如 subscriptions）、用儀表板追蹤 shim 並讓 bot 在 shim 不再觸發時提 PR 清理、harness 以 agent 為基本單位，並預期 6 個月內 90% 的 agent 工作將脫離筆電執行（這是講者的預測）。
+模型變聰明後，harness 裡幫模型補腦的部分確實被吃掉了，但 harness 仍決定 agent 能做什麼新事、跑得安不安全、貴不貴。
+
+**Why** 網路上流行「harness 已死」的說法，需要釐清哪些部分真的過時、哪些不會。
+
+**How** 作者提出資料飛輪：harness 讓更難的任務可行→更多使用者嘗試→更多資料給實驗室→模型原生學會→harness 可刪掉補丁→再去解鎖新任務。模型吸收不了的部分是雲端執行環境、信任與安全、效率（cache hit rate、token 效率、model mix）。
+
+**What** SpaceXAI（Cursor 被 SpaceX 收購後）Jediah Katz 引用 UC Berkeley 研究（7 個前沿模型、含 Pi、Codex、Claude Code 等 harness，在 SWE-bench lite 上 harness 差異不顯著）與 Apple/EPFL 的 MLE 研究（MLE-bench 同樣差異不大，但兩者每任務成本差異明顯）。以 Grokbot（長壽 coordinator 搭配 worker agents）為例，新領域反而要把 prompt 與 guardrail 加回去。預測：primitives 設計（如 subscriptions）、用儀表板追蹤 shim 並讓 bot 在 shim 不再觸發時提 PR 清理、harness 以 agent 為基本單位，並預期 6 個月內 90% 的 agent 工作將脫離筆電執行（這是講者的預測）。
 
 ### 重點
 - 資料飛輪：harness 解鎖難任務→資料回流→模型原生吸收→harness 刪補丁→解鎖下一個前沿；寫程式能力被商品化，新領域（Grokbot）反而要加回 prompt 與 guardrail

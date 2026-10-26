@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## [AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months
 
-AI 模型協助發現 PHP 核心的兩個記憶體損壞漏洞（PHP2Shell），經約兩個月的多方協調後才公開。 **Why** 漏洞位於 PHP 引擎本身而非外掛，無法等外掛開發者修補，影響範圍極廣，需要事先協調防禦。 **How** Calif 研究員 Ryan Austin 在 OpenAI 的 Patch the Planet 計畫下使用 GPT-5.6 Sol 發現漏洞；Wiz 另以 Gemini 4 Argon 等工具獨立發現。公開前由 PHP 維護者、資安業者與政府協調，Cloudflare 並提前部署 WAF 規則作為過渡。 **What** 漏洞編號 CVE-2026-109618 與 CVE-2026-109619，研究者展示對 WordPress、Drupal、Joomla 的未驗證 RCE 與記憶體洩漏。Cloudflare 規則涵蓋已知攻擊向量但僅是暫時措施，須在 14:00 UTC 修補；NSA 建議無法即時緩解時下線系統。OpenAI 另釋出 Codex skill 供檢查網站是否受影響。文中多項災情數字（如約 150 萬台伺服器）缺乏原始佐證，內文在摘錄處被截斷。
+AI 模型協助發現 PHP 核心的兩個記憶體損壞漏洞（PHP2Shell），經約兩個月的多方協調後才公開。
+
+**Why** 漏洞位於 PHP 引擎本身而非外掛，無法等外掛開發者修補，影響範圍極廣，需要事先協調防禦。
+
+**How** Calif 研究員 Ryan Austin 在 OpenAI 的 Patch the Planet 計畫下使用 GPT-5.6 Sol 發現漏洞；Wiz 另以 Gemini 4 Argon 等工具獨立發現。公開前由 PHP 維護者、資安業者與政府協調，Cloudflare 並提前部署 WAF 規則作為過渡。
+
+**What** 漏洞編號 CVE-2026-109618 與 CVE-2026-109619，研究者展示對 WordPress、Drupal、Joomla 的未驗證 RCE 與記憶體洩漏。Cloudflare 規則涵蓋已知攻擊向量但僅是暫時措施，須在 14:00 UTC 修補；NSA 建議無法即時緩解時下線系統。OpenAI 另釋出 Codex skill 供檢查網站是否受影響。文中多項災情數字（如約 150 萬台伺服器）缺乏原始佐證，內文在摘錄處被截斷。
 
 ### 重點
 - PHP2Shell（CVE-2026-109618、CVE-2026-109619）源自 PHP 處理記憶體不足與致命錯誤的邏輯，Calif/OpenAI（GPT-5.6 Sol）與 Wiz（Gemini 4 Argon）各自獨立發現

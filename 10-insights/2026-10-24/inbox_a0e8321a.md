@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rc/d8a256a03a101a767dc4e1118913c679af740336: fix(taint): avoid false positives for guarded Git arguments (#3703)
 
-GitNexus 的 taint 分析減少 guarded Git 參數的誤報，並優化 TypeScript CFG 收集。 **Why** commit 標題指出目標是避免 guarded Git 參數的誤報。 **How** 接受 guard 後細化值域，並沿本地流與函式摘要保留限制；抑制 finding 前檢查完整命令是否符合 sink 用法，未知路徑或預算耗盡時保留保守結果。 **What** 拒絕 destructured/rest 形參的整體證明、減少 TypeScript CFG 的重複 AST 讀取，並附 benchmark 紀錄（refs #3490、#3703）。
+GitNexus 的 taint 分析減少 guarded Git 參數的誤報，並優化 TypeScript CFG 收集。
+
+**Why** commit 標題指出目標是避免 guarded Git 參數的誤報。
+
+**How** 接受 guard 後細化值域，並沿本地流與函式摘要保留限制；抑制 finding 前檢查完整命令是否符合 sink 用法，未知路徑或預算耗盡時保留保守結果。
+
+**What** 拒絕 destructured/rest 形參的整體證明、減少 TypeScript CFG 的重複 AST 讀取，並附 benchmark 紀錄（refs #3490、#3703）。
 
 ### 重點
 - guard 被接受後細化值域，並跨本地流與函式摘要傳遞；完整命令不符合 sink 用法時不抑制 finding

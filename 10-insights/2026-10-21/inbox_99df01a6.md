@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v7.0.1
 
-把過長的 skill 拆成參考文件，避免 Claude Code 壓縮對話後遺失內容。 **Why** Claude Code 壓縮後會重新附上每個 skill，但超過 20,000 字元的部分會被截掉，整個 session 都無法取得。 **How** 將 subagent-driven-development、writing-skills、executing-plans 的細節移到 references/，需要時才從磁碟讀取，並以測試腳本強制 SKILL.md 低於 20,000 bytes。 **What** superpowers v7.0.1 同時重調 brainstorming：先讀專案脈絡再提問，設計文件獲核准前不建置；測試情境中未寫設計文件的比例由 24/24 降為 3/24。另在 issue 與 PR 模板加入人工撰寫的摘要要求。
+把過長的 skill 拆成參考文件，避免 Claude Code 壓縮對話後遺失內容。
+
+**Why** Claude Code 壓縮後會重新附上每個 skill，但超過 20,000 字元的部分會被截掉，整個 session 都無法取得。
+
+**How** 將 subagent-driven-development、writing-skills、executing-plans 的細節移到 references/，需要時才從磁碟讀取，並以測試腳本強制 SKILL.md 低於 20,000 bytes。
+
+**What** superpowers v7.0.1 同時重調 brainstorming：先讀專案脈絡再提問，設計文件獲核准前不建置；測試情境中未寫設計文件的比例由 24/24 降為 3/24。另在 issue 與 PR 模板加入人工撰寫的摘要要求。
 
 ### 重點
 - 超過 20,000 字元的 skill 在壓縮後會被截斷；subagent-driven-development 因此遺失五輪限制，跑了 18 輪修正（回報案例）

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## battledrones v14: Compass Rose, a four player map
 
-Simon Willison 的對戰遊戲 Battledrones 新增四人連線地圖，由 AI 依一句 prompt 寫出新地圖與網路程式碼。 **Why** 先前地圖只支援兩名玩家，無法四人同玩。 **How** 他用一段 prompt 要求四向旋轉對稱地圖、最多四個 AI 玩家、沿用 WebSocket 非音訊多人模式（人類不足的位置由 AI 補上）；Claude Opus 5.5 新增地圖並修改多人網路程式碼。 **What** Battledrones v14 推出「Compass Rose」四人地圖，玩家可透過分享連結或 QR code 加入。新增紫色與綠色機器人隊伍，加入原有的藍、紅。作者另附開啟「Goliath Armada」mutator（每方起始四台巨型 Goliath 機甲）的四方 AI 對戰重播連結。
+Simon Willison 的對戰遊戲 Battledrones 新增四人連線地圖，由 AI 依一句 prompt 寫出新地圖與網路程式碼。
+
+**Why** 先前地圖只支援兩名玩家，無法四人同玩。
+
+**How** 他用一段 prompt 要求四向旋轉對稱地圖、最多四個 AI 玩家、沿用 WebSocket 非音訊多人模式（人類不足的位置由 AI 補上）；Claude Opus 5.5 新增地圖並修改多人網路程式碼。
+
+**What** Battledrones v14 推出「Compass Rose」四人地圖，玩家可透過分享連結或 QR code 加入。新增紫色與綠色機器人隊伍，加入原有的藍、紅。作者另附開啟「Goliath Armada」mutator（每方起始四台巨型 Goliath 機甲）的四方 AI 對戰重播連結。
 
 ### 重點
 - v14 新增「Compass Rose」四人地圖，設計為四向旋轉對稱，最多四名人類玩家，空位由 AI 補上

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Podcast: The Future of Web Apps: Will AI Agents Generate UIs on the Fly?
 
-讓小型語言模型直接在使用者裝置上跑，取代把請求都丟給雲端大模型的做法。 **Why** 雲端 LLM wrapper 有隱私、延遲與成本的問題。 **How** 採用 local-first 應用架構，讓 SLM 在裝置端執行。 **What** InfoQ Podcast，前 React 核心團隊成員 Rachel Lee Nabors 討論 local-first 應用的架構與理念，以及 SLM 如何提供注重隱私、低延遲且具成本效益的替代方案；標題也提出 AI agent 是否會即時生成 UI 的問題。
+讓小型語言模型直接在使用者裝置上跑，取代把請求都丟給雲端大模型的做法。
+
+**Why** 雲端 LLM wrapper 有隱私、延遲與成本的問題。
+
+**How** 採用 local-first 應用架構，讓 SLM 在裝置端執行。
+
+**What** InfoQ Podcast，前 React 核心團隊成員 Rachel Lee Nabors 討論 local-first 應用的架構與理念，以及 SLM 如何提供注重隱私、低延遲且具成本效益的替代方案；標題也提出 AI agent 是否會即時生成 UI 的問題。
 
 ### 重點
 - 講者 Rachel Lee Nabors 為前 React 核心團隊成員

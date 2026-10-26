@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## I kept losing track of my Claude Code sessions, so I built a butler
 
-多個 Claude Code 會話難追蹤，作者自製 butler 工具來管理。 **Why** 作者常同時進行 3 到 4 個任務，每個任務佔一兩個終端機分頁，容易搞丟會話（摘要原文）。 **What** 標題表明作者自建名為 butler 的工具來管理 Claude Code sessions；摘要未說明功能與實作。
+多個 Claude Code 會話難追蹤，作者自製 butler 工具來管理。
+
+**Why** 作者常同時進行 3 到 4 個任務，每個任務佔一兩個終端機分頁，容易搞丟會話（摘要原文）。
+
+**What** 標題表明作者自建名為 butler 的工具來管理 Claude Code sessions；摘要未說明功能與實作。
 
 ### 重點
 - 情境：同時 3 到 4 個任務，每個佔 1 到 2 個終端機分頁（摘要原文）

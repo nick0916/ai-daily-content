@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO
 
-用一天、一千美元的 AI token，把大型舊系統的一個領域從理解到提出變更方案一次做完。 **Why** GEICO 的工程師在 patch 與小改版後，只剩不到 25% 的時間做大改版；大改版卡在「找對的人一起決策」與「整合各種知識的智慧」兩個瓶頸（外圈流程），而非寫程式。 **How** 建立多人 AI-native「war room」：決策者與領域專家名冊、一位操作者、通訊頻道與設計工具，並用 FleetKit（以 markdown 寫成的規則與協定）調度 agent：先派 leader 做研究並把問題放進人工審核佇列，核准後再派 builder 執行，以 9 步流程產出需人工填寫的 HTML 工作表與架構圖。 **What** 與 Anthropic 合作，使用 Claude harness 與 code modernization plugin，在三個任務各跑一次：rentals（uplift，擴充既有 API，預估每月省 8,500 次呼叫）、damages（transform，新增 agent 可呼叫 API）、salvage（reimagine，產出產品與技術各層核可的遷移計畫並發現一個 prod bug）。講者分享教訓：不要讓 agent 設 cron 輪詢（每次都會啟動昂貴 session）、prompt caching 比預期高；benchmark 顯示 Sonnet 5.5 寫的程式碼不輸 Fable，模型選擇有價值。
+用一天、一千美元的 AI token，把大型舊系統的一個領域從理解到提出變更方案一次做完。
+
+**Why** GEICO 的工程師在 patch 與小改版後，只剩不到 25% 的時間做大改版；大改版卡在「找對的人一起決策」與「整合各種知識的智慧」兩個瓶頸（外圈流程），而非寫程式。
+
+**How** 建立多人 AI-native「war room」：決策者與領域專家名冊、一位操作者、通訊頻道與設計工具，並用 FleetKit（以 markdown 寫成的規則與協定）調度 agent：先派 leader 做研究並把問題放進人工審核佇列，核准後再派 builder 執行，以 9 步流程產出需人工填寫的 HTML 工作表與架構圖。
+
+**What** 與 Anthropic 合作，使用 Claude harness 與 code modernization plugin，在三個任務各跑一次：rentals（uplift，擴充既有 API，預估每月省 8,500 次呼叫）、damages（transform，新增 agent 可呼叫 API）、salvage（reimagine，產出產品與技術各層核可的遷移計畫並發現一個 prod bug）。講者分享教訓：不要讓 agent 設 cron 輪詢（每次都會啟動昂貴 session）、prompt caching 比預期高；benchmark 顯示 Sonnet 5.5 寫的程式碼不輸 Fable，模型選擇有價值。
 
 ### 重點
 - 三個實驗對應 Anthropic code modernization plugin 的 uplift／transform／reimagine 分類，分別為 rentals、damages、salvage 領域

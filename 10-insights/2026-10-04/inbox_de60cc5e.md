@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Kolibri: A Sovereign Open-Weight Model
 
-德國公司 Aleph Alpha 釋出以德文與英文為主、可在地部署的 MoE 開放權重模型 Kolibri。 **Why** 公部門與受監管產業需要可控、可稽核，且不必把資料送往第三方推論服務的模型。 **How** 採 78B 總參數、約 3B 活躍參數的 MoE（384 個小專家），50 層中只有 10 層處理完整上下文，其餘 40 層使用 512-token 視窗，並以自動化訓練 pipeline 每小時評估 checkpoint。 **What** 以 Apache 2.0 授權於 Hugging Face 開放完整權重，支援最長 1M tokens；官方宣稱在數學、程式、grounding 與長上下文任務上可匹敵活躍參數多 4 倍的模型（如 Nemotron 3 Super）。
+德國公司 Aleph Alpha 釋出以德文與英文為主、可在地部署的 MoE 開放權重模型 Kolibri。
+
+**Why** 公部門與受監管產業需要可控、可稽核，且不必把資料送往第三方推論服務的模型。
+
+**How** 採 78B 總參數、約 3B 活躍參數的 MoE（384 個小專家），50 層中只有 10 層處理完整上下文，其餘 40 層使用 512-token 視窗，並以自動化訓練 pipeline 每小時評估 checkpoint。
+
+**What** 以 Apache 2.0 授權於 Hugging Face 開放完整權重，支援最長 1M tokens；官方宣稱在數學、程式、grounding 與長上下文任務上可匹敵活躍參數多 4 倍的模型（如 Nemotron 3 Super）。
 
 ### 重點
 - 78B 總參數、約 3B 活躍；50 層中僅 10 層處理完整上下文，其餘 40 層使用 512-token 視窗

@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Claude Flightdeck: a live dashboard for Claude Code context, cost, permissions and subagents
 
-用即時儀表板看見 Claude Code 的 context、成本、權限與 subagents 狀態。 **Why** Claude Code 同時派出五個 subagents 時，使用者只看到轉圈圈，無法判斷 context 用量與花費。 **What** Claude Flightdeck 為 Claude Code 的即時儀表板，文章介紹其顯示 context 使用率、單次執行成本、工具權限與 subagents 狀態的功能。
+用即時儀表板看見 Claude Code 的 context、成本、權限與 subagents 狀態。
+
+**Why** Claude Code 同時派出五個 subagents 時，使用者只看到轉圈圈，無法判斷 context 用量與花費。
+
+**What** Claude Flightdeck 為 Claude Code 的即時儀表板，文章介紹其顯示 context 使用率、單次執行成本、工具權限與 subagents 狀態的功能。
 
 ### 重點
 - 問題：多個 subagents 並行時，原生介面只顯示 spinner，看不到 context 使用率與成本

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Study Finds AI-generated Code Fails to Boost Productivity Due to Downstream Bottlenecks
 
-AI 讓程式碼寫得更多，但做完的工作沒有跟著變多，因為瓶頸移到了後面的審查等環節。 **Why** AI 產生的程式碼量增加，下游階段（尤其是 code review）的工作量也跟著增加。 **How** 研究使用 Jellyfish 分析平台的資料，比較 AI 程式助手/agent 帶來的程式碼量與實際完成的工作量。 **What** 一項涵蓋 718 家公司的 Harvard 研究發現，AI coding assistants 與 agents 提高程式碼產量，但並未對應提高完成的工作量，code review 是主要的下游負擔。
+AI 讓程式碼寫得更多，但做完的工作沒有跟著變多，因為瓶頸移到了後面的審查等環節。
+
+**Why** AI 產生的程式碼量增加，下游階段（尤其是 code review）的工作量也跟著增加。
+
+**How** 研究使用 Jellyfish 分析平台的資料，比較 AI 程式助手/agent 帶來的程式碼量與實際完成的工作量。
+
+**What** 一項涵蓋 718 家公司的 Harvard 研究發現，AI coding assistants 與 agents 提高程式碼產量，但並未對應提高完成的工作量，code review 是主要的下游負擔。
 
 ### 重點
 - 樣本：718 家公司，資料來自 Jellyfish 分析平台（Harvard 研究）

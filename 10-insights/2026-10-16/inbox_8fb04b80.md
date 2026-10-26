@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## sparqlite: SPARQL 1.1 inside SQLite, written in Rust
 
-讓 Claude Code 網頁版自己編排一群子代理，連跑 12 小時以上做出一個 SQLite 的 SPARQL 擴充，成果大到人根本無法審查。 **Why** Simon Willison 想實驗 Claude Code 的「Ultracode」模式，看動態 workflow 能把複雜任務推到多遠。 **How** 開啟 Ultracode 後，Claude Code 會產生 JavaScript 來定義並協調一組子代理（dynamic workflows）；他只下了一個初始 prompt，之後補一個要求加 README 與教學的 follow-up。 **What** 成果是 sparqlite，一個用 Rust 寫的 SQLite 擴充，實作完整的 SPARQL 1.1。原 prompt 因手機打字錯誤把「hit the rows directly」寫成「delete」，Claude Code 仍跑了超過 12 小時並產出大量 Rust crates。作者認為這是「next-level vibe coding」：程式碼無法逐行審查，連跟著文件操作都要投入可觀時間，他也不確定隨興做出又沒時間理解的東西有多少價值。
+讓 Claude Code 網頁版自己編排一群子代理，連跑 12 小時以上做出一個 SQLite 的 SPARQL 擴充，成果大到人根本無法審查。
+
+**Why** Simon Willison 想實驗 Claude Code 的「Ultracode」模式，看動態 workflow 能把複雜任務推到多遠。
+
+**How** 開啟 Ultracode 後，Claude Code 會產生 JavaScript 來定義並協調一組子代理（dynamic workflows）；他只下了一個初始 prompt，之後補一個要求加 README 與教學的 follow-up。
+
+**What** 成果是 sparqlite，一個用 Rust 寫的 SQLite 擴充，實作完整的 SPARQL 1.1。原 prompt 因手機打字錯誤把「hit the rows directly」寫成「delete」，Claude Code 仍跑了超過 12 小時並產出大量 Rust crates。作者認為這是「next-level vibe coding」：程式碼無法逐行審查，連跟著文件操作都要投入可觀時間，他也不確定隨興做出又沒時間理解的東西有多少價值。
 
 ### 重點
 - Claude Code for web 的 Ultracode 模式用動態 workflow 生成 JavaScript 協調多個子代理，初始 prompt 讓它運作超過 12 小時

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 7 ChatGPT prompts that can help you build better habits — one of them inspired 3 major changes that actually stuck
 
-用 ChatGPT 當習慣教練，請它給出建立健康習慣的提示詞，再照著回答問題來落實。 **Why** 作者知道自己生活還有改善空間，想找不用大幅改變作息的方法。 **How** 先請 ChatGPT 列出 7 組習慣養成提示詞，再依第一組「Habit Audit」回答 10 個問題，由它找出 3 個最有效的小習慣。 **What** 7 組提示詞包括 Habit Audit、Tiny Habits、Habit Stacking、Bad-Habit Replacement、30-Day Challenge、Habit Failure Investigator、Personal Health Routine；作者採用的三個習慣是每週兩次 20 分鐘肌力訓練、早餐加入一份蛋白質食物、下午設定一段無螢幕時間。
+用 ChatGPT 當習慣教練，請它給出建立健康習慣的提示詞，再照著回答問題來落實。
+
+**Why** 作者知道自己生活還有改善空間，想找不用大幅改變作息的方法。
+
+**How** 先請 ChatGPT 列出 7 組習慣養成提示詞，再依第一組「Habit Audit」回答 10 個問題，由它找出 3 個最有效的小習慣。
+
+**What** 7 組提示詞包括 Habit Audit、Tiny Habits、Habit Stacking、Bad-Habit Replacement、30-Day Challenge、Habit Failure Investigator、Personal Health Routine；作者採用的三個習慣是每週兩次 20 分鐘肌力訓練、早餐加入一份蛋白質食物、下午設定一段無螢幕時間。
 
 ### 重點
 - 7 組提示詞涵蓋習慣稽核、微習慣、習慣疊加、壞習慣替代、30 天挑戰、失敗原因分析與健康日常規劃

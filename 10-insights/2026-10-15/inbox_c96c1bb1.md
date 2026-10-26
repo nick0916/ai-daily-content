@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## This Month in Ladybird - September 2026
 
-獨立瀏覽器引擎 Ladybird 九月進度，重點在安全隔離、降低閒置的 CPU 與記憶體浪費。 **Why** 閒置頁面持續耗用資源會讓使用者感到發燙與卡頓；renderer 處理不可信的網頁，因此需要與其他 process 隔離。 **How** 修正 setTimeout 巢狀層級未延續導致的最小延遲失效、對隱藏分頁節流 timer、離開視窗的動畫停止 frame，並讓網路 process 接手 HTTP 與 WebSocket 的 cookie 處理。 **What** 新增 force-dark 模式與可自動更新的內容封鎖清單（如 EasyList）；macOS 以 VideoToolbox 硬體解碼影片；Qt 成為唯一桌面前端；新增 crash reporter。與 Trail of Bits 合作的安全審查（由 OpenAI 贊助）也促成多項隔離修正。
+獨立瀏覽器引擎 Ladybird 九月進度，重點在安全隔離、降低閒置的 CPU 與記憶體浪費。
+
+**Why** 閒置頁面持續耗用資源會讓使用者感到發燙與卡頓；renderer 處理不可信的網頁，因此需要與其他 process 隔離。
+
+**How** 修正 setTimeout 巢狀層級未延續導致的最小延遲失效、對隱藏分頁節流 timer、離開視窗的動畫停止 frame，並讓網路 process 接手 HTTP 與 WebSocket 的 cookie 處理。
+
+**What** 新增 force-dark 模式與可自動更新的內容封鎖清單（如 EasyList）；macOS 以 VideoToolbox 硬體解碼影片；Qt 成為唯一桌面前端；新增 crash reporter。與 Trail of Bits 合作的安全審查（由 OpenAI 贊助）也促成多項隔離修正。
 
 ### 重點
 - 與 Trail of Bits 合作一週進行安全審查（由 OpenAI 贊助）；renderer 被攻破時，其他 process 須把其訊息視為不可信並驗證

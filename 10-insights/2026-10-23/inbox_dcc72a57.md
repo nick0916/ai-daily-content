@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Let AI Agents Sign Up for Your App Safely — Isabelle Williams, WorkOS
 
-讓 AI agent 能自己註冊並使用你的 App，但權限受限、可稽核、可撤銷。 **Why** 未來使用者會把產品探索與上手交給個人 agent，App 若不開放，就會失去這批使用者；但 agent 一旦能動企業資金，又需要嚴格的權限控管。 **How** 用 auth.md 開放協議（App 託管的 markdown 檔）讓 agent 發現如何註冊，分匿名試用後由使用者以連結加一次性代碼認領，或基於 IETF 的 ID-JAG（agent 供應商簽發的身分斷言）免手動登入；App 自己決定是否建帳號與核發範圍。另外 App 不直接把使用者 token 給 agent，而是核發 agent token，其 scope 是使用者權限與 agent blueprint 上限的交集。 **What** 講者是 WorkOS 產品經理，以自建的旅遊規劃 App Waypoint 示範：agent 經同意後免手動完成註冊、訂餐廳與產生行程分享連結。企業情境中，唯讀 agent 與基金 agent 各有權限上限，基金 agent 能在預算內調撥款項，但無法修改預算，須由使用者本人調整。agent token 的 subject 為 agent ID，同時記錄代表的使用者，方便稽核與單獨撤銷。
+讓 AI agent 能自己註冊並使用你的 App，但權限受限、可稽核、可撤銷。
+
+**Why** 未來使用者會把產品探索與上手交給個人 agent，App 若不開放，就會失去這批使用者；但 agent 一旦能動企業資金，又需要嚴格的權限控管。
+
+**How** 用 auth.md 開放協議（App 託管的 markdown 檔）讓 agent 發現如何註冊，分匿名試用後由使用者以連結加一次性代碼認領，或基於 IETF 的 ID-JAG（agent 供應商簽發的身分斷言）免手動登入；App 自己決定是否建帳號與核發範圍。另外 App 不直接把使用者 token 給 agent，而是核發 agent token，其 scope 是使用者權限與 agent blueprint 上限的交集。
+
+**What** 講者是 WorkOS 產品經理，以自建的旅遊規劃 App Waypoint 示範：agent 經同意後免手動完成註冊、訂餐廳與產生行程分享連結。企業情境中，唯讀 agent 與基金 agent 各有權限上限，基金 agent 能在預算內調撥款項，但無法修改預算，須由使用者本人調整。agent token 的 subject 為 agent ID，同時記錄代表的使用者，方便稽核與單獨撤銷。
 
 ### 重點
 - auth.md 是 App 託管的 markdown 檔，讓 agent 發現註冊與存取方式；提供匿名試用加使用者認領（連結＋一次性代碼＋OAuth），或 ID-JAG 免手動流程；App 仍負責實際授權決策

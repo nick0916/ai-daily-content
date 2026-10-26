@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Release Candidate v1.6.13-rc.143
 
-GitNexus 發布預發布候選版 1.6.13-rc.143，供早期測試。 **Why** 候選版是穩定版前的測試版本，穩定版仍在 latest dist-tag。 **What** 以 `npm install gitnexus@rc` 安裝，基底為 1.6.13（rc #143），來源 commit e7ef82d、release commit d0f1723；可見的 What's Changed 清單與前後版本相同，含 MCP 啟動相容性改進與 Swift/Ruby/PHP/Kotlin 語言支援。
+GitNexus 發布預發布候選版 1.6.13-rc.143，供早期測試。
+
+**Why** 候選版是穩定版前的測試版本，穩定版仍在 latest dist-tag。
+
+**What** 以 `npm install gitnexus@rc` 安裝，基底為 1.6.13（rc #143），來源 commit e7ef82d、release commit d0f1723；可見的 What's Changed 清單與前後版本相同，含 MCP 啟動相容性改進與 Swift/Ruby/PHP/Kotlin 語言支援。
 
 ### 重點
 - 版本 1.6.13-rc.143，基底 1.6.13（rc #143），以 `npm install gitnexus@rc` 安裝

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## OpenAI CEO Sam Altman on AI's future: 'the world should accept some bad things happening'
 
-Altman 認為世界應接受 AI 帶來的部分壞事，以換取技術效益與個人自主。 **Why** 此說法引發對 AI 失控與社會風險的爭議，作者認為不應未經審視即接受。 **How** Altman 在 POLITICO 訪談中反對由單一實驗室掌控技術，主張較輕的監管，並表示不認同「嚴重失控」等極端風險。 **What** 完整引文為「The world should accept some bad things happening for the benefits of this technology and people having the agency」；作者引用 MIT AI Risk Initiative 指出，24 項風險中有 18 項超過 10% 機率造成災難性結果。
+Altman 認為世界應接受 AI 帶來的部分壞事，以換取技術效益與個人自主。
+
+**Why** 此說法引發對 AI 失控與社會風險的爭議，作者認為不應未經審視即接受。
+
+**How** Altman 在 POLITICO 訪談中反對由單一實驗室掌控技術，主張較輕的監管，並表示不認同「嚴重失控」等極端風險。
+
+**What** 完整引文為「The world should accept some bad things happening for the benefits of this technology and people having the agency」；作者引用 MIT AI Risk Initiative 指出，24 項風險中有 18 項超過 10% 機率造成災難性結果。
 
 ### 重點
 - Altman（Decoded by POLITICO 訪談）：世界應接受一些壞事發生，以換取技術效益與人們的自主權

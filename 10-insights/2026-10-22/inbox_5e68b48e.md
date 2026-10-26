@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Developer Behind the AI-Built Adobe Clones Says They Are “Not Anywhere Close to Ready
 
-有人用 AI 寫出七個 Adobe 軟體的開源替代品，一邊宣傳快達 100% 相容，一邊自己承認離可用還很遠。 **Why** AI 能快速產出大量程式碼，容易讓人高估專案完成度，宣傳與實況落差大。 **How** 開發者用 Claude Opus 5.5 建構七個 Adobe 應用的開源替代品，在 Reddit 宣傳預計一個月內達約 100% parity，之後在 Hacker News 改口說「not anywhere close to ready」。 **What** 依專案自身 roadmap，目前僅約 45% 可供實際工作使用，距離完全 parity 還需 2,300 至 4,100 agent-hours。
+有人用 AI 寫出七個 Adobe 軟體的開源替代品，一邊宣傳快達 100% 相容，一邊自己承認離可用還很遠。
+
+**Why** AI 能快速產出大量程式碼，容易讓人高估專案完成度，宣傳與實況落差大。
+
+**How** 開發者用 Claude Opus 5.5 建構七個 Adobe 應用的開源替代品，在 Reddit 宣傳預計一個月內達約 100% parity，之後在 Hacker News 改口說「not anywhere close to ready」。
+
+**What** 依專案自身 roadmap，目前僅約 45% 可供實際工作使用，距離完全 parity 還需 2,300 至 4,100 agent-hours。
 
 ### 重點
 - 使用 Claude Opus 5.5 打造七個 Adobe 應用的開源替代品

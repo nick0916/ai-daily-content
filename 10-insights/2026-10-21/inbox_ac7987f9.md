@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Panache — RTS Belle Époque pour mobile
 
-有人把剛開源的即時戰略遊戲換皮成法國 1900 年代蒸汽龐克風格。 **Why** Battle Drones 以 Apache 2.0 授權釋出，別人可以直接 fork 改作，釋出隔天就出現法語版。 **How** 保留原遊戲，更換單位模型的外觀、加上動畫開場、把音樂改成法式風格。 **What** Panache 是可在手機與瀏覽器玩的即時戰略遊戲，背景設定在 Belle Époque 的法國，單位有飛艇、蒸汽 Fardier、Creusot 裝甲車、戴軍帽的自動人偶、行走要塞 Gargantua。目前以美術更新為主，玩法變動不大；Simon Willison 貼出 Goliath 新舊設計對照。
+有人把剛開源的即時戰略遊戲換皮成法國 1900 年代蒸汽龐克風格。
+
+**Why** Battle Drones 以 Apache 2.0 授權釋出，別人可以直接 fork 改作，釋出隔天就出現法語版。
+
+**How** 保留原遊戲，更換單位模型的外觀、加上動畫開場、把音樂改成法式風格。
+
+**What** Panache 是可在手機與瀏覽器玩的即時戰略遊戲，背景設定在 Belle Époque 的法國，單位有飛艇、蒸汽 Fardier、Creusot 裝甲車、戴軍帽的自動人偶、行走要塞 Gargantua。目前以美術更新為主，玩法變動不大；Simon Willison 貼出 Goliath 新舊設計對照。
 
 ### 重點
 - Battle Drones 以 Apache 2.0 釋出，隔天就有法語 fork「Panache」

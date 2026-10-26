@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## The Silicon Beneath the Answers: A Field Guide to Inference Hardware in 2026
 
-概覽 2026 年 AI 推論硬體的全貌。 **Why** 軟體的執行速度受限於底下的硬體。 **What** 文章介紹 GPU、記憶體、互連（interconnect）以及挑戰 NVIDIA 的晶片；原文片段未提供具體規格或數據。
+概覽 2026 年 AI 推論硬體的全貌。
+
+**Why** 軟體的執行速度受限於底下的硬體。
+
+**What** 文章介紹 GPU、記憶體、互連（interconnect）以及挑戰 NVIDIA 的晶片；原文片段未提供具體規格或數據。
 
 ### 重點
 - 硬體層包含 GPU、記憶體與互連三個面向

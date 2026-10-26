@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Stop Re-Typing Your Best Prompt, Build a Claude Skill in 30 Minutes
 
-把常用的 prompt 存成 Claude Skill，免得每次重打。 **Why** 作者提到自己反覆輸入同樣的指示約四十次（原文示例：簡短、用我的標題、不編造數字、結尾附行動呼籲）。 **What** 文章主張可在 30 分鐘內建立 Claude Skill；摘要片段未列出具體建立步驟。
+把常用的 prompt 存成 Claude Skill，免得每次重打。
+
+**Why** 作者提到自己反覆輸入同樣的指示約四十次（原文示例：簡短、用我的標題、不編造數字、結尾附行動呼籲）。
+
+**What** 文章主張可在 30 分鐘內建立 Claude Skill；摘要片段未列出具體建立步驟。
 
 ### 重點
 - 主張：30 分鐘內可把重複使用的 prompt 做成 Claude Skill（標題）

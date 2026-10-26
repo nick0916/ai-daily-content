@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Presentation: Actors for Agents: Patterns for Production AI
 
-把 AI agent 當成分散式系統來設計，用 actor model 處理狀態與失敗，讓 agent 不只是脆弱的 demo。 **Why** 生產環境的 AI agent 有複雜的執行期挑戰，例如失敗處理、延續執行與可變的執行圖。 **How** 套用 actor model：明確由 actor 擁有狀態、以訊息傳遞溝通、採 write-through state，並以 supervision boundary 管理失敗。 **What** InfoQ 收錄 Manju Rajashekhar 的演講「Actors for Agents: Patterns for Production AI」，討論如何用這些模式讓 agentic workflow 成為具韌性的架構。
+把 AI agent 當成分散式系統來設計，用 actor model 處理狀態與失敗，讓 agent 不只是脆弱的 demo。
+
+**Why** 生產環境的 AI agent 有複雜的執行期挑戰，例如失敗處理、延續執行與可變的執行圖。
+
+**How** 套用 actor model：明確由 actor 擁有狀態、以訊息傳遞溝通、採 write-through state，並以 supervision boundary 管理失敗。
+
+**What** InfoQ 收錄 Manju Rajashekhar 的演講「Actors for Agents: Patterns for Production AI」，討論如何用這些模式讓 agentic workflow 成為具韌性的架構。
 
 ### 重點
 - 核心觀點：把 agent 視為分散式系統，用 actor model 解決執行期問題

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.12 — restored pair command
 
-讓 Ruflo 的 pair 指令回來，修好依賴它的 pair-programming skill。 **Why** v3 CLI 重寫時整個移除了 pair 指令，使用該 skill 的專案會出現 Unknown command 錯誤。 **How** 恢復為非互動式指令，session 狀態以原子寫入存於 .claude-flow/sessions/pair/current.json。 **What** 支援 start、status、switch、mode、end、history 子命令，並保留 v2 的 --start、--status、--end、--history 頂層旗標別名；另修正一個依賴 umask 的測試（#4365）。
+讓 Ruflo 的 pair 指令回來，修好依賴它的 pair-programming skill。
+
+**Why** v3 CLI 重寫時整個移除了 pair 指令，使用該 skill 的專案會出現 Unknown command 錯誤。
+
+**How** 恢復為非互動式指令，session 狀態以原子寫入存於 .claude-flow/sessions/pair/current.json。
+
+**What** 支援 start、status、switch、mode、end、history 子命令，並保留 v2 的 --start、--status、--end、--history 頂層旗標別名；另修正一個依賴 umask 的測試（#4365）。
 
 ### 重點
 - pair 指令恢復為非互動式，session 狀態存於 .claude-flow/sessions/pair/current.json 並以原子寫入保存

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Harbor Adds Docker Sandboxes to Run Reproducible AI Agent Evals in Isolated MicroVMs
 
-讓每個 AI agent 評測任務各自跑在獨立的小型虛擬機裡，彼此不互相干擾。 **Why** 多個評測任務共用同一個容器時會互相影響，結果較難重現。 **How** 讓 Harbor 整合 Docker Sandboxes，每個評測任務在自己的 microVM 中執行，而非共用容器。 **What** Docker 宣布開源 agent 評測框架 Harbor 現已支援 Docker Sandboxes，以 microVM 隔離每個任務，提升隔離性與可重現性。
+讓每個 AI agent 評測任務各自跑在獨立的小型虛擬機裡，彼此不互相干擾。
+
+**Why** 多個評測任務共用同一個容器時會互相影響，結果較難重現。
+
+**How** 讓 Harbor 整合 Docker Sandboxes，每個評測任務在自己的 microVM 中執行，而非共用容器。
+
+**What** Docker 宣布開源 agent 評測框架 Harbor 現已支援 Docker Sandboxes，以 microVM 隔離每個任務，提升隔離性與可重現性。
 
 ### 重點
 - Harbor（開源 agent 評測框架）整合 Docker Sandboxes

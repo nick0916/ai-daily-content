@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Why AI Doesn’t Always Pick the Most Likely Next Word
 
-模型不一定挑機率最高的下一個字，temperature、top-k、top-p 是在呆板與失控之間的調整旋鈕。 **Why** 文章以「呆板回答」與「失控回答」描述兩端，說明需要取樣參數來調節。 **What** 文章說明 temperature、top-k、top-p 三個參數的作用；摘要片段未提供數值範例。
+模型不一定挑機率最高的下一個字，temperature、top-k、top-p 是在呆板與失控之間的調整旋鈕。
+
+**Why** 文章以「呆板回答」與「失控回答」描述兩端，說明需要取樣參數來調節。
+
+**What** 文章說明 temperature、top-k、top-p 三個參數的作用；摘要片段未提供數值範例。
 
 ### 重點
 - 模型生成下一個字時，不一定選機率最高者

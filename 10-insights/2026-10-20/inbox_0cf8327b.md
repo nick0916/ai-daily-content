@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Episode 855 | The Eight SaaS Moats that Still Work in the Age of AI
 
-討論在 AI 時代仍有效的 SaaS 護城河，以及已經失效的護城河。 **Why** 作者指出 AI 讓客戶能自行 vibe coding、平台可免費提供類似功能、按座位收費可能消失，SaaS 面臨明顯衝擊。 **How** 節目先列出 10 種 AI 對 SaaS 的攻擊方式，再整理 8 種目前仍有效的護城河，並以 Stripe、Gusto、SignWell、Gymdesk 等公司為例。 **What** 8 種護城河包括：買家信任、成為系統紀錄（system of record）、被允許執行動作、客戶不檢查你的工作成果、已獲官方許可、大家都在用、每位客戶讓產品更聰明、以及難以維運。節目認為最強的護城河是學習迴圈（learning loops），並建議創辦人可考慮從賣工具轉向直接替客戶完成工作。
+討論在 AI 時代仍有效的 SaaS 護城河，以及已經失效的護城河。
+
+**Why** 作者指出 AI 讓客戶能自行 vibe coding、平台可免費提供類似功能、按座位收費可能消失，SaaS 面臨明顯衝擊。
+
+**How** 節目先列出 10 種 AI 對 SaaS 的攻擊方式，再整理 8 種目前仍有效的護城河，並以 Stripe、Gusto、SignWell、Gymdesk 等公司為例。
+
+**What** 8 種護城河包括：買家信任、成為系統紀錄（system of record）、被允許執行動作、客戶不檢查你的工作成果、已獲官方許可、大家都在用、每位客戶讓產品更聰明、以及難以維運。節目認為最強的護城河是學習迴圈（learning loops），並建議創辦人可考慮從賣工具轉向直接替客戶完成工作。
 
 ### 重點
 - 10 種攻擊包括客戶自行 vibe coding、開源已夠好用、平台免費內建功能、以及按座位收費收入消失

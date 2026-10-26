@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Is a Faster Model Actually Faster? Test the Whole Job — Morgan Suo, MiniMax
 
-判斷模型是否真的比較快，要量「完成整份可用報告」的總成本與時間，而非單次生成速度。 **Why** 模型回應變快，但若漏掉關鍵來源，人還得回頭補，整體工作未必變快。 **How** 講者拆解 M3.1 Flash 的內部優化（sparse attention、KV cache 由 8-bit 降到 4-bit、MoE 專家 4-bit 計算、speculative decoding、reasoning effort 控制），並指出每項都要用最終任務結果驗證，例如以 14 份公司財報做 PCB 供應鏈現金流研究，檢查來源、計算與證據是否正確。 **What** 數據：長文測試 39 個請求全數通過，最長約 83 萬 tokens；4-bit KV cache 平均分數幾乎不變但某項降 6.6 個百分點；併發從 32 升到 64 時總吞吐約 1.9 倍，但 P95 首 token 延遲由約 1.5 秒升至約 11 秒；coding 測試中 high 比 max reasoning 用較少 token，準確率卻由 80% 降到 68%。M3.1 Flash 預告下週發布。
+判斷模型是否真的比較快，要量「完成整份可用報告」的總成本與時間，而非單次生成速度。
+
+**Why** 模型回應變快，但若漏掉關鍵來源，人還得回頭補，整體工作未必變快。
+
+**How** 講者拆解 M3.1 Flash 的內部優化（sparse attention、KV cache 由 8-bit 降到 4-bit、MoE 專家 4-bit 計算、speculative decoding、reasoning effort 控制），並指出每項都要用最終任務結果驗證，例如以 14 份公司財報做 PCB 供應鏈現金流研究，檢查來源、計算與證據是否正確。
+
+**What** 數據：長文測試 39 個請求全數通過，最長約 83 萬 tokens；4-bit KV cache 平均分數幾乎不變但某項降 6.6 個百分點；併發從 32 升到 64 時總吞吐約 1.9 倍，但 P95 首 token 延遲由約 1.5 秒升至約 11 秒；coding 測試中 high 比 max reasoning 用較少 token，準確率卻由 80% 降到 68%。M3.1 Flash 預告下週發布。
 
 ### 重點
 - 平均分數會掩蓋個別能力退化：KV cache 4-bit 後平均幾乎持平，但單項下降 6.6 個百分點

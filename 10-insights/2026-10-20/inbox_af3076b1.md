@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.0 — Real AgentDB HNSW search, Grok Build host, npm README image fix
 
-修正 Ruflo 的 AgentDB 向量搜尋，改為直接接上真實的 agentdb.HNSWIndex，原本的路徑長期失敗卻被靜默吞掉。 **Why** getController('hnsw') 路徑在真實 agentdb 套件上必定拋錯，而每次搜尋都被靜默 catch，因此一直沒有被發現。 **How** AgentDBBackend 直接串接 agentdb.HNSWIndex，加上 staleness 拒絕與寫入後的安全重建；遇到原生能力失敗、缺依賴、維度不符或過濾查詢時退回精確 cosine 搜尋。 **What** 同版本另加入 RaBitQ 索引自動建置、Grok Build CLI 作為與 Claude Code、Codex 並列的 init host，以及 memory list/search 的 tag 過濾；三個 CLI 套件發布為 3.59.0，另獨立發布 @claude-flow/memory@3.0.8。
+修正 Ruflo 的 AgentDB 向量搜尋，改為直接接上真實的 agentdb.HNSWIndex，原本的路徑長期失敗卻被靜默吞掉。
+
+**Why** getController('hnsw') 路徑在真實 agentdb 套件上必定拋錯，而每次搜尋都被靜默 catch，因此一直沒有被發現。
+
+**How** AgentDBBackend 直接串接 agentdb.HNSWIndex，加上 staleness 拒絕與寫入後的安全重建；遇到原生能力失敗、缺依賴、維度不符或過濾查詢時退回精確 cosine 搜尋。
+
+**What** 同版本另加入 RaBitQ 索引自動建置、Grok Build CLI 作為與 Claude Code、Codex 並列的 init host，以及 memory list/search 的 tag 過濾；三個 CLI 套件發布為 3.59.0，另獨立發布 @claude-flow/memory@3.0.8。
 
 ### 重點
 - AgentDBBackend 改接 agentdb.HNSWIndex，搜尋失敗時退回精確 cosine（#4249 / #4322）

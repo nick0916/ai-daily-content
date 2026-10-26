@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Anthropic Adds Opt-In Security Scanning for Critical Open-Source Projects
 
-Anthropic 讓開源專案自願加入，由 AI 定期掃描並回報安全漏洞。 **Why** 開源專案維護者資源有限，漏洞難以持續被發現。 **How** 維護者 opt-in 後會定期收到由 Anthropic 最強模型（含 Claude Mythos）產生的安全報告；報告未經人工審核即寄出，維護者可自行驗證發現並決定採納哪些修補建議。 **What** Anthropic 推出免費的 OSS Scanner 服務，對象為關鍵開源專案。
+Anthropic 讓開源專案自願加入，由 AI 定期掃描並回報安全漏洞。
+
+**Why** 開源專案維護者資源有限，漏洞難以持續被發現。
+
+**How** 維護者 opt-in 後會定期收到由 Anthropic 最強模型（含 Claude Mythos）產生的安全報告；報告未經人工審核即寄出，維護者可自行驗證發現並決定採納哪些修補建議。
+
+**What** Anthropic 推出免費的 OSS Scanner 服務，對象為關鍵開源專案。
 
 ### 重點
 - OSS Scanner 為免費、opt-in 服務，針對開源專案找漏洞

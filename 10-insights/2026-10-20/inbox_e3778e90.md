@@ -26,7 +26,13 @@ deep_dive_approved: false
 
 ## Claude Code Context Window Management in 2026: What Gets Included, What Gets Dropped, and How to...
 
-Claude Code 的多數效能問題源於未管理的 context window。 **Why** 原文主張 Claude Code 多數效能問題來自 context window 沒有被管理。 **How** 文章說明哪些內容會被納入、哪些會被丟棄，以及如何控制 context window（具體做法未在摘要段落中展示）。 **What** 2026 年的 Medium 技術文章，內文被截斷。
+Claude Code 的多數效能問題源於未管理的 context window。
+
+**Why** 原文主張 Claude Code 多數效能問題來自 context window 沒有被管理。
+
+**How** 文章說明哪些內容會被納入、哪些會被丟棄，以及如何控制 context window（具體做法未在摘要段落中展示）。
+
+**What** 2026 年的 Medium 技術文章，內文被截斷。
 
 ### 重點
 - 原文主張：多數 Claude Code 效能問題源於 unmanaged context window

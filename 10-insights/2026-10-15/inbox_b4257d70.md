@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Introducing Portal
 
-讓 Emacs 直接嵌入 macOS 原生網頁與 Ghostty 終端機，不必在多個 app 間切換。 **Why** Emacs 內建的 xwidget-webkit 在 macOS 上效果不佳，而作者在 Emacs 內畫草圖、看 Markdown 與 HTML、跑 coding agent。 **How** 以動態模組把 WKWebView 放進 Emacs pane，view 跟隨所屬 buffer；另附 Bun 後端服務網頁應用，並把 Ghostty renderer 作為原生 view 嵌入。 **What** Excalidraw 可離線使用，Markdown 以渲染頁面顯示（含目錄與 Open in Emacs 按鈕），HTML mockup 可直接在 Emacs 內預覽。作者表示已數週未開獨立 Ghostty。已知問題是外接螢幕插拔會觸發 Ghostty renderer deadlock（ghostty#14427），並連帶讓 Emacs 凍結，上游近期有修正。專案僅支援 macOS 並已開源。
+讓 Emacs 直接嵌入 macOS 原生網頁與 Ghostty 終端機，不必在多個 app 間切換。
+
+**Why** Emacs 內建的 xwidget-webkit 在 macOS 上效果不佳，而作者在 Emacs 內畫草圖、看 Markdown 與 HTML、跑 coding agent。
+
+**How** 以動態模組把 WKWebView 放進 Emacs pane，view 跟隨所屬 buffer；另附 Bun 後端服務網頁應用，並把 Ghostty renderer 作為原生 view 嵌入。
+
+**What** Excalidraw 可離線使用，Markdown 以渲染頁面顯示（含目錄與 Open in Emacs 按鈕），HTML mockup 可直接在 Emacs 內預覽。作者表示已數週未開獨立 Ghostty。已知問題是外接螢幕插拔會觸發 Ghostty renderer deadlock（ghostty#14427），並連帶讓 Emacs 凍結，上游近期有修正。專案僅支援 macOS 並已開源。
 
 ### 重點
 - 以 macOS WKWebView 作為 Emacs buffer 內的原生 view，附 Bun 後端服務 Excalidraw 離線運作

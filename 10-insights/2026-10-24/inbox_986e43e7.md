@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Building Reasoning Models from the Ground Up: A Full Video Course
 
-Sebastian Raschka 發布 8 支、共 11 小時的影片課，從預訓練模型出發，用 PyTorch 親手實作推理模型。 **Why** 現今幾乎所有 LLM 都是推理模型或提供推理模式，而推理模型是 agent 的「引擎」，理解它有助於理解現代 agent。 **How** 以小型預訓練 Qwen3 0.6B 為起點，逐步實作評估、推理時擴展、強化學習與蒸餾。 **What** 影片搭配其書《Build a Reasoning Model (From Scratch)》，內容包含載入模型與 KV cache、數學答案 verifier（MATH-500 評估，也作為 RLVR 的獎勵訊號）、取樣與 self-consistency、評分與 self-refinement，以及簡化版 GRPO 的 RLVR。前置需求為 Python 與 PyTorch，早期範例可用 CPU，訓練建議使用 GPU。
+Sebastian Raschka 發布 8 支、共 11 小時的影片課，從預訓練模型出發，用 PyTorch 親手實作推理模型。
+
+**Why** 現今幾乎所有 LLM 都是推理模型或提供推理模式，而推理模型是 agent 的「引擎」，理解它有助於理解現代 agent。
+
+**How** 以小型預訓練 Qwen3 0.6B 為起點，逐步實作評估、推理時擴展、強化學習與蒸餾。
+
+**What** 影片搭配其書《Build a Reasoning Model (From Scratch)》，內容包含載入模型與 KV cache、數學答案 verifier（MATH-500 評估，也作為 RLVR 的獎勵訊號）、取樣與 self-consistency、評分與 self-refinement，以及簡化版 GRPO 的 RLVR。前置需求為 Python 與 PyTorch，早期範例可用 CPU，訓練建議使用 GPU。
 
 ### 重點
 - 課程以 Qwen3 0.6B 為基礎，涵蓋 KV cache 與 torch.compile、MATH-500 verifier、temperature／top-p 取樣、self-consistency、self-refinement、簡化版 GRPO 的 RLVR

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings
 
-兩位評論者聊 Kimi K3.1 Pro 為何榜單亮眼卻評價兩極，以及開放權重模型在資安上的風險是否被誇大。 **Why** Kimi K3.1 Pro 在 Artificial Analysis 排名極高，但長時程、探索型任務表現參差，社群反應不一；同時開放權重模型與網路攻擊能力的討論，資安專家與 AI 專家的看法差異很大。 **How** Kimi 在 mid-training 階段調降資料中的 cyber 能力權重，使攻擊能力刻意低於其內部 pipeline 能產出的上限，並讓這個效果延續到 post-training；Florian 認為短時程榜單與 ProgramBench 這類長時程探索型榜單的落差，可能來自 RL 訓練偏向 exploitative 而非 explorative。 **What** Kimi K3.1 Pro 約三兆參數，需 B300 等級硬體、一個 node 一個 replica，權重預計 11 月 4 日前釋出，另有約兩週獨家存取期；Artificial Analysis 上居前幾名，但 Terminal-Bench Science 落後 GPT-6 Astra 約 20 分。節目另討論 PHP2Shell、LiteLLM 事件、abliterated 模型 API、Anthropic 不招初階員工等話題（以上僅依節目章節與逐字稿前段，後半內容被截斷）。
+兩位評論者聊 Kimi K3.1 Pro 為何榜單亮眼卻評價兩極，以及開放權重模型在資安上的風險是否被誇大。
+
+**Why** Kimi K3.1 Pro 在 Artificial Analysis 排名極高，但長時程、探索型任務表現參差，社群反應不一；同時開放權重模型與網路攻擊能力的討論，資安專家與 AI 專家的看法差異很大。
+
+**How** Kimi 在 mid-training 階段調降資料中的 cyber 能力權重，使攻擊能力刻意低於其內部 pipeline 能產出的上限，並讓這個效果延續到 post-training；Florian 認為短時程榜單與 ProgramBench 這類長時程探索型榜單的落差，可能來自 RL 訓練偏向 exploitative 而非 explorative。
+
+**What** Kimi K3.1 Pro 約三兆參數，需 B300 等級硬體、一個 node 一個 replica，權重預計 11 月 4 日前釋出，另有約兩週獨家存取期；Artificial Analysis 上居前幾名，但 Terminal-Bench Science 落後 GPT-6 Astra 約 20 分。節目另討論 PHP2Shell、LiteLLM 事件、abliterated 模型 API、Anthropic 不招初階員工等話題（以上僅依節目章節與逐字稿前段，後半內容被截斷）。
 
 ### 重點
 - Kimi 的 open-weight 原則：不釋出會推進 cyber 能力絕對前沿的權重，透過 mid-training 資料調降攻擊能力，並宣稱可延續至 post-training

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## 0.164.0
 
-OpenAI Codex 0.164.0 新增可存常用 prompt 的 presets，並補強壓縮、續接與沙箱安全。 **Why** 長期使用 CLI 時，重複輸入 prompt、壓縮失敗弄壞歷史、續接丟失設定，以及沙箱路徑繞過都會影響可靠度。 **How** 提供十個編號 /presets 槽位與鍵盤選單，/model 與 /permissions 支援行內參數；壓縮失敗時不再留下殘缺摘要，續接會還原已存的 thread 設定。 **What** OpenAI Codex v0.164.0：新增 /presets、行內 /model 與 /permissions 參數、Kitty/Sixel 終端的全螢幕圖片預覽、企業 MCP 以 Codex 帳號授權或獨立登入驗證，以及遠端 Bash 與 Zsh snapshot 的憑證遮罩。Amazon Bedrock 設定精靈預設啟用；macOS 大小寫變體 metadata 路徑與可替換 symlink 的沙箱檢查被加固，Windows proxy 支援 Negotiate/NTLM 驗證，並改善磁碟用量與 V8 升級至 152.2.0（Array.sort 安全防護）。
+OpenAI Codex 0.164.0 新增可存常用 prompt 的 presets，並補強壓縮、續接與沙箱安全。
+
+**Why** 長期使用 CLI 時，重複輸入 prompt、壓縮失敗弄壞歷史、續接丟失設定，以及沙箱路徑繞過都會影響可靠度。
+
+**How** 提供十個編號 /presets 槽位與鍵盤選單，/model 與 /permissions 支援行內參數；壓縮失敗時不再留下殘缺摘要，續接會還原已存的 thread 設定。
+
+**What** OpenAI Codex v0.164.0：新增 /presets、行內 /model 與 /permissions 參數、Kitty/Sixel 終端的全螢幕圖片預覽、企業 MCP 以 Codex 帳號授權或獨立登入驗證，以及遠端 Bash 與 Zsh snapshot 的憑證遮罩。Amazon Bedrock 設定精靈預設啟用；macOS 大小寫變體 metadata 路徑與可替換 symlink 的沙箱檢查被加固，Windows proxy 支援 Negotiate/NTLM 驗證，並改善磁碟用量與 V8 升級至 152.2.0（Array.sort 安全防護）。
 
 ### 重點
 - 新增 /presets：十個編號槽位儲存可重用 prompt 與 slash command，並有鍵盤選單；/model 與 /permissions 支援行內設定模型、reasoning effort、速度與權限 profile

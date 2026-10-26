@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Presentation: Beyond the Prototype: Scaling Framework Agnostic AI Agent Infrastructure with Ray
 
-把 AI agent 從本機原型搬到 Kubernetes 上穩定運行的實戰經驗分享。 **Why** 本機 FastAPI 原型無法應付真實流量、狀態保存與多區域可用性等生產需求。 **How** 以 Ray 在 Kubernetes 上建置 RayCluster，並處理有狀態記憶體、依流量自動擴縮、控制平面設計，搭配 guardrails 與 LLM-as-a-judge 評估流程。 **What** InfoQ 演講「Beyond the Prototype: Scaling Framework Agnostic AI Agent Infrastructure with Ray」，講者為 Deepak Mohanakumar Chandramouli 與 Bhumik Vinodkumar Thakkar；內容涵蓋 RayCluster topology、multi-region 部署與框架無關（framework agnostic）的 agent 基礎設施。
+把 AI agent 從本機原型搬到 Kubernetes 上穩定運行的實戰經驗分享。
+
+**Why** 本機 FastAPI 原型無法應付真實流量、狀態保存與多區域可用性等生產需求。
+
+**How** 以 Ray 在 Kubernetes 上建置 RayCluster，並處理有狀態記憶體、依流量自動擴縮、控制平面設計，搭配 guardrails 與 LLM-as-a-judge 評估流程。
+
+**What** InfoQ 演講「Beyond the Prototype: Scaling Framework Agnostic AI Agent Infrastructure with Ray」，講者為 Deepak Mohanakumar Chandramouli 與 Bhumik Vinodkumar Thakkar；內容涵蓋 RayCluster topology、multi-region 部署與框架無關（framework agnostic）的 agent 基礎設施。
 
 ### 重點
 - 以 Ray 在 Kubernetes 上運行 agent，從本機 FastAPI 原型遷移到生產系統

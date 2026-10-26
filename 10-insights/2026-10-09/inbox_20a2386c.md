@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I connected ChatGPT to the apps I use daily with these 5 plugins — and it was a huge time-saver
 
-作者把五款常用 app 接上 ChatGPT plugin，用來省下查找與規劃的時間。 **Why** 作者每天在多個 app 間切換，查天氣、找音樂、播客、禮物與票券都很耗時。 **How** 用 @app 名稱加上具體提示詞，例如要求 AccuWeather 把預報轉為可執行的決策，或要求 Spotify 分析聆聽紀錄後推薦 15 首未聽過的歌。 **What** 連接的是 AccuWeather、Spotify、Podcast App、Etsy 與 Ticketmaster；作者表示大幅節省時間，但未提供量化數據。
+作者把五款常用 app 接上 ChatGPT plugin，用來省下查找與規劃的時間。
+
+**Why** 作者每天在多個 app 間切換，查天氣、找音樂、播客、禮物與票券都很耗時。
+
+**How** 用 @app 名稱加上具體提示詞，例如要求 AccuWeather 把預報轉為可執行的決策，或要求 Spotify 分析聆聽紀錄後推薦 15 首未聽過的歌。
+
+**What** 連接的是 AccuWeather、Spotify、Podcast App、Etsy 與 Ticketmaster；作者表示大幅節省時間，但未提供量化數據。
 
 ### 重點
 - 作者連接 AccuWeather、Spotify、Podcast App、Etsy、Ticketmaster 五款 app 的 ChatGPT plugin

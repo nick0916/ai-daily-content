@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Apple says Siri doesn't need to beat ChatGPT — here's what it's betting on instead
 
-Apple 主張 Siri 不必贏過 ChatGPT，而是靠 iPhone 上的個人資料取勝。 **Why** Apple 過去數年一直在追趕，CEO John Ternus 表示公司選擇做出差異化的部分，而非自製最聰明的聊天機器人。 **How** 新 Siri 採用 Apple 模型，底層借用 Google Gemini 技術；經使用者授權後可跨 App 串連資料完成任務，並刻意避免高度自主的行為。 **What** 據 TIME 專訪（2026/10/15），新 Siri 目前已在美國推出；簡單請求在裝置端處理，較複雜的請求交由 Private Cloud Compute 處理。
+Apple 主張 Siri 不必贏過 ChatGPT，而是靠 iPhone 上的個人資料取勝。
+
+**Why** Apple 過去數年一直在追趕，CEO John Ternus 表示公司選擇做出差異化的部分，而非自製最聰明的聊天機器人。
+
+**How** 新 Siri 採用 Apple 模型，底層借用 Google Gemini 技術；經使用者授權後可跨 App 串連資料完成任務，並刻意避免高度自主的行為。
+
+**What** 據 TIME 專訪（2026/10/15），新 Siri 目前已在美國推出；簡單請求在裝置端處理，較複雜的請求交由 Private Cloud Compute 處理。
 
 ### 重點
 - 新 Siri 採用 Apple 模型，底層借用 Google Gemini 技術，Apple 不以自製最前沿模型為目標

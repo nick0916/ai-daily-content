@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Don't Trust Your AI Agents. Test Them Like a Scientist — Stephanie Jarmak, Omni Analytics
 
-不要盲信 benchmark 和 agent 的自述，像科學家一樣控制變數、檢查追蹤紀錄，在你自己的環境量測。 **Why** 公開 benchmark 的單一分數受模型訓練偏科、harness 與驗證器定義影響，不一定反映你的實際工作；agent 的 trace 也可能不可信。 **How** 依真實工作負載分類取樣任務，控制變數並重複多次跑以處理非決定性，保留完整 trace 沿著管線逐層診斷（工具有沒有提供、有沒有呼叫、回傳什麼、最終結果有沒有改變）；把「標記問題」與「強制擋下」分開，並設定自主與升級給人的邊界。 **What** 講者 Stephanie Jarmak（Omni Analytics AI 工程師，前 Sourcegraph、前天文學家）舉例：改 prompt 讓成本降 28%，但 agent 仍未使用目標工具；一個第三方比較中，只換 harness 就讓模型排名翻轉，差距逾 30%；grep 取回 295 個檔案但實際只需 6 個，凸顯 precision/recall 該看哪個。另有 LLM-as-judge 1% 誤報率換算成約 10,000 次人工複審的負荷，以及僅靠 hash 檢查的 trace 漏掉被注入的安全問題，獨立紀錄比對才抓得到。
+不要盲信 benchmark 和 agent 的自述，像科學家一樣控制變數、檢查追蹤紀錄，在你自己的環境量測。
+
+**Why** 公開 benchmark 的單一分數受模型訓練偏科、harness 與驗證器定義影響，不一定反映你的實際工作；agent 的 trace 也可能不可信。
+
+**How** 依真實工作負載分類取樣任務，控制變數並重複多次跑以處理非決定性，保留完整 trace 沿著管線逐層診斷（工具有沒有提供、有沒有呼叫、回傳什麼、最終結果有沒有改變）；把「標記問題」與「強制擋下」分開，並設定自主與升級給人的邊界。
+
+**What** 講者 Stephanie Jarmak（Omni Analytics AI 工程師，前 Sourcegraph、前天文學家）舉例：改 prompt 讓成本降 28%，但 agent 仍未使用目標工具；一個第三方比較中，只換 harness 就讓模型排名翻轉，差距逾 30%；grep 取回 295 個檔案但實際只需 6 個，凸顯 precision/recall 該看哪個。另有 LLM-as-judge 1% 誤報率換算成約 10,000 次人工複審的負荷，以及僅靠 hash 檢查的 trace 漏掉被注入的安全問題，獨立紀錄比對才抓得到。
 
 ### 重點
 - Harness 與模型的交互作用很大：同一批 63 個左右的 Terminal Bench 任務，只換 harness 就讓模型排名翻轉，差距超過 30%；公開 benchmark 只適合建立短名單，結論要在最接近實際部署的設定中驗證

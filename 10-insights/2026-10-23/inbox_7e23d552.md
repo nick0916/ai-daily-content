@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How OpenAI Built ChatGPT for Bankers and Analysts — Joseph Kim, OpenAI
 
-OpenAI 把 ChatGPT 打造成銀行與分析師專用版，並預告模型一旦跨過「可用門檻」，金融工作會突然改觀。 **Why** 模型能力進步很快，但一般金融從業者的日常工作沒有同步改變，講者稱這個落差為 capability overhang。 **How** 自行授權金融資料並建立搜尋索引（仍以 MCP 協定提供給模型，因為既有 MCP connector 常有延遲、錯誤與搜尋品質問題），搭配引用檢視器、互動圖表與公司範本系統，並用 ChatGPT plugin 平台（MCP、skills、artifact 工具）建構；後續投入金融專用 post-training。 **What** ChatGPT for financial services 約一個月前推出，設計夥伴為 Morgan Stanley 與 Evercore，起步聚焦投資銀行與股票研究。講者表示 Codex 在財務、法務、招募等非工程職能的 AI 產出占比，從 2026 年初近乎 0 升至 6 月約 90%，轉折點對應 2 月推出的 Codex 桌面 app 而非新模型；並預測 2027 年模型將在財報預測等任務上媲美最佳人類專家。
+OpenAI 把 ChatGPT 打造成銀行與分析師專用版，並預告模型一旦跨過「可用門檻」，金融工作會突然改觀。
+
+**Why** 模型能力進步很快，但一般金融從業者的日常工作沒有同步改變，講者稱這個落差為 capability overhang。
+
+**How** 自行授權金融資料並建立搜尋索引（仍以 MCP 協定提供給模型，因為既有 MCP connector 常有延遲、錯誤與搜尋品質問題），搭配引用檢視器、互動圖表與公司範本系統，並用 ChatGPT plugin 平台（MCP、skills、artifact 工具）建構；後續投入金融專用 post-training。
+
+**What** ChatGPT for financial services 約一個月前推出，設計夥伴為 Morgan Stanley 與 Evercore，起步聚焦投資銀行與股票研究。講者表示 Codex 在財務、法務、招募等非工程職能的 AI 產出占比，從 2026 年初近乎 0 升至 6 月約 90%，轉折點對應 2 月推出的 Codex 桌面 app 而非新模型；並預測 2027 年模型將在財報預測等任務上媲美最佳人類專家。
 
 ### 重點
 - Codex 在財務／法務／招募的 AI 產出占比，2026 年初近 0 → 6 月約 90%，講者歸因於 2 月的 Codex 桌面 app（產品形態）而非新模型

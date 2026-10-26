@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Import AI 477: In which I tell the IMF the Singularity has begun
 
-Jack Clark 在 IMF 曼谷會議演講，主張 AI 已開始加速科學本身的進展，奇點的早期階段已經到來。 **Why** 過去半世紀各國研究人力成長但研究生產力下降，點子越來越難找；他認為 AI 已能擴增並自動化部分人類勞動，政策制定者需預期快速且劇烈的變化。 **How** 他以軟體開發（Anthropic 研究員產出的程式碼量約為公司前四年的近 10 倍）、數學、生物、機器人實驗自動化等例子為證，並引用基準測試的急遽進步與 TheoPhysEval 的案例，指出 AI 在前沿科學展現創造力，可能進一步推動 AI 研究本身。 **What** 演講（10 月 17 日 Per Jacobsson 講座）引用數據：Humanity's Last Exam 由 2025 年 1 月的 8% 升至目前最高 Claude Opus 5.5 的 67.7%；FrontierMath 由 2% 升至 94%。TheoPhysEval 的 50 題未發表理論物理題中，GPT-6-Astra 在專家修正自身計算錯誤後達 98%（49/50）。他同時提到程式能力提升也讓網路攻防能力同步增強。內文在摘錄處被截斷，後半段論述未收錄。
+Jack Clark 在 IMF 曼谷會議演講，主張 AI 已開始加速科學本身的進展，奇點的早期階段已經到來。
+
+**Why** 過去半世紀各國研究人力成長但研究生產力下降，點子越來越難找；他認為 AI 已能擴增並自動化部分人類勞動，政策制定者需預期快速且劇烈的變化。
+
+**How** 他以軟體開發（Anthropic 研究員產出的程式碼量約為公司前四年的近 10 倍）、數學、生物、機器人實驗自動化等例子為證，並引用基準測試的急遽進步與 TheoPhysEval 的案例，指出 AI 在前沿科學展現創造力，可能進一步推動 AI 研究本身。
+
+**What** 演講（10 月 17 日 Per Jacobsson 講座）引用數據：Humanity's Last Exam 由 2025 年 1 月的 8% 升至目前最高 Claude Opus 5.5 的 67.7%；FrontierMath 由 2% 升至 94%。TheoPhysEval 的 50 題未發表理論物理題中，GPT-6-Astra 在專家修正自身計算錯誤後達 98%（49/50）。他同時提到程式能力提升也讓網路攻防能力同步增強。內文在摘錄處被截斷，後半段論述未收錄。
 
 ### 重點
 - Humanity's Last Exam 最高分從 2025 年 1 月的 8% 升至 Claude Opus 5.5 的 67.7%；FrontierMath 從 2% 升至 94%

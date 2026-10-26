@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Closing Eight Figure Deals in Two Weeks
 
-AI 基礎設施層與應用層的銷售組織打法不同：前者成交快、金額大但競爭激烈，後者較像上一代 SaaS 但採用更快。 **Why** 客戶成長極快、模型能力約每 45 天更新一次，導致傳統年度規劃跟不上。 **How** 基礎設施層由 FDE、SE 搭配 AE 交付高度複雜的產品；應用層則由 AE 與 CSM 交付，類似前一代軟體但生產力更高。薪酬計畫改為每季調整；團隊太小會缺乏外拓（outbound）與擴張投入。 **What** Tomasz Tunguz 整理 Office Hours 對談：Bardia Shahali 曾帶領 Fireworks AI 營收從約 $3m 成長到約 $400m，現為 Granola 銷售副總。他指出可在兩週內成交八位數美元合約，每位業務可承擔的配額高出數倍，但每家推論供應商都在搶同批客戶。
+AI 基礎設施層與應用層的銷售組織打法不同：前者成交快、金額大但競爭激烈，後者較像上一代 SaaS 但採用更快。
+
+**Why** 客戶成長極快、模型能力約每 45 天更新一次，導致傳統年度規劃跟不上。
+
+**How** 基礎設施層由 FDE、SE 搭配 AE 交付高度複雜的產品；應用層則由 AE 與 CSM 交付，類似前一代軟體但生產力更高。薪酬計畫改為每季調整；團隊太小會缺乏外拓（outbound）與擴張投入。
+
+**What** Tomasz Tunguz 整理 Office Hours 對談：Bardia Shahali 曾帶領 Fireworks AI 營收從約 $3m 成長到約 $400m，現為 Granola 銷售副總。他指出可在兩週內成交八位數美元合約，每位業務可承擔的配額高出數倍，但每家推論供應商都在搶同批客戶。
 
 ### 重點
 - Fireworks AI 客戶為 AI 原生公司，單筆合約可達數千萬美元、銷售週期很短，但競爭激烈

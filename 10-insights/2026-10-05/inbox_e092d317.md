@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## n8n CEO: Why we aren’t dead, how to build great AI products, and what I look for in an AI PM
 
-用 Claude Code 快速做原型，要讓全隊共用、可審核的流程再搬到 n8n。 **Why** 每次有新 AI 工具出現就有人宣告 n8n 已死；n8n CEO 認為當流程不能只靠 95% 的成功率、必須 100% 可靠時，仍需要編排層。 **How** Claude Code 只負責「描述並生成」，n8n 補上後三步：在風險工具前加人工核准、每次執行逐節點記錄輸入輸出並可從任一點重跑、邀請同事協作並有版本歷史。文中給出問卷，2 題以上答「是」就遷移到 n8n，並提供透過 n8n MCP server 自動重建 workflow 的 prompt。 **What** Aakash Gupta 專訪 n8n 創辦人兼 CEO Jan Oberhauser。n8n 數據：200K+ GitHub stars、150 萬活躍用戶、1,200 家企業版客戶；5 月 SAP 以 52 億美元估值投資，並將 n8n 嵌入其 agent builder Joule Studio。n8n 產品團隊以 3–5 名工程師、1–2 名 PM、1 名設計師組成 squad，招募看重技術深度、builder 特質與超越 demo 的可靠性與評估能力。
+用 Claude Code 快速做原型，要讓全隊共用、可審核的流程再搬到 n8n。
+
+**Why** 每次有新 AI 工具出現就有人宣告 n8n 已死；n8n CEO 認為當流程不能只靠 95% 的成功率、必須 100% 可靠時，仍需要編排層。
+
+**How** Claude Code 只負責「描述並生成」，n8n 補上後三步：在風險工具前加人工核准、每次執行逐節點記錄輸入輸出並可從任一點重跑、邀請同事協作並有版本歷史。文中給出問卷，2 題以上答「是」就遷移到 n8n，並提供透過 n8n MCP server 自動重建 workflow 的 prompt。
+
+**What** Aakash Gupta 專訪 n8n 創辦人兼 CEO Jan Oberhauser。n8n 數據：200K+ GitHub stars、150 萬活躍用戶、1,200 家企業版客戶；5 月 SAP 以 52 億美元估值投資，並將 n8n 嵌入其 agent builder Joule Studio。n8n 產品團隊以 3–5 名工程師、1–2 名 PM、1 名設計師組成 squad，招募看重技術深度、builder 特質與超越 demo 的可靠性與評估能力。
 
 ### 重點
 - Claude Code 負責第 1 步（描述生成）；n8n 提供第 2–4 步：高風險工具人工核准、逐節點執行稽核與重跑、協作與版本管理

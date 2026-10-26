@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Netflix Bridges AWS IAM and Internal Identity with Workload Attestation
 
-讓雲端運算工作不必被塞入密碼，而是靠「證明自己是誰」來取得內部服務的短期憑證。 **Why** 託管運算上的工作需要驗證身分存取內部服務，但直接注入憑證有風險。 **How** 結合 AWS IAM 身分與 Netflix control plane 簽署的 claims，再核發短效的內部 X.509 憑證。 **What** Netflix 為 Amazon EMR 上的 Apache Spark 工作開發 workload attestation 機制，使工作無需直接注入憑證即可向內部服務驗證。
+讓雲端運算工作不必被塞入密碼，而是靠「證明自己是誰」來取得內部服務的短期憑證。
+
+**Why** 託管運算上的工作需要驗證身分存取內部服務，但直接注入憑證有風險。
+
+**How** 結合 AWS IAM 身分與 Netflix control plane 簽署的 claims，再核發短效的內部 X.509 憑證。
+
+**What** Netflix 為 Amazon EMR 上的 Apache Spark 工作開發 workload attestation 機制，使工作無需直接注入憑證即可向內部服務驗證。
 
 ### 重點
 - 對象為 Amazon EMR 上的 Apache Spark jobs

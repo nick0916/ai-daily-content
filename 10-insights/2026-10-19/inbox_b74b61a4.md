@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.57.2 — graph/backup/ttl correctness fixes + large community PR batch
 
-修正 Ruflo CLI 多項正確性錯誤，包括備份假成功與索引孤兒問題。 **Why** 這些錯誤會讓使用者誤以為操作成功，或讀到錯誤的資料庫，例如備份失敗仍回報成功、ttl: 0 的資料不過期。 **How** 備份只在已確認加密且無 WAL 的來源才 fallback，並記錄實際完成的方法；ReasoningBank.consolidate() 補上 hnswIndex.removePoint(id)；memory export/import 改為回傳真實錯誤或遷移筆數。 **What** 版本 3.57.2（@claude-flow/cli、claude-flow、ruflo），cli-core 3.7.5 獨立發布並鎖定版本，另含大量社群 PR 修正。
+修正 Ruflo CLI 多項正確性錯誤，包括備份假成功與索引孤兒問題。
+
+**Why** 這些錯誤會讓使用者誤以為操作成功，或讀到錯誤的資料庫，例如備份失敗仍回報成功、ttl: 0 的資料不過期。
+
+**How** 備份只在已確認加密且無 WAL 的來源才 fallback，並記錄實際完成的方法；ReasoningBank.consolidate() 補上 hnswIndex.removePoint(id)；memory export/import 改為回傳真實錯誤或遷移筆數。
+
+**What** 版本 3.57.2（@claude-flow/cli、claude-flow、ruflo），cli-core 3.7.5 獨立發布並鎖定版本，另含大量社群 PR 修正。
 
 ### 重點
 - backupMemoryDb() 原先在任何原生備份失敗（含 SQLITE_BUSY）後都做原始檔案複製，且無論結果都回報 backedUp: true；現改為只在加密且無 WAL 的來源才 fallback

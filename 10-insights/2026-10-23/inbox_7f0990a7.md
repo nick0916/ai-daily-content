@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How an Agent Harness Unlocks Mathematical Reasoning in a 27B Model
 
-用 agent harness 讓 27B 模型的數學推理能力被引導出來，而非只靠原始 LLM 輸出。 **Why** 原始 LLM 在研究等級的數學問題上表現吃力。 **How** 以零信任程式碼核心（code kernel）、向量記憶與自適應 horizon 機制組成 harness。 **What** 文章稱此設定提升了通過率（pass rate）；原文片段未提供具體數字與模型名稱。
+用 agent harness 讓 27B 模型的數學推理能力被引導出來，而非只靠原始 LLM 輸出。
+
+**Why** 原始 LLM 在研究等級的數學問題上表現吃力。
+
+**How** 以零信任程式碼核心（code kernel）、向量記憶與自適應 horizon 機制組成 harness。
+
+**What** 文章稱此設定提升了通過率（pass rate）；原文片段未提供具體數字與模型名稱。
 
 ### 重點
 - 原始 LLM 在研究等級數學題上表現吃力

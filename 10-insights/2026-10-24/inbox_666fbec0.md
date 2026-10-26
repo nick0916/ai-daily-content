@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Coding models in October 2026: benchmarks, prices and flat-rate plans, open weights against Claude...
 
-盤點 2026 年 10 月各家程式碼模型的 benchmark、價格、包月方案與開源權重模型，並與 Claude 比較。 **Why** 原文以企業被要求「多用 AI、少花錢」為背景，引用 KPMG 2026 年 10 月的全球 CEO 調查（1,400 位，原文截斷，職稱未完整）。 **What** 文章比較各家 coding models 的效能指標、價格與 flat-rate 方案，並與開源權重模型對照 Claude；提供的內容為截斷的開頭，具體數字未提供。
+盤點 2026 年 10 月各家程式碼模型的 benchmark、價格、包月方案與開源權重模型，並與 Claude 比較。
+
+**Why** 原文以企業被要求「多用 AI、少花錢」為背景，引用 KPMG 2026 年 10 月的全球 CEO 調查（1,400 位，原文截斷，職稱未完整）。
+
+**What** 文章比較各家 coding models 的效能指標、價格與 flat-rate 方案，並與開源權重模型對照 Claude；提供的內容為截斷的開頭，具體數字未提供。
 
 ### 重點
 - 比較面向：benchmark、價格、flat-rate 方案

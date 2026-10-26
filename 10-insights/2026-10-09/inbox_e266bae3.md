@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Whistle: Speech to Text in 16.9 MB
 
-把語音辨識壓縮成 16.9 MB 單一檔案、可在裝置端 CPU 運行的模型 Whistle。 **Why** 手機、穿戴裝置與微控制器等資源有限的裝置，需要體積小、無外部依賴的語音辨識。 **How** 編碼器為八個區塊、四條 mHC residual lane；解碼器每層以門控 cross attention 讀取語音，語音的 K 與 V 在音訊到達時只計算一次，五個 beam 共用，不必對音訊重複前向運算；另以 Aho-Corasick 自動機做關鍵字偏置。 **What** 支援英、德、法、西、義、荷、波蘭等 7 種語言；官方宣稱在 LibriSpeech、SPGISpeech、Earnings-22 與 FLEURS 平均上勝過 Whisper base，但 TED-LIUM、AMI、MLS 平均上 Whisper base（145.3 MB）較佳；首 token 延遲在 5 秒音訊約 5.9 ms、30 秒約 36.3 ms。
+把語音辨識壓縮成 16.9 MB 單一檔案、可在裝置端 CPU 運行的模型 Whistle。
+
+**Why** 手機、穿戴裝置與微控制器等資源有限的裝置，需要體積小、無外部依賴的語音辨識。
+
+**How** 編碼器為八個區塊、四條 mHC residual lane；解碼器每層以門控 cross attention 讀取語音，語音的 K 與 V 在音訊到達時只計算一次，五個 beam 共用，不必對音訊重複前向運算；另以 Aho-Corasick 自動機做關鍵字偏置。
+
+**What** 支援英、德、法、西、義、荷、波蘭等 7 種語言；官方宣稱在 LibriSpeech、SPGISpeech、Earnings-22 與 FLEURS 平均上勝過 Whisper base，但 TED-LIUM、AMI、MLS 平均上 Whisper base（145.3 MB）較佳；首 token 延遲在 5 秒音訊約 5.9 ms、30 秒約 36.3 ms。
 
 ### 重點
 - 模型 16.9 MB，單一檔案、CPU 上執行無依賴，與前作 Needle 共用同一 C++ 引擎與量化格式

@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## A Bank Built Its Own Coding Agent. It Took Off — Felippe Felisola Caso & Francesco Galletta, Monzo
 
-銀行先把平台基礎建設做好，才讓自家 Slack 程式碼 agent 一推出就爆紅。 **Why** Monzo 有 3,000 多個後端服務、約 13,000 個資料倉儲模型，又是受監管銀行，需要在放手讓 agent 跑的同時控制非確定性風險。 **How** 先建 MCP gateway，以確定性方式決定暴露哪些內部工具與知識來源並管理授權；再建 agent 編排系統，讓 agent 在隔離 namespace 的 sandbox 中執行，由 proxy 僅開放被允許的對外存取。底層 agent 可替換模型，不綁定單一供應商。 **What** 內部 agent「Agent Chip」2026 年 1 月在 Slack 走紅（用 emoji 反應觸發），現在撰寫技術團隊合併 PR 的 10% 以上，每天執行逾 1,800 個任務，並用於事故調查、squad 間詢問回覆、資料品質告警分流；非工程人員也能產出已在 staging 測試的草稿再交工程師審查。
+銀行先把平台基礎建設做好，才讓自家 Slack 程式碼 agent 一推出就爆紅。
+
+**Why** Monzo 有 3,000 多個後端服務、約 13,000 個資料倉儲模型，又是受監管銀行，需要在放手讓 agent 跑的同時控制非確定性風險。
+
+**How** 先建 MCP gateway，以確定性方式決定暴露哪些內部工具與知識來源並管理授權；再建 agent 編排系統，讓 agent 在隔離 namespace 的 sandbox 中執行，由 proxy 僅開放被允許的對外存取。底層 agent 可替換模型，不綁定單一供應商。
+
+**What** 內部 agent「Agent Chip」2026 年 1 月在 Slack 走紅（用 emoji 反應觸發），現在撰寫技術團隊合併 PR 的 10% 以上，每天執行逾 1,800 個任務，並用於事故調查、squad 間詢問回覆、資料品質告警分流；非工程人員也能產出已在 staging 測試的草稿再交工程師審查。
 
 ### 重點
 - Agent Chip 撰寫超過 10% 已合併 PR，每日 1,800+ 任務；涵蓋事故調查、code review、Linear 工單與資料品質告警

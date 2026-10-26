@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Today's PHP Security Release, and How We're Strengthening PHP Security
 
-PHP 發布修補兩個遠端程式碼執行漏洞的安全更新，但協調揭露流程外洩，漏洞利用程式已在流傳。 **Why** CVE 編號於 10 月 20 日約 15:00 UTC 在論壇與社群流出，附帶錯誤的發布時間與 CVSS 10.0（實際為 9.2）；之後 Calif 誤發布的 PoC 影片更加速了各種 PoC 的開發。 **How** PHP 專案將預告提前到 19:30 UTC，並把釋出時間從 10 月 22 日提前至 10 月 21 日 14:00 UTC。 **What** 更新涵蓋整個 PHP 8.x，修補兩個 RCE，使用 PHP 的人需立即升級。發現者 Wiz Research 於 8 月 19 日以 Wiz Atlas、Gemini 4 Argon 與 GPT-5.6 Sol 發現第一個漏洞，並確認可對 Drupal 與 WordPress 進行未經驗證的 RCE。
+PHP 發布修補兩個遠端程式碼執行漏洞的安全更新，但協調揭露流程外洩，漏洞利用程式已在流傳。
+
+**Why** CVE 編號於 10 月 20 日約 15:00 UTC 在論壇與社群流出，附帶錯誤的發布時間與 CVSS 10.0（實際為 9.2）；之後 Calif 誤發布的 PoC 影片更加速了各種 PoC 的開發。
+
+**How** PHP 專案將預告提前到 19:30 UTC，並把釋出時間從 10 月 22 日提前至 10 月 21 日 14:00 UTC。
+
+**What** 更新涵蓋整個 PHP 8.x，修補兩個 RCE，使用 PHP 的人需立即升級。發現者 Wiz Research 於 8 月 19 日以 Wiz Atlas、Gemini 4 Argon 與 GPT-5.6 Sol 發現第一個漏洞，並確認可對 Drupal 與 WordPress 進行未經驗證的 RCE。
 
 ### 重點
 - PHP 8.x 全系列更新修補兩個 RCE，CVSS 實際為 9.2（外流資訊誤傳 10.0）

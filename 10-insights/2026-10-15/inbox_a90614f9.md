@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## rust-djinn: You Should Specify Your Code Unambiguously (and Prove That You Did)
 
-以 djinn! 巨集在 Rust 中寫規格，由 LLM 實作並經 Aeneas/Lean 證明後編譯。 **Why** 作者認為規格易寫錯或寫不完整，LLM 加驗證器可在不逐行審查程式碼下確保實作符合規格。 **How** cargo djinn implement 將規格轉為 Aeneas 的 proof obligation，啟動 LLM agent 撰寫程式並證明，再由 Lean 檢查；加入 unambiguity constraint 要求規格不容許實質不同的實作。 **What** 作者以 gzip 解壓為例，經 Codex 與 Claude Code 交替優化 100 輪，文中稱其略勝 zune_inflate 等測試過的實作，且未使用 unsafe 或 C 函式。
+以 djinn! 巨集在 Rust 中寫規格，由 LLM 實作並經 Aeneas/Lean 證明後編譯。
+
+**Why** 作者認為規格易寫錯或寫不完整，LLM 加驗證器可在不逐行審查程式碼下確保實作符合規格。
+
+**How** cargo djinn implement 將規格轉為 Aeneas 的 proof obligation，啟動 LLM agent 撰寫程式並證明，再由 Lean 檢查；加入 unambiguity constraint 要求規格不容許實質不同的實作。
+
+**What** 作者以 gzip 解壓為例，經 Codex 與 Claude Code 交替優化 100 輪，文中稱其略勝 zune_inflate 等測試過的實作，且未使用 unsafe 或 C 函式。
 
 ### 重點
 - 流程：cargo djinn implement 一次完成翻譯成 Aeneas、啟動 LLM agent、驗證；cargo djinn optimize 以 benchmark 做 hillclimbing，效能不進步的版本會被丟棄

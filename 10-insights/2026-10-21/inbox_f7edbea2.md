@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Article: Distributed Spring Batch Without a Message Broker
 
-分散式批次處理不用訊息佇列，直接用已有的資料庫來協調各節點。 **Why** Spring Batch 分散式 partitioning 本來就需要共享且持久的 job repository，再加 message broker 是額外的複雜度。 **How** 讓資料庫成為整個協調平面：依即時節點數切分工作、每個 job 有各自的 master 而無常駐協調者、用 compare-and-set 搶佔任務避免重複執行、以兩階段 heartbeat 做故障轉移。 **What** Janardhan Reddy Chejarla 的文章說明此無 broker 架構，也指出哪些情境仍適合使用 broker。
+分散式批次處理不用訊息佇列，直接用已有的資料庫來協調各節點。
+
+**Why** Spring Batch 分散式 partitioning 本來就需要共享且持久的 job repository，再加 message broker 是額外的複雜度。
+
+**How** 讓資料庫成為整個協調平面：依即時節點數切分工作、每個 job 有各自的 master 而無常駐協調者、用 compare-and-set 搶佔任務避免重複執行、以兩階段 heartbeat 做故障轉移。
+
+**What** Janardhan Reddy Chejarla 的文章說明此無 broker 架構，也指出哪些情境仍適合使用 broker。
 
 ### 重點
 - 以 compare-and-set claiming 防止任務重複執行

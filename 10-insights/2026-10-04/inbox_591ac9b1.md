@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## How to Use AI to Survive (and Even Enjoy) Meetings | Sam Stephenson
 
-會議工具要讓人在忙碌中保持冷靜，同時也要能被 AI agent 接入使用。 **Why** 使用者常在會議之間趕場，容易混亂；企業也普遍要求工具能接入其內部 agent。 **How** 原文列出設計原則（be calming、less is more、user is in control），並以此做設計決策，例如刻意隱藏即時逐字稿。 **What** Granola 聯合創辦人 Sam Stephenson 訪談，Granola 估值 15 億美元；他表示不少用戶改用 MCP 與 API 而非介面，他起初抗拒，現在認為 UI 與 agent 兩種使用方式都要設計。
+會議工具要讓人在忙碌中保持冷靜，同時也要能被 AI agent 接入使用。
+
+**Why** 使用者常在會議之間趕場，容易混亂；企業也普遍要求工具能接入其內部 agent。
+
+**How** 原文列出設計原則（be calming、less is more、user is in control），並以此做設計決策，例如刻意隱藏即時逐字稿。
+
+**What** Granola 聯合創辦人 Sam Stephenson 訪談，Granola 估值 15 億美元；他表示不少用戶改用 MCP 與 API 而非介面，他起初抗拒，現在認為 UI 與 agent 兩種使用方式都要設計。
 
 ### 重點
 - 設計原則包括 be calming、less is more、user is in control，Granola 因此刻意隱藏即時逐字稿

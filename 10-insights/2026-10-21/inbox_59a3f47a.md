@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## v3.59.9 — toml CVE removal, Windows console path fixes, darwin 0.12.1 pickup
 
-移除未使用的 toml 依賴以消除高風險 CVE，並修正 console 在 Windows 的路徑處理問題。 **Why** toml 套件有未修補的高風險 CVE，但實際解析器其實是 @iarna/toml，因此移除屬於死碼清除，無功能變動。 **How** 以跨平台的 isAbsolutePath 檢查取代只判斷開頭斜線的邏輯，並修正路徑重組時多出前導斜線的問題。 **What** ADR、匯出與 transcript 儲存的專案資料夾查找原本拒絕 Windows 磁碟機代號與 UNC 路徑，現已支援（#4357、#4358）；@metaharness/darwin 升級至 0.12.1（#4359）。
+移除未使用的 toml 依賴以消除高風險 CVE，並修正 console 在 Windows 的路徑處理問題。
+
+**Why** toml 套件有未修補的高風險 CVE，但實際解析器其實是 @iarna/toml，因此移除屬於死碼清除，無功能變動。
+
+**How** 以跨平台的 isAbsolutePath 檢查取代只判斷開頭斜線的邏輯，並修正路徑重組時多出前導斜線的問題。
+
+**What** ADR、匯出與 transcript 儲存的專案資料夾查找原本拒絕 Windows 磁碟機代號與 UNC 路徑，現已支援（#4357、#4358）；@metaharness/darwin 升級至 0.12.1（#4359）。
 
 ### 重點
 - 移除未使用的 toml 依賴（含未修補的高風險 CVE），實際解析器 @iarna/toml 不受影響

@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## RAG System Design Interview: The Questions Behind the Diagram
 
-RAG 系統設計面試的重點在於面試官接著會追問的問題，而不是畫出標準流程圖。 **Why** 「文件→embedding→向量資料庫→LLM」的架構圖只是起點。 **What** 文章討論面試中的後續追問；原文片段未列出具體問題或答案。
+RAG 系統設計面試的重點在於面試官接著會追問的問題，而不是畫出標準流程圖。
+
+**Why** 「文件→embedding→向量資料庫→LLM」的架構圖只是起點。
+
+**What** 文章討論面試中的後續追問；原文片段未列出具體問題或答案。
 
 ### 重點
 - 標準 RAG 流程圖只是面試的起點

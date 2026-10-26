@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Proving Alpha: How a Hedge Fund Measures AI's ROI - Hari Kumar, Contour Asset Management
 
-避險基金用「有 AI vs 沒 AI」的真實 A/B 對照與每個有用洞見的成本，來衡量 AI 的投報率。 **Why** 基本面投資的成果（P&L）要數月才顯現，無法立即證明 AI 支出的價值，只能先從流程面衡量。 **How** 記錄分析師無 AI 的完整流程作基準，再逐步加入 AI 工具（專家訪談、消費者調查、idea generation agent）重跑同一檔股票的三個月週期；同時追蹤每名每日產出的洞見、各標的花費時間，以及修工具故障耗費的時間。 **What** Contour Asset Management（約 15–20 人、60 億美元 AUM）AI 負責人 Hari Kumar 提出「cost per useful insight」指標。也在交易、營運、合規整合工具，並把 AlphaSense、Yipit 等現有訂閱經 MCP/API 接入自建平台以提高訂閱價值。
+避險基金用「有 AI vs 沒 AI」的真實 A/B 對照與每個有用洞見的成本，來衡量 AI 的投報率。
+
+**Why** 基本面投資的成果（P&L）要數月才顯現，無法立即證明 AI 支出的價值，只能先從流程面衡量。
+
+**How** 記錄分析師無 AI 的完整流程作基準，再逐步加入 AI 工具（專家訪談、消費者調查、idea generation agent）重跑同一檔股票的三個月週期；同時追蹤每名每日產出的洞見、各標的花費時間，以及修工具故障耗費的時間。
+
+**What** Contour Asset Management（約 15–20 人、60 億美元 AUM）AI 負責人 Hari Kumar 提出「cost per useful insight」指標。也在交易、營運、合規整合工具，並把 AlphaSense、Yipit 等現有訂閱經 MCP/API 接入自建平台以提高訂閱價值。
 
 ### 重點
 - 做法：針對同一檔股票的三個月財報週期，記錄無 AI 與有 AI 的流程與結論作 A/B 對照

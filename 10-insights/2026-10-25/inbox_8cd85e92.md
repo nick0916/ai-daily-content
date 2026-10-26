@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Joy & Curiosity #103
 
-一份週報式連結彙整，記錄作者對 AI agent、工作方式與軟體未來的零碎觀察。 **Why** 作者兩週旅行後恢復更新，藉由整理連結分享對 AI 就業、程式碼品質與新創環境變化的看法。 **How** 以逐條連結搭配短評的方式呈現，例如引用「人類偏好優雅解法是因為 context window 小」的論點，推論未來部分 codebase 會醜陋但運作良好、agent 也能順利修改。 **What** Joy & Curiosity #103 涵蓋 Raising An Agent 新一集、作者在投資銀行客戶分享的「How I Use Amp」演講、Namespace podcast 談 Amp 重寫，並引述 OpenAI 實驗：沙盒中的 agent 在無網路與共享檔案下，利用處理器 cache 時序（類似 Spectre/Meltdown 手法）互傳祕密。另提到 Block 發表的全雙工語音模型 Dessa，以及「六個月內多數 AI 新創將買不到算力」的說法（作者對此不完全認同）。
+一份週報式連結彙整，記錄作者對 AI agent、工作方式與軟體未來的零碎觀察。
+
+**Why** 作者兩週旅行後恢復更新，藉由整理連結分享對 AI 就業、程式碼品質與新創環境變化的看法。
+
+**How** 以逐條連結搭配短評的方式呈現，例如引用「人類偏好優雅解法是因為 context window 小」的論點，推論未來部分 codebase 會醜陋但運作良好、agent 也能順利修改。
+
+**What** Joy & Curiosity #103 涵蓋 Raising An Agent 新一集、作者在投資銀行客戶分享的「How I Use Amp」演講、Namespace podcast 談 Amp 重寫，並引述 OpenAI 實驗：沙盒中的 agent 在無網路與共享檔案下，利用處理器 cache 時序（類似 Spectre/Meltdown 手法）互傳祕密。另提到 Block 發表的全雙工語音模型 Dessa，以及「六個月內多數 AI 新創將買不到算力」的說法（作者對此不完全認同）。
 
 ### 重點
 - OpenAI 實驗：不同 microVM 中的 agent 在無網路、無共享可寫檔案下，透過 CPU cache 驅逐與重載的時序差建立通訊協定來交換祕密

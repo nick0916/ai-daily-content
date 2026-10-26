@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Ship Your Interpreter
 
-用機器證明的方式檢查 AI 寫的語言語意，而不是只靠測試。 **Why** 沒有形式語意的語言無法做數學證明，而 LLM 寫的語意可能有錯，測試又不一定抓得到。 **How** 把語言的直譯器編譯成語意已形式化的 RISC-V，讓 LLM 在 Lean 中證明其規則與編譯後 binary 的行為對所有程式都一致。 **What** 作者在 WHILE 小語言上實驗（直譯器為 1,855 行 C）；測試套件漏掉一個 63 位元組截斷的錯誤；後續計畫處理 Lua、OCaml，最終是 CPython。
+用機器證明的方式檢查 AI 寫的語言語意，而不是只靠測試。
+
+**Why** 沒有形式語意的語言無法做數學證明，而 LLM 寫的語意可能有錯，測試又不一定抓得到。
+
+**How** 把語言的直譯器編譯成語意已形式化的 RISC-V，讓 LLM 在 Lean 中證明其規則與編譯後 binary 的行為對所有程式都一致。
+
+**What** 作者在 WHILE 小語言上實驗（直譯器為 1,855 行 C）；測試套件漏掉一個 63 位元組截斷的錯誤；後續計畫處理 Lua、OCaml，最終是 CPython。
 
 ### 重點
 - 用 Lean 證明 LLM 撰寫的 WHILE 語意與編譯成 RISC-V 的直譯器 binary 行為一致（binary 含 25,336 條指令）

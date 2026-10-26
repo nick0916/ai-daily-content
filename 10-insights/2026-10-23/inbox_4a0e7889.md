@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Release Candidate v1.6.13-rc.147
 
-GitNexus 推出預發布候選版 1.6.13-rc.147，供早期測試。 **Why** 候選版是穩定版前的測試版本，穩定版仍在 latest dist-tag。 **What** 以 `npm install gitnexus@rc` 安裝，基底為 1.6.13（rc #147），來源 commit bbbc1b4、release commit 20b8449；可見的 What's Changed 清單包含 MCP 啟動相容性改進、Swift/Ruby/PHP/Kotlin 語言支援，以及從 KuzuDB 遷移至 LadybugDB v0.15。
+GitNexus 推出預發布候選版 1.6.13-rc.147，供早期測試。
+
+**Why** 候選版是穩定版前的測試版本，穩定版仍在 latest dist-tag。
+
+**What** 以 `npm install gitnexus@rc` 安裝，基底為 1.6.13（rc #147），來源 commit bbbc1b4、release commit 20b8449；可見的 What's Changed 清單包含 MCP 啟動相容性改進、Swift/Ruby/PHP/Kotlin 語言支援，以及從 KuzuDB 遷移至 LadybugDB v0.15。
 
 ### 重點
 - 版本 1.6.13-rc.147，基底 1.6.13（rc #147），以 `npm install gitnexus@rc` 安裝

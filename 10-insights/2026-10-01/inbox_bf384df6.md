@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## L&D Is Making More AI Video Than Ever. But Is Any of It Actually Helping People Learn?
 
-影片製作的成本與時間已大幅下降，但學習成效是否同步提升仍未確定，關鍵在於影片該用來示範表現，而非單純傳遞資訊。 **Why** 原文引用 Synthesia 報告，指 52% 的 L&D 團隊已用 AI 製作影片，其中 88% 認為主要價值是省時，作者則質疑是否真的在幫助學習。 **How** 作者整理學習科學研究，指出影片適合示範有順序的操作或行為，搭配提問、練習與回饋才有效；另以一份 2013 年 GSK 舉報不當行為 SOP 測試各工具的預設流程。 **What** 預設的 Docs-to-video 流程產出的影片出現規則被改寫的問題，例如把「any executive directly senior」改為「any senior executive you trust」，並加入原文沒有的「zero tolerance」一句。
+影片製作的成本與時間已大幅下降，但學習成效是否同步提升仍未確定，關鍵在於影片該用來示範表現，而非單純傳遞資訊。
+
+**Why** 原文引用 Synthesia 報告，指 52% 的 L&D 團隊已用 AI 製作影片，其中 88% 認為主要價值是省時，作者則質疑是否真的在幫助學習。
+
+**How** 作者整理學習科學研究，指出影片適合示範有順序的操作或行為，搭配提問、練習與回饋才有效；另以一份 2013 年 GSK 舉報不當行為 SOP 測試各工具的預設流程。
+
+**What** 預設的 Docs-to-video 流程產出的影片出現規則被改寫的問題，例如把「any executive directly senior」改為「any senior executive you trust」，並加入原文沒有的「zero tolerance」一句。
 
 ### 重點
 - 原文引用數據：傳統企業影片每完成分鐘約 $1,000 至 $10,000（Clutch, 2025），AI 平台列價約 $1 至 $3；Synthesia 報告製作時間平均由 13 天降至 5 天（-62%）。

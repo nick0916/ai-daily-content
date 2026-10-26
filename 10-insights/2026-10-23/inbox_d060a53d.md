@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Why AI Startups Will Disappear Without Compute Markets — Evan Conrad, San Francisco Compute
 
-AI 新創買不起算力、借不到錢，需要一個能轉賣算力的市場，否則新創將被擠出 AI 產業。 **Why** GPU 叢集融資需要長期 take-or-pay 合約與投資級信用，新創只能付出全部銀行餘額當押金；AI 毛利不像 SaaS，用量預測不準就會過買或過少。 **How** San Francisco Compute 同時營運硬體（像雲）與市場（像電網），做實體交割（physically settled）的遠期市場與即時訂單簿，改為以 GPU 叢集價值而非客戶信用來承貸，並讓容量可轉售。 **What** Evan Conrad 在 AI Engineer 演講指出，目前最大瓶頸是信用而非電力：押金從 1,000 萬美元漲到 1 億再到 10 億美元；若不解決，產業會像 TSMC 一樣集中於少數雲與大型實驗室，新創將消失。他並認為經紀（brokering）模式行不通，因為不營運叢集就無法處理故障。
+AI 新創買不起算力、借不到錢，需要一個能轉賣算力的市場，否則新創將被擠出 AI 產業。
+
+**Why** GPU 叢集融資需要長期 take-or-pay 合約與投資級信用，新創只能付出全部銀行餘額當押金；AI 毛利不像 SaaS，用量預測不準就會過買或過少。
+
+**How** San Francisco Compute 同時營運硬體（像雲）與市場（像電網），做實體交割（physically settled）的遠期市場與即時訂單簿，改為以 GPU 叢集價值而非客戶信用來承貸，並讓容量可轉售。
+
+**What** Evan Conrad 在 AI Engineer 演講指出，目前最大瓶頸是信用而非電力：押金從 1,000 萬美元漲到 1 億再到 10 億美元；若不解決，產業會像 TSMC 一樣集中於少數雲與大型實驗室，新創將消失。他並認為經紀（brokering）模式行不通，因為不營運叢集就無法處理故障。
 
 ### 重點
 - 核心論點：AI 公司對價格敏感、毛利低於 SaaS，因此 GPU 叢集需長期 take-or-pay 合約才能融資，造成缺貨、押金、延遲、故障、預測失準的連鎖風險

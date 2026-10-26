@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## Someone on Torrent Sites Kept Fucking With My Sonarr
 
-偽裝成影集種子的 .exe 惡意程式，會竊取瀏覽器、錢包與開發者憑證。 **Why** 作者的 Sonarr 設定反覆受到此類假種子干擾。 **How** 程式讀取自身檔案尾端 64 bytes，從中找到並解密（文中示例為 ChaCha20）隱藏的 payload，再以手動映射 PE 的方式於記憶體中執行。 **What** 目標包括多款瀏覽器的密碼與 cookie、加密貨幣錢包、密碼管理器、Discord 與 Steam 帳號，以及 .ssh、.aws 等開發者憑證；作者建議在 qBittorrent 排除 .exe、.scr、.lnk、.bat、.cmd，並在 Sonarr/Radarr 將來源加入黑名單。
+偽裝成影集種子的 .exe 惡意程式，會竊取瀏覽器、錢包與開發者憑證。
+
+**Why** 作者的 Sonarr 設定反覆受到此類假種子干擾。
+
+**How** 程式讀取自身檔案尾端 64 bytes，從中找到並解密（文中示例為 ChaCha20）隱藏的 payload，再以手動映射 PE 的方式於記憶體中執行。
+
+**What** 目標包括多款瀏覽器的密碼與 cookie、加密貨幣錢包、密碼管理器、Discord 與 Steam 帳號，以及 .ssh、.aws 等開發者憑證；作者建議在 qBittorrent 排除 .exe、.scr、.lnk、.bat、.cmd，並在 Sonarr/Radarr 將來源加入黑名單。
 
 ### 重點
 - 假種子內含 PE 惡意程式，檔名類似 South Park S29E03 1080p ... .exe，載入流程為解密 payload 後在記憶體中執行

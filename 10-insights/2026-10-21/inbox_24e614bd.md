@@ -27,7 +27,11 @@ deep_dive_approved: false
 
 ## Article Series: Agentic AI Architecture
 
-InfoQ 把 agentic AI 架構當成一種新的軟體架構類型，用系列文章整理。 **Why** 作者認為這類架構未來數年可能主導業界。 **What** InfoQ 的 Agentic AI Architecture 系列文章由業界專家撰寫，涵蓋 agentic AI 架構的各個面向與最新趨勢，因其正進入主流。
+InfoQ 把 agentic AI 架構當成一種新的軟體架構類型，用系列文章整理。
+
+**Why** 作者認為這類架構未來數年可能主導業界。
+
+**What** InfoQ 的 Agentic AI Architecture 系列文章由業界專家撰寫，涵蓋 agentic AI 架構的各個面向與最新趨勢，因其正進入主流。
 
 ### 重點
 - InfoQ 推出 Agentic AI Architecture 系列文章

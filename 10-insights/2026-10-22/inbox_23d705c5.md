@@ -27,7 +27,13 @@ deep_dive_approved: false
 
 ## I Audited a SaaS Homepage for Machine Experience (MX) in Claude Free. Here’s What Broke.
 
-文章介紹如何用 Claude 免費版對 SaaS 首頁文案進行 MX（Machine Experience）稽核，成本為 $0。 **Why** 作者以此為 2026 年 AI 設計轉變做準備。 **How** 把 landing page 文案交給 Claude 免費版進行稽核。 **What** 作者表示稽核後發現了問題，但原文 teaser 未列出具體發現內容。
+文章介紹如何用 Claude 免費版對 SaaS 首頁文案進行 MX（Machine Experience）稽核，成本為 $0。
+
+**Why** 作者以此為 2026 年 AI 設計轉變做準備。
+
+**How** 把 landing page 文案交給 Claude 免費版進行稽核。
+
+**What** 作者表示稽核後發現了問題，但原文 teaser 未列出具體發現內容。
 
 ### 重點
 - MX 指 Machine Experience，即針對機器讀取的體驗稽核
