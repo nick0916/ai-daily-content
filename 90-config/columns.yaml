@@ -131,9 +131,11 @@ columns:
   - id: lenny
     display_name: "🎙️ Lenny's Newsletter・Podcast"
     prompt: "Lenny's Newsletter 的每一篇新文章，包含 podcast 單集（feed 附節目筆記）。"
-    selection_mode: chronological   # every new post, no curation call
-    lookback_days: 7
-    max_items: 5
+    selection_mode: chronological   # newest post not yet shown, no curation call
+    # One post a day, from the last 30 days. Shown posts are locked
+    # (column_displays), so a backlog drains one per day.
+    lookback_days: 30
+    max_items: 1
     filter:
       sources:
         # Podcast episodes are posted to this feed with show notes, so the
