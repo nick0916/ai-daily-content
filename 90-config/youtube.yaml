@@ -25,6 +25,10 @@ channels:
     name: Invest Like The Best
     tier: 2
     model: claude-haiku-5-5   # every episode hits the 40k-char transcript cap
+  - id: UCsg20ERGZt9eHVZRXROJSqg   # Brett Malinowski (The Brett Way) — AI money experiments, ~1 video/month
+    name: Brett Malinowski
+    tier: 3
+    model: claude-haiku-5-5   # trial; also sells courses, so the curator decides per video
 min_duration_sec: 180
 max_duration_sec: 5400
 caption_preference: ["native", "asr"]
