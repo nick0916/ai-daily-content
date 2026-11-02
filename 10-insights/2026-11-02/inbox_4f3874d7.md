@@ -1,0 +1,54 @@
+---
+id: inbox_4f3874d7
+date: 2026-11-02
+source_ref: "[[00-inbox/2026-11-02/2325-substack-lennys-newsletter-how-i-ai-grok-vs-dot-vs-muse-vs-duet-how-29b7]]"
+title: "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day"
+url: https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet
+source: substack-lennys-newsletter
+published_at: 2026-11-02T16:02:08+00:00
+fetched_at: 2026-11-02T23:30:31.433972+00:00
+model: claude-sonnet-5-5
+tokens_in: 0
+tokens_out: 0
+summary_zh: "Lenny's Newsletter 的 How I AI 兩集合輯：一集實測四個個人 agent，一集看 Figma 的 PM 怎麼用 AI。 **Why** 個人 agent 愈來愈多，使用者需要知道哪個適合做哪類工作。 **How** Claire 讓 Grok Bot、Dot、Meta 的 Muse、Claude Duet 做九項真實任務（Slack 回覆、收件匣分流、寫程式、剪影片、Figma 縮圖、家庭專案、購物等），並用 Codex 稽核發現各 agent 的 connector 與 skill 並不對等。 **What** Grok Bot 總分 93%，贏下 Figma、收件匣分流與購物，適合工作；Muse 在九項中有四項最快完成，適合個人生活；Claude Duet 最慢，且在測試中要求授權四次，其他 agent 各一次。Dot 與 Duet 的程式判斷最強，但 Claire 嚴肅寫程式仍會選 Claude 或 Codex。第二集由 Figma 成長 PM Ezra Mechaber 介紹 PM OS：31 個 AI skills 的共用 repo、用 Codex 做 bug bash、AutoXP 成長實驗 agent。"
+key_points:
+  - "九項任務實測：Grok Bot 93% 最全能（工作），Muse 四項最快（個人），Claude Duet 最慢且授權詢問四次（其他各一次）"
+  - "公平比較的前提：Codex 稽核發現各 agent 的 connector/skill 不一致，例如 Muse 缺 Slack 與 GitHub 而無法完成部分工作任務"
+  - "Figma PM OS 為 31 個 AI skills 的共用 repo；AutoXP 以三個 agent 加一次人工檢查點跑成長實驗"
+tags: [personal-agents, agent-benchmark, grok-bot, claude-duet, pm-os]
+topics: [agents.frameworks, product_and_org.adoption]
+importance: 3
+novelty: 3
+insight_quality: 4
+insight_type: pattern
+deep_dive_candidate: false
+deep_dive_approved: false
+---
+
+## 🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day
+
+Lenny's Newsletter 的 How I AI 兩集合輯：一集實測四個個人 agent，一集看 Figma 的 PM 怎麼用 AI。
+
+**Why** 個人 agent 愈來愈多，使用者需要知道哪個適合做哪類工作。
+
+**How** Claire 讓 Grok Bot、Dot、Meta 的 Muse、Claude Duet 做九項真實任務（Slack 回覆、收件匣分流、寫程式、剪影片、Figma 縮圖、家庭專案、購物等），並用 Codex 稽核發現各 agent 的 connector 與 skill 並不對等。
+
+**What** Grok Bot 總分 93%，贏下 Figma、收件匣分流與購物，適合工作；Muse 在九項中有四項最快完成，適合個人生活；Claude Duet 最慢，且在測試中要求授權四次，其他 agent 各一次。Dot 與 Duet 的程式判斷最強，但 Claire 嚴肅寫程式仍會選 Claude 或 Codex。第二集由 Figma 成長 PM Ezra Mechaber 介紹 PM OS：31 個 AI skills 的共用 repo、用 Codex 做 bug bash、AutoXP 成長實驗 agent。
+
+### 重點
+- 九項任務實測：Grok Bot 93% 最全能（工作），Muse 四項最快（個人），Claude Duet 最慢且授權詢問四次（其他各一次）
+- 公平比較的前提：Codex 稽核發現各 agent 的 connector/skill 不一致，例如 Muse 缺 Slack 與 GitHub 而無法完成部分工作任務
+- Figma PM OS 為 31 個 AI skills 的共用 repo；AutoXP 以三個 agent 加一次人工檢查點跑成長實驗
+
+**原文：** [substack-lennys-newsletter](https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet)
+
+---
+
+### 📄 原文內容
+
+<details>
+<summary>點此展開 / 收合</summary>
+
+Grok vs. Dot vs. Muse vs. Claude Duet: which one crushes the competition? Listen now on YouTube • Spotify • Apple Podcasts Brought to you by: WorkOS —Make your app enterprise-ready, with SSO, SCIM, RBAC, and more Firecrawl —Give your AI agents web data and beyond In this solo episode, Claire puts Grok Bot, Dot, Meta’s Muse, and Claude Duet through nine real-world tasks to find out which personal agents are actually worth using. She tests them on everything from Slack replies, inbox triage, and coding to video editing, Figma thumbnails, family projects, and shopping. The results point to a clear split. Biggest takeaways: Grok Bot is the strongest all-around personal agent in this benchmark, especially for work. It scored 93% overall and won the Figma, inbox triage, and shopping tasks. For someone choosing one agent for professional workflows, Claire recommends starting here. Muse is the best agent for personal life. It created the strongest short-form video and family newspaper with almost no prompting and answered a physics question too quickly to time. That speed has led Claire to move more quick Q&A conversations from ChatGPT to Muse. Speed is central to the product experience. Muse finished first on four of the nine tasks, while Claude Duet was consistently the slowest. When an agent disappears for several minutes, users lose context and stop wanting to use it. Claude Duet asks for permission too often. It requested approval four times during the benchmark, compared with once for every other agent. That caution may be well-intentioned, but it makes Duet feel like something the user must supervise rather than trust. An agent is only as capable as the tools it can access. A Codex audit found that Claire’s agents did not have equivalent connectors and skills. Muse lacked Slack and GitHub, which prevented it from completing several work tasks, highlighting the importance of equal setups for a fair comparison. Grok Bot is the agent Claire trusts most with Figma. Dot and Claude Duet mostly filled existing templates, while Grok Bot proposed fresh headlines and layouts that looked like real YouTube thumbnails. It has consistently outperformed the others across Claire’s Figma tests. Claude Duet and Dot still showed the strongest coding judgment. Dot came closest to the intended Sentry fix, while Duet found a second bug and avoided duplicating work Dot had already completed. Claire would still choose Claude or Codex for serious coding, just not through Duet’s personal-agent interface. Dot showed the strongest personal context in one important moment. It was the only agent that asked whether Claire’s Lovable talk was paid and remote, which felt like genuine chief-of-staff judgment. Its poor performance on creative tasks, however, kept it well behind Grok Bot and Muse overall. The useful takeaway is that different agents belong in different parts of life. Claire’s current split is Grok Bot for work and Muse for personal tasks. Choosing agents by job is more effective than expecting one product to handle everything well. Blog and detailed workflow walkthroughs from this episode: Grok vs. Dot vs. Muse vs. Claude Duet: Nine Tasks, Four Agents, No Universal Winner: https://www.chatprd.ai/how-i-ai/grok-vs-dot-vs-muse-vs-claude-duet-nine-tasks-four-agents-no-universal-winner ↳ Generate Novel YouTube Thumbnail Ideas with Grok and Figma: https://www.chatprd.ai/how-i-ai/workflows/generate-novel-youtube-thumbnail-ideas-with-grok-and-figma ↳ How to Create a Branded Product Launch Video with Claude Duet: https://www.chatprd.ai/how-i-ai/workflows/how-to-create-a-branded-product-launch-video-with-claude-duet ↳ Create a Personalized Family Newspaper with Meta’s Muse: https://www.chatprd.ai/how-i-ai/workflows/create-a-personalized-family-newspaper-with-meta-s-muse How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma) Listen now on YouTube • Spotify • Apple Podcasts Brought to you by: Optimizely —Your AI agent orchestration platform for marketing and digital teams Jira Product Discovery —Prioritize with insights, build with confidence Ezra Mechaber is a growth product manager at Figma and one of the creators of PM OS, a shared repository of 31 AI skills used across the company’s product organization. In this episode, he demonstrates how Figma’s PMs use it to manage Slack, gather organizational context, create artifacts, and run more thorough bug bashes with Codex. He also walks through AutoXP, an AI growth PM that runs experiments with a single human checkpoint, and a real-time Jev assistant that improves writing as he types. Biggest takeaways: The best place to start with AI is the work PMs routinely skip. Ezra designed PM OS around tasks that fall through the cracks, such as involving support before a launch or documenting meetings. His goal is to establish a minimum acceptable standard for every PM workflow. Context-gathering skills are the foundation of useful AI at work. At a company with roughly 2,000 employees, even identifying the right collaborators can be difficult. One PM OS skill maps a team and automatically adds the relevant designer, engineering manager, and team leaders as reviewers. A simple “what’s up” skill can make Slack manageable. Ezra runs it about six times a day to gather relevant threads, projects, open decisions, and people awaiting a response. He archives roughly 10 channels daily because the skill preserves what actually matters. A basic Git repository can support an entire PM organization. PM OS consists of an AGENTS.md file, reusable skills, and a few command hooks. An automatic version check keeps 60 to 70 PMs aligned, while private subrepositories give each person room to customize. Successful AI adoption starts with familiar tools, then evolves with users. PM OS began as a terminal interface in Claude Code before gaining a local web interface that was easier to read. Ezra now works primarily in Codex, partly because browser use has become reliable enough for his workflow. Agents can be more diligent bug bashers than humans. Ezra gives his agent a test account and a FigJam board full of scenarios, then has it document its findings. It has caught edge cases ranging from a text box filled with 1,000 emojis to grammar that changed based on a team’s name. In growth, wasted traffic is the biggest sin. AutoXP uses three agents to identify funnel drop-off, propose new copy, and prepare the implementation. A human reviews the experiment once before launch, after which the system analyzes results and begins the next iteration automatically. Fast, inexpensive models can provide feedback that feels continuous. Ezra’s Jev prototype reviews writing whenever the user pauses, flags placeholders and unsupported claims, and finds relevant interview quotes from a research library. The speed makes it feel less like running an AI task and more like working beside an attentive editor. When an AI conversation goes bad, starting over often beats arguing with it. Ezra treats poor output as a sign of unclear instructions or contaminated context. He opens a fresh conversation, restates the goal, and approaches the model with high expectations: “Buddy, I know you can cook.” Blog and detailed workflow walkthroughs from this episode: Inside Figma’s PM OS: 31 AI Skills, Better Bug Bashes, and an Automated Growth Loop: https://www.chatprd.ai/how-i-ai/inside-figma-s-pm-os-31-ai-skills-better-bug-bashes-and-an-automated-growth-loop ↳ Automate Software Bug Bashing with a Browser Agent: https://www.chatprd.ai/how-i-ai/workflows/automate-software-bug-bashing-with-a-browser-agent ↳ Build an Automated Growth Experiment Loop with Multiple AI Agents: https://www.chatprd.ai/how-i-ai/workflows/build-an-automated-growth-experiment-loop-with-multiple-ai-agents ↳ Build a Personal PM Operating System with a Shared Knowledge Repo: https://www.chatprd.ai/how-i-ai/workflows/build-a-personal-pm-operating-system-with-a-shared-knowledge-repo If you’re enjoying these episodes, reply and let me know what you’d love to learn more about: AI workflows, hiring, growth, product strategy—anything. Catch you next week, Lenny P.S. Want every new episode delivered the moment it drops? Hit “Follow” on your favorite podcast app.
+
+</details>
