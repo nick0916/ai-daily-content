@@ -1,0 +1,54 @@
+---
+id: inbox_f3d69f10
+date: 2026-11-24
+source_ref: "[[00-inbox/2026-11-24/0209-substack-product-growth-a-faang-pm-s-guide-to-practical-ai-evals-d106]]"
+title: "A FAANG PM's Guide to Practical AI Evals"
+url: https://www.news.aakashg.com/p/practical-ai-evals
+source: substack-product-growth
+published_at: 2026-11-24T00:34:06+00:00
+fetched_at: 2026-11-24T02:15:34.428303+00:00
+model: claude-sonnet-5-5
+tokens_in: 0
+tokens_out: 0
+summary_zh: "把「AI 產出好不好」拆成一連串是/否問題，再用 LLM 當評審放大，最後仍由人抽查。 **Why** AI 產品的品質難以主觀判斷，PM 若不懂 evals 就無法決定什麼分數可以上線，也無法與工程師分工。 **How** 四步驟：用 3H（helpful、honest、harmless）定義好、把門檻設在競品與最強模型之間、讓 LLM judge 與專家達 70–80% 一致、持續由人抽樣檢查。 **What** Aakash Gupta 整理 Microsoft Foundry 的 evals 實作講座：以合約代理人為例，下限 45%（Cowork）、門檻 65%、上限 70%（最強模型）；專家標註成本舉例 $25,000；大型合約代理人每週人工抽查 200–1,000 筆輸出。分工上 PM 負責撰寫是/否問題、設定上線門檻並決定什麼可上線，工程師負責 judge 與 pipeline。另附 /evals skill（PM OS）與 AI PM 薪資區間，薪資數字為講者個人說法。"
+key_points:
+  - "判斷題用二元是/否評分，驗證快且最終決策本來就是二元；能用程式檢查的就用 code-based eval"
+  - "門檻設定：下限是競品、上限約 70–80%；低於門檻時縮小範圍，只回答能達約 80% 正確率的題型"
+  - "LLM judge 目標是與專家一致 70–80%，不要追求全面一致（可能是陷阱）；仍需每週人工抽樣 200–1,000 筆"
+tags: [evals, llm-as-judge, ai-pm, microsoft-foundry, product-management]
+topics: [engineering.evals, product_and_org.product]
+importance: 3
+novelty: 3
+insight_quality: 4
+insight_type: framework
+deep_dive_candidate: false
+deep_dive_approved: false
+---
+
+## A FAANG PM's Guide to Practical AI Evals
+
+把「AI 產出好不好」拆成一連串是/否問題，再用 LLM 當評審放大，最後仍由人抽查。
+
+**Why** AI 產品的品質難以主觀判斷，PM 若不懂 evals 就無法決定什麼分數可以上線，也無法與工程師分工。
+
+**How** 四步驟：用 3H（helpful、honest、harmless）定義好、把門檻設在競品與最強模型之間、讓 LLM judge 與專家達 70–80% 一致、持續由人抽樣檢查。
+
+**What** Aakash Gupta 整理 Microsoft Foundry 的 evals 實作講座：以合約代理人為例，下限 45%（Cowork）、門檻 65%、上限 70%（最強模型）；專家標註成本舉例 $25,000；大型合約代理人每週人工抽查 200–1,000 筆輸出。分工上 PM 負責撰寫是/否問題、設定上線門檻並決定什麼可上線，工程師負責 judge 與 pipeline。另附 /evals skill（PM OS）與 AI PM 薪資區間，薪資數字為講者個人說法。
+
+### 重點
+- 判斷題用二元是/否評分，驗證快且最終決策本來就是二元；能用程式檢查的就用 code-based eval
+- 門檻設定：下限是競品、上限約 70–80%；低於門檻時縮小範圍，只回答能達約 80% 正確率的題型
+- LLM judge 目標是與專家一致 70–80%，不要追求全面一致（可能是陷阱）；仍需每週人工抽樣 200–1,000 筆
+
+**原文：** [substack-product-growth](https://www.news.aakashg.com/p/practical-ai-evals)
+
+---
+
+### 📄 原文內容
+
+<details>
+<summary>點此展開 / 收合</summary>
+
+Watch the episode on YouTube , Apple or Spotify or read the transcript . Brought to you by Fingerprint - Identify good and bad visitors with industry-leading accuracy Land PM Job - 12-week experience to master getting a PM job Product Faculty - Get $150 off their #1 AI PM Certification via code AAKASH150 Amplitude - THE market leader in product analytics Ariso - Ship AI agents & features faster, with fewer regressions Today's Episode I've been talking to a bunch of AI PMs this year, and when I ask them what has actually changed in their job, they all point to one thing: Evals. I've published a bunch of evals content for you: the theory , the basics , the first principles , the application , how to build them in Braintrust , and how to build them in Arize . Today's episode is another practical one where we show you how to build evals inside of Microsoft Foundry. People are saying evals are the new PRD . I don't think so. But I do think evals are a critical skill for every PM, whether you're an AI PM or not right now. So I hope this content helps you in your career. Go watch the whole thing now on YouTube , Apple and Spotify . Newsletter Deep Dive I've gone even further than what Mahesh showed in the podcast to get you a full deep dive into practical AI evals: How to build AI evals that don't suck A complete toolkit to build evals with AI What the PM role looks like with evals in the mix How to become a $1M+ AI PM who builds evals for a living Subscribe now 1. How to Build AI Evals That Don't Suck At this point, you can't be a PM on AI products without building evals. They're the lifeblood of AI products. You understand that already. So how do you build them well? Well, here's how: There's essentially 4 steps to the process. Let's go into each one in depth. Step 1 - Define good Everyone makes the initial step of eval seem so complicated. Mahesh simplifies it with his 3 H's: These really make it easy for you to understand what it means to be good. You just define the very specific implementations of helpful, honest, and harmless. For example, for a contract agent: Helpful means that it is redacting contracts in the right way. So it's not, for instance, cutting the whole sentence, but changing the right word or the right digit. The test is ideally a yes/no: did it strike out only what it needed to? Honesty is about, is it grounded in the docs? Does it follow the playbook? Does it do what you asked? You can create yes/no tests for each of those. Harmlessness is about it not saying things it shouldn't say. For instance, that a competitor's product is better. You define the yes/no for that as well. So should every eval be yes/no? For judgment calls, yes. Binary scores are faster to verify, and the real decision is binary anyway: you fix it or you don't. If code can check it, use a code-based eval instead, which is still a pass or fail. You'll see 1-5 scales in some guides too. They take more work to verify, so start with yes/no. Step 2 - Set the bar Many PMs are confused and scared to set the bar. They don't understand what type of range they should give their engineering team, and this is a mistake. An experienced AI PM knows that the floor of your eval is your competition and the ceiling is around the 70 to 80% mark. That's where the top benchmarks in AI typically top out. Look at Humanity's Last Exam , where the best model was at 61% when Mahesh checked it live, or hard legal AI reasoning topping out at around 70%. Here's how that looked on his contract agent: Floor: 45%, plain Cowork Bar: 65% Ceiling: 70%, the best model There's a reason for that. You're telling your engineering team there could be better, but at the same time you're showing them that the competition is doing worse. Then they operate in the space above the competition, up to what best could be. So when we say set the bar, you want the performance of your overall eval suite to land around the middle there. Then you know you have a hard enough eval suite that your engineering team can hill climb. And if you come in under the bar, go one level down . Find the slices you're good at, then put guardrails on the product so it only answers the kinds of questions it gets right 80% of the time. Step 3 - Scale with LLM judges As you build out your eval suite, you should use human experts for the initial step one, and that might cost money. For instance, Mahesh gave the example of $25,000 for legal experts on a contract agent. But then you want to build out an LLM judge . For instance, he showed how to do it in Microsoft Foundry, but Bedrock and GCP also ship them. And you can even ship them in Claude Code if you prefer. The whole point is you want to get your judge to agree with your expert 70 to 80% of the time. You don't actually want overall agreement because that might actually be a trap . Step 4 - Keep a human grading You can use an LLM judge to replace humans, but you want to sample those and have a human check those every once in a while. For instance, checking 200 to 1,000 outputs every week might be the example for a large contract agent like Legora or Harvey. 2. A Complete Toolkit to Build Evals with AI I built you a toolkit to simplify these 4 steps. Grab the /evals skill from my PM OS . I recently updated it, so it's a better deal than ever. Here's all you need to do to set up and get your eval skill up to date on what you're building it for: After you do that, it'll help you set the bars and even run them. And here you can see it's given me a scorecard: So this skill in my PM OS walks through all 4 steps for you. You can get it here: Get PM OS 3. What the PM Role Looks Like with Evals In different organizations, different people are going to own different things. But if your team is looking for you to have a point of view on it, I think, and Mahesh thinks, you should own the metrics and you should collaborate with your engineers on the evals. You own the questions of what good means to users and what score ships. After launch, you own the cost and the weekly review, so if the target is a 30% monthly cut in eval cost, engineering delivers it and you follow up. If they're stuck, bring them an idea like a decision model such as Jev . The problem is most PMs don't know how to pair exactly with engineering even after they read those sentences. So let me make it even more clear with this infographic: The PM writes the yes/no questions, sets the launch bar and stage gates, checks the judge, and decides what ships. Engineers build the judges and the pipeline, and help hill climb on evals and down climb on costs. So now when you hear influencers say things like "PMs must learn evals," you actually understand what that means practically. 4. How to Become a $1M+ AI PM Who Builds Evals for a Living Of course, people have been hyping up AI PM and its compensation, but Mahesh really does think AI PMs can get paid a lot. Here's the numbers he shared: L6 to L8: $750K to $1.2M Upper L7 and L8: $1.2M to $2M With stock growth: $2.5M to $3M In my latest PM comp guide , I had to rely on overall PM figures. Mahesh is connected into the AI PM world, and his numbers are a little bit higher than those comp report guides. Everyone I've talked to frankly agrees, including Nancy Chu, who's coming up in an upcoming issue, that this is roughly the pay range. So if this is the pay range, how do you get this type of compensation? The roadmap Here's what I put together as a roadmap for you: Learn how agents work. I've written about AI agents and practical AI agents . I've had podcasts with Zach Lloyd and Armand Ruiz . Learn where AI fits. AI isn't always the solution. You intuitively know that, but can you build with that? Check out my guides on AI as part of the cake , AI product strategy and AI roadmaps to get better at it. Eval those agents. This eval article plus my guide with Hamel and Shreya , which is a classic. Even Google distributes it to its PMs. Read those and learn those. Learn how to price. As I've written about pricing AI products , I have probably the only deep dive guide out there. You can become the expert in this. Once you have these 4 skills, you then sell them in the interview, and here's my guide to AI PM interviews . You see, this seems like a simple roadmap, but actually, 99% of people aren't going to take the time to do it. So if you follow this roadmap and work with Mahesh and me, you can definitely get that $1M+ AI PM job. I promise it's real and it's not just influencers. I'll see you next week. P.S. Find Mahesh on LinkedIn and have a look at his Agentic AI PM certification . I recommend it. P.P.S. Want this newsletter without the ads? Paid subscribers actually don't see them. Go paid
+
+</details>
